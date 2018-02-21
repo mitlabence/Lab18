@@ -1,0 +1,52 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}	%booklet
+%\usepackage{hyperref}	%booklet; clickable citings
+\usepackage{siunitx}	%booklet
+\usepackage{graphicx} 	%includegraphics
+\usepackage{mhchem}		%writing chemical elements with mass numbers
+\usepackage[nottoc]{tocbibind}	%references
+
+
+%the command \insertFigure{file} inserts figure with width 0.9*(column width)
+%TODO adjust width parameter to get nice results
+\newcommand{\insertFigure}[1]{%
+   \includegraphics[width=0.9\linewidth]{#1}%
+}
+
+\title{K223}
+\begin{document}
+\maketitle
+\newpage
+\section{Introduction}
+When a nucleus relaxes to the ground state by emitting a $\gamma$-photon, the probability of emitting in a given direction depends on its angle with the nuclear spin axis. If the relaxation happens by emitting two simultaneous photons, these show an angular correlation. This correlation can be measured, which is the goal of the experiment. To that end, first the $\gamma$-ray spectrum of the sample ($\ce{^{60}Co}$) was measured, then a FAST-SLOW coincidence circuit was set up (see Figure ~\ref{fig:exp_setup}). %TODO too much space between Figure and number
+\begin{figure}[!h]
+\centering
+\insertFigure{k223_setup.png}
+\caption{Experimental setup \cite{booklet}}
+\label{fig:exp_setup}
+\end{figure}
+\section{Theory}
+Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used.
+\begin{figure}[!h]
+\centering
+\insertFigure{cobalt_scheme.png}
+\caption{Cobalt decay scheme \cite{cobalt_scheme}}
+\label{fig:cobalt_scheme}
+\end{figure}
+\section{Experimental setup}
+
+\section{useful}
+\begin{itemize}
+\item Leo 11.3: For technical reasons which we will consider later, it is important to distinguish between fast and slow pulses in an electronics system. Fast signals generally refer to pulses with rise times of a few nanoseconds or less while slow signals have rise times on the order of hundreds of nanosecond or greater. This definition includes both linear and logic signals. Fast pulses are very important for timing applications and high count rates; in these applications it is very important to preserve their rapid rise times throughout the electronics system. Slow pulses, on the other hand, are generally less susceptible to noise and offer better pulse height information for spectroscopy work.
+\end{itemize}
+\begin{thebibliography}{9}
+%TODO decide upon reference notation (how to format reference works)
+\bibitem{booklet}
+Booklet.
+\bibitem{cobalt_scheme}
+R. B. Firestone, Table of Isotopes $8$\textsuperscript{th} edition
+ (Wiley, New York, 1996)
+\end{thebibliography}
+\end{document}
