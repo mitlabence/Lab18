@@ -3,10 +3,11 @@
 \usepackage[english]{babel}
 \usepackage{amsmath}	%booklet
 %\usepackage{hyperref}	%booklet; clickable citings
-\usepackage{siunitx}	%booklet
+\usepackage{siunitx}	%for SI units; see ftp://ftp.dante.de/tex-archive/macros/latex/exptl/siunitx/siunitx.pdf
 \usepackage{graphicx} 	%includegraphics
 \usepackage{mhchem}		%writing chemical elements with mass numbers
 \usepackage[nottoc]{tocbibind}	%references
+\usepackage{indentfirst}%indenting first paragraphs
 
 
 %the command \insertFigure{file} inserts figure with width 0.9*(column width)
@@ -20,15 +21,15 @@
 \maketitle
 \newpage
 \section{Introduction}
-When a nucleus relaxes to the ground state by emitting a $\gamma$-photon, the probability of emitting in a given direction depends on its angle with the nuclear spin axis. If the relaxation happens by emitting two simultaneous photons, these show an angular correlation. This correlation can be measured, which is the goal of the experiment. To that end, first the $\gamma$-ray spectrum of the sample ($\ce{^{60}Co}$) was measured, then a FAST-SLOW coincidence circuit was set up (see Figure ~\ref{fig:exp_setup}). %TODO too much space between Figure and number
-\begin{figure}[!h]
-\centering
-\insertFigure{k223_setup.png}
-\caption{Experimental setup \cite{booklet}}
-\label{fig:exp_setup}
-\end{figure}
+When a nucleus relaxes to the ground state by emitting a $\gamma$-photon, the probability of emitting in a given direction depends on its angle with the nuclear spin axis. If the relaxation happens by emitting two simultaneous photons, these show an angular correlation. This correlation can be measured, which is the goal of the experiment. To that end, first the $\gamma$-ray spectrum of the sample ($\ce{_27^{60}Co}$) was measured, then a FAST-SLOW coincidence circuit was set up (see Figure ~\ref{fig:exp_setup}). %TODO too much space between Figure and number
+
 \section{Theory}
-Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used.
+\par Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ (half-life $\approx 5.3$ years) decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$; with highest probability to the $4+$ angular momentum state. %TODO reformulate 4+ angular momentum state, if possible
+The lifetime of these excited $\ce{Ni}$ states are on the order of $\SI{1}{\pico\second}$. %TODO reformulate order of picoseconds
+Decaying to the ground state follows via emitting one or more $\gamma$ photons. The relaxing process with the largest branching ratio is the $4+ \rightarrow 2+ \rightarrow 0+$ decay, produces two $\gamma$ photons. The corresponding lifetimes are short enough for the emissions to be considered coincidental (from the detecting electronics point of view), and for the assumption that extra-nuclear forces do not cause perturbation in the correlation between the photons.
+\par write a new paragraph; this should look pretty, and the first line should have indention as well.
+
+%TODO write about peaks over natural spectrum appearing in experimental results
 \begin{figure}[!h]
 \centering
 \insertFigure{cobalt_scheme.png}
@@ -36,7 +37,12 @@ Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used.
 \label{fig:cobalt_scheme}
 \end{figure}
 \section{Experimental setup}
-
+\begin{figure}[!h]
+\centering
+\insertFigure{k223_setup.png}
+\caption{Experimental setup \cite{booklet}}
+\label{fig:exp_setup}
+\end{figure}
 \section{useful}
 \begin{itemize}
 \item Leo 11.3: For technical reasons which we will consider later, it is important to distinguish between fast and slow pulses in an electronics system. Fast signals generally refer to pulses with rise times of a few nanoseconds or less while slow signals have rise times on the order of hundreds of nanosecond or greater. This definition includes both linear and logic signals. Fast pulses are very important for timing applications and high count rates; in these applications it is very important to preserve their rapid rise times throughout the electronics system. Slow pulses, on the other hand, are generally less susceptible to noise and offer better pulse height information for spectroscopy work.
