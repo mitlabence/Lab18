@@ -1,5 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Theory}{}% 2
 \BOOKMARK [1][-]{section.3}{Experimental setup}{}% 3
-\BOOKMARK [1][-]{section.4}{useful}{}% 4
-\BOOKMARK [1][-]{section*.1}{References}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Detector}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{The fast coincidence circuit: Constant Fraction Discriminators}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{The slow coincidence circuit: Single-Channel Analyzers}{section.3}% 6
+\BOOKMARK [1][-]{section*.1}{References}{}% 7
