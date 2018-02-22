@@ -1,0 +1,25 @@
+window width: 150
+FC: 15 ns
+timing for prompt: 10 seconds
+det1 SCA: 062 (not moving one)
+det2 SCA: 175
+det1 window: 520-720
+det2 window: 540-740
+interpolate epsilon (we don't know the function)
+for angular correlation, we changed to 7 cm detector distance
+
+<200 nSv/h
+2.1 uSv/h
+
+dark count: 162 over 400 s
+det 1: 1796600
+det 2: 1649900
+
+289 over 800 s
+det 1: 35969
+det 2: 33022
+
+check: scales for peaks -> energy;ratio of the two peaks for both detectors
+
+accidental coincidence: 17:55
+270 degrees for accidental coincidence
