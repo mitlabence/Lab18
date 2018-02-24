@@ -20,10 +20,6 @@
 \maketitle
 \newpage
 \section{Introduction}
-HEYOOOOOOOOOOOOOOOOOOOOOOOO\\
-Bence\\
-abc\\
-DEF\\
 When a nucleus relaxes to the ground state by emitting a $\gamma$-photon, the probability of emitting in a given direction depends on its angle with the nuclear spin axis. If the relaxation happens by emitting two simultaneous photons, these show an angular correlation. This correlation can be measured, which is the goal of the experiment. To that end, first the $\gamma$-ray spectrum of the sample ($\ce{_27^{60}Co}$) was measured, then a FAST-SLOW coincidence circuit was set up (see Figure ~\ref{fig:exp_setup}). 
 %TODO $\gamma$-photon is a bad expression, reformulate it
 \section{Theory}
@@ -66,6 +62,21 @@ The fast coincidence circuit checks whether the two detected photons come from t
 \end{figure}
 \subsection{The slow coincidence circuit: Single-Channel Analyzers}
 The weak detector signal coming from the earlier dynode is fed through the amplifiers \textbf{A1} and \textbf{A2} first. The analyzers \textbf{SCA1}, \textbf{SCA2} determine whether the amplitudes of the signals --- which are proportional to the energy of the $\gamma$-rays --- fall into an interval with adjustable upper and lower limits.
+
+\section{Procedure}
+\subsection{Amplifiers, constant-fraction discriminators}
+First the amplifiers \textbf{A$_1$}, \textbf{A$_2$} were adjusted. We changed the gain using an oscilloscope such that the peaks corresponding to different detected photon energy levels don't hit the $\SI{9}{\volt}$ output ceiling of the amplifiers. The result of the adjustment is shown on Figure \ref{fig:amp}. Next we set the threshold of constant-fraction discriminators above the noise level by using the output of the CFD as the trigger for the amplifier signal of the same detector, increasing the threshold until the bright line at $\SI{0}{\volt}$ showing no photon detection (e.g. noise) disappeared. 
+%TODO which image, if any, shows the CFD output? Looking for channel 2-trigger.
+\subsection{Fast coincidence circuit, prompt curve}
+We connected the CFDs' positive outputs to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. Keeping the resolution time of \textbf{FC} at $\SI{15}{\nano\second}$, we used one of the counter units and changing the delay of \textbf{D3} to measure the coincidental detections as the function of the delay. We measured for $\SI{10}{\second}$ for each delay value.
+\begin{figure}
+\centering
+\insertFigure{./screenshots/SC08.png}
+\caption{Well-adjusted signal of the amplifiers on channel 1. A too high gain would cause the highest peaks to flatten as saturation happens before reaching the maximum.} 
+\label{fig:amp}
+\end{figure}
+
+
 
 \iffalse 
 \section{useful}

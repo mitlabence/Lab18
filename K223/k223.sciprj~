@@ -354,14 +354,14 @@ LabelsRotation	0	0
 </multiLayer>
 <multiLayer>
 prompt-curve-cropped	1	1	2018.02.23. 19:19
-geometry	0	11	508	428	
+geometry	maximized	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1250	276
 Alignement	0	0
 <graph>
-ggeometry	2	4	490	370
+ggeometry	5	4	1299	357
 PlotTitle	Prompt curve	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -403,14 +403,14 @@ LabelsRotation	0	0
 </multiLayer>
 <multiLayer>
 prompt-curve-complete	1	1	2018.02.23. 19:50
-geometry	maximized	active
+geometry	0	0	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1250	276
 Alignement	0	0
 <graph>
-ggeometry	5	5	1314	356
+ggeometry	2	5	496	369
 PlotTitle	Prompt curve	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
