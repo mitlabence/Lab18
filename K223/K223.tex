@@ -23,10 +23,9 @@
 In order to conserve angular momentum, the probability that a nucleus relaxing toward the ground state will emit a photon in a given direction is dependent on the angle between the direction of emission and the spin axis of the nucleus \cite{sieg}. When studying a free nucleus, the nuclear spin axis is free to rotate in space and thus $\gamma$ emissions are isotropic. If relaxation proceeds through successive $\gamma$ emissions however, the two emissions will be angularly correlated if there isn't enough time for the projection of the nuclear spin to be perturbed and rotated by extra-nuclear fields in between the two emissions. The aim of this paper is to verify the angular correlation expected from the $\gamma$-$\gamma$ cascade of decaying $\ce{_27^{60}Co}$. To do so, a FAST-SLOW coincidence circuit was initially set up and the $\gamma$ spectrum of a $\ce{_27^{60}Co}$ sample was measured. The number of angularly correlated photons for different angles were then measured.\cite{cfd}
 
 \section{Theory}
-A more detailed treatment of the theory of the angular correlation of nuclear radiation is provided in chapter XIX of \cite{sieg}. Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ with half-life of $\approx 5.3$ years decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$ with highest probability to the $4^+$ angular momentum state. %TODO reformulate 4+ angular momentum state, using https://physics.stackexchange.com/questions/338817/photon-spin-in-gamma-decay/340129
-%What do you mean here?
+A more detailed treatment of the theory of the angular correlation of nuclear radiation is provided in chapter XIX of \cite{sieg}. Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ with half-life of $\approx 5.3$ years decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$ with highest probability to the $4^+$ angular momentum state. %TODO reformulate 4+ angular momentum state, using https://physics.stackexchange.com/questions/338817/photon-spin-in-gamma-decay/340129 [What does this mean Bence?]
 The $\ce{Ni}$ then relaxes to the ground state with the largest branching ratio being the $4^+\rightarrow2^+\rightarrow 0^+$ decay, producing two $\gamma$ photons with respective energies of 1.17 and 1.33~MeV. The lifetime of the intermediate $2^+$ $\ce{Ni}$ state is on the order of $\SI{1}{\pico\second}$ which is too short to be perturbed by extra-nuclear fields and thus allowing for the angular correlation treatment.
-%TODO reformulate order of picoseconds
+%TODO reformulate order of picoseconds [Not important]
 Decaying to the ground state follows via emitting one or more $\gamma$ photons. The relaxing process with the largest branching ratio is the $4+ \rightarrow 2+ \rightarrow 0+$ decay, produces two $\gamma$ photons. The corresponding lifetimes are short enough for the emissions to be considered coincidental (from the detecting electronics point of view), and for the assumption that extra-nuclear forces do not cause perturbation in the correlation between the photons.
 %TODO write about peaks over natural spectrum appearing in experimental results
 \begin{figure}[!h]
@@ -67,6 +66,21 @@ The fast coincidence circuit checks whether the two detected photons come from t
 \end{figure}
 \subsection{The slow coincidence circuit: Single-Channel Analyzers}
 The weak detector signal coming from the earlier dynode is fed through the amplifiers \textbf{A1} and \textbf{A2} first. The analyzers \textbf{SCA1}, \textbf{SCA2} determine whether the amplitudes of the signals --- which are proportional to the energy of the $\gamma$-rays --- fall into an interval with adjustable upper and lower limits.
+
+\section{Procedure}
+\subsection{Amplifiers, constant-fraction discriminators}
+First the amplifiers \textbf{A$_1$}, \textbf{A$_2$} were adjusted. We changed the gain using an oscilloscope such that the peaks corresponding to different detected photon energy levels don't hit the $\SI{9}{\volt}$ output ceiling of the amplifiers. The result of the adjustment is shown on Figure \ref{fig:amp}. Next we set the threshold of constant-fraction discriminators above the noise level by using the output of the CFD as the trigger for the amplifier signal of the same detector, increasing the threshold until the bright line at $\SI{0}{\volt}$ showing no photon detection (e.g. noise) disappeared. 
+%TODO which image, if any, shows the CFD output? Looking for channel 2-trigger.
+\subsection{Fast coincidence circuit, prompt curve}
+We connected the CFDs' positive outputs to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. Keeping the resolution time of \textbf{FC} at $\SI{15}{\nano\second}$, we used one of the counter units and changing the delay of \textbf{D3} to measure the coincidental detections as the function of the delay. We measured for $\SI{10}{\second}$ for each delay value.
+\begin{figure}
+\centering
+\insertFigure{./screenshots/SC08.png}
+\caption{Well-adjusted signal of the amplifiers on channel 1. A too high gain would cause the highest peaks to flatten as saturation happens before reaching the maximum.} 
+\label{fig:amp}
+\end{figure}
+
+
 
 \iffalse 
 \section{useful}
