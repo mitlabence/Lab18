@@ -20,22 +20,26 @@
 \maketitle
 \newpage
 \section{Introduction}
-When a nucleus relaxes to the ground state by emitting a $\gamma$-photon, the probability of emitting in a given direction depends on its angle with the nuclear spin axis. If the relaxation happens by emitting two simultaneous photons, these show an angular correlation. This correlation can be measured, which is the goal of the experiment. To that end, first the $\gamma$-ray spectrum of the sample ($\ce{_27^{60}Co}$) was measured, then a FAST-SLOW coincidence circuit was set up (see Figure ~\ref{fig:exp_setup}). 
-%TODO $\gamma$-photon is a bad expression, reformulate it
+In order to conserve angular momentum, the probability that a nucleus relaxing toward the ground state will emit a photon in a given direction is dependent on the angle between the direction of emission and the spin axis of the nucleus \cite{sieg}. When studying a free nucleus, the nuclear spin axis is free to rotate in space and thus $\gamma$ emissions are isotropic. If relaxation proceeds through successive $\gamma$ emissions however, the two emissions will be angularly correlated if there isn't enough time for the projection of the nuclear spin to be perturbed and rotated by extra-nuclear fields in between the two emissions. The aim of this paper is to verify the angular correlation expected from the $\gamma$-$\gamma$ cascade of decaying $\ce{_27^{60}Co}$. To do so, a FAST-SLOW coincidence circuit was initially set up and the $\gamma$ spectrum of a $\ce{_27^{60}Co}$ sample was measured. The number of angularly correlated photons for different angles were then measured.\cite{cfd}
+
 \section{Theory}
-Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ (half-life $\approx 5.3$ years) decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$; with highest probability to the $4+$ angular momentum state. %TODO reformulate 4+ angular momentum state, using https://physics.stackexchange.com/questions/338817/photon-spin-in-gamma-decay/340129
-The lifetime of these excited $\ce{Ni}$ states are on the order of $\SI{1}{\pico\second}$. 
-%TODO reformulate order of picoseconds
+A more detailed treatment of the theory of the angular correlation of nuclear radiation is provided in chapter XIX of \cite{sieg}. Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ with half-life of $\approx 5.3$ years decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$ with highest probability to the $4^+$ angular momentum state. %TODO reformulate 4+ angular momentum state, using https://physics.stackexchange.com/questions/338817/photon-spin-in-gamma-decay/340129 [What does this mean Bence?]
+The $\ce{Ni}$ then relaxes to the ground state with the largest branching ratio being the $4^+\rightarrow2^+\rightarrow 0^+$ decay, producing two $\gamma$ photons with respective energies of 1.17 and 1.33~MeV. The lifetime of the intermediate $2^+$ $\ce{Ni}$ state is on the order of $\SI{1}{\pico\second}$ which is too short to be perturbed by extra-nuclear fields and thus allowing for the angular correlation treatment.
+%TODO reformulate order of picoseconds [Not important]
 Decaying to the ground state follows via emitting one or more $\gamma$ photons. The relaxing process with the largest branching ratio is the $4+ \rightarrow 2+ \rightarrow 0+$ decay, produces two $\gamma$ photons. The corresponding lifetimes are short enough for the emissions to be considered coincidental (from the detecting electronics point of view), and for the assumption that extra-nuclear forces do not cause perturbation in the correlation between the photons.
 %TODO write about peaks over natural spectrum appearing in experimental results
 \begin{figure}[!h]
 \centering
 \insertFigure{cobalt_scheme.png}
-\caption{Cobalt decay scheme \cite{cobalt_scheme}}
+\caption{$\ce{_27^{60}Co}$ decay scheme \cite{cobalt_scheme}}
 \label{fig:cobalt_scheme}
 \end{figure}
+As the direction of the emission of the first photon is encoded with information on the projection of the spin axis of the nucleus due to angular momentum conservation, the probability of the direction of emission of the second photon depends on the direction of the first emission. Thus, there is an angular correlation between the directions of the two $\gamma$ emissions, given by the following directional correlation function for the $\gamma$-$\gamma$ cascade herein considered:
+\[W(\theta) = 1+A_{22}P_2(\cos{\theta})+A_{44}P_4(\cos{\theta}),\]
+where $P_2$ and $P_4$ are Legendre Polynomials, $A_2 = 0.1020$, and $A_4 = 0.0091$ \cite{sieg}.
+
 \section{Experimental setup}
-The design of the apparatus is shown in Figure \ref{fig:exp_setup}. A short description of the purpose and the functioning of the components follows.
+The design of the apparatus is shown in Figure \ref{fig:exp_setup}.
 \begin{figure}[!h]
 \centering
 \insertFigure{k223_setup.png}
@@ -87,6 +91,8 @@ We connected the CFDs' positive outputs to the fast coincidence unit \textbf{FC}
 
 \begin{thebibliography}{9}
 %TODO decide upon reference notation (how to format reference works)
+\bibitem{sieg}
+K. Siegbahn, ALPHA-, BETA-, AND GAMMA-RAY SPECTROSCOPY, Vol. 2, North Holand Publishing Company, Amsterdam (1965).
 \bibitem{booklet}
 Booklet.
 \bibitem{cobalt_scheme}
