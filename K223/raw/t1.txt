@@ -1,0 +1,31 @@
+Angle	triple coincidence	detector 1 energy filter	detector 2 energy filter
+90	361	179,000	164,000
+180	447	177,700	165,300
+			
+90	100		
+180	120		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
