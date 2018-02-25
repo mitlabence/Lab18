@@ -21,9 +21,8 @@
 \newpage
 \section{Introduction}
 In order to conserve angular momentum, the probability that a nucleus relaxing toward the ground state will emit a photon in a given direction is dependent on the angle between the direction of emission and the spin axis of the nucleus \cite{sieg}. When studying a free nucleus, the nuclear spin axis is free to rotate in space and thus $\gamma$ emissions are isotropic. If relaxation proceeds through successive $\gamma$ emissions however, the two emissions will be angularly correlated if there isn't enough time for the projection of the nuclear spin to be perturbed and rotated by extra-nuclear fields in between the two emissions. The aim of this paper is to verify the angular correlation expected from the $\gamma$-$\gamma$ cascade of decaying $\ce{_27^{60}Co}$. To do so, a FAST-SLOW coincidence circuit was initially set up and the $\gamma$ spectrum of a $\ce{_27^{60}Co}$ sample was measured. The number of angularly correlated photons for different angles were then measured.\cite{cfd}
-
 \section{Theory}
-A more detailed treatment of the theory of the angular correlation of nuclear radiation is provided in chapter XIX of \cite{sieg}. Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ with half-life of $\approx 5.3$ years decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$ with highest probability to the $4^+$ angular momentum state. %TODO reformulate 4+ angular momentum state, using https://physics.stackexchange.com/questions/338817/photon-spin-in-gamma-decay/340129 [What does this mean Bence?]
+A more detailed treatment of the theory of the angular correlation of nuclear radiation is provided in chapter XIX of \cite{sieg}. Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ with half-life of $\approx 5.3$ years decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$ with highest probability to the $4^+$ angular momentum state.
 The $\ce{Ni}$ then relaxes to the ground state with the largest branching ratio being the $4^+\rightarrow2^+\rightarrow 0^+$ decay, producing two $\gamma$ photons with respective energies of 1.17 and 1.33~MeV. The lifetime of the intermediate $2^+$ $\ce{Ni}$ state is on the order of $\SI{1}{\pico\second}$ which is too short to be perturbed by extra-nuclear fields and thus allowing for the angular correlation treatment.
 %TODO reformulate order of picoseconds [Not important]
 Decaying to the ground state follows via emitting one or more $\gamma$ photons. The relaxing process with the largest branching ratio is the $4+ \rightarrow 2+ \rightarrow 0+$ decay, produces two $\gamma$ photons. The corresponding lifetimes are short enough for the emissions to be considered coincidental (from the detecting electronics point of view), and for the assumption that extra-nuclear forces do not cause perturbation in the correlation between the photons.
@@ -60,7 +59,7 @@ The fast coincidence circuit checks whether the two detected photons come from t
 %TODO is the original signal truly delayed, or is it the inverted signal? Could provide self-made figure
 \begin{figure}[!h]
 \centering
-\includegraphics[width=1.2\linewidth]{cfd.png}
+\includegraphics[width=1.1\linewidth]{cfd.png}
 \caption{Scintillation detector with photomultiplier \cite{cfd}} 
 \label{fig:cfd}
 \end{figure}
@@ -75,13 +74,44 @@ First the amplifiers \textbf{A$_1$}, \textbf{A$_2$} were adjusted. We changed th
 We connected the CFDs' positive outputs to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. Keeping the resolution time of \textbf{FC} at $\SI{15}{\nano\second}$, we used one of the counter units and changing the delay of \textbf{D3} to measure the coincidental detections as the function of the delay. We measured for $\SI{10}{\second}$ for each delay value.
 \begin{figure}
 \centering
-\insertFigure{./screenshots/SC08.png}
-\caption{Well-adjusted signal of the amplifiers on channel 1. A too high gain would cause the highest peaks to flatten as saturation happens before reaching the maximum.} 
+\insertFigure{./screenshots/SC08_cropped.png}
+\caption{Well-adjusted signal of the amplifiers on channel 1 (yellow). A too high gain would cause the highest peaks to flatten as saturation happens before reaching the maximum.} 
 \label{fig:amp}
 \end{figure}
-
-
-
+\begin{figure}
+\centering
+\insertFigure{./screenshots/SC07_cropped.png}
+\caption{Adjusting the delay of the SCAs such that the leading edges of the signals from one SCA (yellow) and the gate and delay generator coincide.}
+\label{fig:sca-overlap}
+\end{figure}
+\subsection{Angular correlation}
+After looking at the detector spectra, we chose the windows 520--720 (detector 1) and 540--740 (detector 2).
+\par We measured the accidental coincidences overnight.
+\par We used interpolation to get values for $Q_2$ and $Q_4$. We chose the arithmetic mean of the two decay energies taken from \cite{cobalt_scheme}, namely
+\begin{equation}
+E_{\text{avg}} = \frac{2505.765}{2} \si{\mega \electronvolt} = \SI{1252.8825}{\mega\electronvolt} \nonumber
+\end{equation}
+With this,
+\begin{align*}
+&Q_2\big(E_{\text{avg}}\big) \equiv Q^*_2 = 0.962297\\
+&Q_4\big(E_{\text{avg}}\big) \equiv Q^*_4 = 0.878188
+\end{align*}
+We tried fitting a function of the form
+\begin{equation}
+W(\theta) = A \big(1 + B (Q^{*}_2)^2 \cos^2 \theta + C (Q^{*}_4)^2 \cos^4 \theta \big) \nonumber
+\end{equation} 
+using the least-squares-fit method, which resulted in
+\begin{align*}
+&A = 3604.22\\
+&B = 0.116871\\
+&C = 0.0424676
+\end{align*}
+While $A$ is solely a factor caused by the units chosen (scale units), the important $B$ and $C$ parameters are close to the theoretical values
+\begin{align*}
+&B_{\text{th}} = \frac{1}{8} = 0.125\\
+&C_{\text{th}} = \frac{1}{24} = 0.041\bar{6}
+\end{align*}
+%TODO errors on parameters
 \iffalse 
 \section{useful}
 \begin{itemize}
