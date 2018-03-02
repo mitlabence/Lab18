@@ -20,7 +20,7 @@
 \maketitle
 \newpage
 \section{Introduction}
-In order to conserve angular momentum, the probability that a nucleus relaxing toward the ground state will emit a photon in a given direction is dependent on the angle between the direction of emission and the spin axis of the nucleus \cite{sieg}. When studying a free nucleus, the nuclear spin axis is free to rotate in space and thus $\gamma$ emissions are isotropic. If relaxation proceeds through successive $\gamma$ emissions however, the two emissions will be angularly correlated if there isn't enough time for the projection of the nuclear spin to be perturbed and rotated by extra-nuclear fields in between the two emissions. The aim of this paper is to verify the angular correlation expected from the $\gamma$-$\gamma$ cascade of decaying $\ce{_27^{60}Co}$. To do so, a FAST-SLOW coincidence circuit was initially set up and the $\gamma$ spectrum of a $\ce{_27^{60}Co}$ sample was measured. The number of angularly correlated photons for different angles were then measured.\cite{cfd}
+In order to conserve angular momentum, the probability that a nucleus relaxing toward the ground state will emit a photon in a given direction is dependent on the angle between the direction of emission and the spin axis of the nucleus \cite{sieg}. When studying a free nucleus, the nuclear spin axis is free to rotate in space and thus $\gamma$ emissions are isotropic. If relaxation proceeds through successive $\gamma$ emissions however, the two emissions will be angularly correlated if there isn't enough time for the projection of the nuclear spin to be perturbed and rotated by extra-nuclear fields in between the two emissions. The aim of this paper is to verify the angular correlation expected from the $\gamma$-$\gamma$ cascade of decaying $\ce{_27^{60}Co}$. To do so, a FAST-SLOW coincidence circuit was initially set up and the $\gamma$ spectrum of a $\ce{_27^{60}Co}$ sample was measured. The number of angularly correlated photons for different angles were then measured.
 \section{Theory}
 A more detailed treatment of the theory of the angular correlation of nuclear radiation is provided in chapter XIX of \cite{sieg}. Figure \ref{fig:cobalt_scheme} shows the decay scheme of the sample used. The $\ce{_27^{60}Co}$ with half-life of $\approx 5.3$ years decays via $\beta^-$-radiation into $\ce{_28^{60}Ni}$ with highest probability to the $4^+$ angular momentum state.
 The $\ce{Ni}$ then relaxes to the ground state with the largest branching ratio being the $4^+\rightarrow2^+\rightarrow 0^+$ decay, producing two $\gamma$ photons with respective energies of 1.17 and 1.33~MeV. The lifetime of the intermediate $2^+$ $\ce{Ni}$ state is on the order of $\SI{1}{\pico\second}$ which is too short to be perturbed by extra-nuclear fields and thus allowing for the angular correlation treatment.
@@ -38,33 +38,45 @@ As the direction of the emission of the first photon is encoded with information
 where $P_2$ and $P_4$ are Legendre Polynomials, $A_2 = 0.1020$, and $A_4 = 0.0091$ \cite{sieg}.
 
 \section{Experimental setup}
-The design of the apparatus is shown in Figure \ref{fig:exp_setup}.
+The design of the apparatus is shown in Figure \ref{fig:exp_setup}. 
 \begin{figure}[!h]
-\centering
-\insertFigure{k223_setup.png}
-\caption{Experimental setup \cite{booklet}}
-\label{fig:exp_setup}
+	\centering
+	\insertFigure{k223_setup.png}
+	\caption{Experimental setup \cite{booklet}}
+	\label{fig:exp_setup}
 \end{figure}
+The slow circuits count the number of photons incident to the respective detectors which have energies within energy range set by the respective single channel analyzers. The slow circuit is used to only count the number of $\gamma$~photons from the relevant $\gamma$-$\gamma$ cascade that are incident to the detectors within a time range set by the timer. The fast coincidence circuit counts the number of pairs of photons which arrive at the two detectors within a time window set by the fast coincidences unit. This circuit is used to distinguish and count pairs of photons which come from single $\gamma$-$\gamma$ cascade events as opposed to pairs of photons from two different cascade events. Though some random coincidences are still inevitably measured due to the large number of $\gamma$-$\gamma$ cascade events occurring at a given time in the sample, these random coincidences are eventually accounted for, as will be discussed in Section~ WHERE?!?!??!?!. The number of coincident photons from the fast and slow circuits are then matched by the universal coincidence unit to count the number of pairs of photons with the right energies and within the right time frame to be labelled as coming from single $\gamma$-$\gamma$ cascade events.
+%TODO refer to the right section above
+
 \subsection{Detector}
-The detectors consist of a crystal scintillator and a photomultiplier. The scintillator absorbs the $\gamma$-ray and re-emits visible light in form of scintillation, which induces electron emission in the photomultiplier via the photoelectric effect. The high voltage provided between the (photo-)cathode and the anode accelerate the electron, which induces an avalanche of electrons by colliding with each of the dynodes, as depicted in Figure \ref{fig:pmt}. As this procedure distorts signal shape, which is required for the measurement of the energy absorbed by the scintillator, the signal on one of the first dynodes is also used as the input for the Single Channel Analyzers \textbf{SCA1} and \textbf{SCA2}.
+The detectors consist of a crystal scintillator and a photomultiplier as show in Figure~\ref{fig:pmt}. The scintillator absorbs the $\gamma$-ray and re-emits visible light in form of scintillation, which induces electron emission in the photomultiplier via the photoelectric effect. The high voltage provided between the (photo-)cathode and the anode accelerate the electron, which induces an avalanche of electrons by colliding with each of the dynodes. The signal produced by the PMT has a measurable height which is proportional to the energy of the incident photon. This signal is then input to the constant fraction discriminator in the fast circuit to measure the arrival time of the incident photon. As this procedure distorts the signal shape, which is required for the measurement of the energy of the incident photon, the output pulse cannot be used to measure the energy. Instead, an undistorted signal from one of the first dynodes is used as the input for the single channel analyzer in the slow circuit. It should be noted that Compton scattering also occurs in the scintillator which distorts the measured energy spectrum by producing a range of photons which are lower in energy than the incident photons. That said, peaks in the spectrum corresponding to the energy of the incident photons should still be easily observable above this Compton noise.
+%TODO "the undistorted signal from one of the first dynodes" Where did you get this from Bence? Is it one of the first dynodes or before the PMT? This sentence sounds imprecise.
 \begin{figure}[!h]
 \centering
 \insertFigure{pmt.png} %TODO is the picture allowed to be used? Source: http://wanda.fiu.edu/teaching/courses/Modern_lab_manual/scintillator.html
 \caption{Scintillation detector with photomultiplier \cite{pmt}} 
 \label{fig:pmt}
 \end{figure}
-\subsection{The fast coincidence circuit: Constant Fraction Discriminators}
-The fast coincidence circuit checks whether the two detected photons come from the same decay process. The constant fraction discriminators modify the signals as seen in Figure \ref{fig:cfd}: an attenuated inverted copy of the input is added to the delayed input signal. The resulting shape crosses the $\SI{0}{\volt}$ line ("zero crossing point"). This point may serve as a time stamp for further processing because the result does not depend on the amplitude.
-\par The discriminators have two outputs: while the "fast" output is a negative pulse, the "slow" output is a positive one, hence the latter is used by the fast coincidence unit \textbf{FC}, which does the actual coincidence checking. The output is fed to a gate $\&$ delay generator \textbf{D$^2$-G$^2$}, which delays the gate signal ("trigger" signal): this is required to match the output of the slow coincidence circuit, described in the next section.
-%TODO is the original signal truly delayed, or is it the inverted signal? Could provide self-made figure
+\subsection{Constant Fraction Discriminator}
+%The fast coincidence circuit checks whether the two detected photons come from the same decay process. 
+The constant fraction discriminators modify the signals as seen in Figure~\ref{fig:cfd}: an attenuated inverted copy of the input is added to the delayed input signal. The resulting shape crosses the $\SI{0}{\volt}$ line ("zero crossing point"). This point serves as a time stamp for the signal which does not depend on the amplitude of the signal.
 \begin{figure}[!h]
-\centering
-\includegraphics[width=1.1\linewidth]{cfd.png}
-\caption{Scintillation detector with photomultiplier \cite{cfd}} 
-\label{fig:cfd}
+	\centering
+	\includegraphics[width=1.02\linewidth]{cfd.png}
+	\caption{Scintillation detector with photomultiplier \cite{cfd}} 
+	\label{fig:cfd}
 \end{figure}
-\subsection{The slow coincidence circuit: Single-Channel Analyzers}
-The weak detector signal coming from the earlier dynode is fed through the amplifiers \textbf{A1} and \textbf{A2} first. The analyzers \textbf{SCA1}, \textbf{SCA2} determine whether the amplitudes of the signals --- which are proportional to the energy of the $\gamma$-rays --- fall into an interval with adjustable upper and lower limits.
+The discriminator has two outputs: the "fast" output which is a negative digital pulse and the "slow" output which is a positive one. The latter is used by the fast coincidence unit \textbf{FC}.
+
+%TODO is the original signal truly delayed, or is it the inverted signal? Could provide self-made figure. No this is right!
+%TODO is it important to talk about the two different outputs of the CFD
+
+\subsection{Single Channel Analyzers}
+The weak detector signal coming from the earlier dynode is fed through the amplifiers \textbf{A1} and \textbf{A2} first. The analyzers \textbf{SCA1} and \textbf{SCA2} determine whether the amplitudes of the signals, which are proportional to the energy of the $\gamma$~photons, fall into an interval set by the \textbf{SCA}s with adjustable upper and lower limits.
+
+\subsection{Universal coincidences}
+The output signals from the \textbf{SCA}s and the \textbf{FC} are sent to the universal coincidence unit \textbf{UC} to count the total number of coincident photons. The signals from the \textbf{SCA}s are first sent through delays to make sure the signals incident to the \textbf{UC} correspond to photons hitting both detectors at the same time. The output from the \textbf{FC} is fed to a gate $\&$ delay generator \textbf{D$^2$-G$^2$} which delays the fast signal to ensure that the fast coincidences are correctly assigned to the right photons measured in the slow circuit when fed into the \textbf{UC}. Thus, the \textbf{UC} counts the total number of photons which had the right energy and arrived within a short enough time frame expected from the $\gamma$-$\gamma$ cascade events.
+
 
 \section{Procedure}
 \subsection{Amplifiers, constant-fraction discriminators}
