@@ -1,0 +1,205 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7083,        197]
+NotebookOptionsPosition[      6732,        180]
+NotebookOutlinePosition[      7070,        195]
+CellTagsIndexPosition[      7027,        192]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"90", ",", " ", "3571.19"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"110", ",", "3690.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"130", ",", "3745.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"150", ",", "3955.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"170", ",", "4075.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"180", ",", "4074.53"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"190", ",", "4159.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"200", ",", "4018.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"220", ",", "3938.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"240", ",", "3660.86"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"260", ",", "3650.86"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"datapolar", " ", "=", " ", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "*", 
+         RowBox[{"Pi", "/", "180"}]}], ",", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], " ", "}"}], "&"}], ",", " ", 
+     "data"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"errors", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "59.7595", ",", " ", "60.7524", ",", " ", "61.2034", ",", " ", "62.8956", 
+     ",", " ", "63.8425", ",", " ", "63.832", ",", "64.497", ",", " ", 
+     "63.3945", ",", " ", "62.7603", ",", " ", "60.505", ",", " ", 
+     "60.4223"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"nlm", " ", "=", " ", 
+  RowBox[{"NonlinearModelFit", "[", 
+   RowBox[{"datapolar", ",", " ", 
+    RowBox[{"a", "*", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"b", "*", 
+        RowBox[{"0.962297", "^", "2"}], "*", 
+        RowBox[{
+         RowBox[{"Cos", "[", "x", "]"}], "^", "2"}]}], " ", "+", " ", 
+       RowBox[{"c", "*", 
+        RowBox[{"0.878188", "^", "2"}], "*", 
+        RowBox[{
+         RowBox[{"Cos", "[", "x", "]"}], "^", "4"}]}]}], ")"}]}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a", ",", "3000"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"b", ",", "0.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"c", ",", "0.1"}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", "x", "}"}], ",", " ", 
+    RowBox[{"Weights", "\[Rule]", 
+     RowBox[{"1", "/", 
+      RowBox[{"errors", "^", "2"}]}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"nlm", "[", "\"\<ParameterTable\>\"", 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.729091604382799*^9, 3.7290916096744127`*^9}, {
+   3.72909732782057*^9, 3.729097327991873*^9}, {3.72909772196206*^9, 
+   3.729097745187502*^9}, 3.729097894680171*^9, {3.7290984515805407`*^9, 
+   3.7290984653214293`*^9}, {3.729098734170117*^9, 3.729098745930276*^9}, {
+   3.729098873340034*^9, 3.729098905438004*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{"FittedModel", "[", 
+    TagBox[
+     PanelBox[
+      TagBox[
+       RowBox[{"3604.190042458282`", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"0.033784358618841465`", " ", 
+           RowBox[{
+            SuperscriptBox["cos", "4"], "(", "x", ")"}]}], "+", 
+          RowBox[{"0.10718268173434038`", " ", 
+           RowBox[{
+            SuperscriptBox["cos", "2"], "(", "x", ")"}]}], "+", "1"}], ")"}]}],
+       Short[#, 2]& ],
+      FrameMargins->5],
+     Editable -> False], "]"}],
+   InterpretTemplate[
+   FittedModel[{
+     "Nonlinear", {$CellContext`a -> 3604.190042458282, $CellContext`b -> 
+       0.11574609696944803`, $CellContext`c -> 
+       0.04380671443111445}, {{$CellContext`x}, $CellContext`a (1 + 
+        0.9260155162089999 $CellContext`b Cos[$CellContext`x]^2 + 
+        0.771214163344 $CellContext`c Cos[$CellContext`x]^4)}}, {{
+     0.0002800180904931314, 0.0002709399969073244, 0.0002669616648904968, 
+     0.00025278975619105125`, 0.0002453467049413864, 0.0002454274278478311, 
+     0.0002403925316378129, 0.0002488266188729604, 0.0002538808701979758, 
+     0.0002731602298290957, 
+     0.00027390849034593146`}}, {{Rational[1, 2] Pi, 3571.19}, {
+      Rational[11, 18] Pi, 3690.86}, {Rational[13, 18] Pi, 3745.86}, {
+      Rational[5, 6] Pi, 3955.86}, {Rational[17, 18] Pi, 4075.86}, {
+      Pi, 4074.53}, {Rational[19, 18] Pi, 4159.86}, {
+      Rational[10, 9] Pi, 4018.86}, {Rational[11, 9] Pi, 3938.86}, {
+      Rational[4, 3] Pi, 3660.86}, {Rational[13, 9] Pi, 3650.86}}, 
+     Function[Null, 
+      Internal`LocalizedBlock[{$CellContext`a, $CellContext`b, \
+$CellContext`c, $CellContext`x}, #], {HoldAll}]]& ],
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->True], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.729098466113471*^9, {3.729098743250695*^9, 3.729098746219328*^9}, {
+   3.729098882548223*^9, 3.729098905885954*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  StyleBox[
+   TagBox[GridBox[{
+      {"\<\"\"\>", "\<\"Estimate\"\>", "\<\"Standard Error\"\>", "\<\"t\
+\[Hyphen]Statistic\"\>", "\<\"P\[Hyphen]Value\"\>"},
+      {"a", "3604.190042458282`", "30.686176203527403`", 
+       "117.45321471640305`", "3.085974633187756`*^-14"},
+      {"b", "0.11574609696944803`", "0.05071076074984648`", 
+       "2.2824760515902622`", "0.05187046790041801`"},
+      {"c", "0.04380671443111445`", "0.0573213016683537`", 
+       "0.7642309779454911`", "0.46667010923757135`"}
+     },
+     AutoDelete->False,
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+     GridBoxDividers->{
+      "ColumnsIndexed" -> {2 -> GrayLevel[0.7]}, 
+       "RowsIndexed" -> {2 -> GrayLevel[0.7]}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+     GridBoxSpacings->{
+      "ColumnsIndexed" -> {2 -> 1}, "RowsIndexed" -> {2 -> 0.75}}],
+    "Grid"], "DialogStyle",
+   StripOnInput->False], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.729098466113471*^9, {3.729098743250695*^9, 3.729098746219328*^9}, {
+   3.729098882548223*^9, 3.729098905887287*^9}}]
+}, Open  ]]
+},
+WindowSize->{662, 713},
+WindowMargins->{{-325, Automatic}, {-106, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3037, 82, 266, "Input"],
+Cell[3620, 106, 1947, 44, 52, "Output"],
+Cell[5570, 152, 1146, 25, 78, "Output"]
+}, Open  ]]
+}
+]
+*)
+
