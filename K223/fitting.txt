@@ -1,16 +1,16 @@
-[2018.02.25. 19:33	Plot: ''Graph1'']
+[2018.03.07. 14:50	Plot: ''angular-correlation-final-plot'']
 Non-linear fit of dataset: angular-correlation-final_UC-accidental, using function: a*(1+b*0.962297^2*cos(x*3.14159/180)^2+c*0.878188^2*cos(x*3.14159/180)^4)
-Y standard errors: Statistical (assuming Poisson distribution)
+Y standard errors: Arbitrary Dataset: angular-correlation-final_UC-Err
 Nelder-Mead Simplex algorithm with tolerance = 0.0001
 From x = 90 to x = 260
-a  = 3,604.19121167371 +/- 39.2167280421839
-b  = 0.115744329177189 +/- 0.0647018364565056
-c  = 0.0438080916414585 +/- 0.0731592351867938
+a  = 3,602.14116449159 +/- 40.0147019394096
+b  = 0.119389963626016 +/- 0.0660442340383109
+c  = 0.040350795658279 +/- 0.0746452803190225
 --------------------------------------------------------------------------------------
-Chi^2 = 4.80465614223677
-R^2 = 0.957064062846195
+Chi^2 = 4.70339820191849
+R^2 = 0.956202171993142
 ---------------------------------------------------------------------------------------
-Iterations = 227
+Iterations = 128
 Status = success
 ---------------------------------------------------------------------------------------
 

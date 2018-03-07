@@ -85,12 +85,12 @@ First the amplifiers \textbf{A$_1$}, \textbf{A$_2$} were adjusted. We changed th
 We connected the CFDs' positive outputs to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. Keeping the resolution time of \textbf{FC} at $\SI{15}{\nano\second}$, we used one of the counter units and changing the delay of \textbf{D3} to measure the coincidental detections as the function of the delay. We measured for $\SI[separate-uncertainty = true]{10.0(1) }{\second}$ for each delay value.
 \begin{figure}[!h]
 \centering
-\insertFigure{prompt_cropped.png}
+\insertFigure{prompt_cropped2.png}
 \caption{The measured prompt curve.}
 \end{figure}
 \begin{figure}[!h]
 \centering
-\includegraphics[width=1.1\linewidth]{detectors.png}
+\includegraphics[width=1.0\linewidth]{detectors2.png}
 \caption{Measured detector spectra.}
 \end{figure}
 \begin{figure}
@@ -128,16 +128,17 @@ W(\theta) = A \big(1 + B (Q^{*}_2)^2 \cos^2 \theta + C (Q^{*}_4)^2 \cos^4 \theta
 \end{equation} 
 using the least-squares-fit method, which resulted in
 \begin{align*}
-&A = 3604.19 \pm 30.69\\
-&B = 0.1157  \pm 0.0507\\
-&C = 0.04381 \pm 0.05732
+&A = 3602.14 \pm 40.01\\
+&B = 0.1157  \pm 0.0660\\
+&C = 0.04035 \pm 0.07465
 \end{align*}
 The theoretical values of $B$ and $C$ ($A$ is a scaling factor depending on the measurement time):
 \begin{align*}
 &B_{\text{th}} = \frac{1}{8} = 0.125\\
 &C_{\text{th}} = \frac{1}{24} = 0.041\bar{6}
 \end{align*}
-%TODO errors on parameters
+\section{Conclusion}
+We set up an experiment to analyze the angular correlation of the $\gamma$-$\gamma$ cascade in a $\ce{_27^{60}Co}$ sample. We achieved a somewhat good agreement with the theoretical prediction, and the main source of the errors can be easily identified: a longer measurement time would have allowed for smaller relative uncertainties, as visible in the case of the overnight recording of the accidental coincidences.
 \iffalse 
 \section{useful}
 \begin{itemize}
@@ -146,11 +147,10 @@ The theoretical values of $B$ and $C$ ($A$ is a scaling factor depending on the 
 \fi
 
 \begin{thebibliography}{9}
-%TODO decide upon reference notation (how to format reference works)
 \bibitem{sieg}
-K. Siegbahn, ALPHA-, BETA-, AND GAMMA-RAY SPECTROSCOPY, Vol. 2, North Holand Publishing Company, Amsterdam (1965).
+Siegbahn, K.: Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2, North Holand Publishing Company, Amsterdam, 1965.
 \bibitem{booklet}
-Booklet.
+Unspecified author: Advanced Laboratory Course (physics601) Description of Experiments, University of Bonn, 2018.
 \bibitem{cobalt_scheme}
 R. B. Firestone, Table of Isotopes $8$\textsuperscript{th} edition
  (Wiley, New York, 1996)
