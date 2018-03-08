@@ -14,14 +14,14 @@
 
 %the command \insertFigure{file} inserts figure with width 0.9*(column width)
 \newcommand{\insertFigure}[1]{%
-   \includegraphics[width=0.9\linewidth]{#1}%
+   \includegraphics[width=0.95\linewidth]{#1}%
 }
 
 \title{\textbf{K223: Angular Correlation}}
 \author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
 \begin{document}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
-\twocolumn[ %makes a one collumn abstract
+\twocolumn[ %makes a one column abstract
 \begin{@twocolumnfalse}
 \maketitle
 \begin{abstract} \vspace{-10mm}
@@ -120,18 +120,18 @@ The amplifiers \textbf{A$_1$}, \textbf{A$_2$} were then adjusted. We changed the
 We connected the positive outputs of the \textbf{CFD}s to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. While keeping the resolution time of the \textbf{FC} at $\SI{15}{\nano\second}$, which was a value approximately expected, we changed the delay of \textbf{D3} to measure the coincidental detections as a function of the delay. We measured the counts for $\SI[separate-uncertainty = true]{10.0(1) }{\second}$ for each delay value which was sufficient to plot an informative prompt curve, given in Figure~\ref{fig:prompt}.
 \begin{figure}[!h]
 	\centering
-	\insertFigure{prompt_with_gauss.png}
+	\insertFigure{prompt.png}
 	\caption{The measured prompt curve and a fitted Gaussian to quantify the width. The parameters are $\mu = \SI[separate-uncertainty = true]{11.1 \pm 0.9}{\nano\second}$ (mean), $\sigma = \SI[separate-uncertainty = true]{9.3 \pm 1.3}{\nano\second}$ (deviation), $A = 8259.8 \pm	881.8$ (scaling factor). Two measured values at 61 ($17 \pm 4.1$ counts) and 63~ns ($29 \pm 5.4$) are not shown.}
 	\label{fig:prompt}
 \end{figure}
 %TODO what are these measured values at 61 and 63ns?
-From the figure, the count rate approximately plateaus from a delay of approximately 4~ns to 18~ns. This gives confidence in the resolution time of the \textbf{FC} set at $\SI{15}{\nano\second}$ when the delay of \textbf{D3} is set to 11~ns. These values were used for the angular correlation measurements. The Gaussian fitted post factum confirmed our choice ($\mu$), and provided the experimental resolving time of the fast coincidence circuit  $\text{FWHM} = 2 \sqrt{2 \text{ln}2} \sigma = \SI[separate-uncertainty = true]{21.9 \pm 3.0}{\nano \second}$\cite{signal}. A possible explanation to the discrepancy between the experimental and the set value ($15$ ns) might be the false assumption that the timing uncertainties of the two \textbf{CFD} units follow a normal distribution: in this case, the prompt curve would also be a Gaussian, instead of having a clearly visible plateau. 
+From the figure, the count rate approximately plateaus from a delay of approximately 4~ns to 18~ns. This is comparable to the resolution time of the \textbf{FC} set at $\SI{15}{\nano\second}$, although a more careful investigation follows below. We set the delay of \textbf{D3} to 11~ns, roughly in the middle. These values were used for the angular correlation measurements. The Gaussian fitted post factum confirmed our choice for the delay ($\mu$), and provided the experimental resolving time of the fast coincidence circuit  $\text{FWHM} = 2 \sqrt{2 \text{ln}2} \sigma = \SI[separate-uncertainty = true]{21.9 \pm 3.0}{\nano \second}$\cite{signal}. Here one must consider the numerous error sources. First, the theoretical prompt curve would be a rectangle (see \cite{leo}), and the time jitter manifesting in the smoothened edges are attributed to the non-idealness of the electronical components (not perfectly rectangular generated pulses, for example). If one wants to read off the resolution time, defined as the FWHM for the prompt curve, one needs to take this jitter into account; thus even though the Gaussian is not the theoretical shape, it can be used more easily and yields a more precise result than taking the length of the plateau. Secondly, there exists a constant background, caused by the accidental coincidences (two atoms radiate at the same time). This is clearly visible if one considers the fitted Gaussian at $>60$~ns values, where it gives a count of $<10^{-4}$, practically 0, while the measurements yield a substantially different result. They could be used to estimate the accidental coincidences; we only consider later the case when the two photons also have the relevant energy, see section \ref{sec:acc}.
 
 \subsection{Energy Spectra}
 The energy spectra from both detectors was plotted by scanning the entire relevant channels of both \textbf{SCA}s. The detectors were placed at 180$^{\circ}$ separation where the largest number of coincidence counts are theoretically expected. We again measured the counts for $\SI[separate-uncertainty = true]{10.0(1) }{\second}$, which was sufficient to obtain adequate spectra. A window size of 150 channels for both \textbf{SCA}s was used. Measurement were taken until the full spectrum expected from Figure~\ref{fig:Compt} was obtained for both detectors. The spectra are given in Figure~\ref{fig:spectra}.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{detectors2.png}
+	\includegraphics[width=0.9\linewidth]{detectors3.png}
 	\caption{Measured energy spectra of both detectors.}
 	\label{fig:spectra}
 \end{figure}
@@ -195,7 +195,13 @@ $A$ is a simply scaling factor which depends on the measuring time. As the funct
 &B = 0.116  \pm 0.066,\\
 &C = 0.040 \pm 0.075.
 \end{align*}
-These values are in agreement with the theoretical values expected, given above. That said, the uncertainties in the fit values are quite large, especially for $C$, though this was also found in previous experiments~\cite{meliss}. A plot of the data with the weighted fit is given in Figure........
+These values are in agreement with the theoretical values expected, given above. That said, the uncertainties in the fit values are quite large, especially for $C$, though this was also found in previous experiments~\cite{meliss}. A plot of the data with the weighted fit is given in Figure \ref{fig:angular}.
+\begin{figure}
+\centering
+\insertFigure{angular.png}
+\caption{Angular correlation with fitted (red) and theoretical function (blue).}
+\label{fig:angular}
+\end{figure}
 
 \section{Conclusion}
 We set up an experiment to analyze the angular correlation of the $\gamma$-$\gamma$ cascade in a $\ce{_27^{60}Co}$ sample. We achieved a somewhat good agreement with the theoretical prediction, and the main source of the errors can be easily identified: a longer measurement time would have allowed for smaller relative uncertainties, as visible in the case of the overnight recording of the accidental coincidences.
@@ -229,9 +235,9 @@ Nakhostin: Signal Processing for Radiation Detectors, Wiley (2018)
 \bibitem{Compton}
 \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}
 \bibitem{meliss}
-A. C. Melissinos $\&$ J. Napolitano, Experiments in Modern Physics, 2\textsuperscript{nd} edition, (Academic Press, San Diego, 2003), pp 419-21.
+A. C. Melissinos $\&$ J. Napolitano, Experiments in Modern Physics, 2\textsuperscript{nd} edition (Academic Press, San Diego, 2003), pp 419-21.
 \bibitem{leo}
-William R. Leo: Techniques for Nuclear and Particle Physics Experiments, Springer-Verlag (1987)
+William R. Leo: Techniques for Nuclear and Particle Physics Experiments (Springer-Verlag, 1987)
 %TODO check for correctness of these book details
 \end{thebibliography}
 \end{document}

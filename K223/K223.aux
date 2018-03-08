@@ -21,7 +21,10 @@
 \citation{cobalt_scheme}
 \citation{sieg}
 \citation{booklet}
-\babel@aux{english}{}
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Theory}{1}{section.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces $\ce {_27^{60}Co}$ decay scheme \cite  {cobalt_scheme}}}{1}{figure.1}}
@@ -40,10 +43,11 @@
 \newlabel{fig:pmt}{{3}{2}{Scintillation detector with photomultiplier \cite {pmt}}{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Compton scattering in the $\ce {^{60}Co}$ $\gamma $-$\gamma $ cascade spectrum \cite  {Compt}}}{2}{figure.4}}
 \newlabel{fig:Compt}{{4}{2}{Compton scattering in the $\ce {^{60}Co}$ $\gamma $-$\gamma $ cascade spectrum \cite {Compt}}{figure.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Constant Fraction Discriminator}{2}{subsection.3.2}}
 \citation{sieg}
 \citation{sieg}
 \citation{signal}
+\citation{leo}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Constant Fraction Discriminator}{3}{subsection.3.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Scintillation detector with photomultiplier \cite  {cfd}}}{3}{figure.5}}
 \newlabel{fig:cfd}{{5}{3}{Scintillation detector with photomultiplier \cite {cfd}}{figure.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Single Channel Analyzers}{3}{subsection.3.3}}
@@ -52,7 +56,6 @@
 \newlabel{sec:Proc}{{4}{3}{Procedure}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Solid Angle Corrections}{3}{subsection.4.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Amplifiers, CFDs}{3}{subsection.4.2}}
-\citation{leo}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Well-adjusted signal of the first amplifier. A too high gain would cause the highest peaks to flatten due to saturation before the maximum.}}{4}{figure.6}}
 \newlabel{fig:amp}{{6}{4}{Well-adjusted signal of the first amplifier. A too high gain would cause the highest peaks to flatten due to saturation before the maximum}{figure.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Prompt Curve}{4}{subsection.4.3}}
@@ -61,21 +64,20 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Energy Spectra}{4}{subsection.4.4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Measured energy spectra of both detectors.}}{4}{figure.8}}
 \newlabel{fig:spectra}{{8}{4}{Measured energy spectra of both detectors}{figure.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Accidental Coincidences}{4}{subsection.4.5}}
-\newlabel{sec:acc}{{4.5}{4}{Accidental Coincidences}{subsection.4.5}{}}
+\citation{leo}
 \citation{sieg}
 \citation{meliss}
-\bibcite{sieg}{1}
-\bibcite{booklet}{2}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Adjusting the delay of the SCAs such that the leading edges of the signals from one SCA (yellow) and the gate and delay generator coincide.}}{5}{figure.9}}
 \newlabel{fig:sca-overlap}{{9}{5}{Adjusting the delay of the SCAs such that the leading edges of the signals from one SCA (yellow) and the gate and delay generator coincide}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Accidental Coincidences}{5}{subsection.4.5}}
+\newlabel{sec:acc}{{4.5}{5}{Accidental Coincidences}{subsection.4.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{5}{section.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Angular Correlation}{5}{subsection.5.1}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Data for the total universal counts \textbf  {UC} at each angle for their respective measuring times mentioned below, normalised to 400 seconds \textbf  {UC-norm.}, and lastly corrected for accidental counts \textbf  {UC-acc.} with propagated uncertainty.}}{5}{table.1}}
 \newlabel{tab:data}{{1}{5}{Data for the total universal counts \textbf {UC} at each angle for their respective measuring times mentioned below, normalised to 400 seconds \textbf {UC-norm.}, and lastly corrected for accidental counts \textbf {UC-acc.} with propagated uncertainty}{table.1}{}}
 \newlabel{eq:fit}{{2}{5}{Angular Correlation}{equation.5.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{5}{section.6}}
-\@writefile{toc}{\contentsline {section}{References}{5}{section*.1}}
+\bibcite{sieg}{1}
+\bibcite{booklet}{2}
 \bibcite{cobalt_scheme}{3}
 \bibcite{pmt}{4}
 \bibcite{cfd}{5}
@@ -84,5 +86,9 @@
 \bibcite{Compton}{8}
 \bibcite{meliss}{9}
 \bibcite{leo}{10}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Polar plot of the counts against angle. Uncertainties are not displayed for the measurements. The weighted fit is given in blue, the theoretical result in green.}}{6}{figure.10}}
-\newlabel{fig:polar}{{10}{6}{Polar plot of the counts against angle. Uncertainties are not displayed for the measurements. The weighted fit is given in blue, the theoretical result in green}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Angular correlation with fitted (red) and theoretical function (blue).}}{6}{figure.10}}
+\newlabel{fig:angular}{{10}{6}{Angular correlation with fitted (red) and theoretical function (blue)}{figure.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{6}{section.6}}
+\@writefile{toc}{\contentsline {section}{References}{6}{section*.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Polar plot of the counts against angle. Uncertainties are not displayed for the measurements. The weighted fit is given in blue, the theoretical result in green.}}{6}{figure.11}}
+\newlabel{fig:polar}{{11}{6}{Polar plot of the counts against angle. Uncertainties are not displayed for the measurements. The weighted fit is given in blue, the theoretical result in green}{figure.11}{}}
