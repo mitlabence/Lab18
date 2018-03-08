@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     44171,       1043]
-NotebookOptionsPosition[     43857,       1027]
-NotebookOutlinePosition[     44192,       1042]
-CellTagsIndexPosition[     44149,       1039]
+NotebookDataLength[     44240,       1044]
+NotebookOptionsPosition[     43926,       1028]
+NotebookOutlinePosition[     44261,       1043]
+CellTagsIndexPosition[     44218,       1040]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -214,7 +214,7 @@ Cell[BoxData[{
        RowBox[{"Pi", "/", "2"}], ",", " ", 
        RowBox[{"3", "*", 
         RowBox[{"Pi", "/", "2"}]}]}], "}"}], ",", " ", 
-     RowBox[{"PlotStyle", "\[Rule]", "Red"}]}], "]"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Green"}]}], "]"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"Plot", "[", 
     RowBox[{"0", ",", 
@@ -484,14 +484,15 @@ Cell[BoxData[{
      RowBox[{"1200", ",", "1200"}], "}"}]}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
  CellChangeTimes->CompressedData["
-1:eJwdzE0ow3EAh/Exy5DkJa9bbRE5GOYlOTDThCRNXLRkrBmZt2JyWosSaY0D
-ylJbGv/ZVitm2tqRAxnlJVtkiGmSViTk993h6XN7uNJhsSyaRqOxSdAX+Js3
-Hb7WhYN5q1Co0qi2ifwX5zyccpv1MPvdYYPOIf8utJVQN/A+qTqGIub17sfD
-GWNZKrx7bmBDecd6LvzJVxbDr9rMKsh85bTBQ8mIAuoYwWHIKF+ag2bNSsRp
-XqsJ6tub7TDZwT2ApyK6C9KFJ8eQZTV6oZLBuoQPHo4fOltHgzCHemSaiZvn
-y4lQvFNfAAU96UUwSx8ngtOlVBOcdHs7obTRJYcLlnEFrJnlu+FbdvtZRGHL
-BVzMmLuK/GVPt1Dnr/yGKiohZYf4Sd/LgurYbruFqLVajmFh2sA1XAvJfLDP
-wAtAj3zrCaoHxkKwP7biA05Iwr9wQ/AXZSUGfrXSriPyMwgG4T9HTQ0d
+1:eJwdzE0ow3EAh/Exa0MSFsZossjB27wkB2YiJGnioiVjzUvmLUw7rUWJJHZA
+WWpLm/9sSjGT5YiajPKSLTLENEkrEvL77vD0uT1p0n6xLJRGo6WSoNv7N208
+fK0I+PhLUKTUKNeJghf7NBx3mHUw6d22Ce19nm24mUfdwPvo0jCKyO/YjYAT
+hoI4ePdcnQLlzSvp8CdDkQu/yhNLIOuV1wgPJQPdcJ7h64eMwoUpaNYsBlXl
+NBihrqluC8bY0vbgaRV9H9JFJ07ItRpcUMHgXsKHA54H2hsGfTCZemSZiWvn
+2igo3qjMhML2+GzI0YVXQVU+VQvHHK4WKK3Zl8MZy3A3LJsUOOBbUtNZUFH9
+BZxNmLoK/mVPt3DeU/wNlVRk7Abxk77DgWpm25aFOGe1OGEWu+caLvtlbtip
+z/HCA7npCap7hvywi1n0AUclgV+4KvwLsRK9v3PS1iPy0wt7g8aY2CNE7TEr
+Gf4DWg4U0Q==
   "]],
 
 Cell[BoxData[
@@ -670,7 +671,7 @@ qpdvD98e8N7124kX+1DU0Q11JjuBErqkJIytDPxNe/kkYfhN/AlR7Pg/czz7
 +HjgDFExLY4tE3Zx/pu+z63//58H/wd0yxyZ
         
         "]]}}, {}, {{{}, {}, {}, {}}, {}}}, {{{}, {}}, {}, {{}, {}, 
-      {RGBColor[1, 0, 0], AbsoluteThickness[1.6], LineBox[CompressedData["
+      {RGBColor[0, 1, 0], AbsoluteThickness[1.6], LineBox[CompressedData["
 1:eJwt2Xc81d//AHApJJKVLbui7FIhDlJZZWREwyYjm5C9ZV5ZRULm+7r3omGE
 lxQZRWmgrI9kJQ1JIb/zfTx+f93H8/G+73Pe73te5/V6nccVs/cydaKno6Nr
 3UJH97/PYW150q0dZ4/HLZg07JEko6l5D8HpDhYwy/i8639mZb08/KlDECKC
@@ -1022,7 +1023,7 @@ PcI=
  CellChangeTimes->{{3.729094353546273*^9, 3.729094371658581*^9}, 
    3.729094454933937*^9, {3.729094517597054*^9, 3.7290945461365747`*^9}, 
    3.729094643037201*^9, 3.7290946822098846`*^9, 3.729447693614573*^9, 
-   3.729447774682561*^9}]
+   3.729447774682561*^9, {3.7295003331772738`*^9, 3.7295003772894087`*^9}}]
 }, Open  ]]
 },
 WindowSize->{1323, 713},
@@ -1042,8 +1043,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 15445, 472, 893, "Input"],
-Cell[16028, 496, 27813, 528, 1215, "Output"]
+Cell[580, 22, 15464, 473, 893, "Input"],
+Cell[16047, 497, 27863, 528, 1215, "Output"]
 }, Open  ]]
 }
 ]
