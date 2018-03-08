@@ -102,14 +102,14 @@ The amplifiers \textbf{A$_1$}, \textbf{A$_2$} were then adjusted. We changed the
 \end{figure}
 
 \subsection{Prompt Curve}
-We connected the positive outputs of the \textbf{CFD}s to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. While keeping the resolution time of the \textbf{FC} at $\SI{15}{\nano\second}$, which was a value approximately expected, we changed the delay of \textbf{D3} to measure the coincidental detections as a function of the delay. We measured the counts for $\SI[separate-uncertainty = true]{10.0(1) }{\second}$ for each delay value which was sufficient to plot an informative prompt curve, given in Figure~\ref{fig:promt}. 
+We connected the positive outputs of the \textbf{CFD}s to the fast coincidence unit \textbf{FC}, one of them through a delay unit \textbf{D3}. While keeping the resolution time of the \textbf{FC} at $\SI{15}{\nano\second}$, which was a value approximately expected, we changed the delay of \textbf{D3} to measure the coincidental detections as a function of the delay. We measured the counts for $\SI[separate-uncertainty = true]{10.0(1) }{\second}$ for each delay value which was sufficient to plot an informative prompt curve, given in Figure~\ref{fig:prompt}.
 \begin{figure}[!h]
 	\centering
-	\insertFigure{prompt_cropped.png}
-	\caption{The measured prompt curve.}
-	\label{fig:promt}
+	\insertFigure{prompt_with_gauss.png}
+	\caption{The measured prompt curve and a fitted Gaussian to quantify the width. The parameters are $\mu = \SI[separate-uncertainty = true]{11.1 \pm 0.9}{\nano\second}$ (mean), $\sigma = \SI[separate-uncertainty = true]{9.3 \pm 1.3}{\nano\second}$ (deviation), $A = 8259.8 \pm	881.8$ (scaling factor). Two measured values at 61 ($17 \pm 4.1$ counts) and 63~ns ($29 \pm 5.4$) are not shown.}
+	\label{fig:prompt}
 \end{figure}
-From the figure, the count rate approximately plateaus from a delay of approximately 4~ns to 18~ns. This gives confidence in the resolution time of the \textbf{FC} set at $\SI{15}{\nano\second}$ when the delay of \textbf{D3} is set to 11~ns. These values were used for the angular correlation measurements.
+From the figure, the count rate approximately plateaus from a delay of approximately 4~ns to 18~ns. This gives confidence in the resolution time of the \textbf{FC} set at $\SI{15}{\nano\second}$ when the delay of \textbf{D3} is set to 11~ns. These values were used for the angular correlation measurements. The Gaussian fitted post factum confirmed our choice ($\mu$), and provided the experimental resolving time of the fast coincidence circuit  $\text{FWHM} = 2 \sqrt{2 \text{ln}2} \sigma = \SI[separate-uncertainty = true]{21.9 \pm 3.0}{\nano \second}$\cite{signal}. A possible explanation to the discrepancy between the experimental and the set value ($15$ ns) might be the false assumption that the timing uncertainties of the two \textbf{CFD} units follow a normal distribution: in this case, the prompt curve would also be a Gaussian, instead of having a clearly visible plateau. 
 
 \subsection{Energy Spectra}
 The energy spectra from both detectors was plotted by scanning the entire relevant channels of both \textbf{SCA}s. The detectors were placed at 180$^{\circ}$ separation where the largest number of coincidence counts are theoretically expected. We again measured the counts for $\SI[separate-uncertainty = true]{10.0(1) }{\second}$, which was sufficient to obtain adequate spectra. A window size of 150 channels for both \textbf{SCA}s was used. Measurement were taken until the full spectrum expected from Figure~\ref{fig:Compt} was obtained for both detectors. The spectra are given in Figure~\ref{fig:spectra}.
@@ -122,9 +122,16 @@ The energy spectra from both detectors was plotted by scanning the entire releva
 The two $\gamma$-$\gamma$ cascade photon peaks are clearly visible for both detectors at the upper end of the spectra, as well as the backscatter peaks at the lower end of the spectra and Compton edges around channel 450. The channel windows chosen for \textbf{SCA1} and \textbf{SCA2} were 520--720 and 540--740 respectively, in order to include both $\gamma$-$\gamma$ cascade photon peaks.
 
 \subsection{Accidental Coincidences} \label{sec:acc}
-We measured the accidental coincidences overnight. 
-
-
+Two photons might be detected as coincidental yet come from two different atoms, we need to take this noise into account. We measured the accidental coincidences overnight, and during the length of $\SI{59820}{\second}$, $21855 \pm 148$ coincidences were recorded, which corresponds to $146.14 \pm 0.99$ counts over $\SI{400}{\second}$, or $0.3653 \pm 0.0025$
+counts each second. The individual \textbf{SCA} units measured $260560000 \pm 16142$ and $243720000 \pm 15612$ incoming photons within the correct energy interval, or
+ \begin{equation}
+ N_{\text{SCA 1}} = 4355.73 \pm 0.27 \hspace{8pt} \text{and} \hspace{8pt} N_{\text{SCA 2}} =  4074.22 \pm 0.26 \nonumber
+ \end{equation}
+ each second. Using the time resoultion $\sigma = \SI[separate-uncertainty = true]{21.9 \pm 3.0}{\nano \second}$ of the \textbf{FCC} (see Figure \ref{fig:prompt}), we can calculate the expected accidental coincidences (see \cite{leo} for a detailed explanation) as
+\begin{equation}
+N_{\text{acc}} = \sigma \cdot N_{\text{SCA 1}} \cdot N_{\text{SCA 2}} = 0.3886 \pm 0.0532 \nonumber
+\end{equation}
+counts per second, which agrees with the experimental results.
 \begin{figure}
 \centering
 \insertFigure{./screenshots/SC07_cropped.png}
@@ -150,14 +157,13 @@ The theoretical values of $B$ and $C$ ($A$ is a scaling factor depending on the 
 &B_{\text{th}} = \frac{1}{8} = 0.125\\
 &C_{\text{th}} = \frac{1}{24} = 0.041\bar{6}
 \end{align*}
-
 \section{Conclusion}
 We set up an experiment to analyze the angular correlation of the $\gamma$-$\gamma$ cascade in a $\ce{_27^{60}Co}$ sample. We achieved a somewhat good agreement with the theoretical prediction, and the main source of the errors can be easily identified: a longer measurement time would have allowed for smaller relative uncertainties, as visible in the case of the overnight recording of the accidental coincidences.
 
 \begin{figure}
 	\centering
-	\insertFigure{polar.png}
-	\caption{Polar plot of the counts against angle. Uncertainties are not displayed for the measurements. The weighted fit is given in blue.}
+	\includegraphics[width=\linewidth]{polar2.png}
+	\caption{Polar plot of the counts against angle. Uncertainties are not displayed for the measurements. The weighted fit is given in blue, the theoretical result in green.}
 	\label{fig:polar}
 \end{figure}
 
@@ -176,10 +182,15 @@ R. B. Firestone, Table of Isotopes $8$\textsuperscript{th} edition
 \bibitem{cfd}
 \url{https://en.wikipedia.org/wiki/Constant_fraction_discriminator#/media/File:Operation_of_a_CFD.png}
 %alternative url: https://en.wikipedia.org/wiki/Constant_fraction_discriminator
+\bibitem{signal}
+Nakhostin: Signal Processing for Radiation Detectors, Wiley (2018)
+%Mohammad Nakhostin
 \bibitem{Compt}
 \url{https://www.nuclear-power.net/nuclear-power/reactor-physics/interaction-radiation-matter/interaction-gamma-radiation-matter/compton-scattering/compton-edge}
 \bibitem{Compton}
 \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}
-
+\bibitem{leo}
+William R. Leo: Techniques for Nuclear and Particle Physics Experiments, Springer-Verlag (1987)
+%TODO check for correctness of these book details
 \end{thebibliography}
 \end{document}
