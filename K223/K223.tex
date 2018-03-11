@@ -121,7 +121,7 @@ We connected the positive outputs of the \textbf{CFD}s to the fast coincidence u
 \begin{figure}[!h]
 	\centering
 	\insertFigure{prompt.png}
-	\caption{The measured prompt curve and a fitted Gaussian to quantify the width. The parameters are $\mu = \SI[separate-uncertainty = true]{11.1 \pm 0.9}{\nano\second}$ (mean), $\sigma = \SI[separate-uncertainty = true]{9.3 \pm 1.3}{\nano\second}$ (deviation), $A = 8259.8 \pm	881.8$ (scaling factor). Two measured values at 61 ($17 \pm 4.1$ counts) and 63~ns ($29 \pm 5.4$) are not shown.}
+	\caption{The measured prompt curve and a fitted Gaussian to quantify the width. The parameters are $\mu = \SI[separate-uncertainty = true]{11.1 \pm 0.9}{\nano\second}$ (mean), $\sigma = \SI[separate-uncertainty = true]{9.3 \pm 1.3}{\nano\second}$ (deviation), $A = 8259.8 \pm	881.8$ (scaling factor). Two measured values at 61~ns ($17 \pm 4.1$ counts) and 63~ns ($29 \pm 5.4$) are not shown.}
 	\label{fig:prompt}
 \end{figure}
 
@@ -132,10 +132,12 @@ The energy spectra from both detectors was plotted by scanning the entire releva
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.9\linewidth]{detectors3.png}
-	\caption{Measured energy spectra of both detectors.}
+	\caption{Measured energy spectra of both detectors 1 (fixed location, black) and 2 (red)}
 	\label{fig:spectra}
 \end{figure}
 The two $\gamma$-$\gamma$ cascade photon peaks are clearly visible for both detectors at the upper end of the spectra, as well as the backscatter peaks at the lower end of the spectra and Compton edges around channel 450. The channel windows chosen for \textbf{SCA1} and \textbf{SCA2} were 520--720 and 540--740 respectively, in order to include both $\gamma$-$\gamma$ cascade photon peaks.
+\par We can assume that the difference between the two spectra is a constant factor due to the different instruments of the two detector systems (not investigated during the experiment). A rough estimate follows. Using the channel number as units, the first peak appears at $565 \pm 15$ (detector 1, black) and $595 \pm 15$ (detector 2). From this, $\alpha = 0.950 \pm 0.035$ results as the value for detector 1 divided by the value for detector 2. Similarly, we detect the second peak for detectors 1 and 2 at $655 \pm 15$ and $670 \pm 15$, respectively, yielding $\alpha = 0.978 \pm 0.031$.
+
 
 \subsection{Accidental Coincidences} \label{sec:acc}
 Two photons might be detected as coincidental yet come from two different atoms, we need to take this noise into account. We measured the accidental coincidences overnight, and during the length of $\SI{59820}{\second}$, $21855 \pm 148$ coincidences were recorded, which corresponds to $146.14 \pm 0.99$ counts over $\SI{400}{\second}$, or $0.3653 \pm 0.0025$
@@ -204,8 +206,7 @@ These values are in agreement with the theoretical values expected, given above.
 \end{figure}
 
 \section{Conclusion}
-We set up an experiment to analyze the angular correlation of the $\gamma$-$\gamma$ cascade in a $\ce{_27^{60}Co}$ sample. First we measured the prompt curve, where despite the low measurement times, we were able to easily find the optimal delay, confirmed by later analysis. Next, we found the relevant energy window by scanning through a wide range of the single channel analyzers. We found a different interval for the two detectors, stemming from the presumable differences in the two systems, but we found the spectra to match our expectations, including the Compton edge and the two peaks. Then we proceeded to investigate the angular correlation. We achieved a somewhat good agreement with the theoretical prediction, and the main source of the errors can be easily identified: a longer measurement time would have allowed for smaller relative uncertainties, as visible in the case of the overnight recording of the accidental coincidences.
-%TODO could talk about taking more data for the prompt curve in order to get a more accurate theoretical accidental coincidences prediction
+We set up an experiment to analyze the angular correlation of the $\gamma$-$\gamma$ cascade in a $\ce{_27^{60}Co}$ sample. First we measured the prompt curve, where despite the low measurement times, we were able to easily find the optimal delay, confirmed by later analysis. Next, we found the relevant energy window of the individual detector energy spectra by scanning through a wide range of the single channel analyzers. We found a different interval for the two detectors, stemming from the presumable differences in the two systems, but we found the spectra to match our expectations, including the Compton edge and the two peaks. Then we proceeded to investigate the angular correlation. We achieved a somewhat good agreement with the theoretical prediction, and the main source of the errors can be easily identified: a longer measurement time would have allowed for smaller relative uncertainties, as visible in the case of the overnight recording of the accidental coincidences.
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{polar2.png}
@@ -213,6 +214,8 @@ We set up an experiment to analyze the angular correlation of the $\gamma$-$\gam
 	\label{fig:polar}
 \end{figure}
 
+%For AIP style see http://guides.lib.monash.edu/citing-referencing/aip; missing element is the upper index citation numbers instead of [x]
+\newpage
 \begin{thebibliography}{9}
 
 %TODO order bibliography by order of appearance and use the one style (AIP)

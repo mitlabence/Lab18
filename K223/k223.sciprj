@@ -10,7 +10,7 @@ geometry	147	24	562	430
 <table>
 17984
 <table creation_time="2018-22-02 12:09:00:000" caption_spec="%n%C{ - }%c" name="sca-spectra" columns="5" rows="38"><comment><![CDATA[x (scale) has error +- 1]]></comment><column creation_time="2018-22-02 12:09:32:369" caption_spec="%n%C{ - }%c" name="Scale unit" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-22-02 12:09:32:369" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-22-02 12:09:32:369" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.5000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">5.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">7.5000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">1.2500000000000000e+02</row><row type="TypeDouble" index="5" invalid="no">1.5000000000000000e+02</row><row type="TypeDouble" index="6" invalid="no">1.7500000000000000e+02</row><row type="TypeDouble" index="7" invalid="no">2.0000000000000000e+02</row><row type="TypeDouble" index="8" invalid="no">2.2500000000000000e+02</row><row type="TypeDouble" index="9" invalid="no">2.5000000000000000e+02</row><row type="TypeDouble" index="10" invalid="no">2.7500000000000000e+02</row><row type="TypeDouble" index="11" invalid="no">3.0000000000000000e+02</row><row type="TypeDouble" index="12" invalid="no">3.2500000000000000e+02</row><row type="TypeDouble" index="13" invalid="no">3.5000000000000000e+02</row><row type="TypeDouble" index="14" invalid="no">3.7500000000000000e+02</row><row type="TypeDouble" index="15" invalid="no">4.0000000000000000e+02</row><row type="TypeDouble" index="16" invalid="no">4.2500000000000000e+02</row><row type="TypeDouble" index="17" invalid="no">4.5000000000000000e+02</row><row type="TypeDouble" index="18" invalid="no">4.7500000000000000e+02</row><row type="TypeDouble" index="19" invalid="no">5.0000000000000000e+02</row><row type="TypeDouble" index="20" invalid="no">5.2500000000000000e+02</row><row type="TypeDouble" index="21" invalid="no">5.5000000000000000e+02</row><row type="TypeDouble" index="22" invalid="no">5.3700000000000000e+02</row><row type="TypeDouble" index="23" invalid="no">5.6500000000000000e+02</row><row type="TypeDouble" index="24" invalid="no">5.8000000000000000e+02</row><row type="TypeDouble" index="25" invalid="no">5.9500000000000000e+02</row><row type="TypeDouble" index="26" invalid="no">6.1000000000000000e+02</row><row type="TypeDouble" index="27" invalid="no">6.2500000000000000e+02</row><row type="TypeDouble" index="28" invalid="no">6.4000000000000000e+02</row><row type="TypeDouble" index="29" invalid="no">6.5500000000000000e+02</row><row type="TypeDouble" index="30" invalid="no">6.7000000000000000e+02</row><row type="TypeDouble" index="31" invalid="no">6.8500000000000000e+02</row><row type="TypeDouble" index="32" invalid="no">7.0000000000000000e+02</row><row type="TypeDouble" index="33" invalid="no">7.1500000000000000e+02</row><row type="TypeDouble" index="34" invalid="no">7.4000000000000000e+02</row><row type="TypeDouble" index="35" invalid="no">7.6500000000000000e+02</row><row type="TypeDouble" index="36" invalid="no">7.8000000000000000e+02</row><row type="TypeDouble" index="37" invalid="no">8.0000000000000000e+02</row></column><column creation_time="2018-22-02 12:09:32:369" caption_spec="%n%C{ - }%c" name="Detector 1" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[Detector 1]]></comment><input_filter><simple_filter creation_time="2018-22-02 12:09:32:369" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-22-02 12:09:32:369" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.1380000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">3.5940000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">4.4590000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">5.2580000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">4.9190000000000000e+03</row><row type="TypeDouble" index="5" invalid="no">3.8240000000000000e+03</row><row type="TypeDouble" index="6" invalid="no">3.1950000000000000e+03</row><row type="TypeDouble" index="7" invalid="no">2.7340000000000000e+03</row><row type="TypeDouble" index="8" invalid="no">2.5570000000000000e+03</row><row type="TypeDouble" index="9" invalid="no">2.3900000000000000e+03</row><row type="TypeDouble" index="10" invalid="no">2.2760000000000000e+03</row><row type="TypeDouble" index="11" invalid="no">2.3460000000000000e+03</row><row type="TypeDouble" index="12" invalid="no">2.3530000000000000e+03</row><row type="TypeDouble" index="13" invalid="no">2.3290000000000000e+03</row><row type="TypeDouble" index="14" invalid="no">2.4790000000000000e+03</row><row type="TypeDouble" index="15" invalid="no">2.6190000000000000e+03</row><row type="TypeDouble" index="16" invalid="no">2.7340000000000000e+03</row><row type="TypeDouble" index="17" invalid="no">2.5290000000000000e+03</row><row type="TypeDouble" index="18" invalid="no">2.1660000000000000e+03</row><row type="TypeDouble" index="19" invalid="no">1.8090000000000000e+03</row><row type="TypeDouble" index="20" invalid="no">1.8510000000000000e+03</row><row type="TypeDouble" index="21" invalid="no">3.1080000000000000e+03</row><row type="TypeDouble" index="22" invalid="no">2.3350000000000000e+03</row><row type="TypeDouble" index="23" invalid="no">3.9520000000000000e+03</row><row type="TypeDouble" index="24" invalid="no">3.7520000000000000e+03</row><row type="TypeDouble" index="25" invalid="no">2.6510000000000000e+03</row><row type="TypeDouble" index="26" invalid="no">1.9040000000000000e+03</row><row type="TypeDouble" index="27" invalid="no">2.1130000000000000e+03</row><row type="TypeDouble" index="28" invalid="no">2.8280000000000000e+03</row><row type="TypeDouble" index="29" invalid="no">2.9010000000000000e+03</row><row type="TypeDouble" index="30" invalid="no">2.0730000000000000e+03</row><row type="TypeDouble" index="31" invalid="no">1.0450000000000000e+03</row><row type="TypeDouble" index="32" invalid="no">3.5800000000000000e+02</row><row type="TypeDouble" index="33" invalid="no">1.2800000000000000e+02</row><row type="TypeDouble" index="34" invalid="no">3.0000000000000000e+01</row><row type="TypeDouble" index="35" invalid="no">3.5000000000000000e+01</row><row type="TypeDouble" index="36" invalid="no">1.8000000000000000e+01</row><row type="TypeDouble" index="37" invalid="no">2.5000000000000000e+01</row></column><column creation_time="2018-25-02 11:56:37:423" caption_spec="%n%C{ - }%c" name="Error 1" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[Error of detector 1]]></comment><input_filter><simple_filter creation_time="2018-25-02 11:56:37:423" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-25-02 11:56:37:423" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="37">sqrt(col(&quot;Detector 1&quot;))</formula><row type="TypeDouble" index="0" invalid="no">5.6017854296643669e+01</row><row type="TypeDouble" index="1" invalid="no">5.9949979149287451e+01</row><row type="TypeDouble" index="2" invalid="no">6.6775744099186198e+01</row><row type="TypeDouble" index="3" invalid="no">7.2512067961133198e+01</row><row type="TypeDouble" index="4" invalid="no">7.0135582980395910e+01</row><row type="TypeDouble" index="5" invalid="no">6.1838499334961227e+01</row><row type="TypeDouble" index="6" invalid="no">5.6524331044250317e+01</row><row type="TypeDouble" index="7" invalid="no">5.2287665849605489e+01</row><row type="TypeDouble" index="8" invalid="no">5.0566787519082126e+01</row><row type="TypeDouble" index="9" invalid="no">4.8887626246321268e+01</row><row type="TypeDouble" index="10" invalid="no">4.7707441767506253e+01</row><row type="TypeDouble" index="11" invalid="no">4.8435524153249339e+01</row><row type="TypeDouble" index="12" invalid="no">4.8507731342539614e+01</row><row type="TypeDouble" index="13" invalid="no">4.8259714048054619e+01</row><row type="TypeDouble" index="14" invalid="no">4.9789557138018409e+01</row><row type="TypeDouble" index="15" invalid="no">5.1176166327695945e+01</row><row type="TypeDouble" index="16" invalid="no">5.2287665849605489e+01</row><row type="TypeDouble" index="17" invalid="no">5.0289163842720633e+01</row><row type="TypeDouble" index="18" invalid="no">4.6540305112880382e+01</row><row type="TypeDouble" index="19" invalid="no">4.2532340636273474e+01</row><row type="TypeDouble" index="20" invalid="no">4.3023249528597908e+01</row><row type="TypeDouble" index="21" invalid="no">5.5749439459065414e+01</row><row type="TypeDouble" index="22" invalid="no">4.8321837713398274e+01</row><row type="TypeDouble" index="23" invalid="no">6.2864934582006846e+01</row><row type="TypeDouble" index="24" invalid="no">6.1253571324454221e+01</row><row type="TypeDouble" index="25" invalid="no">5.1487862647424002e+01</row><row type="TypeDouble" index="26" invalid="no">4.3634848458542855e+01</row><row type="TypeDouble" index="27" invalid="no">4.5967379738244816e+01</row><row type="TypeDouble" index="28" invalid="no">5.3178943201233324e+01</row><row type="TypeDouble" index="29" invalid="no">5.3860932037980923e+01</row><row type="TypeDouble" index="30" invalid="no">4.5530209751328840e+01</row><row type="TypeDouble" index="31" invalid="no">3.2326459750489228e+01</row><row type="TypeDouble" index="32" invalid="no">1.8920887928424502e+01</row><row type="TypeDouble" index="33" invalid="no">1.1313708498984761e+01</row><row type="TypeDouble" index="34" invalid="no">5.4772255750516612e+00</row><row type="TypeDouble" index="35" invalid="no">5.9160797830996161e+00</row><row type="TypeDouble" index="36" invalid="no">4.2426406871192848e+00</row><row type="TypeDouble" index="37" invalid="no">5.0000000000000000e+00</row></column><column creation_time="2018-22-02 12:10:08:362" caption_spec="%n%C{ - }%c" name="Detector 2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[moving detector]]></comment><input_filter><simple_filter creation_time="2018-22-02 12:10:08:362" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-22-02 12:10:08:362" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.7140000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">3.3800000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">3.6580000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">4.3060000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">3.5220000000000000e+03</row><row type="TypeDouble" index="5" invalid="no">3.0580000000000000e+03</row><row type="TypeDouble" index="6" invalid="no">2.6200000000000000e+03</row><row type="TypeDouble" index="7" invalid="no">2.0730000000000000e+03</row><row type="TypeDouble" index="8" invalid="no">1.9670000000000000e+03</row><row type="TypeDouble" index="9" invalid="no">1.8120000000000000e+03</row><row type="TypeDouble" index="10" invalid="no">1.6570000000000000e+03</row><row type="TypeDouble" index="11" invalid="no">1.6950000000000000e+03</row><row type="TypeDouble" index="12" invalid="no">1.6890000000000000e+03</row><row type="TypeDouble" index="13" invalid="no">1.6720000000000000e+03</row><row type="TypeDouble" index="14" invalid="no">1.9010000000000000e+03</row><row type="TypeDouble" index="15" invalid="no">1.9710000000000000e+03</row><row type="TypeDouble" index="16" invalid="no">1.9800000000000000e+03</row><row type="TypeDouble" index="17" invalid="no">2.1110000000000000e+03</row><row type="TypeDouble" index="18" invalid="no">1.8950000000000000e+03</row><row type="TypeDouble" index="19" invalid="no">1.5910000000000000e+03</row><row type="TypeDouble" index="20" invalid="no">1.3410000000000000e+03</row><row type="TypeDouble" index="21" invalid="no">1.6030000000000000e+03</row><row type="TypeDouble" index="22" invalid="no">1.4050000000000000e+03</row><row type="TypeDouble" index="23" invalid="no">1.9530000000000000e+03</row><row type="TypeDouble" index="24" invalid="no">2.5500000000000000e+03</row><row type="TypeDouble" index="25" invalid="no">2.9260000000000000e+03</row><row type="TypeDouble" index="26" invalid="no">2.6190000000000000e+03</row><row type="TypeDouble" index="27" invalid="no">1.8580000000000000e+03</row><row type="TypeDouble" index="28" invalid="no">1.4270000000000000e+03</row><row type="TypeDouble" index="29" invalid="no">1.7070000000000000e+03</row><row type="TypeDouble" index="30" invalid="no">2.0580000000000000e+03</row><row type="TypeDouble" index="31" invalid="no">1.9820000000000000e+03</row><row type="TypeDouble" index="32" invalid="no">1.4710000000000000e+03</row><row type="TypeDouble" index="33" invalid="no">8.1700000000000000e+02</row><row type="TypeDouble" index="34" invalid="no">1.8400000000000000e+02</row><row type="TypeDouble" index="35" invalid="no">3.9000000000000000e+01</row><row type="TypeDouble" index="36" invalid="no">3.1000000000000000e+01</row><row type="TypeDouble" index="37" invalid="no">1.8000000000000000e+01</row></column><column creation_time="2018-25-02 11:56:39:015" caption_spec="%n%C{ - }%c" name="Error 2" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[Error of detector 2]]></comment><input_filter><simple_filter creation_time="2018-25-02 11:56:39:015" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-25-02 11:56:39:015" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="37">sqrt(col(&quot;Detector 2&quot;))</formula><row type="TypeDouble" index="0" invalid="no">5.2096065110524421e+01</row><row type="TypeDouble" index="1" invalid="no">5.8137767414994535e+01</row><row type="TypeDouble" index="2" invalid="no">6.0481402100149765e+01</row><row type="TypeDouble" index="3" invalid="no">6.5620118866091673e+01</row><row type="TypeDouble" index="4" invalid="no">5.9346440499831161e+01</row><row type="TypeDouble" index="5" invalid="no">5.5299186250793966e+01</row><row type="TypeDouble" index="6" invalid="no">5.1185935568278907e+01</row><row type="TypeDouble" index="7" invalid="no">4.5530209751328840e+01</row><row type="TypeDouble" index="8" invalid="no">4.4350873723073370e+01</row><row type="TypeDouble" index="9" invalid="no">4.2567593307585526e+01</row><row type="TypeDouble" index="10" invalid="no">4.0706264874095240e+01</row><row type="TypeDouble" index="11" invalid="no">4.1170377700477800e+01</row><row type="TypeDouble" index="12" invalid="no">4.1097445176069037e+01</row><row type="TypeDouble" index="13" invalid="no">4.0890096600521744e+01</row><row type="TypeDouble" index="14" invalid="no">4.3600458713183279e+01</row><row type="TypeDouble" index="15" invalid="no">4.4395945760846224e+01</row><row type="TypeDouble" index="16" invalid="no">4.4497190922573978e+01</row><row type="TypeDouble" index="17" invalid="no">4.5945620030640569e+01</row><row type="TypeDouble" index="18" invalid="no">4.3531597719357833e+01</row><row type="TypeDouble" index="19" invalid="no">3.9887341350358263e+01</row><row type="TypeDouble" index="20" invalid="no">3.6619666847201110e+01</row><row type="TypeDouble" index="21" invalid="no">4.0037482438335203e+01</row><row type="TypeDouble" index="22" invalid="no">3.7483329627982627e+01</row><row type="TypeDouble" index="23" invalid="no">4.4192759587968709e+01</row><row type="TypeDouble" index="24" invalid="no">5.0497524691810391e+01</row><row type="TypeDouble" index="25" invalid="no">5.4092513345194085e+01</row><row type="TypeDouble" index="26" invalid="no">5.1176166327695945e+01</row><row type="TypeDouble" index="27" invalid="no">4.3104524124504614e+01</row><row type="TypeDouble" index="28" invalid="no">3.7775653535048207e+01</row><row type="TypeDouble" index="29" invalid="no">4.1315856520227193e+01</row><row type="TypeDouble" index="30" invalid="no">4.5365184888855019e+01</row><row type="TypeDouble" index="31" invalid="no">4.4519658579104131e+01</row><row type="TypeDouble" index="32" invalid="no">3.8353617821530214e+01</row><row type="TypeDouble" index="33" invalid="no">2.8583211855912904e+01</row><row type="TypeDouble" index="34" invalid="no">1.3564659966250536e+01</row><row type="TypeDouble" index="35" invalid="no">6.2449979983983983e+00</row><row type="TypeDouble" index="36" invalid="no">5.5677643628300215e+00</row><row type="TypeDouble" index="37" invalid="no">4.2426406871192848e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
-geometry	-137	-7	1333	415	
+geometry	maximized	active
 
 </table>
 <table>
@@ -39,14 +39,14 @@ geometry	0	0	562	430
 </table>
 <multiLayer>
 SCA-spectra	1	1	2018.02.25. 13:49
-geometry	0	0	508	428	
+geometry	0	0	508	428	hidden
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1231	276
 Alignement	0	0
 <graph>
-ggeometry	103	-8	254	370
+ggeometry	-118	5	1273	308
 PlotTitle	 	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -57,15 +57,15 @@ EnabledAxes	1	0	1	0
 AxesTitles	Channel number	Counts per 10 s			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Noto Sans	7	75	0	0	0
-ScaleFont0	Noto Sans	15	75	0	0	0
-ScaleFont1	Noto Sans	61	75	0	0	0
-ScaleFont2	Noto Sans	15	75	0	0	0
-ScaleFont3	Noto Sans	61	75	0	0	0
-AxisFont0	Noto Sans	12	75	1	0	0
-AxisFont1	Noto Sans	61	50	0	0	0
-AxisFont2	Noto Sans	12	75	1	0	0
-AxisFont3	Noto Sans	61	50	0	0	0
+TitleFont	Noto Sans	6	75	0	0	0
+ScaleFont0	Noto Sans	12	75	0	0	0
+ScaleFont1	Noto Sans	51	75	0	0	0
+ScaleFont2	Noto Sans	12	75	0	0	0
+ScaleFont3	Noto Sans	51	75	0	0	0
+AxisFont0	Noto Sans	10	75	1	0	0
+AxisFont1	Noto Sans	51	50	0	0	0
+AxisFont2	Noto Sans	10	75	1	0	0
+AxisFont3	Noto Sans	51	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
@@ -148,7 +148,7 @@ Spacing	5	5
 LayerCanvasSize	400	300
 Alignement	0	0
 <graph>
-ggeometry	101	19	248	302
+ggeometry	196	23	481	368
 PlotTitle	 	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -175,9 +175,10 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	255
 curve	prompt_Delay (ns)	prompt_Counts	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	1	prompt_Delay (ns)	prompt_Counts	prompt_1	1	8	#000000	1	1	1
-FunctionCurve	0,F1,x,0,24	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-34672192	21962	1
+FunctionCurve	0,F1,x,0,24	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	307836128	21963	1
 <formula>
 355.419*exp(-0.00581698*(x-11.1324)^2)
+
 
 
 
@@ -198,14 +199,14 @@ LabelsRotation	0	0
 </multiLayer>
 <multiLayer>
 angular-correlation-final-plot	1	1	2018.03.03. 16:09
-geometry	maximized	active
+geometry	0	0	508	428	
 WindowLabel		0
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1195	49
 Alignement	0	0
 <graph>
-ggeometry	238	23	643	290
+ggeometry	158	30	427	367
 PlotTitle	 	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -216,15 +217,15 @@ EnabledAxes	1	0	1	0
 AxesTitles	Angle [Deg]	Counts per 400 s			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Noto Sans	10	75	0	0	0
-ScaleFont0	Noto Sans	14	75	0	0	0
-ScaleFont1	Noto Sans	86	75	0	0	0
-ScaleFont2	Noto Sans	14	75	0	0	0
-ScaleFont3	Noto Sans	86	75	0	0	0
-AxisFont0	Noto Sans	11	75	1	0	0
-AxisFont1	Noto Sans	86	50	0	0	0
-AxisFont2	Noto Sans	11	75	1	0	0
-AxisFont3	Noto Sans	86	50	0	0	0
+TitleFont	Noto Sans	15	75	0	0	0
+ScaleFont0	Noto Sans	21	75	0	0	0
+ScaleFont1	Noto Sans	128	75	0	0	0
+ScaleFont2	Noto Sans	21	75	0	0	0
+ScaleFont3	Noto Sans	128	75	0	0	0
+AxisFont0	Noto Sans	16	75	1	0	0
+AxisFont1	Noto Sans	128	50	0	0	0
+AxisFont2	Noto Sans	16	75	1	0	0
+AxisFont3	Noto Sans	128	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
@@ -232,7 +233,7 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	255
 curve	angular-correlation-final_Angle	angular-correlation-final_UC-accidental	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	10	1
 ErrorBars	1	angular-correlation-final_Angle	angular-correlation-final_UC-accidental	angular-correlation-final_UC-Err	1	8	#000000	1	1	1
-FunctionCurve	0,NonLinearFit1,x,90,260	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-34600592	21962	1
+FunctionCurve	0,NonLinearFit1,x,90,260	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	307913536	21963	1
 <formula>
 a=3602.14116449159
 b=0.119389963626016
@@ -252,10 +253,12 @@ a*(1+b*0.962297^2*cos(x*3.14159/180)^2+c*0.878188^2*cos(x*3.14159/180)^4)
 
 
 
+
 </formula>
-FunctionCurve	0,F1,x,90,260	1000			0	1	3	0	1	0	0	0	19	0	0	31	0	2	0	-34513504	21962	1
+FunctionCurve	0,F1,x,90,260	1000			0	1	3	0	1	0	0	0	19	0	0	31	0	2	0	307916464	21963	1
 <formula>
 3602.141*(1+0.125*0.962297^2*cos(x*3.14159/180)^2+0.04166666666*0.878188^2*cos(x*3.14159/180)^4)
+
 
 
 
@@ -275,7 +278,7 @@ AxesLineWidth	1
 LabelsRotation	0	0
 </graph>
 <graph>
-ggeometry	579	53	402	22
+ggeometry	385	67	267	28
 PlotTitle		#000000	4228
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -286,15 +289,15 @@ EnabledAxes	0	0	0	0
 AxesTitles	X Axis Title	Y Axis Title			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Noto Sans	19	50	0	0	0
-ScaleFont0	Noto Sans	25	75	0	0	0
-ScaleFont1	Noto Sans	25	75	0	0	0
-ScaleFont2	Noto Sans	25	75	0	0	0
-ScaleFont3	Noto Sans	25	75	0	0	0
-AxisFont0	Noto Sans	18	50	0	0	0
-AxisFont1	Noto Sans	18	50	0	0	0
-AxisFont2	Noto Sans	18	50	0	0	0
-AxisFont3	Noto Sans	18	50	0	0	0
+TitleFont	Noto Sans	28	50	0	0	0
+ScaleFont0	Noto Sans	37	75	0	0	0
+ScaleFont1	Noto Sans	37	75	0	0	0
+ScaleFont2	Noto Sans	37	75	0	0	0
+ScaleFont3	Noto Sans	37	75	0	0	0
+AxisFont0	Noto Sans	27	50	0	0	0
+AxisFont1	Noto Sans	27	50	0	0	0
+AxisFont2	Noto Sans	27	50	0	0	0
+AxisFont3	Noto Sans	27	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
@@ -350,9 +353,10 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	255
 curve	angular-correlation-final_Angle	angular-correlation-final_correlation	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	10	1
 ErrorBars	1	angular-correlation-final_Angle	angular-correlation-final_correlation	angular-correlation-final_1	1	8	#000000	1	1	1
-FunctionCurve	0,F1,x,80,260	1000			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	-34302960	21962	1
+FunctionCurve	0,F1,x,80,260	1000			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	308208032	21963	1
 <formula>
 1+0.125*0.962297^2*cos(x*3.14159/180)^2 + 0.047666*0.878188^2*cos(x*3.14159/180)^4
+
 
 
 
