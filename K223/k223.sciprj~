@@ -46,7 +46,7 @@ Spacing	5	5
 LayerCanvasSize	1231	276
 Alignement	0	0
 <graph>
-ggeometry	36	3	490	370
+ggeometry	103	-8	254	370
 PlotTitle	 	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -58,9 +58,9 @@ AxesTitles	Channel number	Counts per 10 s
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
 TitleFont	Noto Sans	7	75	0	0	0
-ScaleFont0	Noto Sans	17	75	0	0	0
+ScaleFont0	Noto Sans	15	75	0	0	0
 ScaleFont1	Noto Sans	61	75	0	0	0
-ScaleFont2	Noto Sans	12	75	0	0	0
+ScaleFont2	Noto Sans	15	75	0	0	0
 ScaleFont3	Noto Sans	61	75	0	0	0
 AxisFont0	Noto Sans	12	75	1	0	0
 AxisFont1	Noto Sans	61	50	0	0	0
@@ -148,7 +148,7 @@ Spacing	5	5
 LayerCanvasSize	400	300
 Alignement	0	0
 <graph>
-ggeometry	266	6	492	367
+ggeometry	101	19	248	302
 PlotTitle	 	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -159,15 +159,15 @@ EnabledAxes	1	0	1	0
 AxesTitles	Delay (ns)	Counts per 10 s			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Noto Sans	26	75	0	0	0
-ScaleFont0	Noto Sans	21	75	0	0	0
-ScaleFont1	Noto Sans	21	75	0	0	0
-ScaleFont2	Noto Sans	21	75	0	0	0
-ScaleFont3	Noto Sans	21	75	0	0	0
-AxisFont0	Noto Sans	21	50	0	0	0
-AxisFont1	Noto Sans	21	50	0	0	0
-AxisFont2	Noto Sans	21	50	0	0	0
-AxisFont3	Noto Sans	21	50	0	0	0
+TitleFont	Noto Sans	30	75	0	0	0
+ScaleFont0	Noto Sans	15	75	0	0	0
+ScaleFont1	Noto Sans	25	75	0	0	0
+ScaleFont2	Noto Sans	15	75	0	0	0
+ScaleFont3	Noto Sans	25	75	0	0	0
+AxisFont0	Noto Sans	13	75	1	0	0
+AxisFont1	Noto Sans	25	50	0	0	0
+AxisFont2	Noto Sans	13	75	1	0	0
+AxisFont3	Noto Sans	25	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
@@ -175,9 +175,16 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	255
 curve	prompt_Delay (ns)	prompt_Counts	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	1	prompt_Delay (ns)	prompt_Counts	prompt_1	1	8	#000000	1	1	1
-scale	0	0	400	0	8	5	0	0
+FunctionCurve	0,F1,x,0,24	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-34672192	21962	1
+<formula>
+355.419*exp(-0.00581698*(x-11.1324)^2)
+
+
+
+</formula>
+scale	0	0	400	0	10	5	0	0
 scale	1	0	400	0	8	5	0	0
-scale	2	-1	25	0	7	5	0	0
+scale	2	-1	25	0	6	5	0	0
 scale	3	-1	25	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
@@ -191,14 +198,14 @@ LabelsRotation	0	0
 </multiLayer>
 <multiLayer>
 angular-correlation-final-plot	1	1	2018.03.03. 16:09
-geometry	0	0	508	428	
+geometry	maximized	active
 WindowLabel		0
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1195	49
 Alignement	0	0
 <graph>
-ggeometry	3	-4	490	370
+ggeometry	238	23	643	290
 PlotTitle	 	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -210,13 +217,13 @@ AxesTitles	Angle [Deg]	Counts per 400 s
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
 TitleFont	Noto Sans	10	75	0	0	0
-ScaleFont0	Noto Sans	20	75	0	0	0
+ScaleFont0	Noto Sans	14	75	0	0	0
 ScaleFont1	Noto Sans	86	75	0	0	0
-ScaleFont2	Noto Sans	20	75	0	0	0
+ScaleFont2	Noto Sans	14	75	0	0	0
 ScaleFont3	Noto Sans	86	75	0	0	0
-AxisFont0	Noto Sans	13	75	1	0	0
+AxisFont0	Noto Sans	11	75	1	0	0
 AxisFont1	Noto Sans	86	50	0	0	0
-AxisFont2	Noto Sans	13	75	1	0	0
+AxisFont2	Noto Sans	11	75	1	0	0
 AxisFont3	Noto Sans	86	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
@@ -225,7 +232,7 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	255
 curve	angular-correlation-final_Angle	angular-correlation-final_UC-accidental	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	10	1
 ErrorBars	1	angular-correlation-final_Angle	angular-correlation-final_UC-accidental	angular-correlation-final_UC-Err	1	8	#000000	1	1	1
-FunctionCurve	0,NonLinearFit1,x,90,260	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	966171424	21982	1
+FunctionCurve	0,NonLinearFit1,x,90,260	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-34600592	21962	1
 <formula>
 a=3602.14116449159
 b=0.119389963626016
@@ -241,10 +248,18 @@ a*(1+b*0.962297^2*cos(x*3.14159/180)^2+c*0.878188^2*cos(x*3.14159/180)^4)
 
 
 
+
+
+
+
 </formula>
-FunctionCurve	0,F1,x,90,260	1000			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	957337984	21982	1
+FunctionCurve	0,F1,x,90,260	1000			0	1	3	0	1	0	0	0	19	0	0	31	0	2	0	-34513504	21962	1
 <formula>
 3602.141*(1+0.125*0.962297^2*cos(x*3.14159/180)^2+0.04166666666*0.878188^2*cos(x*3.14159/180)^4)
+
+
+
+
 </formula>
 scale	0	3400	4400	0	4	5	0	0
 scale	1	3400	4400	0	8	5	0	0
@@ -260,7 +275,7 @@ AxesLineWidth	1
 LabelsRotation	0	0
 </graph>
 <graph>
-ggeometry	131	64	91	27
+ggeometry	579	53	402	22
 PlotTitle		#000000	4228
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -272,14 +287,14 @@ AxesTitles	X Axis Title	Y Axis Title
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
 TitleFont	Noto Sans	19	50	0	0	0
-ScaleFont0	Noto Sans	24	75	0	0	0
-ScaleFont1	Noto Sans	24	75	0	0	0
-ScaleFont2	Noto Sans	24	75	0	0	0
-ScaleFont3	Noto Sans	24	75	0	0	0
-AxisFont0	Noto Sans	17	50	0	0	0
-AxisFont1	Noto Sans	17	50	0	0	0
-AxisFont2	Noto Sans	17	50	0	0	0
-AxisFont3	Noto Sans	17	50	0	0	0
+ScaleFont0	Noto Sans	25	75	0	0	0
+ScaleFont1	Noto Sans	25	75	0	0	0
+ScaleFont2	Noto Sans	25	75	0	0	0
+ScaleFont3	Noto Sans	25	75	0	0	0
+AxisFont0	Noto Sans	18	50	0	0	0
+AxisFont1	Noto Sans	18	50	0	0	0
+AxisFont2	Noto Sans	18	50	0	0	0
+AxisFont3	Noto Sans	18	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
@@ -301,14 +316,14 @@ LabelsRotation	0	0
 </multiLayer>
 <multiLayer>
 Graph1	1	1	2018.03.07. 22:55
-geometry	maximized	active
+geometry	0	0	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1244	224
 Alignement	0	0
 <graph>
-ggeometry	5	5	1312	304
+ggeometry	2	6	490	370
 PlotTitle	 	#000000	4228
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -319,15 +334,15 @@ EnabledAxes	1	0	1	0
 AxesTitles	X Axis Title	Y Axis Title			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	4	5124	4
-TitleFont	Noto Sans	13	75	0	0	0
-ScaleFont0	Noto Sans	11	75	0	0	0
-ScaleFont1	Noto Sans	11	75	0	0	0
-ScaleFont2	Noto Sans	11	75	0	0	0
-ScaleFont3	Noto Sans	11	75	0	0	0
-AxisFont0	Noto Sans	11	50	0	0	0
-AxisFont1	Noto Sans	11	50	0	0	0
-AxisFont2	Noto Sans	11	50	0	0	0
-AxisFont3	Noto Sans	11	50	0	0	0
+TitleFont	Noto Sans	19	75	0	0	0
+ScaleFont0	Noto Sans	16	75	0	0	0
+ScaleFont1	Noto Sans	16	75	0	0	0
+ScaleFont2	Noto Sans	16	75	0	0	0
+ScaleFont3	Noto Sans	16	75	0	0	0
+AxisFont0	Noto Sans	16	50	0	0	0
+AxisFont1	Noto Sans	16	50	0	0	0
+AxisFont2	Noto Sans	16	50	0	0	0
+AxisFont3	Noto Sans	16	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
@@ -335,9 +350,13 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	255
 curve	angular-correlation-final_Angle	angular-correlation-final_correlation	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	10	1
 ErrorBars	1	angular-correlation-final_Angle	angular-correlation-final_correlation	angular-correlation-final_1	1	8	#000000	1	1	1
-FunctionCurve	0,F1,x,80,260	1000			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	973724992	21982	1
+FunctionCurve	0,F1,x,80,260	1000			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	-34302960	21962	1
 <formula>
 1+0.125*0.962297^2*cos(x*3.14159/180)^2 + 0.047666*0.878188^2*cos(x*3.14159/180)^4
+
+
+
+
 </formula>
 scale	0	0.95	1.2	0	8	5	0	0
 scale	1	0.95	1.2	0	8	5	0	0

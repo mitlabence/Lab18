@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  8 MAR 2018 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  12 MAR 2018 22:01
 entering extended mode
 **./K223.tex
 (K223.tex
@@ -59,6 +59,12 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absrightindent=\skip45
 \absparindent=\skip46
 \absparsep=\skip47
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+LaTeX Info: Redefining \cite on input line 441.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -1039,20 +1045,20 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (K223.aux)
 \openout1 = `K223.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1089,7 +1095,7 @@ LaTeX Font Info:    ... okay on input line 22.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1098,9 +1104,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (K223.out) (K223.out)
 \@outlinefile=\write3
@@ -1216,187 +1222,146 @@ G,.JBIG2,.JB2,.eps]
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 22.
+. Activating mapping `default' on line 23.
 .................................................
 \c__siunitx_mathsf_int=\count300
 \c__siunitx_mathtt_int=\count301
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
-<cobalt_scheme.png, id=74, 489.83pt x 292.09125pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+<cobalt_scheme.png, id=78, 489.83pt x 292.09125pt>
 File: cobalt_scheme.png Graphic file (type png)
 <use cobalt_scheme.png>
-Package pdftex.def Info: cobalt_scheme.png  used on input line 41.
-(pdftex.def)             Requested size: 220.7163pt x 131.61365pt.
-<k223_setup.png, id=79, 551.05875pt x 383.4325pt>
-File: k223_setup.png Graphic file (type png)
-<use k223_setup.png>
-Package pdftex.def Info: k223_setup.png  used on input line 55.
-(pdftex.def)             Requested size: 220.7163pt x 153.57506pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[1{C:/Users/Benoît/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+Package pdftex.def Info: cobalt_scheme.png  used on input line 43.
+(pdftex.def)             Requested size: 232.97914pt x 138.9275pt.
+ [1{C:/Users/Benoît/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
  <./cobalt_scheme.png>]
-<pmt.png, id=110, 415.7934pt x 259.6902pt>
+<k223_setup.png, id=110, 551.05875pt x 383.4325pt>
+File: k223_setup.png Graphic file (type png)
+<use k223_setup.png>
+Package pdftex.def Info: k223_setup.png  used on input line 58.
+(pdftex.def)             Requested size: 232.97914pt x 162.11122pt.
+<pmt.png, id=113, 415.7934pt x 259.6902pt>
 File: pmt.png Graphic file (type png)
 <use pmt.png>
-Package pdftex.def Info: pmt.png  used on input line 64.
-(pdftex.def)             Requested size: 220.7163pt x 137.85307pt.
-<Compt.png, id=112, 942.52126pt x 770.88pt>
+Package pdftex.def Info: pmt.png  used on input line 65.
+(pdftex.def)             Requested size: 232.97914pt x 145.51268pt.
+<Compt.png, id=116, 942.52126pt x 770.88pt>
 File: Compt.png Graphic file (type png)
 <use Compt.png>
-Package pdftex.def Info: Compt.png  used on input line 71.
+Package pdftex.def Info: Compt.png  used on input line 73.
 (pdftex.def)             Requested size: 245.24199pt x 200.57698pt.
-<cfd.png, id=119, 308.352pt x 160.9212pt>
-File: cfd.png Graphic file (type png)
-<use cfd.png>
-Package pdftex.def Info: cfd.png  used on input line 83.
-(pdftex.def)             Requested size: 250.14787pt x 130.5468pt.
-
-Overfull \hbox (4.90588pt too wide) in paragraph at lines 83--84
- [][] 
- []
 
 [2 <./k223_setup.png> <./pmt.png> <./Compt.png>]
-Underfull \vbox (badness 4084) has occurred while \output is active []
-
-<./screenshots/SC08_cropped.png, id=139, 493.845pt x 400.49625pt>
+<cfdnew.png, id=137, 350.81062pt x 337.26pt>
+File: cfdnew.png Graphic file (type png)
+<use cfdnew.png>
+Package pdftex.def Info: cfdnew.png  used on input line 85.
+(pdftex.def)             Requested size: 232.98636pt x 171.67096pt.
+<./screenshots/SC08_cropped.png, id=142, 493.845pt x 400.49625pt>
 File: ./screenshots/SC08_cropped.png Graphic file (type png)
 <use ./screenshots/SC08_cropped.png>
-Package pdftex.def Info: ./screenshots/SC08_cropped.png  used on input line 114
+Package pdftex.def Info: ./screenshots/SC08_cropped.png  used on input line 110
 .
-(pdftex.def)             Requested size: 220.7163pt x 178.99332pt.
+(pdftex.def)             Requested size: 232.97914pt x 188.93604pt.
+ [3 <./cfdnew.png>]
+<prompt.png, id=155, 654.445pt x 340.27126pt>
+File: prompt.png Graphic file (type png)
+<use prompt.png>
+Package pdftex.def Info: prompt.png  used on input line 119.
+(pdftex.def)             Requested size: 232.97914pt x 121.13202pt.
+<detectors3.png, id=158, 666.49pt x 492.84125pt>
+File: detectors3.png Graphic file (type png)
+<use detectors3.png>
+Package pdftex.def Info: detectors3.png  used on input line 128.
+(pdftex.def)             Requested size: 220.7163pt x 163.20964pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<prompt_with_gauss.png, id=141, 685.56125pt x 314.17375pt>
-File: prompt_with_gauss.png Graphic file (type png)
-<use prompt_with_gauss.png>
-Package pdftex.def Info: prompt_with_gauss.png  used on input line 123.
-(pdftex.def)             Requested size: 220.7163pt x 101.14647pt.
-[3 <./cfd.png>]
-<detectors2.png, id=153, 994.71625pt x 491.8375pt>
-File: detectors2.png Graphic file (type png)
-<use detectors2.png>
-Package pdftex.def Info: detectors2.png  used on input line 134.
-(pdftex.def)             Requested size: 220.7163pt x 109.12767pt.
-
-Underfull \hbox (badness 4108) in paragraph at lines 144--146
-\OT1/cmr/m/n/10 each se-cond. Using the time re-soul-tion $\OML/cmm/m/it/10  \
-OT1/cmr/m/n/10 =
- []
-
-[4 <./screenshots/SC08_cropped.png> <./prompt_with_gauss.png> <./detectors2.png
->]pdfTeX warning (ext4): destination with the same identifier (name{equation.4.
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.4.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.4.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.4.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \begin{equation}
-                      
-<./screenshots/SC07_cropped.png, id=167, 594.22pt x 399.4925pt>
+[4 <./screenshots/SC08_cropped.png> <./prompt.png>]
+<./screenshots/SC07_cropped.png, id=170, 594.22pt x 399.4925pt>
 File: ./screenshots/SC07_cropped.png Graphic file (type png)
 <use ./screenshots/SC07_cropped.png>
-Package pdftex.def Info: ./screenshots/SC07_cropped.png  used on input line 152
+Package pdftex.def Info: ./screenshots/SC07_cropped.png  used on input line 139
 .
-(pdftex.def)             Requested size: 220.7163pt x 148.38899pt.
-<polar2.png, id=174, 1012.78375pt x 963.6pt>
+(pdftex.def)             Requested size: 232.97914pt x 156.63046pt.
+<angular.png, id=177, 644.4075pt x 457.71pt>
+File: angular.png Graphic file (type png)
+<use angular.png>
+Package pdftex.def Info: angular.png  used on input line 193.
+(pdftex.def)             Requested size: 232.97914pt x 165.48087pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{equation.4
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.198 \begin{align*}
+                     <./detectors3.png> <./screenshots/SC07_cropped.png>]
+<polar2.png, id=195, 1012.78375pt x 963.6pt>
 File: polar2.png Graphic file (type png)
 <use polar2.png>
-Package pdftex.def Info: polar2.png  used on input line 204.
+Package pdftex.def Info: polar2.png  used on input line 206.
 (pdftex.def)             Requested size: 245.24199pt x 233.3272pt.
 
-Underfull \hbox (badness 2644) in paragraph at lines 213--214
-[]\OT1/cmr/m/n/10 Siegbahn, K.: Alpha-, beta-, and gamma-ray
+[6 <./angular.png> <./polar2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+[]\OT1/cmr/m/n/10 K. Sieg-bahn, \OT1/cmr/m/sl/10 Alpha-, beta-, and gamma-ray
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 213--214
-\OT1/cmr/m/n/10 spectroscopy, Vol. 2, (North Hol-land Pu-blis-hing
- []
-
-[5 <./screenshots/SC07_cropped.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
-[][]$\OT1/cmtt/m/n/10 http : / / wanda . fiu . edu / teaching / courses /
+Underfull \hbox (badness 4805) in paragraph at lines 216--217
+\OT1/cmr/m/sl/10 spectroscopy, Vol. 2 \OT1/cmr/m/n/10 (North Hol-land Pu-blis-h
+ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-[][]$\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki / Constant _
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+[]$\OT1/cmtt/m/n/10 https : / / www . nuclear-[]power . net / nuclear-[]power /
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-\OT1/cmtt/m/n/10 fraction _ discriminator # /media / File :
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+\OT1/cmtt/m/n/10 reactor-[]physics / interaction-[]radiation-[]matter /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-[][]$\OT1/cmtt/m/n/10 https : / / www . nuclear-[]power . net /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-\OT1/cmtt/m/n/10 nuclear-[]power / reactor-[]physics /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-\OT1/cmtt/m/n/10 interaction-[]radiation-[]matter /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
 \OT1/cmtt/m/n/10 interaction-[]gamma-[]radiation-[]matter /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-[][]$\OT1/cmtt/m/n/10 https : / / www . phys . ufl . edu / courses / phy4803L /
-
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+\OT1/cmtt/m/n/10 courses / phy4803L / group _ I / gamma _ spec / gamspec .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-[6 <./polar2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
+[7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
  (K223.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
 Package rerunfilecheck Info: File `K223.out' has not changed.
-(rerunfilecheck)             Checksum: F1DF617587CBBFA41197C2931AC2A9E2;1025.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
+(rerunfilecheck)             Checksum: 84841F7CBE1659FDD50E68CD903E478F;1089.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
  ) 
 Here is how much of TeX's memory you used:
- 18662 strings out of 493339
- 359754 string characters out of 3139582
- 446839 words of memory out of 3000000
- 21988 multiletter control sequences out of 15000+200000
- 542362 words of font info for 67 fonts, out of 3000000 for 9000
+ 18766 strings out of 493339
+ 361013 string characters out of 3139582
+ 450155 words of memory out of 3000000
+ 22081 multiletter control sequences out of 15000+200000
+ 543413 words of font info for 70 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
  36i,16n,54p,10396b,976s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -1410,15 +1375,19 @@ e1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on K223.pdf (6 pages, 723935 bytes).
+.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsl8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on K223.pdf (7 pages, 774706 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
