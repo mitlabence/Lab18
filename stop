@@ -1,0 +1,86 @@
+[33mcommit 24945ab009e2a0aa9370a4061a623e3493e5443a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Bescho <benoit_scholtes_05@hotmail.com>
+Date:   Sat Feb 24 22:40:43 2018 +0100
+
+    Typed out the introduction and the theory section, which should now be
+    pretty much complete. Review and change what you want/tell me what needs
+    changing.
+
+[33mcommit dc34a9f79d23b9ef15904d7419f4100ef0598105[m
+Author: mitlabence <mitlabence111@gmail.com>
+Date:   Fri Feb 23 17:31:22 2018 +0100
+
+    Added sciDAVIS and screenshots
+
+[33mcommit eb04cd43e744551a6af62e4618522af5351d2e5f[m
+Author: Mitlasóczki Bence <mitlabence111@gmail.com>
+Date:   Thu Feb 22 21:18:03 2018 +0100
+
+    added notes for experiment
+
+[33mcommit 571f10754fcdfe96e63bdd22454e679c23e85b11[m
+Merge: 22837fd e413a40
+Author: mitlabence <mitlabence111@gmail.com>
+Date:   Thu Feb 22 19:17:16 2018 +0100
+
+    Bence's solving of conflict
+
+[33mcommit 22837fd1bf48ec3045429ed97280aca7dde87ff2[m
+Author: mitlabence <mitlabence111@gmail.com>
+Date:   Thu Feb 22 19:08:33 2018 +0100
+
+    Overwrite or not?
+
+[33mcommit e413a40cf75267cda760658af5bc400430f12514[m
+Author: Bescho <benoit_scholtes_05@hotmail.com>
+Date:   Thu Feb 22 19:08:17 2018 +0100
+
+    Let's see how this goes
+
+[33mcommit 1cba5ca16e3e9c73763dffb253973166a940e39d[m
+Author: mitlabence <mitlabence111@gmail.com>
+Date:   Thu Feb 22 18:43:18 2018 +0100
+
+    Bence's response
+
+[33mcommit a22978afb6e1fc85eda8c61f8fbd10b36f851712[m
+Author: Bescho <benoit_scholtes_05@hotmail.com>
+Date:   Thu Feb 22 18:25:00 2018 +0100
+
+    Seeing what the hell is going on
+
+[33mcommit 943b74b8f87d0a51e988f9da3f4d36672b4677e4[m
+Author: mitlabence <mitlabence111@gmail.com>
+Date:   Wed Feb 21 21:43:21 2018 +0100
+
+    Additional info to spin states
+
+[33mcommit 059e53420094dfec43f47fcbbd899286ee474746[m
+Author: mitlabence <asd>
+Date:   Wed Feb 21 21:24:17 2018 +0100
+
+    Started experimental setup #2
+
+[33mcommit 2e9cbdb3cb02c79f67d4321b31eb3de518fc2416[m
+Author: mitlabence <asd>
+Date:   Wed Feb 21 21:21:44 2018 +0100
+
+    Started experimental setup
+
+[33mcommit 20abf9039fb2b95cb29c4adf8b9dfd2a1278abce[m
+Author: mitlabence <asd>
+Date:   Wed Feb 21 15:09:11 2018 +0100
+
+    K223
+
+[33mcommit 602d566f648c4fcd64fa3f533a59966a1bd48ed2[m
+Author: mitlabence <asd>
+Date:   Wed Feb 21 12:14:03 2018 +0100
+
+    adding K223
+
+[33mcommit cfc08bb29c9ba109614165e975f877f37b45c472[m
+Author: mitlabence <asd>
+Date:   Wed Feb 21 12:11:01 2018 +0100
+
+    first commit

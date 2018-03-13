@@ -1,0 +1,54 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{sieg}
+\citation{cfd}
+\citation{sieg}
+\citation{cobalt_scheme}
+\citation{sieg}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Theory}{1}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces $\ce {_27^{60}Co}$ decay scheme \cite  {cobalt_scheme}}}{1}{figure.1}}
+\newlabel{fig:cobalt_scheme}{{1}{1}{$\ce {_27^{60}Co}$ decay scheme \cite {cobalt_scheme}}{figure.1}{}}
+\citation{booklet}
+\citation{pmt}
+\citation{pmt}
+\citation{cfd}
+\citation{cfd}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental setup}{2}{section.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Experimental setup \cite  {booklet}}}{2}{figure.2}}
+\newlabel{fig:exp_setup}{{2}{2}{Experimental setup \cite {booklet}}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Detector}{2}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The fast coincidence circuit: Constant Fraction Discriminators}{2}{subsection.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Scintillation detector with photomultiplier \cite  {pmt}}}{2}{figure.3}}
+\newlabel{fig:pmt}{{3}{2}{Scintillation detector with photomultiplier \cite {pmt}}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}The slow coincidence circuit: Single-Channel Analyzers}{2}{subsection.3.3}}
+\bibcite{sieg}{1}
+\bibcite{booklet}{2}
+\bibcite{cobalt_scheme}{3}
+\bibcite{pmt}{4}
+\bibcite{cfd}{5}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Scintillation detector with photomultiplier \cite  {cfd}}}{3}{figure.4}}
+\newlabel{fig:cfd}{{4}{3}{Scintillation detector with photomultiplier \cite {cfd}}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Procedure}{3}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Amplifiers, constant-fraction discriminators}{3}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Fast coincidence circuit, prompt curve}{3}{subsection.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Well-adjusted signal of the amplifiers on channel 1. A too high gain would cause the highest peaks to flatten as saturation happens before reaching the maximum.}}{3}{figure.5}}
+\newlabel{fig:amp}{{5}{3}{Well-adjusted signal of the amplifiers on channel 1. A too high gain would cause the highest peaks to flatten as saturation happens before reaching the maximum}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{References}{3}{section*.1}}
