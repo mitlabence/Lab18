@@ -1,0 +1,74 @@
+\documentclass[twocolumn]{article}
+\usepackage{geometry}	%
+\usepackage{abstract} %to get email footnotes
+\geometry{margin=2cm}	%more visible figures (more place) 
+\usepackage[superscript,biblabel]{cite}%superscript citing
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}	%booklet
+\usepackage{hyperref}	%clickable citings, referencing URL via \url{}
+\usepackage{siunitx}	%for SI units; see ftp://ftp.dante.de/tex-archive/macros/latex/exptl/siunitx/siunitx.pdf
+\usepackage{graphicx} 	%includegraphics
+\usepackage{mhchem}		%writing chemical elements with mass numbers
+\usepackage[nottoc]{tocbibind}	%references
+\usepackage{indentfirst}%indenting first paragraphs
+
+%the command \insertFigure{file} inserts figure with width 0.9*(column width)
+\newcommand{\insertFigure}[1]{%
+   \includegraphics[width=0.95\linewidth]{#1}%
+}
+
+\title{\textbf{Title}}
+\author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
+\begin{document}
+\renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
+\twocolumn[ %makes a one column abstract
+\begin{@twocolumnfalse}
+\maketitle
+\begin{abstract} \vspace{-8mm}
+Abstract goes here
+\end{abstract}
+\end{@twocolumnfalse}
+\hspace{5mm} ]
+\maketitle
+\saythanks %from abstract package to ensure email footnotes from \thanks command in a two-collumn article
+\section{Introduction}
+Introduction text
+
+\section{Theory}
+Theory
+\begin{figure}[!h]
+\centering
+%\insertFigure{}
+\caption{A sample figure}
+\label{fig:example}
+\end{figure}
+
+\section{Experimental setup} \label{sec:Exp}
+
+\section{Procedure} \label{sec:Proc}
+\section{Results}
+\section{Conclusion}
+
+\begin{thebibliography}{9}
+\bibitem{book}
+K. Siegbahn, \textsl{Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2} (North Holland Publishing Company, Amsterdam, 1965).
+\bibitem{booklet}
+Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
+ \bibitem{link}
+ W. U. Boeglin, \textit{Scintillation Detectors}, WWW Document, \url{http://wanda.fiu.edu/teaching/courses/Modern_lab_manual/scintillator.html}.
+\bibitem{pdf_on_website}
+Unspecified author, \textsl{Gamma Ray Spectroscopy} (University of Florida, 2013), \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}.
+\bibitem{cfd}
+E. Ermis and C. Celiktas, International Journal Of Instrumentation Science 1, (2013), pp.54-62.
+%alternative url: https://en.wikipedia.org/wiki/Constant_fraction_discriminator
+\bibitem{signal}
+M. Nakhostin, \textsl{Signal Processing for Radiation Detectors} (John Wiley $\&$ Sons, 2018), p. 298\footnote{Relevant pages (chapter 6) available for preview under\\ \url{https://books.google.de/books?id=Lrg4DwAAQBAJ}}.
+%Mohammad Nakhostin
+\bibitem{leo}
+W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Springer-Verlag, 1987), p. 305.
+%William R. Leo
+\bibitem{meliss}
+A. C. Melissinos, J. Napolitano, \textsl{Experiments in Modern Physics, 2\textsuperscript{nd} edition} (Academic Press, San Diego, 2003), pp 419-21.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,14 @@
+GIMP pixel distance measurement:
+
+Between 8 cm and 5 cm:
+742.2 pixels = 30 mm +- 0.5 mm (conservative error estimation)
+1 px = 40.42 um +- 0.67367 um
+
+MOT
+height= 72 px +- 2 px = (2.91 mm +- 0.05 mm) +- (0.08084 mm +- 0.00134734 mm); simple addition of errors: 0.1322 mm; pythagoras: 0.09506 mm 
+width = 57 px +- 2 px = (2.30 mm +- 0.04 mm) +- (0.08084 mm +- 0.00134734 mm); 				  0.1222 mm; 		 0.09020 mm
+
+I assume the two horizontal axes have the same value, e.g. the horizontal cross-sections are circles. See mot-volume.nb for results.
+ 
+
+

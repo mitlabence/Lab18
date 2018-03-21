@@ -1,0 +1,117 @@
+\documentclass[twocolumn]{article}
+\usepackage[fleqn]{mathtools}%for aligning parameters of fitted erfc(x)
+\usepackage{geometry}	%
+\usepackage{abstract} %to get email footnotes
+\geometry{margin=2cm}	%more visible figures (more place) 
+\usepackage[superscript,biblabel]{cite}%superscript citing
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}	%booklet
+\usepackage{hyperref}	%clickable citings, referencing URL via \url{}
+\usepackage{siunitx}	%for SI units; see ftp://ftp.dante.de/tex-archive/macros/latex/exptl/siunitx/siunitx.pdf
+\usepackage{graphicx} 	%includegraphics
+\usepackage{mhchem}		%writing chemical elements with mass numbers
+\usepackage[nottoc]{tocbibind}	%references
+\usepackage{indentfirst}%indenting first paragraphs
+
+%the command \insertFigure{file} inserts figure with width 0.9*(column width)
+\newcommand{\insertFigure}[1]{%
+   \includegraphics[width=0.95\linewidth]{#1}%
+}
+
+\title{\textbf{Title}}
+\author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
+\begin{document}
+\renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
+\twocolumn[ %makes a one column abstract
+\begin{@twocolumnfalse}
+\maketitle
+\begin{abstract} \vspace{-8mm}
+We adjusted some mirrors to get MOT. We did some measurements.
+\end{abstract}
+\end{@twocolumnfalse}
+\hspace{5mm} ]
+\maketitle
+\saythanks %from abstract package to ensure email footnotes from \thanks command in a two-column article
+\section{Introduction}
+
+\section{Theory}
+Theory
+\begin{figure}[!h]
+\centering
+%\insertFigure{}
+\caption{A sample figure}
+\label{fig:example}
+\end{figure}
+
+\section{Experimental setup} \label{sec:Exp}
+
+\section{Procedure} \label{sec:Proc}
+\section{Measurements}
+\subsection{Laser beam diameter}
+Using a movable razor blade and a powermeter, we measured the intensity as a function of the displacement of the blade along an axis perpendicular to the beam propagation direction. The results are collected in Table \ref{table:beampower}. Fitting a function of the form
+\begin{alignat*}{2}\label{erf}
+f(x) &= \mathrlap{P + A \cdot \text{erfc}(B\cdot x - C),}
+\shortintertext{we found}
+P &= & 0.012 \pm 0.009\\
+A &= & 0.735 \pm 0.007\\
+B &= & 4.942 \pm 0.133\\
+C &= & 198.039 \pm 5.317
+\end{alignat*}
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Position (cm)	& Power (mW)\\
+\hline
+$39.4 \pm 0.05$	&	$1.58 \pm 0.01$\\ 	\hline
+$39.5 \pm 0.05$	&	$1.57 \pm 0.01$\\ 	\hline
+$39.6 \pm 0.05$	&	$1.52 \pm 0.01$\\ 	\hline
+$39.7 \pm 0.05$	&	$1.40 \pm 0.01$\\ 	\hline
+$39.8 \pm 0.05$	&	$1.07 \pm 0.01$\\ 	\hline
+$39.9 \pm 0.05$	&	$0.62 \pm 0.01$\\ 	\hline
+$40.0 \pm 0.05$	&	$0.25 \pm 0.01$\\ 	\hline
+$40.1 \pm 0.05$	&	$0.10 \pm 0.01$\\ 	\hline
+$40.2 \pm 0.05$	&	$0.04 \pm 0.01$\\	\hline
+$40.3 \pm 0.05$	&	$0.01 \pm 0.01$\\	\hline
+$40.4 \pm 0.05$	&	$0.00 \pm 0.01$\\	\hline
+\end{tabular}
+%TODO last value can be negative within that error range, fix that maybe?
+\caption{Beam power as a function of position of the razor blade. Clearly visible}
+\label{table:beampower}
+\end{table}
+This results in a width %http://people.fjfi.cvut.cz/blazejos/public/ul7en.pdf
+\begin{equation}
+w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm} \nonumber
+\end{equation}
+\section{Conclusion}
+
+\begin{thebibliography}{9}
+\bibitem{inexpensive}
+C. Wieman, G. Flowers and S.Gilbert, Am. J. Phys. \textbf{63} (1995).
+\bibitem{manual}
+Unspecified Author, \textsl{FP Experiment: Rubidium MOT} (University of Bonn, 2014).
+\iffalse
+%Leaving this here as examples for referencing different media
+\bibitem{book}
+K. Siegbahn, \textsl{Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2} (North Holland Publishing Company, Amsterdam, 1965).
+\bibitem{booklet}
+Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
+ \bibitem{link}
+ W. U. Boeglin, \textit{Scintillation Detectors}, WWW Document, \url{http://wanda.fiu.edu/teaching/courses/Modern_lab_manual/scintillator.html}.
+\bibitem{pdf_on_website}
+Unspecified author, \textsl{Gamma Ray Spectroscopy} (University of Florida, 2013), \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}.
+\bibitem{cfd}
+E. Ermis and C. Celiktas, International Journal Of Instrumentation Science 1, (2013), pp.54-62.
+%alternative url: https://en.wikipedia.org/wiki/Constant_fraction_discriminator
+\bibitem{signal}
+M. Nakhostin, \textsl{Signal Processing for Radiation Detectors} (John Wiley $\&$ Sons, 2018), p. 298\footnote{Relevant pages (chapter 6) available for preview under\\ \url{https://books.google.de/books?id=Lrg4DwAAQBAJ}}.
+%Mohammad Nakhostin
+\bibitem{leo}
+W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Springer-Verlag, 1987), p. 305.
+%William R. Leo
+\bibitem{meliss}
+A. C. Melissinos, J. Napolitano, \textsl{Experiments in Modern Physics, 2\textsuperscript{nd} edition} (Academic Press, San Diego, 2003), pp 419-21.
+\fi
+\end{thebibliography}
+\end{document}
