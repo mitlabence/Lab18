@@ -19,7 +19,7 @@
    \includegraphics[width=0.95\linewidth]{#1}%
 }
 
-\title{\textbf{Title}}
+\title{\textbf{A248: Magneto-Optic Trap}}
 \author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
 \begin{document}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
@@ -37,12 +37,15 @@ We adjusted some mirrors to get MOT. We did some measurements.
 
 \section{Theory}
 Theory
+
+\iffalse
 \begin{figure}[!h]
 \centering
 %\insertFigure{}
 \caption{A sample figure}
 \label{fig:example}
 \end{figure}
+\fi
 
 \section{Experimental setup} \label{sec:Exp}
 
@@ -84,6 +87,69 @@ This results in a width %http://people.fjfi.cvut.cz/blazejos/public/ul7en.pdf
 \begin{equation}
 w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm} \nonumber
 \end{equation}
+\subsection{Size of MOT}
+\begin{figure}
+\centering
+\insertFigure{Images/MOT_w_scale.png}
+\caption{Photo of the MOT merged with photo of the scale.}
+\label{fig:mot_w_scale}
+\end{figure}
+To get an estimate on the MOT size we took a picture of, we used a scale put in the focus to convert distances in pixels to centimeters. By choosing two points $\SI[separate-uncertainty = true]{30.0 \pm 0.5 }{\milli\meter}$ from each other in the image (the error due to the width of the millimeter lines on the scale and the two points not at the same distance from the edge of the ruler), the image viewer software showed $742.2$ pixels. Then
+\begin{equation}
+1 \text{~px} = \SI[separate-uncertainty = true]{40.42 \pm 0.67}{\micro\meter} \nonumber
+\end{equation}
+As visible on Figure \ref{fig:mot_w_scale}, the MOT has different horizontal and vertical size values. The directly measured width and height for the MOT are
+\begin{align*}
+h &= (72 \pm 2)  \, \text{px}\\
+w &= (57 \pm 2)  \, \text{px} 
+\end{align*}
+We chose to approximate the volume by an ellipsoid with one axis half the height ($c$) and two axes half the width ($a$, $b$) each.
+\begin{align*}
+a, b &= \SI[separate-uncertainty = true]{1.15 \pm 0.04}{\milli\meter} \\
+c &=  \SI[separate-uncertainty = true]{1.46 \pm 0.05}{\milli\meter} \\
+V &= \frac{4}{3} \pi a b c = \SI[separate-uncertainty = true]{8.09 \pm 0.52 }{\cubic\milli\meter}
+\end{align*}
+\subsection{Changing the magnetic field}
+To measure the MOT fluorescence as a function of the magnetic field, we changed the current flowing through the coils. Figure \ref{fig:magnetic} shows our results. To get a visible MOT, we had to set the current to a minimal value of around $0.9$ A, below this the system fails to trap the moving atoms; from this point, the fluorescence grew proportional to the current to a good approximation, up to $4.6$ A. The background fluorescence has been previously measured and substracted from the data.
+\begin{figure}
+\centering
+\insertFigure{Images/magnetic_dependence_wo_linear.png}
+\caption{The dependency of MOT luminosity on the current flow through the coils (thus the magnetic field).}
+\label{fig:magnetic}
+\end{figure}
+\subsection{Loading behaviour}
+\begin{figure}
+\centering
+\insertFigure{Images/mot_buildup.png}
+\caption{Example of data points exported from the oscilloscope, with fitted function (red).}
+\label{fig:buildup}
+\end{figure}
+After replacing the powermeter with a photodiode and showing its signal on an oscilloscope, we used the data from 6 MOT buildup events to find the loading time. As it is known,\cite{inexpensive} the number of trapped atoms changes as
+\begin{equation}\label{eq:load}
+N(t) = N_0 \big( 1 - e^{-\frac{t}{\tau}} \big),
+\end{equation}
+where $\tau$ is the loading time, $N_0$ is the maximal number of atoms in the trap. The cross-section is related to $\tau$ if there is only $\ce{Rb}$ in the vacuum chamber (which we assume):
+\begin{equation}\label{eq:cross-section}
+\frac{1}{\tau} = n_{\text{Rb}} \sigma_{\text{Rb}} v_{\text{Rb}},
+\end{equation}
+where $n_{\text{Rb}}$ is the number density, $v_{\text{Rb}}$ is the average velocity of the $\ce{Rb}$ vapor (in the following, the subscript Rb is ignored).\\
+As the luminescence-time signal also follows Eqn. \ref{eq:load}, by fitting such a function to the oscilloscope data we have gathered yields $\tau$:
+\begin{equation}
+\tau = (0.268 \pm 0.006) \, \text{s}\nonumber
+\end{equation}
+With the recorded temperature $T = (293.55 \pm 0.05) \, K$ and pressure $p = (8.09 \pm 0.01)\cdot 10^{-8} \, \text{mbar}$,
+%mass of 85 Rb: 84.911 amu = 141.037*10^-27 kg
+\begin{equation}
+v = \sqrt{\frac{2kT}{m}} = (293.545 \pm 0.025) \, \frac{\text{m}}{\text{s}} \nonumber
+\end{equation}
+The number density $n$ can be calculated from the ideal gas law:
+\begin{equation}
+n = \frac{N}{V} = \frac{p}{kT} = (1.99704 \pm 0.00250)\cdot 10^{15} \, \frac{1}{\text{m}^3}\nonumber
+\end{equation}
+Finally, the cross-section:
+\begin{equation}
+\sigma = \frac{1}{n \tau v} = (6.355 \pm 0.131) \cdot 10^{-18} \, \text{m}^2
+\end{equation}
 \section{Conclusion}
 
 \begin{thebibliography}{9}
@@ -91,6 +157,9 @@ w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm} \nonumber
 C. Wieman, G. Flowers and S.Gilbert, Am. J. Phys. \textbf{63} (1995).
 \bibitem{manual}
 Unspecified Author, \textsl{FP Experiment: Rubidium MOT} (University of Bonn, 2014).
+\bibitem{metcalf}
+H. Metcalf and P. van der Straten, \textsl{Laser Cooling and Trapping} (Springer, 1999).
+
 \iffalse
 %Leaving this here as examples for referencing different media
 \bibitem{book}
