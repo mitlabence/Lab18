@@ -1,0 +1,390 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> B = 17.4
+> B
+[1] 17.4
+> A = 0.3*B*0.852
+> A
+[1] 4.44744
+> test = (0.1,.2,.3)
+Error: unexpected ',' in "test = (0.1,"
+> test = (0.1;.2;.3)
+Error: unexpected ';' in "test = (0.1;"
+> test(1, 2, 3)
+Error: could not find function "test"
+> c(1, 2, 3)
+[1] 1 2 3
+> r_1 = c(47, 3300, 490, 300)
+> r_1
+[1]   47 3300  490  300
+> p_1 = A*r_1
+> p_1
+[1]   209.0297 14676.5520  2179.2456  1334.2320
+> r_2 = c(125, 160, 245, 56)
+> P_2 = A*r_2
+> P_2
+[1]  555.9300  711.5904 1089.6228  249.0566
+> r_2v = c(280, 830)
+> r_1v = c(320, 62)
+> p_1v = A*r_1v
+> p_1v
+[1] 1423.1808  275.7413
+> p_2v = A*r_2v
+> p_2v
+[1] 1245.283 3691.375
+> p_1v(1)
+Error: could not find function "p_1v"
+> p_1v
+[1] 1423.1808  275.7413
+> p_1v[1]
+[1] 1423.181
+> pvtot_1 = p_1v[1]+p_1v[2]
+> pvtot_1
+[1] 1698.922
+> pvtot_2 = p_2v[1]+p_2v[2]
+> pvtot_2
+[1] 4936.658
+> p_1+pvtot_1
+[1]  1907.952 16375.474  3878.168  3033.154
+> p_1[5] = pvtot_1
+> p_1
+[1]   209.0297 14676.5520  2179.2456  1334.2320  1698.9221
+> p_2[5] = pvtot_2
+Error in p_2[5] = pvtot_2 : object 'p_2' not found
+> p_2
+Error: object 'p_2' not found
+> p_2 = P_2
+> p_2[5] = pvtot_2
+> p_2
+[1]  555.9300  711.5904 1089.6228  249.0566 4936.6584
+> sqrt(4)
+[1] 2
+> m_1 = sqrt((sqrt(m_p^2+p_1v[2]^2)+sqrt(m_pi^2+p_1v[1]^2))^2-pvtot_1^2)
+Error: object 'm_p' not found
+> m_p = 938.3
+> m_pi = 139.6
+> m_1 = sqrt((sqrt(m_p^2+p_1v[2]^2)+sqrt(m_pi^2+p_1v[1]^2))^2-pvtot_1^2)
+> m_1
+[1] 1706.48
+> m_2 = sqrt((sqrt(m_p^2+p_2v[2]^2)+sqrt(m_pi^2+p_2v[1]^2))^2-pvtot_2^2)
+> m_2
+[1] 1118.781
+> p_1
+[1]   209.0297 14676.5520  2179.2456  1334.2320  1698.9221
+> P_2
+[1]  555.9300  711.5904 1089.6228  249.0566
+> r_1
+[1]   47 3300  490  300
+> p_v2
+Error: object 'p_v2' not found
+> p_2v
+[1] 1245.283 3691.375
+> p_1f
+Error: object 'p_1f' not found
+> p_1v
+[1] 1423.1808  275.7413
+> pvtot_1
+[1] 1698.922
+> pvtot_2
+[1] 4936.658
+> m_1 = sqrt((sqrt(m_p^2+p_1v[1]^2)+sqrt(m_pi^2+p_1v[2]^2))^2-pvtot_1^2)
+> m_1
+[1] 1081.081
+> m_2
+[1] 1118.781
+> p_1v
+[1] 1423.1808  275.7413
+> r_1v
+[1] 320  62
+> Ep_2 = sqrt(m_p^2 + p_2v[2]^2)
+> Epi_2 = sqrt(m_pi^2 + p_2v[1]^2)
+> Ep_2
+[1] 3808.761
+> Epi_2
+[1] 1253.084
+> Errm_2 = 1/m_2
+> 1/2*4
+[1] 2
+> Errm_2 = 1/m_2*sqrt(((p_1v[2]*Errp_2v[2]/Ep_2)^2))
+Error: object 'Errp_2v' not found
+> r_2v
+[1] 280 830
+> Errr_2v = c(10, 30)
+> Errp_2v = 0.3*B*sqrt((ErrV*r_2v)^2+(Errr_2v*V)^2)
+Error: object 'ErrV' not found
+> V = 0.852
+> ErrV = 0.5*sqrt((0.1)^2+(0.1)^2)
+> ErrV
+[1] 0.07071068
+> Erra = abs(10)
+> Erra
+[1] 10
+> Erra = abs(23.1905/28.2^2*0.1)
+> Erra
+[1] 0.002916164
+> Erra = abs(23.9951/28.2^2*0.1)
+> Errb = 32.1905/37.7*0.1
+> ErrV = 0.5*sqrt((Errb)^2+(Erra)^2)
+> ErrV
+[1] 0.04271962
+> V
+[1] 0.852
+> Errp_2v = 0.3*B*sqrt((ErrV*r_2v)^2+(Errr_2v*V)^2)
+> Errp_2v
+[1]  76.65899 228.16432
+> p_2v
+[1] 1245.283 3691.375
+> Errp_2v/p_2v
+[1] 0.06155948 0.06181011
+> Errm_2 = 1/m_2*sqrt(((p_2v[2]*Errp_2v[2]/Ep_2)^2+(p_2v[1]*Errp_2v[1]/Epi_2)^2)*(Ep_2+Epi_2)^2+(pvtot_2*Errpvtot_2)^2)
+Error: object 'Errpvtot_2' not found
+> p_2v
+[1] 1245.283 3691.375
+> Errp_2v
+[1]  76.65899 228.16432
+> Errpvtot_2 = sqrt((Errp_2v[1])^2+(Errp_2v[2])^2)
+> Errpvtot_2/pvtot_2
+[1] 0.04875728
+> Errm_2 = 1/m_2*sqrt(((p_2v[2]*Errp_2v[2]/Ep_2)^2+(p_2v[1]*Errp_2v[1]/Epi_2)^2)*(Ep_2+Epi_2)^2+(pvtot_2*Errpvtot_2)^2)
+> Errm_2/m_2
+[1] 1.340098
+> Errm_2
+[1] 1499.277
+> m_2
+[1] 1118.781
+> Errp_2v/p_2v
+[1] 0.06155948 0.06181011
+> p_2v
+[1] 1245.283 3691.375
+> Epi_2
+[1] 1253.084
+> Ep_2
+[1] 3808.761
+> Errm_2 = 1/m_2*sqrt(((p_2v[2]*Errp_2v[2]/Ep_2)^2+(p_2v[1]
+
+> First = (p_2v[2]*Errp_2v[2]/Ep_2)^2+(p_2v[1]*Errp_2v[1]/Epi_2)^2
+> First
+[1] 54703.17
+> Second = (Ep_2+Epi_2)^2
+> Second
+[1] 25622267
+> First*second
+Error: object 'second' not found
+> sqrt(First*Second)
+[1] 1183900
+> m_2
+[1] 1118.781
+> p_2v[2]*Errp_2v[2]
+[1] 842240.1
+> Ep_2
+[1] 3808.761
+> Epi_2
+[1] 1253.084
+> r_3 = c(56, 750)
+> Errr_3 = c(2, 50)
+> p_3 = A*r_3
+> r_3v = r_3
+> Errr_3v = Errr_3
+> Errp_2v = 0.3*B*sqrt((ErrV*r_2v)^2+(Errr_2v*V)^2)
+> Errp_3v = 0.3*B*sqrt((ErrV*r_3v)^2+(Errr_3v*V)^2)
+> Errp_3v
+[1]  15.3318 278.2462
+> p_3v
+Error: object 'p_3v' not found
+> p_3v = p_3
+> p_3v
+[1]  249.0566 3335.5800
+> Errp_3v/p_3v
+[1] 0.06155948 0.08341765
+> pvtot_3 = p_3v[1]+p_3v[2]
+> m_3 = sqrt((sqrt(m_p^2+p_3v[2]^2)+sqrt(m_pi^2+p_3v[1]^2))^2-pvtot_3^2)
+> m_3
+[1] 1103.187
+> m_2
+[1] 1118.781
+> m_1
+[1] 1081.081
+> Epi_3 = sqrt(m_pi^2+p_3v[1]^2)
+> p_3v^2
+[1]    62029.21 11126093.94
+> p_3v[1]^2
+[1] 62029.21
+> Ep_3 = sqrt(m_p^2+p_3v[2]^2)
+> Ep_3
+[1] 3465.04
+> Epi_3
+[1] 285.5125
+> m_p
+[1] 938.3
+> m_pi
+[1] 139.6
+> pvtot_3
+[1] 3584.637
+> Errpvtot_3 = sqrt((Errp_3v[1])^2+(Errp_3v[2])^2)
+> Errpvtot_3
+[1] 278.6683
+> Errpvtot_3/pvtot_3
+[1] 0.07773963
+> Ein = (p_3v[2]*Errp_3v[2]/Ep_3)^2+(p_3v[1]*Errp_3v[1]/Epi_3)^2
+> zwei = (Ep_3+Epi_3)^2
+> Ein
+[1] 71922.75
+> zwei
+[1] 14066642
+> Drei = (pvtot_3*Errpvtot_3)^2
+> Errm_3 = 1/m_3*sqrt(Ein*zwei+Drei)
+> Errm_3
+[1] 1284.995
+> m_3
+[1] 1103.187
+> Errm_3 = 1/m_3*sqrt(Ein+zwei+Drei)
+> Errm_3
+[1] 905.496
+> Errp_3v
+[1]  15.3318 278.2462
+> Errp_3v/p_3v
+[1] 0.06155948 0.08341765
+> 22/370
+[1] 0.05945946
+> 3/76
+[1] 0.03947368
+> pvtot_4 = 379
+> Errpvtot_4 = 22
+> p_4v = c(76, 370)
+> Errp_4v = c(3, 22)
+> m_4 = sqrt((sqrt(m_p^2+p_4v[2]^2)+sqrt(m_pi^2+p_4v[1]^2))^2-pvtot_4^2)
+> m_4
+[1] 1104.338
+> Epi_3 = sqrt(m_pi^2+p_4v[1]^2)
+> Epi_3 = sqrt(m_pi^2+p_3v[1]^2)
+> Epi_4 = sqrt(m_pi^2+p_4v[1]^2)
+> E4_3 = sqrt(m_p^2+p_4v[2]^2)
+> Ein4 = (p_4v[2]*Errp_4v[2]/Ep_4)^2+(p_4v[1]*Errp_4v[1]/Epi_4)^2
+Error: object 'Ep_4' not found
+> Ep_4 = sqrt(m_p^2+p_4v[2]^2)
+> Ein4 = (p_4v[2]*Errp_4v[2]/Ep_4)^2+(p_4v[1]*Errp_4v[1]/Epi_4)^2
+> zwei = (Ep_4+Epi_4)^2
+> zwei = (Ep_3+Epi_3)^2
+> zwei4 = (Ep_4+Epi_4)^2
+> Drei4 = (pvtot_4*Errpvtot_4)^2
+> Errm_4 = 1/m_4*sqrt(Ein4+zwei4+Drei4)
+> Errm_4
+[1] 7.62389
+> r_2
+[1] 125 160 245  56
+> r_3 = c(2000, 1700)
+> p_3 = A*r_3
+> Errr_3 = c(200,100)
+> Errp_2 = 0.3*B*sqrt((ErrV*r_2)^2+(Errr_2*V)^2)
+Error: object 'Errr_2' not found
+> Errr_2 = c(5,5,5,5)
+> Errp_2 = 0.3*B*sqrt((ErrV*r_2)^2+(Errr_2*V)^2)
+> Errp_2
+[1] 35.65787 42.04182 58.98627 25.50369
+> p_2
+[1]  555.9300  711.5904 1089.6228  249.0566 4936.6584
+> Errp_2/p_2
+[1] 0.064140935 0.059081486 0.054134579 0.102401163 0.007223078
+Warning message:
+In Errp_2/p_2 :
+  longer object length is not a multiple of shorter object length
+> Errr_2 = c(5,5,5,3)
+> Errp_2 = 0.3*B*sqrt((ErrV*r_2)^2+(Errr_2*V)^2)
+> Errp_2
+[1] 35.65787 42.04182 58.98627 18.27464
+> Errp_3 = 0.3*B*sqrt((ErrV*r_3)^2+(Errr_3*V)^2)
+> Errp_3/p_3
+[1] 0.11186626 0.07729338
+> Errr_3
+[1] 200 100
+> r_3
+[1] 2000 1700
+> m_2
+[1] 1118.781
+> Errm_2
+[1] 1499.277
+> Errm_3
+[1] 905.496
+> Errm_3 = 1/m_3*sqrt(Ein+zwei+Drei)
+> Errm_3
+[1] 905.496
+> Ein
+[1] 71922.75
+> zwei
+[1] 14066642
+> Drei
+[1] 997850496024
+> Errm_3 = 1/m_3*sqrt(Ein*zwei+Drei)
+> Errm_3
+[1] 1284.995
+> r_2v
+[1] 280 830
+> Errr_2v
+[1] 10 30
+> r_3v
+[1]  56 750
+> Errr_3v
+[1]  2 50
+> p_2v
+[1] 1245.283 3691.375
+> Errp_2v
+[1]  76.65899 228.16432
+> p_3v
+[1]  249.0566 3335.5800
+> Errp_3v
+[1]  15.3318 278.2462
+> Epi_2
+[1] 1253.084
+> Ep_2
+[1] 3808.761
+> Epi_3
+[1] 285.5125
+> Ep_3
+[1] 3465.04
+> pvtot_3
+[1] 3584.637
+> Errpvtot_3
+[1] 278.6683
+> pvtot_4
+[1] 379
+> Errpvtot_4
+[1] 22
+> pvtot_2
+[1] 4936.658
+> Errpvtot_2
+[1] 240.6981
+> r_2
+[1] 125 160 245  56
+> Errr_2
+[1] 5 5 5 3
+> p_2
+[1]  555.9300  711.5904 1089.6228  249.0566 4936.6584
+> Errp_2
+[1] 35.65787 42.04182 58.98627 18.27464
+> p_3
+[1] 8894.880 7560.648
+> Errp_3
+[1] 995.0369 584.3881
+> r_3
+[1] 2000 1700
+> Errr_3
+[1] 200 100
+> save.image("C:\\Users\\Benoît\\Desktop\\V0")
+> 
