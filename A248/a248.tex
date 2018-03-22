@@ -19,13 +19,14 @@
    \includegraphics[width=0.95\linewidth]{#1}%
 }
 
-\title{\textbf{A248: Magneto-Optic Trap}}
+\title{\textbf{A248: Magneto-optical Trap}}
 \author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
 \begin{document}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
 \twocolumn[ %makes a one column abstract
 \begin{@twocolumnfalse}
 \maketitle
+
 \begin{abstract} \vspace{-8mm}
 We adjusted some mirrors to get MOT. We did some measurements.
 \end{abstract}
@@ -34,10 +35,35 @@ We adjusted some mirrors to get MOT. We did some measurements.
 \maketitle
 \saythanks %from abstract package to ensure email footnotes from \thanks command in a two-column article
 \section{Introduction}
+Magneto-optical traps (MOT) are an important apparatus in modern atomic physics experiments, used to slow and trap a neutral atom cloud to temperatures as cold as several microkelvin. They are achieved by combining radiation pressure from laser beams and a quadropole magnetic field inside a vacuum cell rid of other gasses. Their use ranges from probing atomic properties, quantum optics, cold collision, quantum information processing, and acting as the preliminary stage to achieving even colder atom traps, namely Bose-Einstein condensates. This experiment aimed at obtaining a MOT and finding its size, population, and loading behaviour as well its fluorescence dependence on the magnetic field strength, quarter waveplate angle, and laser frequency detuning.
 
 \section{Theory}
-Theory
+The central process by which atomic gasses are cooled are via radiation pressure from lasers. When a photon is absorbed by an object, particle, or atom, its energy as well as its momentum, equal to $p=\hbar k$, is absorbed as a result of momentum conservation. This radiation pressure can be used to slow down moving atoms if the atoms absorb photons travelling in the opposite direction. That said, only photons resonant to a transition of the absorption spectrum of the atoms are absorbed. As a result, the absorption spectrum of the atoms to be cooled needs to be known and a particular transition chosen such that the required frequency of the cooling laser can be determined.
 
+%In order to obtain a MOT, two lasers are used. A cooling laser is used to actively slow and thus cool the atoms down, while a repumping laser is used to `repump' rare atoms that have excited to off-resonant states back into states that can be slowed by the cooling laser. The repumping laser will be explained in Section~\ref{sec:Rubidium}. Figure~\ref{fig:Laser} shows the setup for the preperation of the two lasers for the MOT.
+
+\subsection{Saturation Spectroscopy}
+Atoms can only absorb photons with frequencies that are resonant to their excitation transitions. That said, a moving atom will not be able to absorb photons with these frequencies as their frequency will be Doppler shifted and no longer resonant to the atom transitions. The moving atom will only be able to absorb light which has been Doppler shifted such that it is resonant with one of its excitation transitions. In an uncooled gas, the atoms are all travelling in different directions with different speeds. As a results, light incident on the gas from one direction will be Doppler shifted differently for all the different atoms. An absorption spectrum obtained from such a gas will thus be Doppler broadened, making it difficult to determine the energy levels and transitions of the atoms. In order to obtain a spectrum with high resolution, Doppler-free spectroscopy such as saturation spectroscopy needs to be used. \\
+
+\par Saturation spectroscopy utilises two lasers. One laser
+
+
+\subsection{Polarisation Spectroscopy}
+
+\subsection{Optical Cooling}
+
+\subsection{Magneto-Optical Trap}
+\subsubsection{Optical Trap}
+
+\subsubsection{Magnetic Trap}
+
+\subsection{Rubidium} \label{sec:Rubidium}
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/Spectrum.png}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\label{fig:Spectrum}
+\end{figure}
 \iffalse
 \begin{figure}[!h]
 \centering
@@ -48,19 +74,46 @@ Theory
 \fi
 
 \section{Experimental setup} \label{sec:Exp}
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/Laser.png}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\label{fig:Laser}
+\end{figure}
+\subsection{Diode Laser}
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/Diode.png}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\label{fig:Diode}
+\end{figure}
+%TODO talk about the laser system here w/ picture
+
+\subsection{Laser Detuning}
+
+\subsection{MOT setup}
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/MOT.png}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\label{fig:MOT}
+\end{figure}
 
 \section{Procedure} \label{sec:Proc}
+
 \section{Measurements}
+
 \subsection{Laser beam diameter}
 Using a movable razor blade and a powermeter, we measured the intensity as a function of the displacement of the blade along an axis perpendicular to the beam propagation direction. The results are collected in Table \ref{table:beampower}. Fitting a function of the form
 \begin{alignat*}{2}\label{erf}
 f(x) &= \mathrlap{P + A \cdot \text{erfc}(B\cdot x - C),}
 \shortintertext{we found}
-P &= & 0.012 \pm 0.009\\
-A &= & 0.735 \pm 0.007\\
-B &= & 4.942 \pm 0.133\\
-C &= & 198.039 \pm 5.317
+P &= & 0.012 \pm 0.009,\\
+A &= & 0.735 \pm 0.007,\\
+B &= & 4.942 \pm 0.133,\\
+C &= & 198.039 \pm 5.317.
 \end{alignat*}
+%TODO Any units for these values? Remember these values are still inside a sentence, so proper punctuation is still necessary.
 \begin{table}
 \centering
 \begin{tabular}{|c|c|}
@@ -79,7 +132,7 @@ $40.2 \pm 0.05$	&	$0.04 \pm 0.01$\\	\hline
 $40.3 \pm 0.05$	&	$0.01 \pm 0.01$\\	\hline
 $40.4 \pm 0.05$	&	$0.00 \pm 0.01$\\	\hline
 \end{tabular}
-%TODO last value can be negative within that error range, fix that maybe?
+%TODO last value can be negative within that error range, fix that maybe? These uncertainties need to be much larger, we saw a lot more deviations for these during measurement taking. I guess we'll estimate some kind of relative error for all of these to pretend we actually quantified uncertainty then and there. The last point could have zero negative uncertainty (+0.01, -0.00).
 \caption{Beam power as a function of position of the razor blade. Clearly visible}
 \label{table:beampower}
 \end{table}
@@ -90,10 +143,11 @@ w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm} \nonumber
 \subsection{Size of MOT}
 \begin{figure}
 \centering
-\insertFigure{Images/MOT_w_scale.png}
+\insertFigure{Images/MOT_w_scale_crop.png}
 \caption{Photo of the MOT merged with photo of the scale.}
 \label{fig:mot_w_scale}
 \end{figure}
+%TODO Crop slightly to make the MOT more visible/central
 To get an estimate on the MOT size we took a picture of, we used a scale put in the focus to convert distances in pixels to centimeters. By choosing two points $\SI[separate-uncertainty = true]{30.0 \pm 0.5 }{\milli\meter}$ from each other in the image (the error due to the width of the millimeter lines on the scale and the two points not at the same distance from the edge of the ruler), the image viewer software showed $742.2$ pixels. Then
 \begin{equation}
 1 \text{~px} = \SI[separate-uncertainty = true]{40.42 \pm 0.67}{\micro\meter} \nonumber
@@ -114,9 +168,10 @@ To measure the MOT fluorescence as a function of the magnetic field, we changed 
 \begin{figure}
 \centering
 \insertFigure{Images/magnetic_dependence_wo_linear.png}
-\caption{The dependency of MOT luminosity on the current flow through the coils (thus the magnetic field).}
+\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
 \label{fig:magnetic}
 \end{figure}
+%TODO What is the dependence of the magnetic field with current flow? Should we investigate this or not?
 \subsection{Loading behaviour}
 \begin{figure}
 \centering
