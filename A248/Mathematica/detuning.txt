@@ -1,0 +1,29 @@
+1 s / div
+
+spectrum:
+3 -> 2,4:	4.708 pm 0.024
+3 -> 3,4:	4.956 pm 0.024
+3 ->   4:	5.556 pm 0.016
+
+%THIS ONE IS BETTER
+known frequency difference between 3 -> 4 and 3 -> 3,4:
+60.3 MHz
+0.600 pm 0.029 s = C*60.3 MHz
+C = 0.0099502 pm 0.0004809 s/MHz,
+C^-1 = 100.5 pm 4.8572 MHz/s
+
+
+known frequency difference between 3 -> 2,4 and 3 -> 3,4:
+31.7 MHz
+
+0.248 pm 0.034 s = C*31.7 MHz (C: conversion rate)
+C = 0.007823343 pm 0.001073 s/MHz, or
+C^-1 = 127.82 pm 17.53 MHz/s
+
+mot:
+5.456 pm 0.008 s
+
+difference between mot peak and 3 -> 4 peak:
+0.1 pm 0.0179 s
+in frequency:
+10.05 pm 1.86 MHz
