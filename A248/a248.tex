@@ -41,15 +41,23 @@ Magneto-optical traps (MOT) are an important apparatus in modern atomic physics 
 The central process by which atomic gasses are cooled are via radiation pressure from lasers. When a photon is absorbed by an object, particle, or atom, its energy as well as its momentum, equal to $p=\hbar k$, is absorbed as a result of momentum conservation. This radiation pressure can be used to slow down moving atoms if the atoms absorb photons travelling in the opposite direction. That said, only photons resonant to a transition of the absorption spectrum of the atoms are absorbed. As a result, the absorption spectrum of the atoms to be cooled needs to be known and a particular transition chosen such that the required frequency of the cooling laser can be determined.
 
 %In order to obtain a MOT, two lasers are used. A cooling laser is used to actively slow and thus cool the atoms down, while a repumping laser is used to `repump' rare atoms that have excited to off-resonant states back into states that can be slowed by the cooling laser. The repumping laser will be explained in Section~\ref{sec:Rubidium}. Figure~\ref{fig:Laser} shows the setup for the preperation of the two lasers for the MOT.
-
+%TODO talk about Doppler and natural broadening of spectrum, Voigt-profile
 \subsection{Saturation Spectroscopy}
-Atoms can only absorb photons with frequencies that are resonant to their excitation transitions. That said, a moving atom will not be able to absorb photons with these frequencies as their frequency will be Doppler shifted and no longer resonant to the atom transitions. The moving atom will only be able to absorb light which has been Doppler shifted such that it is resonant with one of its excitation transitions. In an uncooled gas, the atoms are all travelling in different directions with different speeds. As a results, light incident on the gas from one direction will be Doppler shifted differently for all the different atoms. An absorption spectrum obtained from such a gas will thus be Doppler broadened, making it difficult to determine the energy levels and transitions of the atoms. In order to obtain a spectrum with high resolution, Doppler-free spectroscopy such as saturation spectroscopy needs to be used. \\
+Atoms can only absorb photons with frequencies that are resonant to their excitation transitions. That said, a moving atom will not be able to absorb photons with these frequencies as their frequency will be Doppler shifted and no longer resonant to the atom transitions. The moving atom will only be able to absorb light which has been Doppler shifted such that it is resonant with one of its excitation transitions. In an uncooled gas, the atoms are all travelling in different directions with different speeds. As a result, light incident on the gas from one direction will be Doppler shifted differently for all the different atoms. An absorption spectrum obtained from such a gas will thus be Doppler broadened, making it difficult to determine the energy levels and transitions of the atoms. In order to obtain a spectrum with high resolution, Doppler-free spectroscopy such as saturation spectroscopy needs to be used. \\
+\par Saturation spectroscopy makes use of two beams, often from the same source: the powerful pump beam and a weaker probe beam, passing through the sample in opposite directions. Due to the Doppler-broadened spectrum of the ensemble, there will be absorption in the wider frequency region for each beam, corresponding to a group of atoms (velocity class) which move with the right velocity in the beam direction.  As the frequency of the two beams matches, while their direction is opposite, the corresponding velocity classes move with velocities $\pm v$ along the common beam axis. If $v = 0$, that is, the laser frequency matches the transition frequency without doppler-shift, the probe beam shows a drop in the absorption signal (difference of original probe beam intensity and detected transmitted intensity), which is called the Lamb dip (a peak in the transmission spectrum). The narrowness of the Lamb dip compared to the Doppler-broadening allows for a much higher resolution.
+An important phenomenon is the appearance of crossover peaks: these appear at the middle frequency of two close peaks with an intersection in their Doppler-broadened spectra. The two beams interact with the same velocity class, but producing the two different hyperfine transitions.
 
-\par Saturation spectroscopy utilises two lasers. One laser
-
-
-\subsection{Polarisation Spectroscopy}
-
+\subsection{Polarisation Spectroscopy}%Laser Spectroscopy p. 464 (485)
+Polarization spectroscopy is based on saturation spectroscopy. The pump beam is circularly polarized by passing through a quarter waveplate before entering the sample. This can be shown to introduce anisotropy\cite{demtroder}$^{(\text{p.}\,465)}$ in the orientations of the angular momentum $J$ of the atoms, the sample becomes birefringent.
+In the realised setup, the probe beam is split in two by a polarization beam splitter (PBS),
+%TODO is PBS mentioned before?
+only one of them passing through the anisotropic sample, turning its polarization axis slightly. After entering the detector, the difference of the signals is formed, which shows the axis shift. The result is a dispersive signal with a shape similar to what is shown on Figure \ref{fig:Dispersive}. The zero crossing with differing voltage signs on the two sides provides a precise locking point.
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{Images/Dispersive.png}
+\caption{A dispersive signal.\cite{demtroder}$^{(\text{p.}\,461)}$}
+\label{fig:Dispersive}
+\end{figure}
 \subsection{Optical Cooling}
 
 \subsection{Magneto-Optical Trap}
@@ -77,25 +85,35 @@ Atoms can only absorb photons with frequencies that are resonant to their excita
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/Laser.png}
-	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.\cite{manual}}
 	\label{fig:Laser}
 \end{figure}
 \subsection{Diode Laser}
+The lasers used in the experiment are diode lasers. The reason for using this type of lasers is for two reasons: first, the state transitions we exploit (cooling and repumping) lie in the infrared range (Figure \ref{fig:Laser}), second, we need tunable coherent light sources.\\
+Recombination of an electron with a hole in a diode may result in electromagnetic radiation, with a large linewidth.\cite{demtroder} In the laser diode, the metal case for heat dissipation and optical cavity makes it possible that above a threshold current, population inversion can occur, which means lasing with a large free spectral range (below the threshold, the diode acts as a LED). The resonator modes can be shifted by changing the temperature (externally or by changing the diode current): the band gap, the index of refraction and the length of the cavity change. To use it in single mode, the laser is used in Littrow configuration, where an external grating is utilised. The grating is positioned such that for the desired frequency, the $-1.$ order is reflected back into the active medium, thus it serves as an external resonator element. The actual beam produced for use is the $0.$ order. For constructive interference, the grating equation reads\cite{demtroder}$^{(\text{p.}\, 114)}$ with the notation of Figure \ref{fig:Grating}:
+\begin{equation}
+2 d \sin \alpha = m \lambda\nonumber
+\end{equation}
+A piezo system functioning on triangular supply voltage is responsible for the moving of the grating, scanning through the laser spectrum.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Images/Grating.png}
+	\caption{Diffraction grating in the special case when the incident and reflected beams coincide.\cite{demtroder}$^{(\text{p.}\, 114)}$}
+	\label{fig:Grating}
+\end{figure}
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/Diode.png}
-	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\caption{The diode laser with the grating in Littrow configuration.\cite{manual}}
 	\label{fig:Diode}
 \end{figure}
-%TODO talk about the laser system here w/ picture
-
 \subsection{Laser Detuning}
 
 \subsection{MOT setup}
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/MOT.png}
-	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\caption{The MOT setup.\cite{manual}}
 	\label{fig:MOT}
 \end{figure}
 
@@ -214,7 +232,10 @@ C. Wieman, G. Flowers and S.Gilbert, Am. J. Phys. \textbf{63} (1995).
 Unspecified Author, \textsl{FP Experiment: Rubidium MOT} (University of Bonn, 2014).
 \bibitem{metcalf}
 H. Metcalf and P. van der Straten, \textsl{Laser Cooling and Trapping} (Springer, 1999).
-
+\bibitem{demtroder}
+W. Demtröder, \textsl{Laser Spectroscopy, Basic Concepts and Instrumentation} (Springer, 2003).%Third Edition
+\bibitem{laserdiode}
+\textsl{Physics Fundamentals: Laser Diode Characteristics}, \url{https://www.sukhamburg.com/download/fundamentals-laserdiodes.pdf}
 \iffalse
 %Leaving this here as examples for referencing different media
 \bibitem{book}
