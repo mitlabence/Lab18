@@ -19,7 +19,50 @@
 \title{\textbf{detuning}}
 \author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
 \begin{document}
-
+\section{new things}
+\subsection{Polarization direction dependence}
+As it is visible on Figure \ref{fig:Waveplate}, the MOT luminosity changes periodically, following a $\pi$ periodic dependence; the fitted function
+\begin{equation}
+f(x) = A \cos\big(\frac{\pi x}{180^{\circ}} - \varphi \big) + B \nonumber
+\end{equation}
+serves the purpose of confirming the periodicity, as the fitting is otherwise distorted by the abundance of near-maximum points compared to those near the minimum.\\
+Figure \ref{fig:Waveplate2} shows the unadjusted luminosity as a function of the polarization angle of the beam changed before the second passing through the sample. Here, the strong fluctuations make it impossible to notice fine angle-dependent changes. The underlying function is likely a constant function, shown as the red dashed fitted line.
+\begin{figure}
+\centering
+\insertFigure{Images/Waveplate1_w_fit.png}
+\caption{MOT luminescence intensity with background as a function of the polarization angle before the first MOT pass-through of one beam.}
+\label{fig:Waveplate}
+\end{figure}
+\begin{figure}
+\centering
+\insertFigure{Images/Waveplate2.png}
+\caption{MOT luminescence intensity with background as a function of the polarization angle before the second MOT pass-through of one beam.}
+\label{fig:Waveplate2}
+\end{figure}
+\subsection{Detuning of the cooling laser}
+To quantify the ideal detuning of the cooling laser, we used a slow periodic signal to scan through the spectrum slow enough that the changes in the MOT can be recorded on an oscilloscope. The detected peaks (F $\rightarrow$ F1 and MOT fluorescence peak):
+\begin{alignat*}{3}
+&3 \rightarrow 2, \, 4&&: \hspace{12pt} &(4.708 \pm 0.024) \, \text{s}\\
+&3 \rightarrow 3, \, 4&&:  &(4.956 \pm 0.024) \, \text{s}\\
+&3 \rightarrow 4&&:		 &(5.556 \pm 0.016)\, \text{s}\\
+&MOT			&&:		&(5.456 \pm 0.008) \, \text{s}
+\end{alignat*}
+By matching the difference of peaks 1, 2 and peaks 2, 3 with the frequencies of the transitions, averaging the results yields a frequency scale of
+\begin{equation}
+C =(114.161 \pm 11.163)\, \frac{\text{MHz}}{\text{s}} \nonumber
+\end{equation}
+The optimal detuning is the difference between the MOT and the 3 $\rightarrow$ 4 peaks:
+\begin{equation}
+\Delta = C \cdot (0.100 \pm 0.008) \, \text{s} = (11.4161 \pm 1.4423) \, \text{MHz} \nonumber
+\end{equation}
+\begin{figure}
+\centering
+\insertFigure{Images/Detuning_cooling.png}
+\caption{MOT luminescence intensity with background as a function of the polarization angle before the second MOT pass-through of one beam.}
+\label{fig:Detuning}
+\end{figure}
+%TODO look at the matrices in nicola bardia
+%TODO detuning of repumping laser?
 
 
 \begin{thebibliography}{9}

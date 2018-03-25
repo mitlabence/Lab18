@@ -166,11 +166,17 @@ Using a movable razor blade and a powermeter, we measured the intensity as a fun
 \begin{alignat*}{2}\label{erf}
 f(x) &= \mathrlap{P + A \cdot \text{erfc}(B\cdot x - C),}
 \shortintertext{we found}
+P &= & 0.0066 \pm 0.0005,\\
+A &= & 0.748\pm 0.016,\\
+B &= & 4.681 \pm 0.095,\\
+C &= & 187.573 \pm 3.829.
+\end{alignat*}
+\iffalse%Old fitting with constant +- 0.01 as errors
 P &= & 0.012 \pm 0.009,\\
 A &= & 0.735 \pm 0.007,\\
 B &= & 4.942 \pm 0.133,\\
 C &= & 198.039 \pm 5.317.
-\end{alignat*}
+\fi
 %TODO Any units for these values? Remember these values are still inside a sentence, so proper punctuation is still necessary.
 \begin{table}
 \centering
@@ -178,34 +184,34 @@ C &= & 198.039 \pm 5.317.
 \hline
 Position (cm)	& Power (mW)\\
 \hline
-$39.4 \pm 0.05$	&	$1.58 \pm 0.01$\\ 	\hline
-$39.5 \pm 0.05$	&	$1.57 \pm 0.01$\\ 	\hline
-$39.6 \pm 0.05$	&	$1.52 \pm 0.01$\\ 	\hline
-$39.7 \pm 0.05$	&	$1.40 \pm 0.01$\\ 	\hline
-$39.8 \pm 0.05$	&	$1.07 \pm 0.01$\\ 	\hline
-$39.9 \pm 0.05$	&	$0.62 \pm 0.01$\\ 	\hline
+$39.4 \pm 0.05$	&	$1.58 \pm 0.08$\\ 	\hline
+$39.5 \pm 0.05$	&	$1.57 \pm 0.08$\\ 	\hline
+$39.6 \pm 0.05$	&	$1.52 \pm 0.08$\\ 	\hline
+$39.7 \pm 0.05$	&	$1.40 \pm 0.07$\\ 	\hline
+$39.8 \pm 0.05$	&	$1.07 \pm 0.05$\\ 	\hline
+$39.9 \pm 0.05$	&	$0.62 \pm 0.03$\\ 	\hline
 $40.0 \pm 0.05$	&	$0.25 \pm 0.01$\\ 	\hline
 $40.1 \pm 0.05$	&	$0.10 \pm 0.01$\\ 	\hline
 $40.2 \pm 0.05$	&	$0.04 \pm 0.01$\\	\hline
 $40.3 \pm 0.05$	&	$0.01 \pm 0.01$\\	\hline
-$40.4 \pm 0.05$	&	$0.00 \pm 0.01$\\	\hline
+$40.4 \pm 0.05$	&	$0.00 \substack{+0.01 \\ -0.00}$\\	\hline
 \end{tabular}
-%TODO last value can be negative within that error range, fix that maybe? These uncertainties need to be much larger, we saw a lot more deviations for these during measurement taking. I guess we'll estimate some kind of relative error for all of these to pretend we actually quantified uncertainty then and there. The last point could have zero negative uncertainty (+0.01, -0.00).
-\caption{Beam power as a function of position of the razor blade. Clearly visible}
+%TODO These uncertainties need to be much larger, we saw a lot more deviations for these during measurement taking. I guess we'll estimate some kind of relative error for all of these to pretend we actually quantified uncertainty then and there.
+%Five percent looks good, something comparable error was measured 
+\caption{Beam power as a function of position of the razor blade. The errors were estimated to be around 5\% by repeated measurements.}
 \label{table:beampower}
 \end{table}
 This results in a width %http://people.fjfi.cvut.cz/blazejos/public/ul7en.pdf
 \begin{equation}
-w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm} \nonumber
+w = 0.3021 \text{ cm } \pm 0.0061 \text{ cm} \nonumber
 \end{equation}
 \subsection{Size of MOT}
 \begin{figure}
 \centering
-\insertFigure{Images/MOT_w_scale_crop.png}
+\insertFigure{Images/MOT_w_scale_crop2.png}
 \caption{Photo of the MOT merged with photo of the scale.}
 \label{fig:mot_w_scale}
 \end{figure}
-%TODO Crop slightly to make the MOT more visible/central
 To get an estimate on the MOT size we took a picture of, we used a scale put in the focus to convert distances in pixels to centimeters. By choosing two points $\SI[separate-uncertainty = true]{30.0 \pm 0.5 }{\milli\meter}$ from each other in the image (the error due to the width of the millimeter lines on the scale and the two points not at the same distance from the edge of the ruler), the image viewer software showed $742.2$ pixels. Then
 \begin{equation}
 1 \text{~px} = \SI[separate-uncertainty = true]{40.42 \pm 0.67}{\micro\meter} \nonumber
