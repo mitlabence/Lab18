@@ -151,7 +151,7 @@ The MOT set-up is shown in Figure~\ref{fig:MOT}.
 A vacuum chamber held at pressure levels of approximately $10^{-7}$~mbar with glass windows served as the container for the Rubidium gas. The collinear cooling and repumping beams were directed by two beam splitters, several mirrors, and six quarter waveplates for each of the beams convergent on the atom trap. The six beams could be adjusted by fine-tuning the mirror angles with screws. The two coils which provided the magnetic field were fixed in space, thus providing a fixed magnetic field. The strength of the magnetic field could be altered however, by changing the current applied to the coils. Acquiring a MOT was the first aim of the experiment. To do so, the six laser beams had to be aligned such that they formed an intersection volume in the centre of the magnetic field. Markings on the vacuum cell container gave approximate indications of the centre of the magnetic field. An infrared camera was also used to see the fluorescence of the laser beams in the vacuum cell and thus the laser beams themselves. Using these two devices, the beams were aligned to cross approximately at the centre of the magnetic field. It was necessary to make sure that none of the laser beam profiles were cut so that as little power was lost. Furthermore, in order to make sure that the laser beams were reflected adequately back into the gas along the beams of the incident lasers, the mirrors were fine-tuned so that the beams were reflected back into the optical fibre. This was achieved by using a piece of paper with a small hole in it to allow the incident beam near the optical fibre to pass through and seeing on the paper how far the reflected beams were from being reflected perfectly back through the hole. The mirrors were adjusted until thus was achieved. \\
 \begin{figure} [!h]
 	\centering
-	\includegraphics[width=1\linewidth]{Images/Peaks.png}
+	\includegraphics[width=0.95\linewidth]{Images/Peaks.png}
 	\caption{$_{85}$Rb observed spectrum with Lamb dips for $F = 3 \rightarrow F' = 2, \, 3, \, 4$. The transitions to states with two numbers refer to crossover peaks.\cite{manual}}
 	\label{fig:Peaks}
 \end{figure}
@@ -210,9 +210,17 @@ This results in a width of the laser beam of %http://people.fjfi.cvut.cz/blazejo
 \begin{equation}
 w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm}. \nonumber
 \end{equation}
+The results with the fit are plotted in Figure~\ref{fig:beam}.
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/beam.png}
+	\caption{Plot of the laser beam luminosity with razor blade position, provided with fit.}
+	\label{fig:beam}
+\end{figure}
+%TODO Add labels and make fit red
 
 \subsection{Size of the MOT}
-To get an estimate of the MOT size, we took a photo of it from the side as seen in Figure~\ref{fig:mot_w_scale}. The photo is superimposed with a photo of a ruler placed the same distance away from the camera as the MOT. This was achieved by moving the ruler back and forth until it was in the focus of the camera and was done so that a scale for the MOT image could be used to convert distances in pixels to centimetres.
+To get an estimate of the MOT size, we took a photo of it from the side, shown in Figure~\ref{fig:mot_w_scale}. The photo is superimposed with a photo of a ruler placed the same distance away from the camera as the MOT. This was achieved by moving the ruler back and forth until it was in the focus of the camera and was done so that a scale for the MOT image could be used to convert distances in pixels to centimetres.
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/MOT_w_scale_crop.png}
@@ -237,14 +245,44 @@ V &= \frac{4}{3} \pi a b c = \SI[separate-uncertainty = true]{8.09 \pm 0.52 }{\c
 To measure the MOT fluorescence as a function of the magnetic field, we changed the current flowing through the coils. The luminosity of the fluorescence was measured with a powermeter directed at the MOT. Figure~\ref{fig:magnetic} shows our results. 
 \begin{figure} [!h]
 	\centering
-	\insertFigure{Images/magnetic_dependence_wo_linear.png}
-	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\insertFigure{Images/magnetic_dependence_w_linear.png}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field, given with linear fit.}
 	\label{fig:magnetic}
 \end{figure}
-The plot seems to suggest that the MOT luminosity follows a sigmoid curve relationship with magnetic field strength, though it is nearly linear. To get a visible MOT, we had to set the current to a minimal value of around $0.9$~A. From this point, it can be seen that the fluorescence grew approximately proportional to the current, up to $4.6$~A. The background fluorescence from the lasers and the environment was previously measured and subtracted from the data. Further experiments can aim at obtaining a more luminous MOT in order to determine whether this relationship is indeed linear or sigmoid-like, or neither.
+The plot seems to suggest that the MOT luminosity follows a sigmoid curve relationship with magnetic field strength, though it is nearly linear. To get a visible MOT, we had to set the current to a minimal value of around $0.9$~A. From this point, it can be seen that the fluorescence grew approximately proportional to the current, up to $4.6$~A. The background fluorescence from the lasers and the environment was previously measured and subtracted from the data. A linear fit was performed for the central linear section, with calculated coefficients $a = 22.11 \pm 0.53$~nW/A and $\text{const} = -20.9 \pm 1.5$~nW. It can be seen that the full plot is not linear. Further experiments can aim at obtaining a more luminous MOT in order to determine whether this relationship is indeed linear or sigmoid-like, or neither.
 
-\subsection{Loading behaviour}
-\begin{figure}
+\subsection{Influence of Quarter Waveplate}
+The influence of the quarter waveplate angles were then measured. Firstly, the angle of the quarter waveplate for one of the beams before it first passes through the vacuum cell was scanned. This is illustrated as one of the two quarter waveplates on the lower half of Figure~\ref{fig:MOT}. Changing this quarter plate thus also affects the polarisation of the reflected beam, given that the relative angle between the two waveplate changes. The powermeter was again used to measure the MOT luminosity. The background luminosity was not subtracted from the data as it was found that it fluctuated in time, meaning that it was not a systematic shift in the data. The reason for the fluctuations are unknown. A plot of the results with a periodic fit is given in Figure~\ref{fig:Waveplate}. 
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/Waveplate1_w_fit.png}
+	\caption{MOT luminescence intensity as a function of the polarization angle of the first quart waveplate.}
+	\label{fig:Waveplate}
+\end{figure}
+The function of the fit is
+\begin{equation}
+f(x) = A \cos\big(x - \varphi \big) + B, \nonumber
+\end{equation}
+which produced coefficients
+\begin{align*}
+A &=  70.0 \pm 5.5,\\
+B &=  607.9\pm 3.8,\\
+\varphi &=  ???? \pm 0.095.
+\end{align*} \\
+%TODO is this to be expected? (Periodic fit)
+
+\par The angle of the second quarter waveplate after the beam was reflected back into the vacuum cell was then scanned. Changing this waveplate does not affect the polarisation of the incident beam obviously, thus serving as a different investigation to the one above. The results are displayed in Figure~\ref{fig:Waveplate2}.
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/Waveplate2.png}
+	\caption{MOT luminescence intensity as a function of the polarization angle of the second quarter waveplate, given with a fit.}
+	\label{fig:Waveplate2}
+\end{figure}
+Here, the strong fluctuations in the values make it difficult to notice fine angle-dependent changes. The underlying relationship foremostly appears to be a constant function, shown as the red dashed fitted line. Further experiments could determine whether this relationship is indeed linear by achieving a more stable MOT, allowing for a more accurate determination of the relationship.
+%TODO again, is this fit expected? Look at Bardia
+
+\subsection{Loading Behaviour}
+\begin{figure} [!h]
 \centering
 \insertFigure{Images/mot_buildup.png}
 \caption{Example of data points exported from the oscilloscope, with fitted function (red).}
@@ -276,6 +314,9 @@ Finally, the cross-section:
 \begin{equation}
 \sigma = \frac{1}{n \tau v} = (6.355 \pm 0.131) \cdot 10^{-18} \, \text{m}^2
 \end{equation}
+
+\subsection{Influence of Laser Detuning}
+
 \section{Conclusion}
 %TODO order of appearance!
 \begin{thebibliography}{9}
