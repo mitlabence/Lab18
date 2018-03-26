@@ -58,10 +58,10 @@ Atoms can only absorb photons with frequencies that are resonant to their excita
 An important phenomenon is the appearance of crossover peaks: these appear at the middle frequency of two close peaks with an intersection in their Doppler-broadened spectra. The two beams interact with the same velocity class, but producing the two different hyperfine transitions.
 \fi
 
-\subsection{Polarisation Spectroscopy}%Laser Spectroscopy p. 464 (485)
+\subsection{Polarisation Spectroscopy} \label{sec:pol} %Laser Spectroscopy p. 464 (485) 
 Polarization spectroscopy expands on saturation spectroscopy. The pump beam is circularly polarized with a quarter waveplate before entering the sample. This introduces anisotropy in the populations of the degenerate magnetic hyperfine states of the atoms and as a result the sample becomes birefringent.~\cite{demtroder}
 %TODO Are we supposed to reference with the page number in text?
-In the realised setup, the linearly polarised probe beam is split in two beams by a polarizing beam splitter (PBS). One of the beams then passes through the birefringent sample which tilts its polarization axis slightly. Both beam signals are then detected and their difference is taken to determine the axis shift. The result is a dispersive signal with a shape similar to what is shown in Figure~\ref{fig:Dispersive}. The zero crossing with differing voltage signs on the two sides provides a precise locking point for the cooling laser frequency, discussed in Section~\ref{sec:laser}. This stabilises the frequency of the laser such that a MOT can be more easily obtained and held.
+In the realised set-up, the linearly polarised probe beam is split in two beams by a polarizing beam splitter (PBS). One of the beams then passes through the birefringent sample which tilts its polarization axis slightly. Both beam signals are then detected and their difference is taken to determine the axis shift. The result is a dispersive signal with a shape similar to what is shown in Figure~\ref{fig:Dispersive}. The zero crossing with differing voltage signs on the two sides provides a precise locking point for the cooling and repumping laser frequencies and is thus used as the error signal, discussed in Section~\ref{sec:laser}. This stabilises the frequencies of the lasers such that a MOT can be more easily obtained and held.
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{Images/Dispersive.png}
@@ -94,11 +94,11 @@ This magnetic field has a strength that increases linearly from centre, which it
 	\caption{The Zeeman effect on atoms on either side of the centre where the magnetic field changes sign. The transitions allowed for differently polarised light is also shown.~\cite{Wieman}}
 	\label{fig:Zeeman}
 \end{figure}
-As the magnetic field has a different sign on either side of the centre, a certain energy level $m_i$ will not have the same energy on either side. Circularly polarised lasers therefore need to be used, where the reflection of a laser will cause the polarisation to flip from $\sigma_-$ to $\sigma_+$ for example. The counter-propagating laser beams are thus oppositely polarised meaning that they will be resonant with different transitions, one with $m=-1$ and the other with $m=+1$. This is due to the transition selection rules where a $\sigma_\pm$ polarised photon requires that $\Delta m=\pm1$ between the initial and final states of the atom.~\cite{Foot} Though the beams are resonant to different transitions, these transitions will have the same energies the same distance away from the centre, meaning that a laser with a single frequency can become increasingly resonant atoms on either side of the atom trap. The magnetic field has thus introduced a point which the atoms are drawn towards. The complete MOT setup is given in Figure~\ref{fig:MOT2}. The centre of the magnetic field is to be aligned with the centre of the intersection volume of the lasers to achieve the best results. \\
+As the magnetic field has a different sign on either side of the centre, a certain energy level $m_i$ will not have the same energy on either side. Circularly polarised lasers therefore need to be used, where the reflection of a laser will cause the polarisation to flip from $\sigma_-$ to $\sigma_+$ for example. The counter-propagating laser beams are thus oppositely polarised meaning that they will be resonant with different transitions, one with $m=-1$ and the other with $m=+1$. This is due to the transition selection rules where a $\sigma_\pm$ polarised photon requires that $\Delta m=\pm1$ between the initial and final states of the atom.~\cite{Foot} Though the beams are resonant to different transitions, these transitions will have the same energies the same distance away from the centre, meaning that a laser with a single frequency can become increasingly resonant atoms on either side of the atom trap. The magnetic field has thus introduced a point which the atoms are drawn towards. The complete MOT set-up is given in Figure~\ref{fig:MOT2}. The centre of the magnetic field is to be aligned with the centre of the intersection volume of the lasers to achieve the best results. \\
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/MOT2.png}
-	\caption{The MOT setup, shown with the coils in anti-Helmholtz configuration, magnetic field, and laser beam polarisations.~\cite{Foot}}
+	\caption{The MOT set-up, shown with the coils in anti-Helmholtz configuration, magnetic field, and laser beam polarisations.~\cite{Foot}}
 	\label{fig:MOT2}
 \end{figure}
  
@@ -113,56 +113,84 @@ Natural Rubidium gas is composed of $^{85}\ce{Rb}$ and $^{87}\ce{Rb}$. This expe
 	\label{fig:Spectrum}
 \end{figure}
 
-\section{Experimental setup} \label{sec:Exp}
-
 \subsection{Diode Laser} \label{sec:laser}
-The lasers used in this experiment are diode lasers. The reasons for this are that the state transitions we exploit for cooling and repumping lie in the infrared range, as seen in Figure~\ref{fig:Laser}, and that we need tunable coherent light sources.
-\begin{figure} [!h]
-	\centering
-	\insertFigure{Images/Laser.png}
-	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.\cite{manual}}
-	\label{fig:Laser}
-\end{figure}
-Recombination of an electron with a hole in a diode may result in electromagnetic radiation, with a large linewidth.~\cite{demtroder} In the laser diode, the metal case used for heat dissipation and the optical cavity makes it possible that above a threshold current, population inversion can occur, which means lasing with a large free spectral range (below the threshold, the diode acts as a LED). The resonator modes can be shifted by changing the temperature (externally or by changing the diode current): the band gap, the index of refraction and the length of the cavity change. We only changed the current throughout the experiment; the temperature change of the room influenced our setup, causing a slow drift. To use it in single mode, the laser is used in Littrow configuration, where an external grating is utilised. The grating is positioned such that for the desired frequency, the $-1.$ order is reflected back into the active medium, thus it serves as an external resonator element. The actual beam produced for use is the $0.$ order. For constructive interference, the grating equation reads\cite{demtroder} with the notation of Figure~\ref{fig:Grating}: 
-\begin{equation}
-2 d \sin \alpha = m \lambda\nonumber
-\end{equation}
-%TODO Centre this equation
-A piezo system functioning on triangular supply voltage is responsible for the moving of the grating, scanning through the laser spectrum.
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.3]{Images/Grating.png}
-	\caption{Diffraction grating in the special case when the incident and reflected beams coincide.\cite{demtroder}$^{(\text{p.}\, 114)}$}
-	\label{fig:Grating}
-\end{figure}
+Diode lasers are used in this experiment for the cooling and repumping lasers. The reasons for this are that the state transitions we exploit for cooling and repumping lie in the infrared range and that we need tunable coherent light sources.Diode lasers work via the recombination of an electron with a hole in a diode, resulting in electromagnetic radiation with a large linewidth, which starts the laser oscillations.~\cite{demtroder} In the laser diode, the metal case used for heat dissipation and the optical cavity makes it possible that population inversion can occur above a threshold current, which means a large free spectral range can be lased. In order to produce a laser with a single mode instead, a grating is used as shown in Figure~\ref{fig:Diode}. Here, the laser produced by the diode is divergent and collimated to a non-divergent beam by the collimating lens.
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/Diode.png}
 	\caption{The diode laser with the grating in Littrow configuration.\cite{manual}}
 	\label{fig:Diode}
 \end{figure}
-%Subsection Laser Detuning is not necessary in my opinion, being already explained in subsection Optical Trap
-\subsection{MOT setup}
-The actual realisation of the MOT system is presented herein short.\\
-A vacuum chamber held at HV (high vacuum) pressure levels ($\approx 10^{-7}$~mbar) with glass windows and a Rb source inside served as the container for the vapor. The cooling and repumping beams were directed by an optical cable, two beam splitters, several mirrors and a quarter wave plate for each six directions of illumination. The six beams could be adjusted by fine-tuning the mirror angles. The two coils which provided the magnetic field were fixed in space. Our task was to create an intersection point of the beams in the middle point of this field, with the helpful middle signs provided, and an infrared camera to grant us vision. Once an intersection was accomplished, we had to find the correct peak in scanning mode using an oscilloscope (Figure \ref{fig:Peaks}), then locking the laser, and fine adjusting until a MOT appeared. More often than not, this procedure failed and needed to be repeated several times. Once a lasting MOT was observed, we could begin with the quantitative measurements. Due to the laser drift caused by the ambient temperature change, measurements had to be performed fast.
-%Another source of errors is the luminosity fluctuation
+The beam is then directed on to an external grating in Littrow configuration, as seen in Figure~\ref{fig:Grating}. The grating is positioned such that for the desired frequency, the $-1.$ order is reflected back into the active medium, thus serving as an external resonating element. This back-reflected frequency determines the single-mode frequency of the laser. The actual beam produced for use is the $0.$ order, which makes up most of the produced power of the laser diode. For constructive interference, the grating equation reads as given in Figure~\ref{fig:Grating}, such that a single mode is obtained. A piezo system functioning on triangular supply voltage, as well as adjustable screws, are responsible for the moving of the grating so that different frequencies in the laser spectrum can be reflected back to the laser, allowing for frequencies of the laser to be scanned. The error signal produced by polarisation spectroscopy, discussed in Section~\ref{sec:pol}, is that used as the triangular voltage to stabilise and lock the laser to a desired frequency. The frequency can also be changed with the current applied to the diode and the diode's temperature, such that changes in the temperature of the room causes the frequency of the laser to drift.
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.5]{Images/Peaks.png}
-	\caption{$_{85}$Rb observed spectrum for $F = 3 \rightarrow F' = 2, \, 3, \, 4$. The transitions to states with two numbers refer to crossover peaks.\cite{manual}}
-	\label{fig:Peaks}
+	\includegraphics[scale=0.4]{Images/Grating.png}
+	\caption{Diffraction grating in a Littrow configuration, when the incident and reflected beams coincide.~\cite{demtroder}}
+	\label{fig:Grating}
 \end{figure}
+
+
+\section{Experimental Set-up} \label{sec:Exp}
+The laser section of the experiment is shown in Figure~\ref{fig:Laser}.
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/Laser.png}
+	\caption{The set-up for producing the cooling and repumping lasers, sent to the MOT experiment.~\cite{manual}}
+	\label{fig:Laser}
+\end{figure}
+This produces both cooling and repumping lasers which are sent to the MOT set-up collinear through an optical fibre. Two cells with Rubidium gas are used for the polarisation spectroscopy to produce the error signals to scan and lock both lasers. This part of the experiment was already configured.
+
+\subsection{MOT Set-up and Procedure}
+The MOT set-up is shown in Figure~\ref{fig:MOT}.
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/MOT.png}
-	\caption{The MOT setup.\cite{manual}}
+	\caption{The MOT set-up.\cite{manual}}
 	\label{fig:MOT}
 \end{figure}
-%\section{Procedure} \label{sec:Proc}
-\section{Measurements}
+A vacuum chamber held at pressure levels of approximately $10^{-7}$~mbar with glass windows served as the container for the Rubidium gas. The collinear cooling and repumping beams were directed by two beam splitters, several mirrors, and six quarter waveplates for each of the beams convergent on the atom trap. The six beams could be adjusted by fine-tuning the mirror angles with screws. The two coils which provided the magnetic field were fixed in space, thus providing a fixed magnetic field. The strength of the magnetic field could be altered however, by changing the current applied to the coils. Acquiring a MOT was the first aim of the experiment. To do so, the six laser beams had to be aligned such that they formed an intersection volume in the centre of the magnetic field. Markings on the vacuum cell container gave approximate indications of the centre of the magnetic field. An infrared camera was also used to see the fluorescence of the laser beams in the vacuum cell and thus the laser beams themselves. Using these two devices, the beams were aligned to cross approximately at the centre of the magnetic field. It was necessary to make sure that none of the laser beam profiles were cut so that as little power was lost. Furthermore, in order to make sure that the laser beams were reflected adequately back into the gas along the beams of the incident lasers, the mirrors were fine-tuned so that the beams were reflected back into the optical fibre. This was achieved by using a piece of paper with a small hole in it to allow the incident beam near the optical fibre to pass through and seeing on the paper how far the reflected beams were from being reflected perfectly back through the hole. The mirrors were adjusted until thus was achieved. \\
+\begin{figure} [!h]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Peaks.png}
+	\caption{$_{85}$Rb observed spectrum with Lamb dips for $F = 3 \rightarrow F' = 2, \, 3, \, 4$. The transitions to states with two numbers refer to crossover peaks.\cite{manual}}
+	\label{fig:Peaks}
+\end{figure}
+\par Once an intersection was accomplished, the spectrum of the gas was obtained on an oscilloscope by scanning the cooling laser, as shown in Figure~\ref{fig:Peaks}. When the peak for the desired F=3 $\to$ F'=4 transition was found, the laser was locked to a frequency slightly red detuned from this as a guess. For the repumping laser, the F=2 $\to$ F'=3 transition was found in the spectrum, shown in Figure~\ref{fig:Peaks}, and the laser was made to scan a small range over the peak. The laser was not detuned as it is not used to cool the atoms, just to repump atoms lost to the cooling process. Furthermore, it was not locked for most of the experiment as it was found that a large MOT was obtained when it was made to scan a small range. This is thought to be due to the ability for the laser to be resonant with more atoms of different speeds and different positions in the magnetic field. 
+\begin{figure} [!h]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Peak1.png}
+	\caption{$_{85}$Rb observed spectrum with Lamb dips for $F = 2 \rightarrow F' = 1, \, 2, \, 3$. The transitions to states with two numbers refer to crossover peaks.\cite{manual}}
+	\label{fig:Peaks1}
+\end{figure}
+The frequencies of the lasers were then fined tuned, especially that of the cooling laser, until a MOT was observed by a video camera able to see the infrared fluorescence emitted. A ferromagnet was also used to affect the magnetic field of the coils to see whether a MOT could be observed. This would suggest that the intersection point of the laser beams were not properly aligned with the centre of the magnetic field and that they needed to be re-aligned. Once a lasting MOT was observed with adequate luminescence, the quantitative measurements were undertaken. Due to the laser drift caused by the ambient temperature change, the measurements had to be performed quickly.
 
-\subsection{Laser beam diameter}
-Using a movable razor blade and a powermeter, we measured the intensity as a function of the displacement of the blade along an axis perpendicular to the beam propagation direction. The results are collected in Table \ref{table:beampower}. Fitting a function of the form
+\section{Results}
+
+\subsection{Laser Beam Diameter}
+Using a movable razor blade and a powermeter, the intensity of the combined cooling and repumping laser beam as a function of the displacement of the blade along an axis perpendicular to the beam propagation, thereby blocking parts of the beam, was measured. The results are collected in Table~\ref{table:beampower}. 
+\begin{table}  [!h]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		Position (cm)	& Power (mW)\\
+		\hline
+		$39.4 \pm 0.05$	&	$1.58 \pm 0.01$\\ 	\hline
+		$39.5 \pm 0.05$	&	$1.57 \pm 0.01$\\ 	\hline
+		$39.6 \pm 0.05$	&	$1.52 \pm 0.01$\\ 	\hline
+		$39.7 \pm 0.05$	&	$1.40 \pm 0.01$\\ 	\hline
+		$39.8 \pm 0.05$	&	$1.07 \pm 0.01$\\ 	\hline
+		$39.9 \pm 0.05$	&	$0.62 \pm 0.01$\\ 	\hline
+		$40.0 \pm 0.05$	&	$0.25 \pm 0.01$\\ 	\hline
+		$40.1 \pm 0.05$	&	$0.10 \pm 0.01$\\ 	\hline
+		$40.2 \pm 0.05$	&	$0.04 \pm 0.01$\\	\hline
+		$40.3 \pm 0.05$	&	$0.01 \pm 0.01$\\	\hline
+		$40.4 \pm 0.05$	&	$0.00 \pm 0.01$\\	\hline
+	\end{tabular}
+	%TODO last value can be negative within that error range, fix that maybe? These uncertainties need to be much larger, we saw a lot more deviations for these during measurement taking. I guess we'll estimate some kind of relative error for all of these to pretend we actually quantified uncertainty then and there. The last point could have zero negative uncertainty (+0.01, -0.00) but it's also fine.
+	\caption{Beam power as a function of position of the razor blade.}
+	\label{table:beampower}
+\end{table}
+The uncertainty in the power measurements is a result of their sensitivity to very slight movements of the blade, less than was noticeable. Fitting a function of the form
 \begin{alignat*}{2}\label{erf}
 f(x) &= \mathrlap{P + A \cdot \text{erfc}(B\cdot x - C),}
 \shortintertext{we found}
@@ -172,63 +200,43 @@ B &= & 4.942 \pm 0.133,\\
 C &= & 198.039 \pm 5.317.
 \end{alignat*}
 %TODO Any units for these values? Remember these values are still inside a sentence, so proper punctuation is still necessary.
-\begin{table}
-\centering
-\begin{tabular}{|c|c|}
-\hline
-Position (cm)	& Power (mW)\\
-\hline
-$39.4 \pm 0.05$	&	$1.58 \pm 0.01$\\ 	\hline
-$39.5 \pm 0.05$	&	$1.57 \pm 0.01$\\ 	\hline
-$39.6 \pm 0.05$	&	$1.52 \pm 0.01$\\ 	\hline
-$39.7 \pm 0.05$	&	$1.40 \pm 0.01$\\ 	\hline
-$39.8 \pm 0.05$	&	$1.07 \pm 0.01$\\ 	\hline
-$39.9 \pm 0.05$	&	$0.62 \pm 0.01$\\ 	\hline
-$40.0 \pm 0.05$	&	$0.25 \pm 0.01$\\ 	\hline
-$40.1 \pm 0.05$	&	$0.10 \pm 0.01$\\ 	\hline
-$40.2 \pm 0.05$	&	$0.04 \pm 0.01$\\	\hline
-$40.3 \pm 0.05$	&	$0.01 \pm 0.01$\\	\hline
-$40.4 \pm 0.05$	&	$0.00 \pm 0.01$\\	\hline
-\end{tabular}
-%TODO last value can be negative within that error range, fix that maybe? These uncertainties need to be much larger, we saw a lot more deviations for these during measurement taking. I guess we'll estimate some kind of relative error for all of these to pretend we actually quantified uncertainty then and there. The last point could have zero negative uncertainty (+0.01, -0.00) but it's also fine.
-\caption{Beam power as a function of position of the razor blade. Clearly visible}
-\label{table:beampower}
-\end{table}
-This results in a width %http://people.fjfi.cvut.cz/blazejos/public/ul7en.pdf
+This results in a width of the laser beam of %http://people.fjfi.cvut.cz/blazejos/public/ul7en.pdf
 \begin{equation}
-w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm} \nonumber
+w = 0.2860 \text{ cm } \pm 0.0077 \text{ cm}. \nonumber
 \end{equation}
-\subsection{Size of MOT}
-\begin{figure}
-\centering
-\insertFigure{Images/MOT_w_scale_crop.png}
-\caption{Photo of the MOT merged with photo of the scale.}
-\label{fig:mot_w_scale}
+
+\subsection{Size of the MOT}
+To get an estimate of the MOT size, we took a photo of it from the side as seen in Figure~\ref{fig:mot_w_scale}. The photo is superimposed with a photo of a ruler placed the same distance away from the camera as the MOT. This was achieved by moving the ruler back and forth until it was in the focus of the camera and was done so that a scale for the MOT image could be used to convert distances in pixels to centimetres.
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/MOT_w_scale_crop.png}
+	\caption{Photo of the MOT merged with photo of the scale.}
+	\label{fig:mot_w_scale}
 \end{figure}
-To get an estimate on the MOT size we took a picture of, we used a scale put in the focus to convert distances in pixels to centimeters. By choosing two points $\SI[separate-uncertainty = true]{30.0 \pm 0.5 }{\milli\meter}$ from each other in the image (the error due to the width of the millimeter lines on the scale and the two points not at the same distance from the edge of the ruler), the image viewer software showed $742.2$ pixels. Then
+The MOT as well as the vertical and horizontal laser beams can be seen in the photo. An image software determined that two points $\SI[separate-uncertainty = true]{30.0 \pm 0.5 }{\milli\meter}$ away from each other in the image were separated by $742.2$ pixels. The uncertainty here is due to the width of the millimetre lines on the scale and the two points not at the same distance from the edge of the ruler. Thus
 \begin{equation}
-1 \text{~px} = \SI[separate-uncertainty = true]{40.42 \pm 0.67}{\micro\meter} \nonumber
+1 \text{~px} = \SI[separate-uncertainty = true]{40.42 \pm 0.67}{\micro\meter}. \nonumber
 \end{equation}
-As visible on Figure \ref{fig:mot_w_scale}, the MOT has different horizontal and vertical size values. The directly measured width and height for the MOT are
+As visible in Figure~\ref{fig:mot_w_scale}, the MOT does not have a perfect circular cross-section. This is likely the result of the laser beams not intersecting to form a perfect cubic intersection volume and not being exactly centred with the magnetic field. The latter can be directly observed in the photo from the discrepancy between the position of MOT and the centre of the intersection of the beams. The directly measured width and height for the MOT are
+$$
+h = (72 \pm 2)  \, \text{px}, \: \text{and} \: w = (57 \pm 2)  \, \text{px}.
+$$
+We chose to approximate the volume by an ellipsoid with one axis half the height ($c$) and two axes half the width ($a$, $b$) each, as our best guess is that the MOT is just as deep as it is wide. That said, the imaged cross-section of the MOT is nearly circular thereby giving more some assurance that the real depth wasn't too different from our estimation. The dimensions of the MOT and its volume were calculated to be
 \begin{align*}
-h &= (72 \pm 2)  \, \text{px}\\
-w &= (57 \pm 2)  \, \text{px} 
+a, b &= \SI[separate-uncertainty = true]{1.15 \pm 0.04}{\milli\meter}, \\
+c &=  \SI[separate-uncertainty = true]{1.46 \pm 0.05}{\milli\meter}, \\
+V &= \frac{4}{3} \pi a b c = \SI[separate-uncertainty = true]{8.09 \pm 0.52 }{\cubic\milli\meter}.
 \end{align*}
-We chose to approximate the volume by an ellipsoid with one axis half the height ($c$) and two axes half the width ($a$, $b$) each.
-\begin{align*}
-a, b &= \SI[separate-uncertainty = true]{1.15 \pm 0.04}{\milli\meter} \\
-c &=  \SI[separate-uncertainty = true]{1.46 \pm 0.05}{\milli\meter} \\
-V &= \frac{4}{3} \pi a b c = \SI[separate-uncertainty = true]{8.09 \pm 0.52 }{\cubic\milli\meter}
-\end{align*}
-\subsection{Changing the magnetic field}
-To measure the MOT fluorescence as a function of the magnetic field, we changed the current flowing through the coils. Figure \ref{fig:magnetic} shows our results. To get a visible MOT, we had to set the current to a minimal value of around $0.9$ A, below this the system fails to trap the moving atoms; from this point, the fluorescence grew proportional to the current to a good approximation, up to $4.6$ A. The background fluorescence has been previously measured and substracted from the data.
-\begin{figure}
-\centering
-\insertFigure{Images/magnetic_dependence_wo_linear.png}
-\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
-\label{fig:magnetic}
+\subsection{Magnetic Field Dependence}
+To measure the MOT fluorescence as a function of the magnetic field, we changed the current flowing through the coils. The luminosity of the fluorescence was measured with a powermeter directed at the MOT. Figure~\ref{fig:magnetic} shows our results. 
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/magnetic_dependence_wo_linear.png}
+	\caption{The dependency of MOT luminosity on the current flow through the coils and thus the strength of the magnetic field.}
+	\label{fig:magnetic}
 \end{figure}
-%TODO What is the dependence of the magnetic field with current flow? Should we investigate this or not?
+The plot seems to suggest that the MOT luminosity follows a sigmoid curve relationship with magnetic field strength, though it is nearly linear. To get a visible MOT, we had to set the current to a minimal value of around $0.9$~A. From this point, it can be seen that the fluorescence grew approximately proportional to the current, up to $4.6$~A. The background fluorescence from the lasers and the environment was previously measured and subtracted from the data. Further experiments can aim at obtaining a more luminous MOT in order to determine whether this relationship is indeed linear or sigmoid-like, or neither.
+
 \subsection{Loading behaviour}
 \begin{figure}
 \centering
