@@ -168,37 +168,43 @@ The frequencies of the lasers were then fined tuned, especially that of the cool
 
 \subsection{Laser Beam Diameter}
 Using a movable razor blade and a powermeter, the intensity of the combined cooling and repumping laser beam as a function of the displacement of the blade along an axis perpendicular to the beam propagation, thereby blocking parts of the beam, was measured. The results are collected in Table~\ref{table:beampower}. 
-\begin{table}  [!h]
+\begin{table}
 	\centering
 	\begin{tabular}{|c|c|}
 		\hline
 		Position (cm)	& Power (mW)\\
 		\hline
-		$39.4 \pm 0.05$	&	$1.58 \pm 0.01$\\ 	\hline
-		$39.5 \pm 0.05$	&	$1.57 \pm 0.01$\\ 	\hline
-		$39.6 \pm 0.05$	&	$1.52 \pm 0.01$\\ 	\hline
-		$39.7 \pm 0.05$	&	$1.40 \pm 0.01$\\ 	\hline
-		$39.8 \pm 0.05$	&	$1.07 \pm 0.01$\\ 	\hline
-		$39.9 \pm 0.05$	&	$0.62 \pm 0.01$\\ 	\hline
+		$39.4 \pm 0.05$	&	$1.58 \pm 0.08$\\ 	\hline
+		$39.5 \pm 0.05$	&	$1.57 \pm 0.08$\\ 	\hline
+		$39.6 \pm 0.05$	&	$1.52 \pm 0.08$\\ 	\hline
+		$39.7 \pm 0.05$	&	$1.40 \pm 0.07$\\ 	\hline
+		$39.8 \pm 0.05$	&	$1.07 \pm 0.05$\\ 	\hline
+		$39.9 \pm 0.05$	&	$0.62 \pm 0.03$\\ 	\hline
 		$40.0 \pm 0.05$	&	$0.25 \pm 0.01$\\ 	\hline
 		$40.1 \pm 0.05$	&	$0.10 \pm 0.01$\\ 	\hline
 		$40.2 \pm 0.05$	&	$0.04 \pm 0.01$\\	\hline
 		$40.3 \pm 0.05$	&	$0.01 \pm 0.01$\\	\hline
-		$40.4 \pm 0.05$	&	$0.00 \pm 0.01$\\	\hline
+		$40.4 \pm 0.05$	&	$0.00 \substack{+0.01 \\ -0.00}$\\	\hline
 	\end{tabular}
 	%TODO last value can be negative within that error range, fix that maybe? These uncertainties need to be much larger, we saw a lot more deviations for these during measurement taking. I guess we'll estimate some kind of relative error for all of these to pretend we actually quantified uncertainty then and there. The last point could have zero negative uncertainty (+0.01, -0.00) but it's also fine.
-	\caption{Beam power as a function of position of the razor blade.}
+	\caption{Beam power as a function of position of the razor blade. The last value has no negative uncertainty as the powermeter didn't read a negative value in this mode, even when it was blocked from light. The last few readings have higher uncertainty due to larger reading fluctuations observed.}
 	\label{table:beampower}
 \end{table}
-The uncertainty in the power measurements is a result of their sensitivity to very slight movements of the blade, less than was noticeable. Fitting a function of the form
+The uncertainty in the power measurements is a result of their sensitivity to very slight movements of the blade, less than was noticeable. The errors were estimated to be approximately 5\% for all values by repeating measurements of different values and quantifying their deviation. Fitting a function of the form
 \begin{alignat*}{2}\label{erf}
 f(x) &= \mathrlap{P + A \cdot \text{erfc}(B\cdot x - C),}
 \shortintertext{we found}
+P &= & 0.0066 \pm 0.0005,\\
+A &= & 0.748\pm 0.016,\\
+B &= & 4.681 \pm 0.095,\\
+C &= & 187.6 \pm 3.8.
+\end{alignat*}
+\iffalse%Old fitting with constant +- 0.01 as errors
 P &= & 0.012 \pm 0.009,\\
 A &= & 0.735 \pm 0.007,\\
 B &= & 4.942 \pm 0.133,\\
 C &= & 198.039 \pm 5.317.
-\end{alignat*}
+\fi
 %TODO Any units for these values? Remember these values are still inside a sentence, so proper punctuation is still necessary.
 This results in a width of the laser beam of %http://people.fjfi.cvut.cz/blazejos/public/ul7en.pdf
 \begin{equation}
