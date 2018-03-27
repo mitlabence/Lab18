@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  26 MAR 2018 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  27 MAR 2018 23:28
 entering extended mode
 **./a248.tex
 (a248.tex
@@ -1265,227 +1265,312 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<Images/Lamb.png, id=82, 444.15938pt x 359.84438pt>
-File: Images/Lamb.png Graphic file (type png)
-<use Images/Lamb.png>
-Package pdftex.def Info: Images/Lamb.png  used on input line 52.
-(pdftex.def)             Requested size: 232.97914pt x 188.7509pt.
 [1{C:/Users/Benoît/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-<Images/Dispersive.png, id=105, 609.27625pt x 305.14pt>
+<Images/Lamb.png, id=106, 444.15938pt x 359.84438pt>
+File: Images/Lamb.png Graphic file (type png)
+<use Images/Lamb.png>
+Package pdftex.def Info: Images/Lamb.png  used on input line 52.
+(pdftex.def)             Requested size: 232.97914pt x 188.7509pt.
+<Images/Dispersive.png, id=112, 609.27625pt x 305.14pt>
 File: Images/Dispersive.png Graphic file (type png)
 <use Images/Dispersive.png>
 Package pdftex.def Info: Images/Dispersive.png  used on input line 67.
 (pdftex.def)             Requested size: 245.24199pt x 122.82207pt.
 
-Underfull \hbox (badness 4316) in paragraph at lines 62--71
+Underfull \hbox (badness 4316) in paragraph at lines 64--71
 []\OT1/cmr/m/n/10 Polarization spectroscopy ex-pands on sa-tu-ra-tion
  []
 
-<Images/Scat.png, id=110, 737.75626pt x 370.38374pt>
+
+Underfull \vbox (badness 2418) has occurred while \output is active []
+
+<Images/Scat.png, id=117, 737.75626pt x 370.38374pt>
 File: Images/Scat.png Graphic file (type png)
 <use Images/Scat.png>
 Package pdftex.def Info: Images/Scat.png  used on input line 76.
 (pdftex.def)             Requested size: 232.97914pt x 116.96538pt.
-[2 <./Images/Lamb.png> <./Images/Dispersive.png>]
-<Images/Mag.png, id=122, 353.82187pt x 357.58594pt>
+ [2 <./Images/Lamb.png> <./Images/Dispersive.png>]
+<Images/Mag.png, id=129, 353.82187pt x 357.58594pt>
 File: Images/Mag.png Graphic file (type png)
 <use Images/Mag.png>
-Package pdftex.def Info: Images/Mag.png  used on input line 86.
+Package pdftex.def Info: Images/Mag.png  used on input line 85.
 (pdftex.def)             Requested size: 232.97914pt x 235.4618pt.
-<Images/Zeeman.png, id=126, 514.17094pt x 353.06906pt>
+<Images/Zeeman.png, id=133, 514.17094pt x 353.06906pt>
 File: Images/Zeeman.png Graphic file (type png)
 <use Images/Zeeman.png>
-Package pdftex.def Info: Images/Zeeman.png  used on input line 93.
+Package pdftex.def Info: Images/Zeeman.png  used on input line 92.
 (pdftex.def)             Requested size: 232.97914pt x 159.98402pt.
-<Images/MOT2.png, id=131, 383.18156pt x 456.95718pt>
+<Images/MOT2.png, id=138, 383.18156pt x 456.95718pt>
 File: Images/MOT2.png Graphic file (type png)
 <use Images/MOT2.png>
-Package pdftex.def Info: Images/MOT2.png  used on input line 100.
+Package pdftex.def Info: Images/MOT2.png  used on input line 99.
 (pdftex.def)             Requested size: 232.97914pt x 277.83702pt.
- [3 <./Images/Scat.png> <./Images/Mag.png> <./Images/Zeeman.png>]
-<Images/Spectrum.png, id=148, 431.36156pt x 329.73187pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./Images/Scat.png> <./Images/Mag.png> <./Images/Zeeman.png>]
+<Images/Spectrum.png, id=154, 431.36156pt x 329.73187pt>
 File: Images/Spectrum.png Graphic file (type png)
 <use Images/Spectrum.png>
-Package pdftex.def Info: Images/Spectrum.png  used on input line 111.
+Package pdftex.def Info: Images/Spectrum.png  used on input line 110.
 (pdftex.def)             Requested size: 232.97914pt x 178.08777pt.
-<Images/Diode.png, id=153, 414.79968pt x 360.59718pt>
+<Images/Diode.png, id=159, 414.79968pt x 360.59718pt>
 File: Images/Diode.png Graphic file (type png)
 <use Images/Diode.png>
-Package pdftex.def Info: Images/Diode.png  used on input line 120.
+Package pdftex.def Info: Images/Diode.png  used on input line 119.
 (pdftex.def)             Requested size: 232.97914pt x 202.53279pt.
-<Images/Grating.png, id=159, 323.2075pt x 385.44pt>
+<Images/Grating.png, id=164, 323.2075pt x 385.44pt>
 File: Images/Grating.png Graphic file (type png)
 <use Images/Grating.png>
-Package pdftex.def Info: Images/Grating.png  used on input line 127.
+Package pdftex.def Info: Images/Grating.png  used on input line 126.
 (pdftex.def)             Requested size: 129.2807pt x 154.17326pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./Images/MOT2.png> <./Images/Spectrum.png>]
-<Images/Laser.png, id=170, 549.55313pt x 448.67625pt>
+ [4 <./Images/MOT2.png> <./Images/Spectrum.png>]
+<Images/Laser.png, id=177, 549.55313pt x 448.67625pt>
 File: Images/Laser.png Graphic file (type png)
 <use Images/Laser.png>
-Package pdftex.def Info: Images/Laser.png  used on input line 137.
+Package pdftex.def Info: Images/Laser.png  used on input line 136.
 (pdftex.def)             Requested size: 232.97914pt x 190.20906pt.
+<Images/MOT.png, id=181, 433.62pt x 383.18156pt>
+File: Images/MOT.png Graphic file (type png)
+<use Images/MOT.png>
+Package pdftex.def Info: Images/MOT.png  used on input line 146.
+(pdftex.def)             Requested size: 232.97914pt x 205.88005pt.
+<Images/Peaks.png, id=183, 396.48125pt x 328.22626pt>
+File: Images/Peaks.png Graphic file (type png)
+<use Images/Peaks.png>
+Package pdftex.def Info: Images/Peaks.png  used on input line 153.
+(pdftex.def)             Requested size: 232.97914pt x 192.87552pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/MOT.png, id=174, 433.62pt x 383.18156pt>
-File: Images/MOT.png Graphic file (type png)
-<use Images/MOT.png>
-Package pdftex.def Info: Images/MOT.png  used on input line 147.
-(pdftex.def)             Requested size: 232.97914pt x 205.88005pt.
-<Images/Peaks.png, id=176, 396.48125pt x 328.22626pt>
-File: Images/Peaks.png Graphic file (type png)
-<use Images/Peaks.png>
-Package pdftex.def Info: Images/Peaks.png  used on input line 154.
-(pdftex.def)             Requested size: 232.97914pt x 192.87552pt.
-[5 <./Images/Diode.png> <./Images/Grating.png> <./Images/Laser.png> <./Images/M
-OT.png>]
-<Images/Peak1.png, id=189, 530.73282pt x 416.30531pt>
+[5 <./Images/Diode.png> <./Images/Grating.png> <./Images/Laser.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Images/Peak1.png, id=197, 530.73282pt x 416.30531pt>
 File: Images/Peak1.png Graphic file (type png)
 <use Images/Peak1.png>
-Package pdftex.def Info: Images/Peak1.png  used on input line 161.
+Package pdftex.def Info: Images/Peak1.png  used on input line 160.
 (pdftex.def)             Requested size: 245.24199pt x 192.36667pt.
- [6 <./Images/Peaks.png> <./Images/Peak1.png>]
-<Images/beam.png, id=202, 361.35pt x 220.825pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./Images/MOT.png> <./Images/Peaks.png> <./Images/Peak1.png>]
+<Images/beam.png, id=210, 578.16pt x 370.38374pt>
 File: Images/beam.png Graphic file (type png)
 <use Images/beam.png>
-Package pdftex.def Info: Images/beam.png  used on input line 216.
-(pdftex.def)             Requested size: 232.97914pt x 142.37543pt.
-<Images/MOT_w_scale_crop.png, id=204, 688.82344pt x 479.54156pt>
+Package pdftex.def Info: Images/beam.png  used on input line 207.
+(pdftex.def)             Requested size: 232.97914pt x 149.24727pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Images/MOT_w_scale_crop.png, id=212, 688.82344pt x 479.54156pt>
 File: Images/MOT_w_scale_crop.png Graphic file (type png)
 <use Images/MOT_w_scale_crop.png>
-Package pdftex.def Info: Images/MOT_w_scale_crop.png  used on input line 226.
+Package pdftex.def Info: Images/MOT_w_scale_crop.png  used on input line 216.
 (pdftex.def)             Requested size: 232.97914pt x 162.19318pt.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 232.
-
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 222.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-<Images/magnetic_dependence_w_linear.png, id=207, 578.16pt x 369.38pt>
-File: Images/magnetic_dependence_w_linear.png Graphic file (type png)
-<use Images/magnetic_dependence_w_linear.png>
-Package pdftex.def Info: Images/magnetic_dependence_w_linear.png  used on input
- line 248.
-(pdftex.def)             Requested size: 232.97914pt x 148.8428pt.
- [7pdfTeX warning (ext4): destination with the same identifier (name{equation.4
-.1}) has been already used, duplicate ignored
+) [7pdfTeX warning (ext4): destination with the same identifier (name{equation.
+4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.253 
-       <./Images/beam.png (PNG copy)> <./Images/MOT_w_scale_crop.png>]
-<Images/Waveplate1_w_fit.png, id=220, 578.16pt x 366.36874pt>
-File: Images/Waveplate1_w_fit.png Graphic file (type png)
-<use Images/Waveplate1_w_fit.png>
-Package pdftex.def Info: Images/Waveplate1_w_fit.png  used on input line 258.
-(pdftex.def)             Requested size: 232.97914pt x 147.62943pt.
+l.225 $$
+         <./Images/beam.png (PNG copy)> <./Images/MOT_w_scale_crop.png>]
+<Images/magnetic_dependence_w_linear.png, id=227, 578.16pt x 369.38pt>
+File: Images/magnetic_dependence_w_linear.png Graphic file (type png)
+<use Images/magnetic_dependence_w_linear.png>
+Package pdftex.def Info: Images/magnetic_dependence_w_linear.png  used on input
+ line 239.
+(pdftex.def)             Requested size: 232.97914pt x 148.8428pt.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.263 \begin{equation}
+l.247 \begin{equation}
                       
+<Images/Waveplate1_w_fit.png, id=230, 578.16pt x 369.38pt>
+File: Images/Waveplate1_w_fit.png Graphic file (type png)
+<use Images/Waveplate1_w_fit.png>
+Package pdftex.def Info: Images/Waveplate1_w_fit.png  used on input line 259.
+(pdftex.def)             Requested size: 232.97914pt x 148.8428pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--273
+Underfull \hbox (badness 10000) in paragraph at lines 255--264
 
  []
 
-<Images/Waveplate2.png, id=222, 578.16pt x 371.3875pt>
+[8 <./Images/magnetic_dependence_w_linear.png (PNG copy)> <./Images/Waveplate1_
+w_fit.png (PNG copy)>]
+<Images/Waveplate2.png, id=239, 578.16pt x 375.4025pt>
 File: Images/Waveplate2.png Graphic file (type png)
 <use Images/Waveplate2.png>
-Package pdftex.def Info: Images/Waveplate2.png  used on input line 277.
-(pdftex.def)             Requested size: 232.97914pt x 149.65173pt.
-[8 <./Images/magnetic_dependence_w_linear.png (PNG copy)> <./Images/Waveplate1_
-w_fit.png (PNG copy)> <./Images/Waveplate2.png (PNG copy)>]
-<Images/mot_buildup.png, id=231, 578.16pt x 360.34625pt>
+Package pdftex.def Info: Images/Waveplate2.png  used on input line 268.
+(pdftex.def)             Requested size: 232.97914pt x 151.26959pt.
+<Images/mot_buildup.png, id=242, 578.16pt x 360.34625pt>
 File: Images/mot_buildup.png Graphic file (type png)
 <use Images/mot_buildup.png>
-Package pdftex.def Info: Images/mot_buildup.png  used on input line 287.
+Package pdftex.def Info: Images/mot_buildup.png  used on input line 278.
 (pdftex.def)             Requested size: 232.97914pt x 145.20264pt.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.292 \begin{equation}
+l.283 \begin{equation}
                       \label{eq:load}
-Underfull \hbox (badness 2913) in paragraph at lines 338--361
-[]\OT1/cmr/m/sl/10 Physics Fun-da-men-tals: La-ser Di-ode Cha-rac-te-ris-
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9pdfTeX warning (ext4): destination with the same identifier (name{equation.4
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.296 \begin{equation}
+                       <./Images/Waveplate2.png (PNG copy)> <./Images/mot_build
+up.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier 
+(name{equation.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.300 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.304 \begin{equation}
+                      
+<Images/Detuning1.png, id=256, 578.16pt x 367.3725pt>
+File: Images/Detuning1.png Graphic file (type png)
+<use Images/Detuning1.png>
+Package pdftex.def Info: Images/Detuning1.png  used on input line 313.
+(pdftex.def)             Requested size: 232.97914pt x 148.03387pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.329 \begin{equation}
+                      \label{eqn:detuning}
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
+
+ []
+
+<Images/Detuning2.png, id=259, 578.16pt x 360.34625pt>
+File: Images/Detuning2.png Graphic file (type png)
+<use Images/Detuning2.png>
+Package pdftex.def Info: Images/Detuning2.png  used on input line 337.
+(pdftex.def)             Requested size: 232.97914pt x 145.20264pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{equation.4
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.342 \begin{alignat*}{3}
+                          <./Images/Detuning1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--361
-\OT1/cmr/m/sl/10 tics\OT1/cmr/m/n/10 , []$\OT1/cmtt/m/n/10 https : / / www . su
-khamburg . com / download /
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
-[9pdfTeX warning (ext4): destination with the same identifier (name{equation.4.
-3}) has been already used, duplicate ignored
+[11pdfTeX warning (ext4): destination with the same identifier (name{equation.4
+.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{equation.4.3}) has been already used, duplicate ignored
+l.380 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{equation.4.3}) has been already used, duplicate ignored
+l.380 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 \end{document}
-                     <./Images/mot_buildup.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+l.380 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.4.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.380 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.4.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.380 
+       <./Images/Detuning2.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
+ [12
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
  (a248.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
 Package rerunfilecheck Info: File `a248.out' has not changed.
-(rerunfilecheck)             Checksum: 8A1843C286B357D50D21216078BD71A0;1197.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
+(rerunfilecheck)             Checksum: 330B8CFF9744C9FA69F0899F341E9F24;1276.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
  ) 
 Here is how much of TeX's memory you used:
- 19303 strings out of 493339
- 371625 string characters out of 3139582
- 460046 words of memory out of 3000000
- 22597 multiletter control sequences out of 15000+200000
- 541103 words of font info for 61 fonts, out of 3000000 for 9000
+ 19332 strings out of 493339
+ 372002 string characters out of 3139582
+ 463164 words of memory out of 3000000
+ 22614 multiletter control sequences out of 15000+200000
+ 542106 words of font info for 65 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
  36i,19n,54p,10396b,890s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Benoît\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb>
-Output written on a248.pdf (9 pages, 1210006 bytes).
+2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on a248.pdf (12 pages, 1304964 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
