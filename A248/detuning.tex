@@ -52,9 +52,19 @@ By matching the difference of peaks 1, 2 and peaks 2, 3 with the frequencies of 
 C =(114.161 \pm 11.163)\, \frac{\text{MHz}}{\text{s}} \nonumber
 \end{equation}
 The optimal detuning is the difference between the MOT and the 3 $\rightarrow$ 4 peaks:
-\begin{equation}
-\Delta = C \cdot (0.100 \pm 0.008) \, \text{s} = (11.4161 \pm 1.4423) \, \text{MHz} \nonumber
+\begin{equation}\label{eqn:detuning}
+\Delta \nu = C \cdot (0.100 \pm 0.008) \, \text{s} = (11.4161 \pm 1.4423) \, \text{MHz}
 \end{equation}
+\subsection{Detuning of the pumping laser}
+%TODO finish detuning of pumping laser, find the single detuning
+%TODO calculate mot population, 
+We found the following peaks:
+\begin{alignat*}{3}
+&3 \rightarrow 2, \, 4&&: \hspace{12pt} &(4.708 \pm 0.024) \, \text{s}\\
+&3 \rightarrow 3, \, 4&&:  &(4.956 \pm 0.024) \, \text{s}\\
+&3 \rightarrow 4&&:		 &(5.556 \pm 0.016)\, \text{s}\\
+&MOT			&&:		&(5.456 \pm 0.008) \, \text{s}
+\end{alignat*}
 \begin{figure}
 \centering
 \insertFigure{Images/Detuning_cooling.png}
@@ -63,10 +73,28 @@ The optimal detuning is the difference between the MOT and the 3 $\rightarrow$ 4
 \end{figure}
 %TODO look at the matrices in nicola bardia
 %TODO detuning of repumping laser?
-
-
+\subsection{Population of MOT}
+%gamma, I_sat: from alkali line data
+\begin{equation}
+R = \frac{\Gamma}{2} \frac{\frac{I}{I_{\text{sat}}}}{1 + \frac{I}{I_{\text{sat}}} + \left( \frac{2 \Delta \nu}{\Gamma} \right)^2} = (18.4915 \pm 0.0434)\, \text{MHz,}
+\end{equation}
+%TODO Line breaks here to look nice
+where $\Gamma = 2 \pi \cdot (6.0666 \pm 0.0018)$~MHz is the natural linewidth of the transition, $I_{\text{sat}} = (1.66932 \pm 0.00035)\, \frac{\text{mW}}{\text{cm}^2}$, $I = \frac{2 P}{\pi w^2} = (73.9409 \ pm 3.00633) \frac{\text{mW}}{\text{cm}^2}$ the total cooling laser intensity ($P = 10.60 \pm 0.05$~mW is the total power), and $\Delta \nu$ is the detuning of the cooling laser (eqn. \ref{eqn:detuning}).\\
+The total intercepted power at a distance $\rho$ from the MOT by a lens with radius $r$, when the MOT has a radiation power $P_{\text{MOT}}$, is 
+\begin{equation}
+P = \frac{P_{\text{MOT}}}{4 \pi \rho^2} \cdot \pi r^2, \nonumber
+\end{equation}
+from which ($\rho = (10.5 \pm 1.0) \,$cm, $2r = (2.5\pm 0.1) \,$cm)
+\begin{equation}
+P_{\text{MOT}} = 47.4 \pm 9.8 \, \text{$\mu$W}
+\end{equation}
+The main error source is the distance measurement, but the lens diameter also has a significant uncertainty.
+%47.4163 pm 9.8
+%Intensity from power: https://www.rp-photonics.com/gaussian_beams.html
 \begin{thebibliography}{9}
 \bibitem{manual}
 Unspecified Author, \textsl{FP Experiment: Rubidium MOT} (University of Bonn, 2014).
+\bibitem{spectrum}
+D. A. Steck, \textsl{Rubidium 85 D Line Data}, \url{http://steck.us/alkalidata/rubidium85numbers.pdf}
 \end{thebibliography}
 \end{document}
