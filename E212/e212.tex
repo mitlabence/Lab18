@@ -53,7 +53,7 @@ with $N_0$ being the initial proton number, $n$ the number density, $\sigma$ the
 
 \section{Procedure} \label{sec:Proc}
 \subsection{Magnification}
-We determined the magnification of the photographs by comparing the known coordinates of marks on the two glass planes with the measured distances and assuming the beam passes through the middle of the bubble chamber.\cite{seul}
+We determined the magnification of the photographs by comparing the known coordinates of marks on the two glass planes with the measured distances and assuming the beam passes through the middle of the bubble chamber.\cite{seul} Table \ref{tab:magnification} contains the results.
 \begin{table}
 \centering
 \begin{tabular}{|c|c|c|}
@@ -65,14 +65,34 @@ $V_{\text{F}}$, $V_{\text{G}}$	& $0.85089 \pm 0.00302$	& $0.85386 \pm 0.00226$\\
 $V_{a}$	& $0.85238 \pm 	0.00264$ \\
 \cline{1-2}
 \end{tabular}
+\caption{Magnification}
+\label{tab:magnification}
 \end{table}
-To get the true depth at which the beams were passing through, we used the "stereo-shift" method in 23 different cases. Viewing the same event from two different cameras, we measured the displacement $s_G$ of the point G41 and $s_A$ of an easily identifiable event in the path of the beam, both with an error of $\pm 0.1$~cm. From the data gathered, we discovered the depth to be at
+\par To get the true depth at which the beams were passing through, we used the "stereo-shift" method in 23 different cases. Viewing the same event from two different cameras, we measured the displacement $s_G$ of the point G41 and $s_A$ of an easily identifiable event in the path of the beam, both with an error of $\pm 0.1$~cm. From the data gathered, we discovered the depth to be at
 \begin{equation}
-\frac{s_A}{s_B} = 0.570 \pm 0.011,
+\frac{s_A}{s_B} = 0.5700 \pm 0.0209,
 \end{equation}
 of the total depth, which is in disagreement with our assumption for the magnification before, namely that the beam passes through at $0.5$ depth. This is an important source of systematical error when measuring length on the photo and reconstructing real distances from it.
 \subsection{Scattering events}
-For our next task, we analyzed 50 records, identifying and counting elastic and inelastic scatterings between the marks F21 and F35. Of the 532 total incoming protons, we found 27 of them interacted with the hydrogen in the chamber via elastic, and 64 inelastic scattering.
+For our next task, we analyzed 50 records, identifying and counting elastic and inelastic scatterings between the marks F21 and F35. Of the 532 total incoming protons, we found 27 of them interacted with the hydrogen in the chamber via elastic, and 64 via inelastic scattering. The number density is
+%TODO where does rho = 2*0.063 g/cm^3 come from?
+\begin{equation}
+n = \frac{\rho}{M_{\text{atom}}} = \frac{2 \cdot 0.063 \frac{\text{g}}{\text{cm}^3} \cdot 6 \cdot 10^{23} \frac{1}{\text{mol}}}{2 \frac{\text{g}}{\text{mol}}} = 3.78 \cdot 10^{22} \, \frac{1}{\text{cm}^3} \nonumber
+\end{equation}
+The length between points F21 and F35 was measured to be $(174.5 \pm 0.1)\,$cm, which gives a real distance of $L=(148.739 \pm 0.085)\,$cm. The cross section can be calculated from
+\begin{equation}
+N(L) = N_0 e^{- \sigma n L} \hspace{6pt} \Longrightarrow \hspace{6pt} \sigma =  \frac{\text{ln} \frac{N_0}{N(L)} }{n L}  \nonumber
+\end{equation}
+For the total cross section, we have %binomial error: sigma = Sqrt(<x>(1-p)) where <x> is the expected value of x
+$N_{\text{t}}(L) = 91 \pm 9$ (binomial distribution error), while for the elastic cross section, $N_{\text{e}}(L) = 27 \pm 5$. These values yield
+\begin{alignat*}{3}
+&\sigma_{\text{total}} &&= (9.264 \pm 1.783) \, &\text{mb,}\\
+&\sigma_{\text{elastic}} &&= (33.367 \pm 3.504) \, &\text{mb.} 
+\end{alignat*}
+%38.9 +- 0.1 mbarn theoretical total CS,
+%7.9 +- 0.1 mbarn theoretical elastic CS
+%from  Gerhild Seul: Praktikumsversuche zur Einfuhrung in die Hochenergiephysik; Staatsexamens-arbeit, 1977
+
 \section{Conclusion}
 
 \begin{thebibliography}{9}
