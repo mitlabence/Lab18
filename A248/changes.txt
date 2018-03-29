@@ -1,0 +1,18 @@
+1. 
+2.1, Saturation Spectroscopy
+"The absorption spectrum measured in this manner wil largely look like a Doppler broadened spectrum, though with sharp peaks in the middle of Doppler broadened peaks as seen in Figure 1." 
+Figure 1 shows the transmission spectrum; corrected to 
+"The transmission spectrum measured in this manner wil largely look like a Doppler broadened spectrum, though with sharp peaks in the middle of Doppler broadened peaks as seen in Figure 1."
+
+
+2. 
+"Thus a peak in the Doppler broadened absorption spectrum is observed, called a Lamb dip." 
+Corrected in similar fashion to 
+"Thus a dip in the Doppler broadened absorption spectrum is observed, called a Lamb dip. In the corresponding transmission spectrum, it is a peak as mentioned earlier, sometimes referred to as Lamb peak. We consider the latter spectrum in the following, as it was what we observed."
+
+
+3.
+Figure 2: the I refers to current (probably), changed the caption slightly, from
+"An example of a dispersive signal used as the error signal for locking the cooling laser."
+to
+"An example of a dispersive signal showing the shape of the error signal used for locking the cooling laser."
