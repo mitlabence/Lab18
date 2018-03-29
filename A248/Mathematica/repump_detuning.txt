@@ -1,0 +1,49 @@
+Double Gaussian:
+A*e^(-B*(x-CC)^2) + DD*(-EE*(x-FF)^2) + GG
+
+	Estimate	Standard Error	t-Statistic	P-Value
+A	0.0178482	0.000051619	345.768	2.67190360829*10^-1615
+B	1.50471		0.0144793	103.922	8.75642115457*10^-752
+CC	2.25197		0.00325079	692.745	3.48624351783*10^-2140
+DD	0.014985	0.0000450774	332.427	8.56538288497*10^-1586
+EE	1.04384		0.0123615	84.4423	3.69915915201*10^-620
+FF	4.01358		0.00431047	931.124	1.038120285000*10^-2364
+GG	0.0113962	0.0000249813	456.187	6.11342741021*10^-1824
+
+two MOT luminosity peaks:
+left one (higher): 
+t1 = 2.25197 +- 0.00325079 s
+t1 = (2.25197 \pm 0.00325079)\, \text{s}
+
+right one:
+t2 = 4.01358 +- 0.00431047 s
+t2 = (4.01358 \pm 0.00431047)\, \text{s}
+
+This gives the difference
+
+dt = 1.76162 +- 0.00539887 s
+\Delta t = (1.76162 \pm 0.00539887)\, \text{s}
+
+Theoretical frequency difference, assuming the right peak is F=2 -> F'=3, the left one F=2 -> F' = 2,3 (cross-over peak):
+
+df = 31.7 MHz
+
+Then the scale in the oscilloscope signal is
+
+S = 17.9948 +- 0.0551492 s/MHz
+S = (17.9948 \pm 0.0551492)\, \frac{\text{s}}{\text{MHz}}
+
+The repumping laser peak:
+t3 = 3.706 +- 0.05 s
+t3 = (3.706 \pm 0.05)\, \text{s}
+
+The detuning relative to t2, the right peak:
+
+dt23 = 0.307583 +- 0.0501855 s
+\Delta t_{2,3} = (0.307583 \pm 0.0501855) \, \text{s}
+
+The detuning frequency then:
+
+dnu = 5.53491 +- 0.903238 MHz
+\Delta \nu = (5.53491 \pm 0.903238)\, \text{MHz}
+
