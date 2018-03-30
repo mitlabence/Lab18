@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  29 MAR 2018 23:24
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.26)  27 MAR 2018 19:27
->>>>>>> a7402e8ad3ec4462feb9fd11d74f8c773382361f
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  30 MAR 2018 19:11
 entering extended mode
 **./e212.tex
 (e212.tex
@@ -1049,20 +1045,20 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (e212.aux)
 \openout1 = `e212.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1099,7 +1095,7 @@ LaTeX Font Info:    ... okay on input line 23.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 24.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1108,9 +1104,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (e212.out) (e212.out)
 \@outlinefile=\write3
@@ -1226,33 +1222,33 @@ G,.JBIG2,.JB2,.eps]
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 23.
+. Activating mapping `default' on line 24.
 .................................................
 \c__siunitx_mathsf_int=\count300
 \c__siunitx_mathtt_int=\count301
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
 <SM.png, id=52, 893.58844pt x 659.46375pt>
 File: SM.png Graphic file (type png)
 <use SM.png>
-Package pdftex.def Info: SM.png  used on input line 45.
+Package pdftex.def Info: SM.png  used on input line 46.
 (pdftex.def)             Requested size: 232.97914pt x 171.92946pt.
 <mass.png, id=57, 460.72125pt x 217.5628pt>
 File: mass.png Graphic file (type png)
 <use mass.png>
-Package pdftex.def Info: mass.png  used on input line 52.
+Package pdftex.def Info: mass.png  used on input line 53.
 (pdftex.def)             Requested size: 232.97914pt x 110.01607pt.
 <energy.png, id=62, 487.06969pt x 150.5625pt>
 File: energy.png Graphic file (type png)
 <use energy.png>
-Package pdftex.def Info: energy.png  used on input line 59.
+Package pdftex.def Info: energy.png  used on input line 60.
 (pdftex.def)             Requested size: 232.97914pt x 72.01875pt.
 
 
@@ -1266,174 +1262,161 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  <./SM.png>]
 
-LaTeX Warning: Reference `sec:hadrons' on page 2 undefined on input line 63.
+LaTeX Warning: Reference `sec:hadrons' on page 2 undefined on input line 64.
 
 <colour.png, id=86, 546.04pt x 460.72125pt>
 File: colour.png Graphic file (type png)
 <use colour.png>
-Package pdftex.def Info: colour.png  used on input line 69.
+Package pdftex.def Info: colour.png  used on input line 70.
 (pdftex.def)             Requested size: 232.97914pt x 196.57373pt.
 
-<<<<<<< HEAD
 Underfull \vbox (badness 4673) has occurred while \output is active []
 
-<pseudo.png, id=91, 322.20375pt x 255.20343pt>
+<pseudo.png, id=90, 322.20375pt x 255.20343pt>
 File: pseudo.png Graphic file (type png)
 <use pseudo.png>
-Package pdftex.def Info: pseudo.png  used on input line 79.
+Package pdftex.def Info: pseudo.png  used on input line 80.
 (pdftex.def)             Requested size: 232.97914pt x 184.54071pt.
  [2 <./mass.png> <./energy.png> <./colour.png>]
-Overfull \hbox (12.275pt too wide) in paragraph at lines 112--121
-=======
-Overfull \hbox (12.275pt too wide) in paragraph at lines 59--68
->>>>>>> a7402e8ad3ec4462feb9fd11d74f8c773382361f
+Underfull \hbox (badness 1888) in paragraph at lines 99--102
+\OT1/cmr/m/n/10 pion, sho-wing that these par-ti-cu-lar de-cays lar-gely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+
+ []
+
+<oct.png, id=109, 529.98pt x 397.485pt>
+File: oct.png Graphic file (type png)
+<use oct.png>
+Package pdftex.def Info: oct.png  used on input line 106.
+(pdftex.def)             Requested size: 232.97914pt x 174.73624pt.
+<dec.png, id=112, 163.10115pt x 132.69246pt>
+File: dec.png Graphic file (type png)
+<use dec.png>
+Package pdftex.def Info: dec.png  used on input line 112.
+(pdftex.def)             Requested size: 232.97914pt x 189.55034pt.
+[3 <./pseudo.png> <./oct.png> <./dec.png>]
+Overfull \hbox (12.275pt too wide) in paragraph at lines 152--161
  [][] 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{equation.3.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.196 \bibitem{leo}
+                   ]
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 []\OT1/cmr/m/n/10 T. De-Mi-chele, \OT1/cmr/m/it/10 The Stan-dard Mo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 \OT1/cmr/m/it/10 del (of Par-ti-cle Phy-sics) Ex-plai-ned\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 \OT1/cmr/m/n/10 WWW Do-cu-ment, []$\OT1/cmtt/m/n/10 http : / / factmyth . com /
 
  []
 
 
-Overfull \hbox (23.9367pt too wide) in paragraph at lines 142--143
+Overfull \hbox (23.9367pt too wide) in paragraph at lines 202--203
 \OT1/cmtt/m/n/10 the-[]standard-[]model-[]of-[]particle-[]physics-[]explained/$
 []\OT1/cmr/m/n/10 . 
  []
 
-=======
-Underfull \hbox (badness 3009) in paragraph at lines 98--99
-[]\OT1/cmr/m/n/10 Unspecified au-thor, \OT1/cmr/m/sl/10 Ad-vanced Lab-o-ra-tory
- Course
- []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
->>>>>>> a7402e8ad3ec4462feb9fd11d74f8c773382361f
-
-Underfull \hbox (badness 1655) in paragraph at lines 144--145
+Underfull \hbox (badness 1655) in paragraph at lines 204--205
 []\OT1/cmr/m/n/10 H. Klus, \OT1/cmr/m/it/10 The Strong Nu-clear Force\OT1/cmr/m
 /n/10 , WWW Do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \OT1/cmr/m/n/10 cu-ment, []$\OT1/cmtt/m/n/10 http : / / www . thestargarden . c
 o . uk /
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 146.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 206.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 146.
- [3 <./pseudo.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 206.
 
-[4
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+[]\OT1/cmr/m/n/10 T. Do-rigo, \OT1/cmr/m/it/10 Omega b: the new ba-ryon
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.102 \bibitem{seul}
-                    ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
- [2
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+\OT1/cmr/m/it/10 nai-led by D0\OT1/cmr/m/n/10 , WWW Do-cu-ment, []$\OT1/cmtt/m/
+n/10 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+\OT1/cmtt/m/n/10 / / dorigo . wordpress . com / 2008 / 09 / 19 /
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+[5
 
 ]
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
  (e212.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `e212.out' has not changed.
-(rerunfilecheck)             Checksum: 2C43984065FE1084CA051CEDCEC39BD6;686.
+(rerunfilecheck)             Checksum: 9A4C9E3311415FE5181FDF08BFB0F66D;691.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 100 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 18692 strings out of 493339
- 359891 string characters out of 3139582
- 443971 words of memory out of 3000000
- 22039 multiletter control sequences out of 15000+200000
+ 18715 strings out of 493339
+ 360117 string characters out of 3139582
+ 445423 words of memory out of 3000000
+ 22052 multiletter control sequences out of 15000+200000
  540436 words of font info for 59 fonts, out of 3000000 for 9000
  1127 hyphenation exceptions out of 8191
- 33i,13n,36p,10396b,859s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb>
-Output written on e212.pdf (4 pages, 536691 bytes).
+ 33i,13n,36p,10396b,902s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb>
+Output written on e212.pdf (5 pages, 670001 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
- (./e212.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-Package rerunfilecheck Info: File `e212.out' has not changed.
-(rerunfilecheck)             Checksum: 237553F969A8971F7A8FC904060EC4BF;404.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
- ) 
-Here is how much of TeX's memory you used:
- 18336 strings out of 492990
- 353321 string characters out of 6135004
- 436080 words of memory out of 5000000
- 21727 multiletter control sequences out of 15000+600000
- 539782 words of font info for 57 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 33i,13n,34p,10394b,857s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on e212.pdf (2 pages, 164678 bytes).
-PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> a7402e8ad3ec4462feb9fd11d74f8c773382361f
+ 236 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
 
