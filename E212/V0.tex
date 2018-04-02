@@ -1,0 +1,132 @@
+\documentclass[twocolumn]{article}
+%TODO copy this into E212
+\usepackage{multirow}
+
+\usepackage{geometry}	%
+\usepackage{abstract} %to get email footnotes
+\geometry{margin=2cm}	%more visible figures (more place) 
+\usepackage[superscript,biblabel]{cite}%superscript citing
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}	%booklet
+\usepackage{hyperref}	%clickable citings, referencing URL via \url{}
+\usepackage{siunitx}	%for SI units; see ftp://ftp.dante.de/tex-archive/macros/latex/exptl/siunitx/siunitx.pdf
+\usepackage{graphicx} 	%includegraphics
+\usepackage{mhchem}		%writing chemical elements with mass numbers
+\usepackage[nottoc]{tocbibind}	%references
+\usepackage{indentfirst}%indenting first paragraphs
+
+%the command \insertFigure{file} inserts figure with width 0.9*(column width)
+\newcommand{\insertFigure}[1]{%
+   \includegraphics[width=0.95\linewidth]{#1}%
+}
+
+\title{\textbf{E212: Properties of Elementary Particles}}
+\author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
+\begin{document}
+\section{Theory}
+Useful formula:
+\begin{equation}\label{eqn:radius}
+p = 0.3 \cdot B \cdot V \cdot r
+\end{equation}
+\section{Results}
+\subsection{Neutrino momentum}
+The pion had an initial radius of $27.0 \pm 0.9$~cm, this gives a momentum of $120.1 \pm 3.8$~MeV/c. The track length was measured to be $79.3 \pm 0.9$~cm. The graph provided gave a corresponding $128.5 \pm 5.9$~MeV/c. Comparing the two values, we infer that the pion has indeed decayed while at rest in the laboratory frame.\\
+Next, we measured the length of the $\mu$ track, and found it to be $0.597 \pm 0.085$~cm. From the graph again, a momentum of $27.64 \pm 1.26$~MeV/c was read, in fairly good agreement with the theoretical $29.8$~MeV/c value.
+\subsection{V0}
+We found two V$_0$-canditate events. It is important to note that the angle between the two produced particles in each case was close to 0$^{\circ}$, so the possibility of these being pair productions is considerable.\\
+On image 2898 (???) we detected a primary vertex with 2 visible outgoing particles and one distant vertex of two particles with opposite charges (meaning it was a decay process) which is suspected to have come from the primary vertex. The distance of the two vertices was measured to be 137~cm. 
+\subsubsection{The secondary vertex}
+The neutral particle decayed into two particles with an angle of $(0\pm 0.1)^{\circ} $ between them, this made the association to the primary vertex an easy task. We measured the two radii to be $(56 \pm 2)$~cm for the negative, $750 \pm 50$ for the positive particle. From Eqn. \ref{eqn:radius}, in a coordinate system with the x-axis along the supposed V$_0$ path, we get 
+\begin{alignat*}{3}
+p_- &= &&((249.2 \pm 8.9)\, \text{MeV/c},\hspace{3pt} && (0.22 \pm 0.22)\, \text{MeV/c})\\
+p_+ &= &&((3337.1 \pm 222.7)\, \text{MeV/c},\hspace{3pt} && (-2.92 \pm 2.92)\, \text{MeV/c})
+\end{alignat*}
+The total V$_0$ momentum is then
+\begin{equation}
+ \vert p_0 \vert = (3586.21 \pm 222.89)\, \text{MeV/c}
+\end{equation}
+\subsubsection{A first look at the primary vertex}
+The primary vertex consists of the incoming proton, and two positively charged particles: particle 1 has a path with radius $(2000 \pm 200)$~cm and angle $(2 \pm 0.3)^{\circ}$, particle 2 $(1700 \pm 100)$~cm and $(4.5 \pm 0.3)^{\circ}$. Using the incoming beam as the direction of the x-axis and the positive quarter plane being the top right one, we can write down the momenta:
+\begin{alignat*}{3}
+p_1 &= &&((8893.4 \pm 889.8)\, \text{MeV/c},\hspace{3pt} && (310.6 \pm 56.0)\, \text{MeV/c})\\
+p_2 &= &&((7540.7 \pm 444.2)\, \text{MeV/c},\hspace{3pt} && (-593.5 \pm 52.7)\, \text{MeV/c})\\
+p_0 &= &&((3585.7 \pm 62.6)\, \text{MeV/c},\hspace{3pt} && (222.9 \pm 19.2)\, \text{MeV/c})\\[6pt]
+\Sigma p &= &&((20019.7 \pm 1019.1)\, \text{MeV/c},\hspace{3pt} && (-220.3 \pm 79.3)\, \text{MeV/c})
+\end{alignat*}
+The momenta of the three particles do not add up to the momentum of the incoming proton (23877 MeV/c in the x-direction), this offers two probable explanations to check first:
+\begin{itemize}
+\item Another neutral particle was created which was not detected, or
+\item One neutral particle was created that decayed into neutral particles very close to the primary vertex, and one of these decayed, showing up as a secondary vertex.
+\end{itemize}
+Of course other options are also possible, but we are hoping to find the event to be one of these two types.\\
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Name & Mass (MeV) & Distance (m) & Decays into & Fraction \\
+\hline
+$\Lambda$ 	& 1115.7 & 0.079 &p$\, \pi^-$ & 63.9\%\\
+\hline
+K$^0_{\text{S}}$	 & 497.6 & 0.027 & $\pi^+ \, \pi^-$ & 69\%\\
+\hline
+\multirow{2}{*}{K$^0_{\text{L}}$} &  \multirow{2}{*}{ 497.6}& \multirow{2}{*}{15.3}&$\pi^{\pm} \, e^{\mp} \nu_{\text{e}}$ & 40.6\%\\
+ & & &$\pi^{\pm} \mu ^{\mp} \nu_{\mu}$&27.0\%\\
+\hline
+$\Sigma^0$ & 1192.6 & $2.22 \cdot 10^{-11}$& $\Lambda \, \gamma$ & 100\%\\
+\hline
+$\Xi^0$ & 1314.9 & 0.087 & $\Lambda \, \pi^0$ & 99.5\%\\
+\hline
+\end{tabular}
+\caption{Possible neutral particles\cite{pdg}}
+\label{tab:neutral}
+\end{table}
+\begin{figure}
+\centering
+\insertFigure{Images/primary_1.png}
+\caption{First primary vertex examined.}
+\label{fig:primary1}
+\end{figure}
+\subsubsection{Determining V$_0$}
+Unfortunately, we cannot conclude much from the secondary vertex, situated $(138 \pm 1)$~cm away from the primary vertex, showing the path of two particles which leave the chamber. We assume that the V$_0$ particle decayed into two charged particles and nothing else, as the overall momentum already matches what we expect, thus a possible neutral particle would have a pro- or retrograde motion, and we regard this as unlikely. Looking at Table \ref{tab:neutral}, we see 3 possible scenarios:
+\begin{itemize}
+\item V$_0$ is a $\Lambda$ particle, another neutral particle left the primary vertex undetected; the secondary vertex contains a proton and a pion,
+\item instead of a $\Lambda$, a $K^0_{\text{S}}$ was created, which decayed into a pair of pions,
+\item A $\Sigma^0$ was created at the proton-proton collision, which then decayed within a few picometers, resulting in a $\Lambda$ baryon which decayed into a proton and a pion, and a photon.
+\end{itemize}
+We can calculate the mass of the V$_0$ for these scenarios:
+\begin{align*}
+m_{\text{V}_0} ( \text{p}, \, \pi^-) &= (1103.2 \pm 1028.3)\, \text{MeV}\\
+m_{\text{V}_0} ( \pi^+, \, \pi^- ) &= (532.8 \pm 2132.2)\, \text{MeV}
+\end{align*}
+The uncertainty is tremendous in both cases. We decided for the proton-pion case after comparing the relative errors. This means the V$_0$ was a $\Lambda$ baryon.
+\subsubsection{Primary vertex revisited}
+The incident proton 
+\begin{thebibliography}{9}
+\bibitem{booklet}
+Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
+\bibitem{leo}
+W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Springer-Verlag, 1987), p. 305.
+%William R. Leo
+\bibitem{seul}
+G. Seul, \textsl{Properties of elementary particles} (University of Bonn, 2009).
+\bibitem{pdg}
+Particle Data Group.
+\iffalse
+\bibitem{book}
+K. Siegbahn, \textsl{Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2} (North Holland Publishing Company, Amsterdam, 1965).
+ \bibitem{link}
+ W. U. Boeglin, \textit{Scintillation Detectors}, WWW Document, \url{http://wanda.fiu.edu/teaching/courses/Modern_lab_manual/scintillator.html}.
+\bibitem{pdf_on_website}
+Unspecified author, \textsl{Gamma Ray Spectroscopy} (University of Florida, 2013), \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}.
+\bibitem{cfd}
+E. Ermis and C. Celiktas, International Journal Of Instrumentation Science 1, (2013), pp.54-62.
+%alternative url: https://en.wikipedia.org/wiki/Constant_fraction_discriminator
+\bibitem{signal}
+M. Nakhostin, \textsl{Signal Processing for Radiation Detectors} (John Wiley $\&$ Sons, 2018), p. 298\footnote{Relevant pages (chapter 6) available for preview under\\ \url{https://books.google.de/books?id=Lrg4DwAAQBAJ}}.
+%Mohammad Nakhostin
+\bibitem{meliss}
+A. C. Melissinos, J. Napolitano, \textsl{Experiments in Modern Physics, 2\textsuperscript{nd} edition} (Academic Press, San Diego, 2003), pp 419-21.
+\fi
+\end{thebibliography}
+\end{document}

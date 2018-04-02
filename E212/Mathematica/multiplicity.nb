@@ -1,0 +1,225 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7402,        217]
+NotebookOptionsPosition[      7053,        200]
+NotebookOutlinePosition[      7391,        215]
+CellTagsIndexPosition[      7348,        212]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"N0", " ", "=", " ", "532"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"elScat", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"27", ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"27", "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"27", "/", "N0"}]}], ")"}]}], "]"}], "]"}], ",", " ", 
+     "\"\<elastic\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"inelScat", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"64", ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"64", "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"64", "/", "N0"}]}], ")"}]}], "]"}], "]"}], ",", " ", 
+     "\"\<inelastic\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"totalScat", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"91", ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"91", "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"91", "/", "N0"}]}], ")"}]}], "]"}], "]"}], ",", " ", 
+     "\"\<total\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"inelasticMultiplicity", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "11"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "35"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "13"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "5"}], "}"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"totalInelastic", " ", "=", " ", 
+   RowBox[{"Total", "[", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"#", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "&"}], ",", "inelasticMultiplicity"}],
+      "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"totalMultiplicity", " ", "=", 
+   RowBox[{"Total", "[", " ", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "*", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], "&"}], ",", 
+      "inelasticMultiplicity"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"avgChgMultiplicity", " ", "=", " ", 
+   RowBox[{"N", "[", 
+    RowBox[{"totalMultiplicity", "/", "totalInelastic"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"avgPiZero", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"avgChgMultiplicity", "/", "4"}], ",", " ", 
+    "\"\<one way to calculate pion multiplicity\>\""}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"L", "=", 
+   RowBox[{"{", 
+    RowBox[{"148.739", ",", "0.085"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n\[Pi]", "[", 
+    RowBox[{"pairs_", ",", " ", "l_", ",", " ", "x0_", ",", " ", "nInel_"}], 
+    "]"}], " ", ":=", "  ", 
+   RowBox[{"pairs", "*", 
+    RowBox[{
+     RowBox[{"l", "/", 
+      RowBox[{"(", 
+       RowBox[{"2", "*", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"x0", "*", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Exp", "[", 
+              RowBox[{
+               RowBox[{"-", "l"}], "/", "x0"}], "]"}], " ", "-", " ", "1"}], 
+            ")"}]}], "+", "l"}], ")"}]}], ")"}]}], "/", "nInel"}]}]}], " ", 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"n\[Pi]0", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"n\[Pi]", "[", 
+      RowBox[{"4", ",", " ", 
+       RowBox[{"L", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", " ", "1146", ",", " ", 
+       "totalInelastic"}], "]"}], ",", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"n\[Pi]", "[", 
+           RowBox[{
+           "pairs", ",", " ", "l", ",", " ", "x0", ",", " ", "nInel"}], "]"}],
+           ",", 
+          RowBox[{"{", 
+           RowBox[{"l", ",", "1"}], "}"}]}], "]"}], "^", "2"}], "*", 
+       RowBox[{
+        RowBox[{"L", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "^", "2"}]}], "]"}], ",", " ", 
+     "\"\<pion multiplicity with error (error does not include probably large \
+statistical uncertainty in pair production events)\>\""}], "}"}], "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"l", "\[Rule]", 
+      RowBox[{"L", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ",", " ", 
+     RowBox[{"pairs", "\[Rule]", "4"}], ",", " ", 
+     RowBox[{"x0", "\[Rule]", "1146"}], ",", " ", 
+     RowBox[{"nInel", "\[Rule]", "totalInelastic"}]}], "}"}]}]}]}], "Input",
+ CellChangeTimes->{{3.731383869257257*^9, 3.731383878553273*^9}, {
+   3.73138399276116*^9, 3.731384005326068*^9}, {3.7313860688408203`*^9, 
+   3.731386102933671*^9}, {3.731386153907*^9, 3.7313861909023647`*^9}, {
+   3.7313862226703663`*^9, 3.731386229264564*^9}, {3.7313862607975607`*^9, 
+   3.73138631240101*^9}, {3.731387745443392*^9, 3.731387773724574*^9}, {
+   3.731387831518837*^9, 3.731387832706171*^9}, {3.731387919955304*^9, 
+   3.731387931840105*^9}, {3.7313879869210052`*^9, 3.731387999222869*^9}, {
+   3.7313880895929537`*^9, 3.731388105889863*^9}, {3.731388137805139*^9, 
+   3.731388139663043*^9}, {3.731388238877462*^9, 3.7313883466599894`*^9}, {
+   3.73138847766682*^9, 3.731388630377411*^9}, {3.7313886789881496`*^9, 
+   3.7313886996226377`*^9}, {3.731388925391226*^9, 3.73138893535096*^9}, {
+   3.7313889875571213`*^9, 3.731389013289422*^9}, {3.731389098114088*^9, 
+   3.7313892497523737`*^9}, {3.7313896039051723`*^9, 3.73138960408118*^9}, {
+   3.731390275751679*^9, 3.731390362693843*^9}, 3.731391815738763*^9, {
+   3.73139226722393*^9, 3.731392275167246*^9}, {3.731392617127821*^9, 
+   3.731392653070217*^9}, {3.731392914787251*^9, 3.731392999329571*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+   "1.09375`", ",", "\<\"one way to calculate pion multiplicity\"\>"}], "}"}],
+   TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.7313926533338003`*^9, 3.731392951252677*^9, {3.731392995071845*^9, 
+   3.7313930009269333`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+   "0.5026049078776995`", ",", "0.00027506425290564694`", 
+    ",", "\<\"pion multiplicity with error (error does not include probably \
+large statistical uncertainty in pair production events)\"\>"}], "}"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.7313926533338003`*^9, 3.731392951252677*^9, {3.731392995071845*^9, 
+   3.731393000928515*^9}}]
+}, Open  ]]
+},
+WindowSize->{662, 713},
+WindowMargins->{{Automatic, -425}, {-137, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5757, 153, 483, "Input"],
+Cell[6340, 177, 283, 8, 31, "Output"],
+Cell[6626, 187, 411, 10, 72, "Output"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,8 +1,8 @@
 1. 
 2.1, Saturation Spectroscopy
-"The absorption spectrum measured in this manner wil largely look like a Doppler broadened spectrum, though with sharp peaks in the middle of Doppler broadened peaks as seen in Figure 1." 
+"The absorption spectrum measured in this manner will largely look like a Doppler broadened spectrum, though with sharp peaks in the middle of Doppler broadened peaks as seen in Figure 1." 
 Figure 1 shows the transmission spectrum; corrected to 
-"The transmission spectrum measured in this manner wil largely look like a Doppler broadened spectrum, though with sharp peaks in the middle of Doppler broadened peaks as seen in Figure 1."
+"The transmission spectrum measured in this manner will largely look like a Doppler broadened spectrum, though with sharp peaks in the middle of Doppler broadened peaks as seen in Figure 1."
 
 
 2. 
