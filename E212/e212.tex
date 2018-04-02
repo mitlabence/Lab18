@@ -20,6 +20,7 @@
 
 \title{\textbf{E212: Properties of Elementary Particles}}
 \author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
+
 \begin{document}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
 \twocolumn[ %makes a one column abstract
@@ -36,25 +37,181 @@ Abstract goes here
 Introduction text
 
 \section{Theory}
-\iffalse
+Our current best understanding of particle physics is the Standard Model of particle physics (SM). This model describes our discoveries of fundamental particles and their interactions with each other, mediated by fundamental forces. It furthermore describes the way these particles and forces combine to form atoms, from which many of the physical phenomena we encounter in everyday life can be explained. The main shortcoming of the SM however, is its inability to be united with gravity. That said, due to the relative weakness of gravity in comparison to the other fundamental forces, it rarely has an effect in particle physics and thus is mainly ignored.
+
+\subsection{The Standard Model}
+Figure~\ref{fig:part} give a summary of the particles in the SM with their most basic properties. Furthermore, there also exists anti-particles of many of these particles. An anti-particle, such as a positron, is identical to its particle (electron) apart from having the opposite electric charge. A neutral particle is often its own anti-particle such as the Z~boson, though neutrinos have anti-particles which are merely distinct by having opposing spin projections. All matter particles and the W~bosons have anti-particles while the rest are their own anti-particles.
 \begin{figure}[!h]
-\centering
-%\insertFigure{}
-\caption{A sample figure}
-\label{fig:example}
+	\centering
+	\insertFigure{SM.png}
+	\caption{Illustration of the elementary particles in the SM. Quarks are in purple and Leptons in green, arranged into generation columns from left to right. The gauge bosons are in red, with the scalar Higgs boson in yellow.~\cite{part}}
+	\label{fig:part}
 \end{figure}
-\fi
-The number of protons passing through the bubble chamber (in $x$ direction) obeys
-\begin{equation}
-N(x) = N_0 e^{-n \sigma x}
-\end{equation}
-with $N_0$ being the initial proton number, $n$ the number density, $\sigma$ the (total) cross-section.
-\section{Experimental setup} \label{sec:Exp}
+Quarks and leptons make up all the matter particles that have been discovered. These are given in three generations of particles, shown with the columns from left to right in the figure. Matter that is encountered everyday is largely structured from the first generation, namely the electron, electron neutrino, up quark, and down quark. For example, atoms are made up of electrons, protons, and neutrons, the latter two being composed of up and down quarks. The second and third generations are composed of particles which are otherwise exactly identical to their first generation counterpart apart from being heavier, the third generation being the heaviest of them all. This is only known to be true for the charged leptons (electron, muon, and tau) and quarks however. Though the neutrinos are known not to be massless, they have very small masses which have not been accurately measured. It is unknown which is the most massive and which the least.~\cite{Thompson} Figure~\ref{fig:mass} illustrates the relative masses of the matter particles.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{mass.png}
+	\caption{Illustration of the relative masses of the matter particles in their respective generations. The neutrinos are left blank to show that their masses are extremely small in comparison the other particles.~\cite{Thompson}}
+	\label{fig:mass}
+\end{figure}
+The main reason why the second and third generation of particles are largely not existent in everyday phenomena is due to the requirement that higher energies are needed to produce these heavier particles. Furthermore, these heavier particles have shorter lifetimes due to their favourable decay into lighter particles, such as those in the first generation, due to the fundamental tendency of physical systems to higher kinetic energy states. Particle physics experiments need to be performed at increasingly higher energies in order to produce more massive particles that we do not readily observe. This is illustrated in Figure~\ref{fig:energy}. It should be noted that though neutrinos are not seen, trillions of solar neutrinos pass through your body each second, oscillating between their three different flavours.~\cite{Thompson} They are extremely difficult to detect due to the fact that they have a small mass and no electric charge. \\
+\begin{figure}[!h]
+	\centering
+	\insertFigure{energy.png}
+	\caption{Illustration of the energies required to probe different structures and particles.~\cite{Thompson}}
+	\label{fig:energy}
+\end{figure}
+\par Figure~\ref{fig:part} also shows the fundamental forces in the SM which are all mediated via the exchange of a gauge boson. The most familiar of these is the photon $\gamma$ which mediates the electromagnetic force, responsible for electricity, magnetism, and light. The photon interacts with all particles that have an electric charge and thus with all matter particles in the SM apart from the neutrinos. It also interacts with the W~bosons as they are electrically charged. The gluon gauge bosons mediate the strong force, thus called as it is the strongest force and binds nuclei and hadrons together, explained in Section~\ref{sec:hadrons}. The gluons interacts only with particles which have a so-called ``colour" charge, another property of particles similar to electric charge. Only quarks have a colour charge and the eight differently coloured gluons. Next, the oppositely charged W$^{\pm}$ and Z~bosons mediate the weak interaction, the weakest force apart from gravity. This force is responsible for radioactive decay and interacts with all matter particles in the SM. Finally, the Higgs boson is the most recently discovered particle which gives mass to all the matter particles in the SM by interacting with them.
+
+\subsection{Hadrons and the Strong Force}
+Though quarks are elementary in the SM, they cannot be observed as free particles. This is because quantum chromodynamics (QCD) of the SM, the theory of the strong force, states that colour is confined such that systems with a colour charge cannot propagate freely, termed \textit{colour confinement}. Instead, only colourless composite particles can be observed. As a result, quarks form composite particles called hadrons which are bound by gluons. Hadrons generally form baryons, composed of three quarks, and mesons, composed of one quark and one anti-quark. The reason for the these two types is a result of there being three colours, red, blue, and green, for the quarks, and three anti-colours, anti-red, anti-blue, and anti-green, for the anti-quarks. Colourlessness is achieved by combining all three colours (or anti-colours) in a baryon, or a colour and its anti-colour in a meson, as shown in Figure~\ref{fig:colour}. Protons and neutrons are examples of baryons, composed of two up quarks and one down quark (written as uud), and two down quarks and one up quark (udd), respectively.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{colour.png}
+	\caption{Colour confinement resulting in baryons and mesons, given with some examples.~\cite{colour}}
+	\label{fig:colour}
+\end{figure}
+Furthermore, exotic hadrons, which achieve colour confinement with more quarks, have been hypothesised and observed, though without explicit confirmation that the observations were indeed bound exotic hadrons. Examples include the tetraquark with two quarks and two respective anti-quarks, and the pentaquark with four quarks and an anti-quark. Exotic hadrons are rare however, due to the tendency of quarks to form and decay quickly into mesons and baryons.
+
+\subsection{Multiplets}
+The quark model of QCD just explained was originally proposed from a group theoretic perspective by Murray Gell-Mann among others in the 1960s. This method has proven to be extremely accurate at predicting particles and their properties, explaining all the hadrons that have been observed. It predicts all the possibilities of obtaining colourless composite particles from the quarks in the SM, as well as the colours and the anti-colours. Hadrons are often grouped into so called ``multiplets" in this framework by their composite particles. Figure~\ref{fig:pseudo} shows one such multiplet of mesons formed from up, down, and strange quarks, as well as their anti-quarks. 
+\begin{figure}[!h]
+	\centering
+	\insertFigure{pseudo.png}
+	\caption{The light pseudoscalar meson nonet, plotted against strangeness and electric charge axes.~\cite{pseudo} It is called the light nonet as it is composed of the lightest quarks, resulting in the lightest meson multiplet.}
+	\label{fig:pseudo}
+\end{figure}
+Noteworthy is the strangeness quantum number, shown in the figure, defined as $S = n_{\bar{s}} - n_s$, where $n_{\bar{s}}$ and $n_s$ are the number of strange anti-quarks and quarks in the hadron, respectively~\cite{Thompson}. Strangeness has been observed to be conserved in strong and electromagnetic interactions, but not in weak interactions. The pions are of particular importance of this experiment. The $\pi^{\pm}$ and $\pi^0$ have masses~\cite{pdg}
+\begin{align*} %\label{eq:mass}
+m_{\pi^{\pm}} &= (139.57018 \pm 0.00035)~\text{MeV}, \\
+m_{\pi^0} &= (134.9766 \pm 0.0006)~\text{MeV},
+\end{align*}
+and mean lifetimes
+\begin{align*} %\label{eq:liftime}
+\tau_{\pi^{\pm}} &= (2.6033 \pm 0.0005)\times 10^{-8}~\text{s}, \\
+\tau_{\pi^0} &= (8.52 \pm 0.18)\times 10^{-8}~\text{s}.
+\end{align*}
+%TODO Are the lifetimes necessary?! And that of the Delta plus, later on?
+Their main decay modes are 
+\begin{align*} %\label{eq:decay}
+\pi^+ &\to \mu^+ \nu_\mu \to (e^+ \nu_e \overline{\nu}_{\mu}) \, \nu_\mu, \\
+\pi^- &\to \mu^- \overline{\nu}_\mu \to (e^- \nu_\mu \overline{\nu}_e) \, \overline{\nu}_\mu , \\
+\pi^0 &\to 2\gamma,
+\end{align*}
+where the resulting decays of the muons are given in brackets. The branching ratios of these pion decays are 99.99\% for the charged pions and 98.82\% for the neutral pion, showing that these particular decays largely dominate pion decays.~\cite{pdg} In this experiment however, the $\pi^-$ has a much higher probability of participating in a scattering process $\pi^- +p\to \pi^0+n$ due to the proton-rich liquid hydrogen and thus any so-called $\pi \mu e$ decay observed will most likely be a $\pi^+$ decay. It should be noted that there exists other meson multiplets apart from the one shown in Figure~\ref{fig:pseudo}, composed of other quarks.\\
+
+\par Figures~\ref{fig:oct} and ~\ref{fig:dec} show two examples of baryon multiplets that are relevant in this paper.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{oct.png}
+	\caption{The light baryon octet.~\cite{oct} Note the similarity to the mesons nonet, yet composed of one less particle and having no positive strangeness particles as none are composed of anti-strange quarks.}
+	\label{fig:oct}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\insertFigure{dec.png}
+	\caption{The light baryon decuplet.~\cite{dec}}
+	\label{fig:dec}
+\end{figure}
+Both the octet and decuplet are composed of baryons containing up, down, and strange quarks. It is interesting to note that many of these particles are composed of the same quarks, such as the proton and $\Delta^+$, both composed of two up quarks and a down quarks. The difference is the linear combination of these quarks, accounting for the different ways that the quarks can be ``arranged" in the baryon. As such, the quark wavefunction of the two particles are~\cite{Thompson}
+\begin{align*}
+p &= \frac {1}{\sqrt{6}} (2uud - udu - duu) \\
+\Delta^+ &= \frac {1}{\sqrt{3}} (uud+udu+duu) 
+\end{align*}
+Thus, while the proton has a mass $m_p = (938.2720813 \pm 0.0000058)~\text{MeV}$ and spin of $J_p=1/2$, the $\Delta$ baryons have a mass of $m_\Delta = (1232 \pm 2)~\text{MeV}$ and spin of $J_\Delta=3/2$~\cite{pdg}. As a result, the $\Delta^+$ baryon is called a higher-mass excitation of the proton. Though the proton is stable, being the only stable baryon, $\Delta^+$ has a mean lifetime of $\tau_{\Delta^+}=(5.63 \pm 0.14) \times 10^{-24}$~s with primary decays $\Delta^+ \to \pi^0+p$ or $\pi^+ + n$, though the branching ratios are not yet known~\cite{pdg}. The difference in linear combination of composing quarks is also the reason why the three mesons grouped in Figure~\ref{fig:pseudo} with $S = Q = 0$, the neutral pion, and the $\eta$ and $\eta'$ prime mesons, are all different particles yet made up of the same quarks.
+
+\subsection{Kinematics}
+In order to discover and identify new particles, particle physics experiments primarily analyse the kinematics of particle interactions. This allows for a calculation of the particle's mass, while the other particles involved in the interaction mean that the properties of the particle, such as electric charge and spin, can be determined. The universally fulfilled conservations of energy and momentum in a closed system are largely employed to calculate the mass of unknown particles. To do so, the masses and velocities of the other particles involved in the interaction need to be measured which is easily achieved by analysing bubble chamber photographs.
+
+%TODO Write this somewhere else, if necessary, and shorten as well.
+%TODO Also talk about other equations used? As in Leo's (cross section) (written later)
+
+\subsection{The Bubble Chamber}
+A bubble chamber is used in certain particle physics experiments to photograph collisions such that the involved particles can be tracked. From this, the particles can be identified and their energies and momenta can be calculated. New particles can thus be discovered who don't match the description of known particles. A bubble chamber is simply a large container filled with transparent liquid, in this experiment liquid nitrogen, held at a temperature just below boiling point.~\cite{seul} A piston then causes a fast expansion of the liquid, causing the liquid's boiling point to suddenly drop below then temperature of the liquid. This causes the liquid to be in a metastable state, whereby it does not boil unless stimulated by disturbances. Such disturbances can be imperfections of the container's surface or the ionisation of atoms in the liquid. This is exploited by bubble chamber experiments as charged particles travelling through the liquid will cause the ionisation of surrounding atoms as a result of Bremsstrahlung, thereby leaving ionisation tracks formed of microscopic bubbles of vapour. These are then allowed to grow in size to $0.01-0.1$~mm until they can be visibly photographed, such that the tracks of the charged particles can be seen. A uniform magnetic field is also passed through the liquid such that the charges and velocities of the particles can be determined from the directions of deflection and radii of track arcs. To reconstruct a 3D visualisation of the interactions, multiple cameras arranged at different angles are used. In this experiment, only track which lie approximately in the same plane (with an inclination angle of $<$18\%) are analysed, meaning that spatial reconstruction will not be necessary. Photographs from different angles will be used to clarify interactions however. Figure~\ref{fig:bubble} provides a diagram of the process. 
+\begin{figure}[!h]
+	\centering
+	\insertFigure{bubble.png}
+	\caption{Cross section of a bubble chamber. The particle beam travels normal to the paper.~\cite{perkins}}
+	\label{fig:bubble}
+\end{figure}
 
 \section{Procedure} \label{sec:Proc}
+This experiment only analyses photographs taken at the proton-synchrotron at CERN in 1971. No bubble chamber experiments were conducted. Several hundred photographs from three different cameras are projected onto a measuring table and can be superimposed and moved. Measurements can be made on the table to determine the properties of the observed particles. This section summarises the method used.
+\subsection{Magnification} \label{sec:mag}
+Figure~\ref{fig:track} shows an example of a bubble chamber photograph.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{track.png}
+	\caption{Example of a $\Sigma^- \to \pi^- + \Lambda$ decay in a bubble chamber, whereby the particle tracks have been obtained from a photograph. The solid lines depict the ionisation tracks of charged particles while the dotted lines are extrapolated tracks of neutral particles, which do no produce ionisation tracks nor are they deflected by the magnetic field.~\cite{perkins}}
+	\label{fig:track}
+\end{figure}
+To be able to start analysis on such photographs, their magnifications need to be determined so that calculations of track radii can be accurately calculated. The magnification of the photographs are affected by the distance away the tracks are from the camera, as well as the depths and refractive indices of the liquid hydrogen and container glass that the light must pass through before reaching the camera. The magnification scale is determined using markers on the front and back windows containers which have known separation lengths. As a result, by measuring their separations on a photography, the magnification of the photograph $V_A$ can be determined using~\cite{seul}
+\begin{equation} \label{eq:mag}
+V_A = \frac {V_F+V_G} {2},
+\end{equation}
+Here, $V_F$ and $V_G$ are the magnifications of the front and back markers respectively, where $V_F = \Delta f/ \Delta f'$ (and similarly for $V_G$) is the ratio between the marker separations on the photograph and on the glass pane, respectively. In the derivation of Equation~\ref{eq:mag}, it was assumed that the particle beams travelled in the middle of the chamber, halfway between the front and back glass, as the true depth is unknown. That said, as the particle beam is always approximately incident in the middle of the bubble chamber and the always take pictures with the same zoom, the same magnification can be used for all photographs. The inclination angle range of 18\% introduces error into this method however, as the calculated magnification is indeed not completely accurate for all particle tracks.
+
+\subsection{Charge Sign}
+Once the magnification of the photographs is known, the direction of the magnetic field must be determined so that the charge sign of particles can be determined. This is achieved simply by observing the deflection of \textit{$\delta$-electrons}, as seen in Figure~\ref{fig:delta}. 
+\begin{figure}[!h]
+	\centering
+	\insertFigure{delta.png}
+	\caption{Example of a $\delta$-electron spiral, showing the deflection of negatively charged particles. The straight lines are ionisation tracks while the crosses near the bottom are markers on the glass.~\cite{delta}}
+	\label{fig:delta}
+\end{figure}
+These are electrons which are ejected from their atoms by closely passing charged particles. These leave behind small spirals originating from ionisation tracks. The direction of the spirals then indicate the direction that negatively charged particles deflect. These are spirals instead of circles as their constant bremsstrahlung emissions causes them to lose energy and thus velocity. This causes them to travel in increasingly smaller circles as a result of the Lorentz force in the same magnetic field strength. 
+
+\subsection{Momentum Calculations}
+The momenta can now be calculated by determining the radii $r'$ of the tracks in the photographs, and using the magnification $V$ and the magnetic field strength $B$. The radii $r'$ can be determined using stencils which display arcs of different radii to be matched with the arc in question. The momentum of a particle is then
+\begin{equation} \label{eq:mom}
+p = 0.3\cdot B\cdot V \cdot r',
+\end{equation}
+derived by equating the centrifugal force on the particle apparent from the curvature of the track and the Lorentz force from the magnetic field which causes this curvature.~\cite{seul} Due to the decreasing radii of the track spirals, the first section of the spiral is to be used with the stencils to estimate the initial momentum of the particle after a vertex. That said, a large enough section of the spiral should be used to more accurately determine the radii and thus momentum. Uncertainty was estimated by the confidence in accuracy of a calculated radius. This method will be used to calculate the momentum of observed particles such that the mass of 
+%TODO Finish this sentence properly
+%TODO talk about Sagitta method? Magnetic field strength?
+
+\subsection{Stereo-shift Method}
+The \textit{stereo-shift method} uses two cameras to determine the depth of ionisation tracks in the bubble chamber. This will be herein used to determine the accuracy of the assumption that the particle beams travelled through the centre of the chamber, used in Section~\ref{sec:mag}. In the method, photographs from two cameras of the same event are superimposed such that the same marker on the front glass are on top of one another. The distances between a marker on the back glass and between a point on or close to an ionisation track in both photographs are then measured. This then allows for a calculation of the depth of said track $a_z$, using the following equation:~\cite{seul}
+\begin{equation}
+a_z = \frac{g_z s_A}{s_G},
+\end{equation}
+where $g_z$ is the depth of the chamber, and $s_A$ and $s_G$ are the measured distances between the points on the ionisation track and the back glass markers, respectively, as shown in Figure~\ref{fig:stereo}.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{stereo.png}
+	\caption{Demonstration of the stereo-shift method, with the two photographs used from different cameras shown on the left and the superimposed image on the right, with the distances shown.~\cite{seul}}
+	\label{fig:stereo}
+\end{figure}
+The branching of a $\delta$-electron spiral from a track as seen in Figure~\ref{fig:delta} was often used as a point $A$ in a photograph to determine the depth as they are easy to spot and are located on an ionisation track.
+
+\subsection{Proton-proton Cross-section}
+The cross-section of a particle interaction is the area perpendicular their relative motion in which the two particles must cross in order to scatter.~\cite{Thompson} The probability that two particles will scatter is proportional to their cross-section and thus scattering probabilities are often quantified as such. The proton-proton cross-section can be calculated by observing the difference between the number of incident protons into the chamber and those leaving, averaging over a large number of beam runs. The average difference then equals the average number of proton-proton collisions, from which the cross-section$\sigma$ can be calculated. The number of protons passing through the bubble chamber (in the $x$-direction) obeys~\cite{seul}
+\begin{equation} \label{eq:cross}
+N(x) = N_0 e^{-n \sigma x}
+\end{equation}
+with $N_0$ being the number of protons incident to the chamber and $n$ is the number density of scatterings per unit volume, given by
+\begin{equation*}
+n = \frac {\rho N_A} {A} = 0.379 \times 10^{23} ~\text{cm}^{-3},
+\end{equation*}
+where $\rho=0.126 ~\text{g cm}^{-3}$ is the density of liquid nitrogen, $N_A$ is Avogadro's constant, and $A=2 ~\text{g mol}^{-1}$ is the composition of the liquid nitrogen.
+%TODO The last equation and values are taken from Leo's paper, CHECK!!! I'm not sure this is correct
+
+\subsection{$\pi^0$ Multiplicity}
+One can calculate the average number of neutral pions produced in proton-proton collisions by directly observing how many were produced in the total number of proton-proton collisions considered. Since the neutral $\pi^0$ is invisible in the bubble chamber photographs however, the number of $\pi^0$ produced must instead be calculated by observing the number of $\gamma-\gamma$ productions from the $\pi^0 \to \gamma \gamma$ decay. The photons are again invisible in the chamber however, and thus their multiplicity must be determined from the number of $\gamma \to e^- + e^+$ pair productions observed. The probability that a photon decays to an electron-positron pair at a distance $d$ away from its production is~\cite{seul}
+\begin{equation*}
+P(d) = \frac {1} {\lambda_{abs}} e^{-d/\lambda_{abs}},
+\end{equation*}
+where $\lambda_{abs} = 1146$~cm is the absorption length of a photon in liquid hydrogen. That said, the photographs only determine whether a pair production has been produced in the bubble chamber only, not accounting for decays after leaving the chamber. The probability that a photon decays within the chamber of length $L_c=2$~m is then
+\begin{equation} \label{eq:mult}
+P_c = 1-\lambda_{abs}/L_c +  (\lambda_{abs}/L_c) e^{-L_c/\lambda_{abs}} = 0.08240,
+\end{equation}
+which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} By counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. The average neutral pion multiplicity should then be a quarter of the charged multiplicity as \textbf{?????? Why???}
+%TODO Why is this the case? Is this correct? Again taken from Leo
+
+\section{Results} \label{sec:res}
 \subsection{Magnification}
 We determined the magnification of the photographs by comparing the known coordinates of marks on the two glass planes with the measured distances and assuming the beam passes through the middle of the bubble chamber.\cite{seul} Table \ref{tab:magnification} contains the results.
-\begin{table}
+\begin{table} [!h]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
@@ -68,9 +225,9 @@ $V_{a}$	& $0.85238 \pm 	0.00264$ \\
 \caption{Magnification}
 \label{tab:magnification}
 \end{table}
-\par To get the true depth at which the beams were passing through, we used the "stereo-shift" method in 23 different cases. Viewing the same event from two different cameras, we measured the displacement $s_G$ of the point G41 and $s_A$ of an easily identifiable event in the path of the beam, both with an error of $\pm 0.1$~cm. From the data gathered, we discovered the depth to be at
+\par To get the true depth at which the beams were passing through, we used the \textit{stereo-shift method} in 23 different cases. Viewing the same event from two different cameras, we measured the displacement $s_G$ of the point G41 and $s_A$ of an easily identifiable event in the path of the beam, both with an error of $\pm 0.1$~cm. From the data gathered, we discovered the depth to be at
 \begin{equation}
-\frac{s_A}{s_B} = 0.5700 \pm 0.0209,
+\frac{s_A}{s_B} = 0.570 \pm 0.021,
 \end{equation}
 of the total depth, which is in disagreement with our assumption for the magnification before, namely that the beam passes through at $0.5$ depth. This is an important source of systematical error when measuring length on the photo and reconstructing real distances from it.
 \subsection{Scattering events}
@@ -96,6 +253,8 @@ $N_{\text{t}}(L) = 91 \pm 9$ (binomial distribution error), while for the elasti
 \section{Conclusion}
 
 \begin{thebibliography}{9}
+\bibitem{Thompson}
+M. Thompson, \textsl{Modern Particle Physics} (Cambridge University Press, New York, 2013).
 \bibitem{booklet}
 Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
 \bibitem{leo}
@@ -103,6 +262,24 @@ W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Spr
 %William R. Leo
 \bibitem{seul}
 G. Seul, \textsl{Properties of elementary particles} (University of Bonn, 2009).
+\bibitem{part}
+T. DeMichele, \textit{The Standard Model (of Particle Physics) Explained}, WWW Document, \url{http://factmyth.com/the-standard-model-of-particle-physics-explained/}.
+\bibitem{colour}
+H. Klus, \textit{The Strong Nuclear Force}, WWW Document, \url{http://www.thestargarden.co.uk/Strong-nuclear-force.html}.
+\bibitem{pseudo}
+J. Denker, \textit{Quarks -\textgreater Mesons -\textgreater Nonet = Octet plus Singlet}, WWW Document, \url{https://www.av8n.com/physics/quark-meson-nonet.htm}.
+\bibitem{pdg}
+C. Patrignani et al. (Particle Data Group), Chin. Phys. C, 40, 100001 (2016) and 2017 update.
+\bibitem{oct}
+Unspecified author, \textit{Barion}, WWW Document, \url{http://quimica.wikia.com/wiki/Bari\%C3\%B3n}.
+\bibitem{dec}
+T. Dorigo, \textit{Omega b: the new baryon nailed by D0}, WWW Document, \url{https://dorigo.wordpress.com/2008/09/19/omega-b-the-new-baryon-nailed-by-d0/}.
+\bibitem{perkins}
+D. H. Perkins, \textsl{Introduction to High Energy Physics} (Addison-Wesley Publishing Company, Reading, 1972).
+\bibitem{delta}
+G. T. Jones, \textsl{Pretty knock-on electron (delta-ray)}, WWW Document, \url{http://hst-archive.web.cern.ch/archiv/HST2005/bubble_chambers/BCwebsite/gallery/gal2_12.htm}.
+
+
 \iffalse
 \bibitem{book}
 K. Siegbahn, \textsl{Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2} (North Holland Publishing Company, Amsterdam, 1965).
