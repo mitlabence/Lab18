@@ -1,4 +1,5 @@
 \documentclass[twocolumn]{article}
+\usepackage{multirow} %multirow cells in tables
 \usepackage{geometry}	%
 \usepackage{abstract} %to get email footnotes
 \geometry{margin=2cm}	%more visible figures (more place) 
@@ -93,6 +94,7 @@ and mean lifetimes
 \tau_{\pi^0} &= (8.52 \pm 0.18)\times 10^{-8}~\text{s}.
 \end{align*}
 %TODO Are the lifetimes necessary?! And that of the Delta plus, later on?
+%I think you can leave pion lifetimes in the text, they are not necessary, neither is the Delta+ lifetime.
 Their main decay modes are 
 \begin{align*} %\label{eq:decay}
 \pi^+ &\to \mu^+ \nu_\mu \to (e^+ \nu_e \overline{\nu}_{\mu}) \, \nu_\mu, \\
@@ -196,6 +198,7 @@ n = \frac {\rho N_A} {A} = 3.79 \times 10^{22} ~\text{cm}^{-3},
 \end{equation*}
 where $\rho=0.126 ~\text{g cm}^{-3}$ is the density of liquid nitrogen, $N_A$ is Avogadro's constant, and $A=2 ~\text{g mol}^{-1}$ is the composition of the liquid nitrogen used in the bubble chamber.~\cite{harigel} Equation~\ref{eq:cross} will be used to calculate the total and inelastic cross-sections of the proton-proton interactions.
 %TODO The last equation and values are taken from Leo's paper, CHECK!!! I'm not sure this is correct
+%Found the density here (Table 2): http://web.ihep.su/library/pubs/aconf00/tconf00/ps/c6-4.pdf
 
 \subsection{$\pi^0$ Multiplicity}
 One can calculate the average number of neutral pions produced in proton-proton collisions by directly observing how many were produced in the total number of proton-proton collisions considered. Since the neutral $\pi^0$ is invisible in the bubble chamber photographs however, the number of $\pi^0$ produced must instead be calculated by observing the number of $\gamma-\gamma$ productions from the $\pi^0 \to \gamma \gamma$ decay. The photons are again invisible in the chamber however, and thus their multiplicity must be determined from the number of $\gamma \to e^- + e^+$ pair productions observed. The probability that a photon decays to an electron-positron pair at a distance $d$ away from its production is~\cite{seul}
@@ -208,6 +211,8 @@ P_c = 1-\lambda_{abs}/L_c +  (\lambda_{abs}/L_c) e^{-L_c/\lambda_{abs}} = 0.0824
 \end{equation}
 which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} By counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. Since there are on average four charge particles created per neutral pions in such collisions, the average neutral pion multiplicity can be estimated by dividing the calculated charge multiplicity by four.
 %TODO Should we cite this?
+%Value: Figure 3.5 or eq. 3.10 of Fernow: Introduction to Experimental Particle Physics
+%IMPORTANT! This book chapter 3
 
 \section{Results} \label{sec:res}
 \subsection{Magnification and Beam Depth}

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7402,        217]
-NotebookOptionsPosition[      7053,        200]
-NotebookOutlinePosition[      7391,        215]
-CellTagsIndexPosition[      7348,        212]
+NotebookDataLength[     10385,        297]
+NotebookOptionsPosition[      9738,        270]
+NotebookOutlinePosition[     10074,        285]
+CellTagsIndexPosition[     10031,        282]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -89,15 +89,18 @@ Cell[BoxData[{
         RowBox[{"#", "[", 
          RowBox[{"[", "2", "]"}], "]"}]}], "&"}], ",", 
       "inelasticMultiplicity"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"avgChgMultiplicity", " ", "=", " ", 
+ RowBox[{"avgChgMultiplicity", " ", "=", " ", 
+  RowBox[{"{", 
    RowBox[{"N", "[", 
-    RowBox[{"totalMultiplicity", "/", "totalInelastic"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+    RowBox[{"totalMultiplicity", "/", "totalInelastic"}], "]"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"N", "[", 
+  RowBox[{"280", "/", "64"}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"avgPiZero", " ", "=", " ", 
   RowBox[{"{", 
    RowBox[{
-    RowBox[{"avgChgMultiplicity", "/", "4"}], ",", " ", 
+    RowBox[{
+     RowBox[{"(", "avgChgMultiplicity", ")"}], "/", "4"}], ",", " ", 
     "\"\<one way to calculate pion multiplicity\>\""}], 
    "}"}]}], "\[IndentingNewLine]", 
  RowBox[{
@@ -173,17 +176,41 @@ statistical uncertainty in pair production events)\>\""}], "}"}], "/.",
    3.7313892497523737`*^9}, {3.7313896039051723`*^9, 3.73138960408118*^9}, {
    3.731390275751679*^9, 3.731390362693843*^9}, 3.731391815738763*^9, {
    3.73139226722393*^9, 3.731392275167246*^9}, {3.731392617127821*^9, 
-   3.731392653070217*^9}, {3.731392914787251*^9, 3.731392999329571*^9}}],
+   3.731392653070217*^9}, {3.731392914787251*^9, 3.731392999329571*^9}, {
+   3.731732239317254*^9, 3.731732242948741*^9}, 3.7317333975296926`*^9, {
+   3.7317334713526573`*^9, 3.731733472561594*^9}, 3.731735221719083*^9, {
+   3.7317352792151413`*^9, 3.731735285508141*^9}, {3.73174244151978*^9, 
+   3.731742443674864*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", "4.375`", "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.7313926533338003`*^9, 3.731392951252677*^9, {3.731392995071845*^9, 
+   3.7313930009269333`*^9}, 3.731732243889517*^9, 3.731733398521709*^9, 
+   3.7317351145959797`*^9, 3.731735222062016*^9, 3.731735285942541*^9, 
+   3.7317424444086657`*^9}],
+
+Cell[BoxData[
+ FormBox["4.375`", TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.7313926533338003`*^9, 3.731392951252677*^9, {3.731392995071845*^9, 
+   3.7313930009269333`*^9}, 3.731732243889517*^9, 3.731733398521709*^9, 
+   3.7317351145959797`*^9, 3.731735222062016*^9, 3.731735285942541*^9, 
+   3.7317424444103403`*^9}],
 
 Cell[BoxData[
  FormBox[
   RowBox[{"{", 
    RowBox[{
-   "1.09375`", ",", "\<\"one way to calculate pion multiplicity\"\>"}], "}"}],
-   TraditionalForm]], "Output",
+    RowBox[{"{", "1.09375`", "}"}], 
+    ",", "\<\"one way to calculate pion multiplicity\"\>"}], "}"}], 
+  TraditionalForm]], "Output",
  CellChangeTimes->{
   3.7313926533338003`*^9, 3.731392951252677*^9, {3.731392995071845*^9, 
-   3.7313930009269333`*^9}}],
+   3.7313930009269333`*^9}, 3.731732243889517*^9, 3.731733398521709*^9, 
+   3.7317351145959797`*^9, 3.731735222062016*^9, 3.731735285942541*^9, 
+   3.731742444411355*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -195,11 +222,54 @@ large statistical uncertainty in pair production events)\"\>"}], "}"}],
   TraditionalForm]], "Output",
  CellChangeTimes->{
   3.7313926533338003`*^9, 3.731392951252677*^9, {3.731392995071845*^9, 
-   3.731393000928515*^9}}]
+   3.7313930009269333`*^9}, 3.731732243889517*^9, 3.731733398521709*^9, 
+   3.7317351145959797`*^9, 3.731735222062016*^9, 3.731735285942541*^9, 
+   3.7317424444236526`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"s", " ", "=", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"24", "^", "2"}], " ", "+", " ", 
+         RowBox[{"0.940", "^", "2"}]}], "]"}], " ", "+", " ", "0.940"}], 
+      ")"}], "^", "2"}], " ", "-", " ", 
+    RowBox[{"24", "^", "2"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.731735933608406*^9, 3.731735963791182*^9}, {
+  3.73173606374022*^9, 3.731736129955427*^9}, {3.731736214664488*^9, 
+  3.731736229387363*^9}, {3.731736279238688*^9, 3.731736286729644*^9}}],
+
+Cell[BoxData[
+ FormBox["46.921794404556636`", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.731735951991106*^9, 3.7317359642381783`*^9}, {
+   3.7317360871450357`*^9, 3.731736130451322*^9}, {3.7317362199839373`*^9, 
+   3.73173623023864*^9}, 3.7317362877030373`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1.8", "*", 
+   RowBox[{"Log", "[", "s", "]"}]}], "-", " ", "2.8"}]], "Input",
+ CellChangeTimes->{{3.7317359993435373`*^9, 3.731736022899118*^9}, {
+  3.731736138526842*^9, 3.7317361464209833`*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ FormBox["4.127268080546679`", TraditionalForm]], "Output",
+ CellChangeTimes->{3.731736147013116*^9, 3.731736294639974*^9}]
 }, Open  ]]
 },
 WindowSize->{662, 713},
-WindowMargins->{{Automatic, -425}, {-137, Automatic}},
+WindowMargins->{{-338, Automatic}, {-2, Automatic}},
 FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -215,9 +285,19 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 5757, 153, 483, "Input"],
-Cell[6340, 177, 283, 8, 31, "Output"],
-Cell[6626, 187, 411, 10, 72, "Output"]
+Cell[580, 22, 6119, 160, 504, "Input"],
+Cell[6702, 184, 349, 7, 31, "Output"],
+Cell[7054, 193, 326, 6, 31, "Output"],
+Cell[7383, 201, 451, 11, 31, "Output"],
+Cell[7837, 214, 557, 12, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8431, 231, 590, 15, 32, "Input"],
+Cell[9024, 248, 269, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9330, 257, 252, 6, 32, "Input"],
+Cell[9585, 265, 137, 2, 31, "Output"]
 }, Open  ]]
 }
 ]

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  3 APR 2018 15:08
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.26)  3 APR 2018 15:08
+>>>>>>> ff1cead744d0f44dd827db722f1351902f9e95b2
 entering extended mode
 **./V0.tex
 (V0.tex
@@ -1052,20 +1056,20 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (V0.aux)
 \openout1 = `V0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1102,8 +1106,13 @@ LaTeX Font Info:    ... okay on input line 26.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box51
+<<<<<<< HEAD
 Package hyperref Info: Link coloring OFF on input line 26.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+=======
+Package hyperref Info: Link coloring OFF on input line 25.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+>>>>>>> ff1cead744d0f44dd827db722f1351902f9e95b2
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -1111,9 +1120,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count294
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (V0.out) (V0.out)
 \@outlinefile=\write3
@@ -1229,45 +1238,65 @@ G,.JBIG2,.JB2,.eps]
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 26.
+. Activating mapping `default' on line 25.
 .................................................
 \c__siunitx_mathsf_int=\count301
 \c__siunitx_mathtt_int=\count302
 
+<<<<<<< HEAD
 Overfull \hbox (4.45615pt too wide) detected at line 56
 []
  []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+=======
+Overfull \hbox (4.45615pt too wide) in paragraph at lines 70--70
+[] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+>>>>>>> ff1cead744d0f44dd827db722f1351902f9e95b2
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 
-Overfull \hbox (40.8806pt too wide) in paragraph at lines 65--81
+Overfull \hbox (40.8806pt too wide) in paragraph at lines 79--93
  [][] 
  []
 
+<<<<<<< HEAD
 <Images/primary_1.png, id=41, 578.16pt x 165.61874pt>
 File: Images/primary_1.png Graphic file (type png)
 <use Images/primary_1.png>
 Package pdftex.def Info: Images/primary_1.png  used on input line 86.
 (pdftex.def)             Requested size: 232.97914pt x 66.73657pt.
+=======
+<Images/primary_1.png, id=50, 578.16pt x 165.61874pt>
+File: Images/primary_1.png Graphic file (type png)
+<use Images/primary_1.png>
+Package pdftex.def Info: Images/primary_1.png  used on input line 98. on input 
+line 98.
+Package pdftex.def Info: Requested size: 232.97914pt x 66.73657pt on input line
+ 98.
+>>>>>>> ff1cead744d0f44dd827db722f1351902f9e95b2
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 90.
+(hyperref)                removing `math shift' on input line 102.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 90.
+(hyperref)                removing `subscript' on input line 102.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 90.
+(hyperref)                removing `math shift' on input line 102.
 
 [1
 
+<<<<<<< HEAD
 {C:/Users/Benoît/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/
 primary_1.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
@@ -1304,4 +1333,58 @@ PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
+nation with the same identifier (name{equation.2.2}) has been already used, dup
+licate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.104 \begin{itemize}
+                     ]
+Underfull \hbox (badness 3009) in paragraph at lines 137--138
+[]\OT1/cmr/m/n/10 Unspecified au-thor, \OT1/cmr/m/sl/10 Ad-vanced Lab-o-ra-tory
+ Course
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+[2 <./Images/primary_1.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+ (./V0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package rerunfilecheck Info: File `V0.out' has not changed.
+(rerunfilecheck)             Checksum: A0AE8DDCA62C7BA0F6CAF634B74ED3C0;636.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+ ) 
+Here is how much of TeX's memory you used:
+ 18368 strings out of 492990
+ 353992 string characters out of 6135004
+ 441722 words of memory out of 5000000
+ 21758 multiletter control sequences out of 15000+600000
+ 534006 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 33i,15n,34p,10392b,740s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb>
+Output written on V0.pdf (2 pages, 145051 bytes).
+PDF statistics:
+ 128 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> ff1cead744d0f44dd827db722f1351902f9e95b2
 

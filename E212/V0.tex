@@ -1,5 +1,4 @@
 \documentclass[twocolumn]{article}
-%TODO copy this into E212
 \usepackage{multirow}
 
 \usepackage{geometry}	%
@@ -30,12 +29,27 @@ Useful formula:
 p = 0.3 \cdot B \cdot V \cdot r
 \end{equation}
 \section{Results}
+\subsection{Multiplicity}
+Of the 64 inelastic scattering events, 11 had two, 35 four, 13 six, and 5 eight outgoing charged particles, giving a total of 280 charged tracks from 64 events, giving an average charged multiplicity of $ m_{\text{chg}} = 4.375$.
+%Fernow: equation 3.10 <N> = 1.8 ln(s) - 2.8, s = (Sqrt(24^2 + 0.940^2) + 0.940)^2 - 24000^2 = 46.9 GeV^2, giving the theoretical value below
+This matches our expectations for $s \approx 47$~GeV$^2$.\cite{fernow}\\
+From this, the $\pi^0$ multiplicity is 
+\begin{equation}
+m_0 = \frac{m_{\text{chg}}}{4} = 1.094 \nonumber
+\end{equation}
+As at high energies, positive, negative and neutral pions are created in equal numbers,\cite{perkins, fernow} we expected the multiplicity to be around $1.3 \pm 0.3$.\\
+The other way we calculated the neutral pion multiplicity is to count the detected pair productions. We found 4 such events. The formula then reads
+%TODO check for correctness
+\begin{equation}
+m_{\pi^0} = \frac{n_{\text{pp}}\cdot l}{2\cdot n_{\text{inel}} \cdot \big((x_0 \cdot e^{- l/x_0}-1)+l\big)} = 0.5026 \pm 0.0003,
+\end{equation}
+where the error comes from the uncertainty of the measured length of ($148.739 \pm 0.085$) we examined. This result is in disagreement with the first, and the reason is the low pair production count we recorded (quantifying this uncertainty would also give a much larger deviation for the multiplicity)
 \subsection{Neutrino momentum}
 The pion had an initial radius of $27.0 \pm 0.9$~cm, this gives a momentum of $120.1 \pm 3.8$~MeV/c. The track length was measured to be $79.3 \pm 0.9$~cm. The graph provided gave a corresponding $128.5 \pm 5.9$~MeV/c. Comparing the two values, we infer that the pion has indeed decayed while at rest in the laboratory frame.\\
-Next, we measured the length of the $\mu$ track, and found it to be $0.597 \pm 0.085$~cm. From the graph again, a momentum of $27.64 \pm 1.26$~MeV/c was read, in fairly good agreement with the theoretical $29.8$~MeV/c value.
+Next, we measured the length of the $\mu$ track, and found it to be $0.597 \pm 0.085$~cm. From the graph again, a momentum of $27.64 \pm 1.26$~MeV/c was read, in fairly good agreement with the theoretical $29.8$~MeV/c value.\cite{fernow} 
 \subsection{V0}
 We found two V$_0$-canditate events. It is important to note that the angle between the two produced particles in each case was close to 0$^{\circ}$, so the possibility of these being pair productions is considerable.\\
-On image 2898 (???) we detected a primary vertex with 2 visible outgoing particles and one distant vertex of two particles with opposite charges (meaning it was a decay process) which is suspected to have come from the primary vertex. The distance of the two vertices was measured to be 137~cm. 
+On image 2898 we detected a primary vertex with 2 visible outgoing particles and one distant vertex of two particles with opposite charges (meaning it was a decay process) which is suspected to have come from the primary vertex. The distance of the two vertices was measured to be 137~cm. 
 \subsubsection{The secondary vertex}
 The neutral particle decayed into two particles with an angle of $(0\pm 0.1)^{\circ} $ between them, this made the association to the primary vertex an easy task. We measured the two radii to be $(56 \pm 2)$~cm for the negative, $750 \pm 50$ for the positive particle. From Eqn. \ref{eqn:radius}, in a coordinate system with the x-axis along the supposed V$_0$ path, we get 
 \begin{alignat*}{3}
@@ -75,8 +89,6 @@ K$^0_{\text{S}}$	 & 497.6 & 0.027 & $\pi^+ \, \pi^-$ & 69\%\\
 \hline
 $\Sigma^0$ & 1192.6 & $2.22 \cdot 10^{-11}$& $\Lambda \, \gamma$ & 100\%\\
 \hline
-$\Xi^0$ & 1314.9 & 0.087 & $\Lambda \, \pi^0$ & 99.5\%\\
-\hline
 \end{tabular}
 \caption{Possible neutral particles\cite{pdg}}
 \label{tab:neutral}
@@ -101,7 +113,25 @@ m_{\text{V}_0} ( \pi^+, \, \pi^- ) &= (532.8 \pm 2132.2)\, \text{MeV}
 \end{align*}
 The uncertainty is tremendous in both cases. We decided for the proton-pion case after comparing the relative errors. This means the V$_0$ was a $\Lambda$ baryon.
 \subsubsection{Primary vertex revisited}
-The incident proton 
+The overall missing momentum of the system (the incoming proton has a momentum of 23895 MeV/c, hitting a stationary proton) is
+\begin{equation}
+p_{\text{missing}} = ( (7743.0 \pm 994.5)\, \text{MeV/c,} \, (282.9 \pm 76.9) \, \text{MeV/c} ) \nonumber
+\end{equation}
+It turns out that the simplest proposition for the missing momentum, the $\Sigma^0$ particle, would explain this missing momentum. To see this, check the conservation laws:
+\begin{itemize}
+\item Baryon number: the $\Sigma^0$ (uds) gives 1, this means one of the created charged particles must be a baryon, the other one a meson.
+\item Strangeness: $\Sigma^0$ has $S = -1$, the barion or the meson should have a $\bar{\text{s}}$ quark.
+\item Flavours: the barion and the meson should have 3 u, 1 d, 1 $\bar{s}$ quarks.
+\end{itemize}
+Overall, one of the created particles is a proton, the other a positively charged Kaon (K$^+$, u$\bar{\text{s}}$). To check our proposition, we look at the energy conservation:
+\begin{itemize}
+\item The initial energy is $23895 + 938 = 24833$ MeV.
+\item $E(p_1, \, p^+) = (8948.1 \pm 884.3)$~MeV if we assume $p_1$ belongs to a proton,
+\item $E(p_2, \, K^+) = (7580.1 \pm 441.9)$~MeV,
+\item $E(p_{\text{missing}}, \Sigma^0) = (7543.2 \pm 981.3)$~MeV,
+\end{itemize}
+giving an overall energy of $(24071.4 \pm 1392.9)$~MeV, which matches the initial energy. Switching the proton and kaon tracks yields $(24077.6 \pm 1394.4)$~MeV, also a valid result, thus we cannot uniquely assign the two final particles to tracks.
+\par To sum up our results, we explain the event as a p$\,$p$\,\rightarrow\,$p$\,$K$^+\,\Sigma^0,\,\Sigma^0 \, \rightarrow \, \gamma \, \Lambda$ collision, where we detected  $\Lambda\rightarrow \text{p}\, \pi^-$.
 \begin{thebibliography}{9}
 \bibitem{booklet}
 Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
@@ -112,6 +142,10 @@ W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Spr
 G. Seul, \textsl{Properties of elementary particles} (University of Bonn, 2009).
 \bibitem{pdg}
 Particle Data Group.
+\bibitem{fernow}
+R. C. Fernow, \textsl{Introduction to Experimental Particle Physics} (Cambridge University Press, 1986).
+\bibitem{perkins}
+D. H. Perkins, \textsl{Introduction to High Energy Physics} (Cambridge University Press, 2000).
 \iffalse
 \bibitem{book}
 K. Siegbahn, \textsl{Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2} (North Holland Publishing Company, Amsterdam, 1965).
