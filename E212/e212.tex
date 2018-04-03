@@ -66,7 +66,7 @@ The main reason why the second and third generation of particles are largely not
 \end{figure}
 \par Figure~\ref{fig:part} also shows the fundamental forces in the SM which are all mediated via the exchange of a gauge boson. The most familiar of these is the photon $\gamma$ which mediates the electromagnetic force, responsible for electricity, magnetism, and light. The photon interacts with all particles that have an electric charge and thus with all matter particles in the SM apart from the neutrinos. It also interacts with the W~bosons as they are electrically charged. The gluon gauge bosons mediate the strong force, thus called as it is the strongest force and binds nuclei and hadrons together, explained in Section~\ref{sec:hadrons}. The gluons interacts only with particles which have a so-called ``colour" charge, another property of particles similar to electric charge. Only quarks have a colour charge and the eight differently coloured gluons. Next, the oppositely charged W$^{\pm}$ and Z~bosons mediate the weak interaction, the weakest force apart from gravity. This force is responsible for radioactive decay and interacts with all matter particles in the SM. Finally, the Higgs boson is the most recently discovered particle which gives mass to all the matter particles in the SM by interacting with them.
 
-\subsection{Hadrons and the Strong Force}
+\subsection{Hadrons and the Strong Force}\label{sec:hadrons}
 Though quarks are elementary in the SM, they cannot be observed as free particles. This is because quantum chromodynamics (QCD) of the SM, the theory of the strong force, states that colour is confined such that systems with a colour charge cannot propagate freely, termed \textit{colour confinement}. Instead, only colourless composite particles can be observed. As a result, quarks form composite particles called hadrons which are bound by gluons. Hadrons generally form baryons, composed of three quarks, and mesons, composed of one quark and one anti-quark. The reason for the these two types is a result of there being three colours, red, blue, and green, for the quarks, and three anti-colours, anti-red, anti-blue, and anti-green, for the anti-quarks. Colourlessness is achieved by combining all three colours (or anti-colours) in a baryon, or a colour and its anti-colour in a meson, as shown in Figure~\ref{fig:colour}. Protons and neutrons are examples of baryons, composed of two up quarks and one down quark (written as uud), and two down quarks and one up quark (udd), respectively.
 \begin{figure}[!h]
 	\centering
@@ -94,7 +94,6 @@ and mean lifetimes
 \tau_{\pi^{\pm}} &= (2.6033 \pm 0.0005)\times 10^{-8}~\text{s}, \\
 \tau_{\pi^0} &= (8.52 \pm 0.18)\times 10^{-8}~\text{s}.
 \end{align*}
-%TODO Are the lifetimes necessary?! And that of the Delta plus, later on?
 %I think you can leave pion lifetimes in the text, they are not necessary, neither is the Delta+ lifetime.
 Their main decay modes are 
 \begin{align*} %\label{eq:decay}
@@ -173,6 +172,7 @@ p = 0.3\cdot B\cdot V \cdot r',
 derived by equating the centrifugal force on the particle apparent from the curvature of the track and the Lorentz force from the magnetic field which causes this curvature.~\cite{seul} Due to the decreasing radii of the track spirals, the first section of the spiral is to be used with the stencils to estimate the initial momentum of the particle after a vertex. That said, a large enough section of the spiral should be used to more accurately determine the radii and thus momentum. Uncertainty was estimated by the confidence in accuracy of a calculated radius. This method will be used to calculate the momentum of observed particles such that the mass of 
 %TODO Finish this sentence properly
 %TODO talk about Sagitta method? Magnetic field strength?
+%Not necessary, we never used it. Not sure about magnetic field strength
 
 \subsection{Stereo-shift Method}
 The \textit{stereo-shift method} uses two cameras to determine the depth of ionisation tracks in the bubble chamber. This will be herein used to determine the accuracy of the assumption that the particle beams travelled through the centre of the chamber, used in Section~\ref{sec:mag}. In the method, photographs from two cameras of the same event are superimposed such that the same marker on the front glass are on top of one another. The distances between a marker on the back glass and between a point on or close to an ionisation track in both photographs are then measured. This then allows for a calculation of the depth of said track $a_z$, using the following equation:~\cite{seul}
@@ -197,10 +197,7 @@ with $N_0$ being the number of protons incident to the chamber and $n$ is the nu
 \begin{equation*}
 n = \frac {\rho N_A} {A} = 3.79 \times 10^{22} ~\text{cm}^{-3},
 \end{equation*}
-where $\rho=0.126 ~\text{g cm}^{-3}$ is the density of liquid nitrogen, $N_A$ is Avogadro's constant, and $A=2 ~\text{g mol}^{-1}$ is the composition of the liquid nitrogen used in the bubble chamber.~\cite{harigel} Equation~\ref{eq:cross} will be used to calculate the total and inelastic cross-sections of the proton-proton interactions.
-%TODO The last equation and values are taken from Leo's paper, CHECK!!! I'm not sure this is correct
-%Found the density here (Table 2): http://web.ihep.su/library/pubs/aconf00/tconf00/ps/c6-4.pdf
-
+where $\rho=0.126 ~\text{g cm}^{-3}$ is the density of liquid hydrogen, $N_A$ is Avogadro's constant, and $A=2 ~\text{g mol}^{-1}$ is the composition of the liquid hydrogen used in the bubble chamber.~\cite{harigel} Equation~\ref{eq:cross} will be used to calculate the total and inelastic cross-sections of the proton-proton interactions.
 \subsection{$\pi^0$ Multiplicity}
 One can calculate the average number of neutral pions produced in proton-proton collisions by directly observing how many were produced in the total number of proton-proton collisions considered. Since the neutral $\pi^0$ is invisible in the bubble chamber photographs however, the number of $\pi^0$ produced must instead be calculated by observing the number of $\gamma-\gamma$ productions from the $\pi^0 \to \gamma \gamma$ decay. The photons are again invisible in the chamber however, and thus their multiplicity must be determined from the number of $\gamma \to e^- + e^+$ pair productions observed. The probability that a photon decays to an electron-positron pair at a distance $d$ away from its production is~\cite{seul}
 \begin{equation*}
@@ -211,9 +208,7 @@ where $\lambda_{abs} = 1146$~cm is the absorption length of a photon in liquid h
 P_c = 1-\lambda_{abs}/L_c +  (\lambda_{abs}/L_c) e^{-L_c/\lambda_{abs}} = 0.08240,
 \end{equation}
 which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} By counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. Since there are on average four charge particles created per neutral pions in such collisions, the average neutral pion multiplicity can be estimated by dividing the calculated charge multiplicity by four.
-%TODO Should we cite this?
 %Value: Figure 3.5 or eq. 3.10 of Fernow: Introduction to Experimental Particle Physics
-%IMPORTANT! This book chapter 3
 
 \section{Results} \label{sec:res}
 \subsection{Magnification and Beam Depth}
@@ -258,7 +253,8 @@ Using the radii stencils, we found that the pion had an initial radius of $27.0 
 
 
 \section{Conclusion}
-
+We analyzed photographs of a bubble chamber filled with liquid hydrogen and a proton beam passing through it. We measured the magnification to be $0.852 \pm 0.003$, for later use. While taking notes for the next tasks, we also calculated the depth at which the beam passed through the chamber to be at $0.570 \pm 0.021$, warning us about a systematic error source, as the beam did not pass through at half depth, as assumed for the magnification. We examined 50 records, where out of 532 incoming protons, 27 scattered elastically, 64 inelastically over a distance of $(148.739 \pm 0.085)\,$cm, and calculated the elastic and total cross-sections to be  $\sigma_{\text{el}} = (9.3 \pm 1.8)$~mb and $\sigma_{\text{tot}} = (38.8 \pm 0.1)$~mb, respectively. We calculated the expected neutral pion multiplicity using two independent methods, first by using the charged multiplicity, second by counting the pair productions; the former showed a fair agreement with theory, however, the latter showed high discrepancy due to the low statistical sample (4 photons detected). We were lucky to find a $\pi \, \mu \, e$ decay event, where we confirmed the pion to decay at rest, and the muon has the theoretically predicted momentum of  $29.8$~MeV to a good approximation.\\
+As a final task, we examined two suspected V$_0$ production events, and tried to identify them. In the first case, we found an explanation that satisfies all conservation laws, namely a $\Sigma^0$ baryon decaying undistinguishably close to the primary vertex, emitting a photon and a $\Lambda$ baryon whose decay we detect as the secondary vertex. In the second case, we suggested a directly produced $\Lambda$ baryon and an undetected primary $\pi^0$, and found a scattering process which fits all conservation laws up to the uncertainty limits. It must be stressed, though, that due to the large errors leave us with more than one possible explanations, largely due to the limited angular, radial measurement capabilities and the unfortunate situation that both V$_0$ decays had an angle of $0^{\circ}$.
 \begin{thebibliography}{9}
 \bibitem{Thompson}
 M. Thompson, \textsl{Modern Particle Physics} (Cambridge University Press, New York, 2013).
