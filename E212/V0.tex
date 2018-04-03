@@ -1,6 +1,6 @@
 \documentclass[twocolumn]{article}
 \usepackage{multirow}
-
+\usepackage{amssymb} % for \measuredangle
 \usepackage{geometry}	%
 \usepackage{abstract} %to get email footnotes
 \geometry{margin=2cm}	%more visible figures (more place) 
@@ -74,6 +74,9 @@ The momenta of the three particles do not add up to the momentum of the incoming
 \item One neutral particle was created that decayed into neutral particles very close to the primary vertex, and one of these decayed, showing up as a secondary vertex.
 \end{itemize}
 Of course other options are also possible, but we are hoping to find the event to be one of these two types.\\
+%TODO make table fit one column
+\iffalse
+%original table with distance column
 \begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|c|}
@@ -88,6 +91,30 @@ K$^0_{\text{S}}$	 & 497.6 & 0.027 & $\pi^+ \, \pi^-$ & 69\%\\
  & & &$\pi^{\pm} \mu ^{\mp} \nu_{\mu}$&27.0\%\\
 \hline
 $\Sigma^0$ & 1192.6 & $2.22 \cdot 10^{-11}$& $\Lambda \, \gamma$ & 100\%\\
+\hline
+$\Xi^0$ & 1314.9 & 0.087 & $\Lambda \, \pi^0$ & 99.5\%\\
+\hline
+\end{tabular}
+\caption{Possible neutral particles\cite{pdg}}
+\label{tab:neutral}
+\end{table}
+\fi
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Name & Mass (MeV) & Decays into & Fraction \\
+\hline
+$\Lambda$ 	& 1115.7 & p$\, \pi^-$ & 63.9\%\\
+\hline
+K$^0_{\text{S}}$	 & 497.6 & $\pi^+ \, \pi^-$ & 69\%\\
+\hline
+\multirow{2}{*}{K$^0_{\text{L}}$} &  \multirow{2}{*}{ 497.6}& $\pi^{\pm} \, e^{\mp} \nu_{\text{e}}$ & 40.6\%\\
+ & &$\pi^{\pm} \mu ^{\mp} \nu_{\mu}$&27.0\%\\
+\hline
+$\Sigma^0$ & 1192.6 & $\Lambda \, \gamma$ & 100\%\\
+\hline
+$\Xi^0$ & 1314.9 & $\Lambda \, \pi^0$ & 99.5\%\\
 \hline
 \end{tabular}
 \caption{Possible neutral particles\cite{pdg}}
@@ -132,6 +159,44 @@ Overall, one of the created particles is a proton, the other a positively charge
 \end{itemize}
 giving an overall energy of $(24071.4 \pm 1392.9)$~MeV, which matches the initial energy. Switching the proton and kaon tracks yields $(24077.6 \pm 1394.4)$~MeV, also a valid result, thus we cannot uniquely assign the two final particles to tracks.
 \par To sum up our results, we explain the event as a p$\,$p$\,\rightarrow\,$p$\,$K$^+\,\Sigma^0,\,\Sigma^0 \, \rightarrow \, \gamma \, \Lambda$ collision, where we detected  $\Lambda\rightarrow \text{p}\, \pi^-$.
+\section{V0 \#2}
+In our second V$_0$ event, we have a primary vertex with 4 visible outgoing particles, and the secondary vertex is $(18.8 \pm 0.5)$~cm away from the primary one. With the notation on Figure \ref{fig:primary2} and labeling the positively charged secondary vertex particle as 5, the other one 6, we measured
+\begin{alignat*}{4}
+r_1 &= (47 &\pm \, &3) \, &\text{cm},\\
+r_2 &= (3300 &\pm \, &500) \, &\text{cm},\\
+r_3 &= (300 &\pm \, &20) \, &\text{cm},\\
+r_4 &= (490 &\pm \, &20) \, &\text{cm},\\
+r_5 &= (320 &\pm \, &20) \, &\text{cm},\\
+r_6 &= (62&\pm \, &3) \, &\text{cm},\\
+\measuredangle_{5,6} &= (0.0 &\pm & \, 0.1)^{\circ},&\\
+\measuredangle_{1} &= (54 &\pm & \, 1)^{\circ},&\\
+\measuredangle_{2} &= (0.0 &\pm & \, 0.5)^{\circ},&\\
+\measuredangle_{3} &= (-5.0 &\pm & \, 0.5)^{\circ},&\\
+\measuredangle_{4} &= (-5.0 &\pm & \, 0.5)^{\circ}.&\\
+\end{alignat*} 
+From these values, the momenta are
+\begin{alignat*}{3}
+p_1 &= &&((122.9 \pm 8.4)\, \text{MeV/c},\hspace{3pt} && (169.2 \pm 11.0)\, \text{MeV/c})\\
+p_2 &= &&((14683.0 \pm 2225.2)\, \text{MeV/c},\hspace{3pt} && (0.0 \pm 128.1)\, \text{MeV/c})\\
+p_3 &= &&((1329.7 \pm 88.8)\, \text{MeV/c},\hspace{3pt} && (-116.3 \pm 14.0)\, \text{MeV/c})\\
+p_4 &= &&((2171.9 \pm 88.9)\, \text{MeV/c},\hspace{3pt} && (-190.0 \pm 20.5)\, \text{MeV/c})\\
+p_{0} &= &&((1699.4 \pm 90.1)\, \text{MeV/c},\hspace{3pt} && (29.7 \pm 14.9)\, \text{MeV/c})\\[6pt]
+p_{\text{m}} &= &&((3870.0 \pm 2230.5)\, \text{MeV/c},\hspace{3pt} && (107.5 \pm 131.8)\, \text{MeV/c})
+\end{alignat*}
+The missing momentum is within the uncertainty of the V$_0$ momentum $p_0$, therefore it is satisfactory to assume the direct creation of a $\Lambda$ or $K^0$. The bubble density of the tracks leaves electrons as highly unlikely participants of the V$_0$ decay. Investigating the different scenarios (neglecting the neutrino momentum and mass):
+\begin{itemize}
+\item $m_{V_0} ( \pi^+ \, , \pi^-\, ) = (371.6 \pm 587.7) \, $ MeV,
+\item $m_{V_0} ( p \, , \pi^- \, ) = (1081.1 \pm 199.4) $ MeV,
+\item $m_{V_0} ( \mu^+ \, , \pi^- \, ) = (357.7 \pm 610.6)$ MeV,
+\item $m_{V_0} ( \pi^+ \, , \mu^- \, ) = (300.6 \pm 723.7 )$ MeV.
+\end{itemize}
+The most realistic result is for the case of the p$\, \pi^-$ pair. Thus the secondary vertex is the decay of a $\Lambda$ or $\Xi^0$ baryon (as both masses fall within the uncertainty interval), and the former might have come from the primary vertex itself, or from a decay of a $\Sigma^0$ or $\Xi^0$.\\
+As for the primary vertex, due to the relatively large uncertainties, we cannot assign particles uniquely to each track. It is interesting to note, though, that if we assume the V$_0$ is a $\Lambda$ baryon, the other strange particle (4) is a meson (K$^+$), particle 1 a $\pi^+$, particle 2 a proton, particle 3 a $\pi^-$, the overall energy is $(20575.0 \pm 2225.3)$~GeV, significantly below 24833~GeV meaning we need another neutral particle to satisfy energy conservation. We can, however, add a $\pi^0$ with a $\approx 200-300$~MeV due to the relatively large error in $p_m$. As a simple example, assigning $p_0$ and $p_m - p_0$ to the $\Lambda$ and $\pi^0$, $E = (22751.2 \pm 3083.9)$~GeV, resolving the energy deficit. Thus this is a valid scenario, satisfying all relevant conservation laws.
+\begin{figure}
+\insertFigure{Images/primary_2.png}
+\caption{Second V$_0$ event.}
+\label{fig:primary2}
+\end{figure}
 \begin{thebibliography}{9}
 \bibitem{booklet}
 Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
