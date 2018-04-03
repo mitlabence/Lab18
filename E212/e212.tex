@@ -35,6 +35,7 @@ Abstract goes here
 \saythanks %from abstract package to ensure email footnotes from \thanks command in a two-collumn article
 \section{Introduction}
 Introduction text
+Give details of bubble chamber, i.e. energy, year, etc
 
 \section{Theory}
 Our current best understanding of particle physics is the Standard Model of particle physics (SM). This model describes our discoveries of fundamental particles and their interactions with each other, mediated by fundamental forces. It furthermore describes the way these particles and forces combine to form atoms, from which many of the physical phenomena we encounter in everyday life can be explained. The main shortcoming of the SM however, is its inability to be united with gravity. That said, due to the relative weakness of gravity in comparison to the other fundamental forces, it rarely has an effect in particle physics and thus is mainly ignored.
@@ -172,7 +173,7 @@ derived by equating the centrifugal force on the particle apparent from the curv
 
 \subsection{Stereo-shift Method}
 The \textit{stereo-shift method} uses two cameras to determine the depth of ionisation tracks in the bubble chamber. This will be herein used to determine the accuracy of the assumption that the particle beams travelled through the centre of the chamber, used in Section~\ref{sec:mag}. In the method, photographs from two cameras of the same event are superimposed such that the same marker on the front glass are on top of one another. The distances between a marker on the back glass and between a point on or close to an ionisation track in both photographs are then measured. This then allows for a calculation of the depth of said track $a_z$, using the following equation:~\cite{seul}
-\begin{equation}
+\begin{equation} \label{eq:stereo}
 a_z = \frac{g_z s_A}{s_G},
 \end{equation}
 where $g_z$ is the depth of the chamber, and $s_A$ and $s_G$ are the measured distances between the points on the ionisation track and the back glass markers, respectively, as shown in Figure~\ref{fig:stereo}.
@@ -185,15 +186,15 @@ where $g_z$ is the depth of the chamber, and $s_A$ and $s_G$ are the measured di
 The branching of a $\delta$-electron spiral from a track as seen in Figure~\ref{fig:delta} was often used as a point $A$ in a photograph to determine the depth as they are easy to spot and are located on an ionisation track.
 
 \subsection{Proton-proton Cross-section}
-The cross-section of a particle interaction is the area perpendicular their relative motion in which the two particles must cross in order to scatter.~\cite{Thompson} The probability that two particles will scatter is proportional to their cross-section and thus scattering probabilities are often quantified as such. The proton-proton cross-section can be calculated by observing the difference between the number of incident protons into the chamber and those leaving, averaging over a large number of beam runs. The average difference then equals the average number of proton-proton collisions, from which the cross-section$\sigma$ can be calculated. The number of protons passing through the bubble chamber (in the $x$-direction) obeys~\cite{seul}
+The cross-section of a particle interaction is the area perpendicular their relative motion in which the two particles must cross in order to scatter.~\cite{Thompson} The probability that two particles will scatter is proportional to their cross-section and thus scattering probabilities are often quantified as such. The proton-proton cross-section can be calculated by observing the difference between the number of incident protons into the chamber and those leaving, averaging over a large number of beam runs. The average difference then equals the average number of proton-proton collisions, from which the cross-section $\sigma$ can be calculated. The number of protons passing through the bubble chamber (in the $x$-direction) obeys~\cite{seul}
 \begin{equation} \label{eq:cross}
 N(x) = N_0 e^{-n \sigma x}
 \end{equation}
 with $N_0$ being the number of protons incident to the chamber and $n$ is the number density of scatterings per unit volume, given by
 \begin{equation*}
-n = \frac {\rho N_A} {A} = 0.379 \times 10^{23} ~\text{cm}^{-3},
+n = \frac {\rho N_A} {A} = 3.79 \times 10^{22} ~\text{cm}^{-3},
 \end{equation*}
-where $\rho=0.126 ~\text{g cm}^{-3}$ is the density of liquid nitrogen, $N_A$ is Avogadro's constant, and $A=2 ~\text{g mol}^{-1}$ is the composition of the liquid nitrogen.
+where $\rho=0.126 ~\text{g cm}^{-3}$ is the density of liquid nitrogen, $N_A$ is Avogadro's constant, and $A=2 ~\text{g mol}^{-1}$ is the composition of the liquid nitrogen used in the bubble chamber.~\cite{harigel} Equation~\ref{eq:cross} will be used to calculate the total and inelastic cross-sections of the proton-proton interactions.
 %TODO The last equation and values are taken from Leo's paper, CHECK!!! I'm not sure this is correct
 
 \subsection{$\pi^0$ Multiplicity}
@@ -205,50 +206,50 @@ where $\lambda_{abs} = 1146$~cm is the absorption length of a photon in liquid h
 \begin{equation} \label{eq:mult}
 P_c = 1-\lambda_{abs}/L_c +  (\lambda_{abs}/L_c) e^{-L_c/\lambda_{abs}} = 0.08240,
 \end{equation}
-which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} By counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. The average neutral pion multiplicity should then be a quarter of the charged multiplicity as \textbf{?????? Why???}
-%TODO Why is this the case? Is this correct? Again taken from Leo
+which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} By counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. Since there are on average four charge particles created per neutral pions in such collisions, the average neutral pion multiplicity can be estimated by dividing the calculated charge multiplicity by four.
+%TODO Should we cite this?
 
 \section{Results} \label{sec:res}
-\subsection{Magnification}
-We determined the magnification of the photographs by comparing the known coordinates of marks on the two glass planes with the measured distances and assuming the beam passes through the middle of the bubble chamber.\cite{seul} Table \ref{tab:magnification} contains the results.
-\begin{table} [!h]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-Distance (cm):	&	F21	- F22	&	G41	- G42\\\hline
-calculated	&	23.9951		&  32.1905\\\hline
-measured	&	$28.2 \pm 0.1$		&  $37.7 \pm 0.1$	\\\hline
-$V_{\text{F}}$, $V_{\text{G}}$	& $0.85089 \pm 0.00302$	& $0.85386 \pm 0.00226$\\\cline{1-3}
-$V_{a}$	& $0.85238 \pm 	0.00264$ \\
-\cline{1-2}
-\end{tabular}
-\caption{Magnification}
-\label{tab:magnification}
-\end{table}
-\par To get the true depth at which the beams were passing through, we used the \textit{stereo-shift method} in 23 different cases. Viewing the same event from two different cameras, we measured the displacement $s_G$ of the point G41 and $s_A$ of an easily identifiable event in the path of the beam, both with an error of $\pm 0.1$~cm. From the data gathered, we discovered the depth to be at
-\begin{equation}
+\subsection{Magnification and Beam Depth}
+The magnification was firstly calculated from a single photograph using the method described in Section~\ref{sec:mag}. The F21, F22 and G41, G42 markers on the front glass and back glass, respectively, were used. These have an actual separation of $l_F = 23.9951$~cm and $l_G = 32.1905$~cm, though we measured their separation on the photograph at $(28.2 \pm 0.1)$~cm and $(37.7 \pm 0.1)$~cm, respectively. Using Equation~\ref{eq:mag} we obtained a magnification of $V_A = 0.852 \pm 0.003$, which is used when analysing all photographs in this paper. \\
+
+\par To get the true depth at which the beams were passing through, we used the \textit{stereo-shift method} in 23 different cases. Viewing the same event from two different cameras, we measured the displacement $s_G$ of the G41 marker and $s_A$ of an easily identifiable event in the path of the beam, both with measurement uncertainties of $\pm 0.1$~cm. The distribution of the measured $s_A$ values are shown in Figure~\ref{fig:box}.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{box.png}
+	\caption{Plot of the measured $s_A/s_B$ values used for the stereo-shift method.}
+	\label{fig:box}
+\end{figure}
+We can see that the measurements approximately follow a Gaussian distribution though only roughly due to the small sample value. This however demonstrates the distribution in beam depths in different photographs, introducing error from a single depth used to calculate the magnification. From the data gathered and Equation~\ref{eq:stereo}, we discovered the depth to be at
+\begin{equation*}
 \frac{s_A}{s_B} = 0.570 \pm 0.021,
-\end{equation}
-of the total depth, which is in disagreement with our assumption for the magnification before, namely that the beam passes through at $0.5$ depth. This is an important source of systematical error when measuring length on the photo and reconstructing real distances from it.
-\subsection{Scattering events}
-For our next task, we analyzed 50 records, identifying and counting elastic and inelastic scatterings between the marks F21 and F35. Of the 532 total incoming protons, we found 27 of them interacted with the hydrogen in the chamber via elastic, and 64 via inelastic scattering. The number density is
-%TODO where does rho = 2*0.063 g/cm^3 come from?
-\begin{equation}
-n = \frac{\rho}{M_{\text{atom}}} = \frac{2 \cdot 0.063 \frac{\text{g}}{\text{cm}^3} \cdot 6 \cdot 10^{23} \frac{1}{\text{mol}}}{2 \frac{\text{g}}{\text{mol}}} = 3.78 \cdot 10^{22} \, \frac{1}{\text{cm}^3} \nonumber
-\end{equation}
-The length between points F21 and F35 was measured to be $(174.5 \pm 0.1)\,$cm, which gives a real distance of $L=(148.739 \pm 0.085)\,$cm. The cross section can be calculated from
-\begin{equation}
-N(L) = N_0 e^{- \sigma n L} \hspace{6pt} \Longrightarrow \hspace{6pt} \sigma =  \frac{\text{ln} \frac{N_0}{N(L)} }{n L}  \nonumber
-\end{equation}
-For the total cross section, we have %binomial error: sigma = Sqrt(<x>(1-p)) where <x> is the expected value of x
-$N_{\text{t}}(L) = 91 \pm 9$ (binomial distribution error), while for the elastic cross section, $N_{\text{e}}(L) = 27 \pm 5$. These values yield
+\end{equation*}
+of the total depth, which is in disagreement with our assumption made to calculate the magnification, namely that the beam passes through at $0.5$ depth. This is an important source of systematic error when converting measured lengths and radii on to the photographs to real values.
+
+\subsection{Proton-proton Cross-section}
+Next 50 photographs were analysed by identifying and counting elastic and inelastic scatterings between the marks F21 and F35 of the front glass. These marks were used as they nearly span the whole length of the chamber and the distance between them could be easily measured with little uncertainty. The length was measured at $(174.5 \pm 0.1)\,$cm, which gives an unmagnified distance of $L=(148.739 \pm 0.085)\,$cm. Of the 532 total incoming protons, 27 of them interacted with the hydrogen in the chamber via elastic scattering while 64 scattered inelastically, accounting to 91 total scatterings. Since only 50 photographs were analysed however, we can estimate the error in the scattering values as originating from binomial error due to the polarity of the outcomes being scattering or no-scattering, and elastic scattering or no scattering.~\cite{leo} Thus, for the total cross section we obtained %binomial error: sigma = Sqrt(<x>(1-p)) where <x> is the expected value of x
+$N_{\text{t}}(L) = 91 \pm 9$, and $N_{\text{e}}(L) = 27 \pm 5$ for the elastic cross section. These values yield
 \begin{alignat*}{3}
-&\sigma_{\text{elastic}} &&= (9.264 \pm 1.783) \, &\text{mb,}\\
-&\sigma_{\text{total}} &&= (33.367 \pm 3.504) \, &\text{mb.} 
+&\sigma_{\text{elastic}} &&= (9.3 \pm 1.8) \, &\text{mb,}\\
+&\sigma_{\text{total}} &&= (33.4 \pm 3.5) \, &\text{mb.} 
 \end{alignat*}
-%38.9 +- 0.1 mbarn theoretical total CS,
-%7.9 +- 0.1 mbarn theoretical elastic CS
+These are in agreement with theoretical cross-sections of $\sigma_{\text{elastic}} = (7.9 \pm 0.1)$ and $ \sigma_{\text{total}} = (38.8 \pm 0.1) $~mb~\cite{seul2}, though the uncertainties of the total cross-sections don't overlap. This could be caused by the inaccurately calculated magnification thus affecting the calculated length in which scatterings were counted. Otherwise, we may have observed a statistically unlikely small number of scatterings not completely accounted for by the binomial uncertainty. The calculated values nevertheless suggest agreement with what was to be expected.
 %from  Gerhild Seul: Praktikumsversuche zur Einfuhrung in die Hochenergiephysik; Staatsexamens-arbeit, 1977
+
+\subsection{Multiplicities}
+
+\subsection{Neutrino Momentum}
+A $\pi \mu e$ decay was observed, shown in Figure~\ref{fig:neutrino}. It was found to be a $\pi^+ \to \mu^+ \nu_\mu \to (e^+ \nu_e \overline{\nu}_{\mu}) \, \nu_\mu,$ decay due to the deflection of the particles showing positive charges.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{neutrino.png}
+	\caption{Image of the found $\pi \mu e$ decay, with the $\pi^+$ track coloured in red, $\mu^+$ in green, and positron in blue.}
+	\label{fig:neutrino}
+\end{figure}
+Using the radii stencils, we found that the pion had an initial radius of $27.0 \pm 0.9$~cm giving a momentum of $120.1 \pm 3.8$~MeV/c. The track length was measured to be $79.3 \pm 0.9$~cm by superimposing a piece of rope along the length of the track and then measuring the rope. A Bragg curve graph, relating the distance travelled by a charged particle and its energy loss due to its ionisation of the hydrogen, gave an initial momentum of $128.5 \pm 5.9$~MeV/c for this distance travelled. Seeing that these two momentum values are quite close to each other, we can infer that the pion has indeed decayed while approximately at rest in the laboratory frame. This is important as the centre-of-mass frame of the decay, in which the pion has zero momentum, is applicable. As a result of momentum conservation, the pion's decay products $mu^+$ and $\nu_\mu$ will have equal momentum in opposing directions in this frame. The momentum's magnitude is only dependent on the mass of the pion and muon, as the neutrino mass is so small, and is easily calculated to be $29.8$~MeV/c, providing us with a theoretical momentum value for the produced muon and muon-neutrino.~\cite{seul} Experimentally, we measured the length of the $\mu^+$ track to be $0.597 \pm 0.085$~cm. Using the Bragg curve graph again, a momentum of $27.64 \pm 1.26$~MeV/c was read, which is fairly good agreement with the theoretical value quoted above. This provides confidence that the identified decay is indeed a positively charged $\pi \mu e$ decay.
+
+\subsection{Strange Particle}
+
 
 \section{Conclusion}
 
@@ -278,7 +279,10 @@ T. Dorigo, \textit{Omega b: the new baryon nailed by D0}, WWW Document, \url{htt
 D. H. Perkins, \textsl{Introduction to High Energy Physics} (Addison-Wesley Publishing Company, Reading, 1972).
 \bibitem{delta}
 G. T. Jones, \textsl{Pretty knock-on electron (delta-ray)}, WWW Document, \url{http://hst-archive.web.cern.ch/archiv/HST2005/bubble_chambers/BCwebsite/gallery/gal2_12.htm}.
-
+\bibitem{harigel}
+G. G. Harigel, \textsl{Bubble Chambers, Technology and Impact on High Energy Physics} (CERN, Geneva, 2003), \url{http://web.ihep.su/library/pubs/aconf00/tconf00/ps/c6-4.pdf}.
+\bibitem{Fernow}
+R. C. Fernow, \textsl{Introduction to Experimental Particle Physics} (Cambridge University Press, New York, 2001).
 
 \iffalse
 \bibitem{book}
