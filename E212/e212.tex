@@ -19,7 +19,9 @@
 \newcommand{\insertFigure}[1]{%
    \includegraphics[width=0.95\linewidth]{#1}%
 }
-
+%TODO insert V0 #2 figures
+%TODO change multiplicity with larger error version
+%TODO references in order of appearance
 \title{\textbf{E212: Properties of Elementary Particles}}
 \author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
 
@@ -84,11 +86,13 @@ The quark model of QCD just explained was originally proposed from a group theor
 	\caption{The light pseudoscalar meson nonet, plotted against strangeness and electric charge axes.~\cite{pseudo} It is called the light nonet as it is composed of the lightest quarks, resulting in the lightest meson multiplet.}
 	\label{fig:pseudo}
 \end{figure}
-Noteworthy is the strangeness quantum number, shown in the figure, defined as $S = n_{\bar{s}} - n_s$, where $n_{\bar{s}}$ and $n_s$ are the number of strange anti-quarks and quarks in the hadron, respectively~\cite{Thompson}. Strangeness has been observed to be conserved in strong and electromagnetic interactions, but not in weak interactions. The pions are of particular importance of this experiment. The $\pi^{\pm}$ and $\pi^0$ have masses~\cite{pdg}
+Noteworthy is the strangeness quantum number, shown in the figure, defined as $S = n_{\bar{s}} - n_s$, where $n_{\bar{s}}$ and $n_s$ are the number of strange anti-quarks and quarks in the hadron, respectively~\cite{Thompson}. Strangeness has been observed to be conserved in strong and electromagnetic interactions, but not in weak interactions. The pions and neutral kaon are of particular importance of this experiment. The $\pi^{\pm}$, $\pi^0$, and $K^0$ have masses~\cite{pdg}
 \begin{align*} %\label{eq:mass}
 m_{\pi^{\pm}} &= (139.57018 \pm 0.00035)~\text{MeV}, \\
-m_{\pi^0} &= (134.9766 \pm 0.0006)~\text{MeV},
+m_{\pi^0} &= (134.9766 \pm 0.0006)~\text{MeV}, \\
+m_{K^0} & = (497.61 \pm 0.013)~\text{MeV}.
 \end{align*}
+\iffalse
 and mean lifetimes
 \begin{align*} %\label{eq:liftime}
 \tau_{\pi^{\pm}} &= (2.6033 \pm 0.0005)\times 10^{-8}~\text{s}, \\
@@ -96,6 +100,8 @@ and mean lifetimes
 \end{align*}
 %I think you can leave pion lifetimes in the text, they are not necessary, neither is the Delta+ lifetime.
 Their main decay modes are 
+\fi
+The main decay modes of the pions are 
 \begin{align*} %\label{eq:decay}
 \pi^+ &\to \mu^+ \nu_\mu \to (e^+ \nu_e \overline{\nu}_{\mu}) \, \nu_\mu, \\
 \pi^- &\to \mu^- \overline{\nu}_\mu \to (e^- \nu_\mu \overline{\nu}_e) \, \overline{\nu}_\mu , \\
@@ -203,11 +209,19 @@ One can calculate the average number of neutral pions produced in proton-proton 
 \begin{equation*}
 P(d) = \frac {1} {\lambda_{abs}} e^{-d/\lambda_{abs}},
 \end{equation*}
-where $\lambda_{abs} = 1146$~cm is the absorption length of a photon in liquid hydrogen. That said, the photographs only determine whether a pair production has been produced in the bubble chamber only, not accounting for decays after leaving the chamber. The probability that a photon decays within the chamber of length $L_c=2$~m is then
-\begin{equation} \label{eq:mult}
+where $\lambda_{abs} = 1146$~cm is the absorption length of a photon in liquid hydrogen. That said, the photographs only determine whether a pair production has been produced in the bubble chamber only, not accounting for decays after leaving the chamber. The probability that a photon decays within the chamber of length $L_c$~m is then
+\begin{equation}
 P_c = 1-\lambda_{abs}/L_c +  (\lambda_{abs}/L_c) e^{-L_c/\lambda_{abs}} = 0.08240,
 \end{equation}
+\iffalse
 which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} By counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. Since there are on average four charge particles created per neutral pions in such collisions, the average neutral pion multiplicity can be estimated by dividing the calculated charge multiplicity by four.
+\fi
+which takes into account that not all photons will be produced at the same point along the length of the chamber.~\cite{seul} The total number of neutral pions created can then be calculated using
+\begin{equation} \label{eq:mult}
+m_{\pi^0} = \frac{n_{\text{pp}}\cdot L_c}{2\cdot n_{\text{inel}} \cdot \big((\lambda_{abs} \cdot e^{- L_c/\lambda_{abs}}-1)+L_c\big)},
+\end{equation}
+where $n_{\text{pp}}$ and $n_{\text{inel}}$ are the observed number of pair productions and inelastic collisions.~\cite{seul} Thus, by counting the number of pair productions seen for the total amount of proton-proton collisions, the $\pi^0$ multiplicity can be calculated. The multiplicity can also be calculated from the average charged multiplicity of proton-proton collisions, being the average number of charged particles produced in such a collision. Since there are on average four charge particles created per neutral pions in high-energy proton-proton collisions, the average neutral pion multiplicity can be estimated by dividing the calculated charge multiplicity by four.~\cite{Fernow} This allows us to compare the results of the two calculations to determine their accuracy.
+%TODO Is what I said about this derivation correct?
 %Value: Figure 3.5 or eq. 3.10 of Fernow: Introduction to Experimental Particle Physics
 
 \section{Results} \label{sec:res}
@@ -237,19 +251,123 @@ $N_{\text{t}}(L) = 91 \pm 9$, and $N_{\text{e}}(L) = 27 \pm 5$ for the elastic c
 These are in agreement with theoretical cross-sections of $\sigma_{\text{elastic}} = (7.9 \pm 0.1)$ and $ \sigma_{\text{total}} = (38.8 \pm 0.1) $~mb~\cite{seul2}, though the uncertainties of the total cross-sections don't overlap. This could be caused by the inaccurately calculated magnification thus affecting the calculated length in which scatterings were counted. Otherwise, we may have observed a statistically unlikely small number of scatterings not completely accounted for by the binomial uncertainty. The calculated values nevertheless suggest agreement with what was to be expected.
 %from  Gerhild Seul: Praktikumsversuche zur Einfuhrung in die Hochenergiephysik; Staatsexamens-arbeit, 1977
 
-\subsection{Multiplicities}
+\subsection{Pion Multiplicities}
+Of the 64 inelastic scattering events, 11 had two, 35 had four, 13 had six, and 5 had eight outgoing charged particles, respectively. This gives a total of 280 charged particle tracks from 64 events, giving an average charged multiplicity of $m_{\text{chg}} = 4.375$.
+%Fernow: equation 3.10 <N> = 1.8 ln(s) - 2.8, s = (Sqrt(24^2 + 0.940^2) + 0.940)^2 - 24000^2 = 46.9 GeV^2, giving the theoretical value below
+This matches our expectations from previous proton-proton collision experiments with $24$~GeV/c incident momentum (giving a total energy of $s \approx 47$~GeV$^2$).~\cite{Fernow} From this, the $\pi^0$ multiplicity can be estimated to be approximately 
+\begin{equation}
+	m_{\pi_0} = \frac{m_{\text{chg}}}{4} = 1.094. \nonumber
+\end{equation}
+At high energies, positive, negative and neutral pions are approximately created in equal numbers, where at our energies we expect the multiplicity to be around $1.3 \pm 0.3$ for each individual pion.~\cite{perkins, Fernow} This provides some confidence in our multiplicity estimation above.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{pair.png}
+	\caption{Example of a pair production found.}
+	\label{fig:pair}
+\end{figure}
+\par We can also calculate the neutral pion multiplicity from the detected pair productions. We found 4 such events from all the proton-proton collisions observed. Figure~\ref{fig:pair} shows one pair production found. Using Equation~\ref{eq:mult}, we obtain a total neutral pion multiplicity of $m_{\pi_0} =  0.5026 \pm 0.0003$, where the uncertainty comes mainly from the uncertainty of the measured length $L_c$ of the chamber. This result is in disagreement with the first, only being half of that value. The reason is likely due to a statistically low pair production count, given that we expect at least double from literature. Further experiments should analyse other photographs, or a large sample, to determine whether more pair productions are observed giving a higher neutral pion multiplicity.
+%TODO is the uncertainty right?
 
 \subsection{Neutrino Momentum}
 A $\pi \mu e$ decay was observed, shown in Figure~\ref{fig:neutrino}. It was found to be a $\pi^+ \to \mu^+ \nu_\mu \to (e^+ \nu_e \overline{\nu}_{\mu}) \, \nu_\mu,$ decay due to the deflection of the particles showing positive charges.
 \begin{figure}[!h]
 	\centering
 	\insertFigure{neutrino.png}
-	\caption{Image of the found $\pi \mu e$ decay, with the $\pi^+$ track coloured in red, $\mu^+$ in green, and positron in blue.}
+	\caption{Image of the found $\pi \mu e$ decay, with the $\pi^+$ track coloured in red, $\mu^+$ in green, and positron in blue. The neutrinos are all invisible in the bubble chamber as they are neutral particles.}
 	\label{fig:neutrino}
 \end{figure}
 Using the radii stencils, we found that the pion had an initial radius of $27.0 \pm 0.9$~cm giving a momentum of $120.1 \pm 3.8$~MeV/c. The track length was measured to be $79.3 \pm 0.9$~cm by superimposing a piece of rope along the length of the track and then measuring the rope. A Bragg curve graph, relating the distance travelled by a charged particle and its energy loss due to its ionisation of the hydrogen, gave an initial momentum of $128.5 \pm 5.9$~MeV/c for this distance travelled. Seeing that these two momentum values are quite close to each other, we can infer that the pion has indeed decayed while approximately at rest in the laboratory frame. This is important as the centre-of-mass frame of the decay, in which the pion has zero momentum, is applicable. As a result of momentum conservation, the pion's decay products $mu^+$ and $\nu_\mu$ will have equal momentum in opposing directions in this frame. The momentum's magnitude is only dependent on the mass of the pion and muon, as the neutrino mass is so small, and is easily calculated to be $29.8$~MeV/c, providing us with a theoretical momentum value for the produced muon and muon-neutrino.~\cite{seul} Experimentally, we measured the length of the $\mu^+$ track to be $0.597 \pm 0.085$~cm. Using the Bragg curve graph again, a momentum of $27.64 \pm 1.26$~MeV/c was read, which is fairly good agreement with the theoretical value quoted above. This provides confidence that the identified decay is indeed a positively charged $\pi \mu e$ decay.
 
-\subsection{Strange Particle}
+\subsection{First Strange Particle}
+We analysed two neutral strange particle $V^0$ decays vertices in order to identify the neutral particles. To analyse them, the decays needed to be secondary vertices, in that the neutral particles were created directly from proton-proton collisions, to reduce the complexity of the method. It is important to note that the angle between the two produced particles in each case was close to 0$^{\circ}$, so the possibility of these being pair productions is considerable and needs to be considered. Generally, a candidate $V^0$ was distinguished from a pair production from the size of spirals of the decay products, expecting larger momenta and thus spirals from a heavy neutral particle decay. The first neutral particle decay was observed with a primary vertex which had two visible outgoing particles and one distant vertex of two particles with opposite charges which is suspected to have come from the primary vertex. The opposite charges of the candidate secondary vertex confirms that this is a decay of the neutral particle as the total charge is zero, while a collision with a proton would have produced a vertex of total charge +1e. The primary and candidate secondary vertices of the first neutral particle creation and decay observed are shown in Figures~\ref{fig:strange1} and \ref{fig:strange1b}. The distance of the two vertices was measured to be $(138 \pm 1)$~cm. 
+\begin{figure}[!h]
+	\centering
+	\insertFigure{Images/E212_v0_primary1.png}
+	\caption{Image of the primary vertex (shown with the arrow) for the first neutral particle decay found, with two positively charged particles emerging from the vertex (both curved downwards), labelled for clarity.}
+	\label{fig:strange1}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\insertFigure{Images/E212_v01.png}
+	\caption{Image of the candidate secondary vertex for the first neutral particle decay found, seen as the tracks forming a ``V" shape with no tracks to the left of it. It can be seen that the angle between the momenta of the two decay products are approximately $0^\circ$.}
+	\label{fig:strange1b}
+\end{figure}
+
+\subsubsection{The secondary vertex}
+The neutral particle decayed into two particles with an angle of $(0\pm 0.1)^{\circ} $ between them. To find association with the primary vertex, we simply used a rule to see whether both particles can be directly traced back to the primary vertex, which was indeed found to be the case. We measured the two radii to be $(56 \pm 2)$~cm for the negatively charged and $(750 \pm 50)$~cm for the positively charged particle, respectively. From Equation~\ref{eq:mom}, in a coordinate system with the x-axis along the supposed $V^0$ path, we get 
+\begin{alignat*}{3}
+p_- &= &&(249.2 \pm 8.9)\, \text{MeV/c},\\
+p_+ &= &&(3337 \pm 223)\, \text{MeV/c},
+\end{alignat*}
+both purely in the x-direction. The total $V^0$ momentum is then
+\begin{equation*}
+\vert p_0 \vert = (3586 \pm 223)\, \text{MeV/c}.
+\end{equation*}
+
+\subsubsection{A first look at the primary vertex}
+The primary vertex consists of the incoming proton, and two positively charged outgoing particles. Figure~\ref{fig:primary1} is a diagram of the tracks shown for clarity.
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/primary_1.png}
+	\caption{The first primary vertex examined, with the charged decay products given by solid lines, the $V^0$ by a dashed line, and the x-axis by a dotted line.}
+	\label{fig:primary1}
+\end{figure}
+Particle 1 has a path with radius $(2000 \pm 200)$~cm and angle $(2 \pm 0.3)^{\circ}$, using the incoming proton beam as x-direction in this coordinate system, while particle 2 has a momentum of $(1700 \pm 100)$~cm and angle $(4.5 \pm 0.3)^{\circ}$. The momenta of the particles are
+\begin{alignat*}{3}
+p_1 &= &&((8893 \pm 890)\, \text{MeV/c},\hspace{3pt} && (311 \pm 56)\, \text{MeV/c}),\\
+p_2 &= &&((7541 \pm 444)\, \text{MeV/c},\hspace{3pt} && (-594 \pm 53)\, \text{MeV/c}),\\
+p_0 &= &&((3586 \pm 223)\, \text{MeV/c},\hspace{3pt} && (63 \pm 19)\, \text{MeV/c}),\\[6pt]
+\Sigma p &= &&((2.002 \pm 0.102) \cdot 10^4\, \text{MeV/c},\hspace{3pt} && (-220 \pm 79)\, \text{MeV/c}),
+\end{alignat*}
+where $p_0$ is the momentum of the neutral strange particle and $\Sigma p$ is the sum of the momenta. The momenta of the three particles do not add up to the momentum of the incoming proton of 23877 MeV/c in the x-direction, where the second proton is stationary in the liquid~\cite{seul}. The possibilities for this are that one or more other neutral particle were created in either vertex which were not detected as they did not decay or collide inside the chamber, or that the $V^0$ is not in fact a originating from the primary vertex, though it is in-line with it. It is also possible that  the $V^0$ is a higher vertex, whereby another neutral particle was created at the primary vertex, travelled a very short distance, then decayed into a number of neutral particles, one of whose decay was observed as the $V^0$. The original neutral particle would have had to travel a very short distance so that when we traced back the momenta of the $V^0$ decay products, the $V^0$ still seemed to originate from the primary vertex. These possibilities will be considered to explain the missing mass.
+\begin{table} [!h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		Name & M (MeV) & Dist. (m) & Decay & $\Gamma_p/\Gamma$ \\
+		\hline
+		$\Lambda^0$ 	& 1115.7 & 0.079 &p$\, \pi^-$ & 63.9\%\\
+		\hline
+		K$^0_{\text{S}}$	 & 497.6 & 0.027 & $\pi^+ \, \pi^-$ & 69\%\\
+		\hline
+		\multirow{2}{*}{K$^0_{\text{L}}$} &  \multirow{2}{*}{ 497.6}& \multirow{2}{*}{15.3}&$\pi^{\pm} \, e^{\mp} \nu_{\text{e}}$ & 40.6\%\\
+		& & &$\pi^{\pm} \mu ^{\mp} \nu_{\mu}$&27.0\%\\
+		\hline
+		$\Sigma^0$ & 1192.6 & $2.22 \cdot 10^{-11}$& $\Lambda \, \gamma$ & 100\%\\
+		\hline
+	\end{tabular}
+	\caption{Possible neutral particles with masses, distances, decay products, and branching ratios of the decay products. K$^0_{\text{S}}$ and K$^0_{\text{L}}$ refer to the short and long-lived neutral kaon, respectively.~\cite{pdg}}
+	\label{tab:neutral}
+\end{table}
+
+\subsubsection{Identifying the strange particle}
+Though there is missing momentum, it does not seem to come from the secondary vertex as the directions of the decay particles already trace back to the primary vertex, whereas another decay product would change this. The only possibility would be that a neutral particle would have a pro- or retrograde motion, though this is unlikely. Looking at Table \ref{tab:neutral}, we see three possible scenarios:
+\begin{itemize}
+	\item The $V^0$ is a $\Lambda^0$ particle, while another neutral particle left the primary vertex undetected, and the secondary vertex then contains a proton and a pion.
+	\item The $V^0$ is a $K^0_{\text{S}}$ particle, which decayed into a pair of pions, again with undetected neutral particles.
+	\item A $\Sigma^0$ was created at the proton-proton collision, which then decayed very quickly, resulting in a $\Lambda^0$ baryon whose decayed into a proton, pion, and photon was observed as the incorrectly-labelled "secondary vertex".
+\end{itemize}
+In these scenarios, the mass of the strange particle is
+\begin{align*}
+m_{\text{V}_0} ( \text{p}, \, \pi^-) &= (1103.2 \pm 1028.3)\, \text{MeV},\\
+m_{\text{V}_0} ( \pi^+, \, \pi^- ) &= (532.8 \pm 2132.2)\, \text{MeV},
+\end{align*}
+which are both within uncertainty ranges of the $\Lambda^0$ and $K^0$ masses. That said, the uncertainty is extremely large in both cases, though not emerging from any particular measurement. To reduce these errors, more precise experiments are required. As a result, these mass measurements have not helped us determine the identity of the neutral particle.
+
+\subsubsection{Primary vertex revisited}
+The missing momentum must thus come from the primary vertex, which can help us identify the strange particle. The missing momentum is
+\begin{equation}
+p_{\text{missing}} = ( (7743.0 \pm 994.5)\, \text{MeV/c,} \, (282.9 \pm 76.9) \, \text{MeV/c} ). \nonumber
+\end{equation}
+It turns out that the simplest proposition for the missing momentum is the $\Sigma^0$ particle scenario. To see this, we can check the conservation laws:
+\begin{itemize}
+	\item Baryon number: the $\Sigma^0$ (uds) gives 1, this means only one of the created charged particles in the primary vertex can be a baryon.
+	\item Strangeness: $\Sigma^0$ has $S = -1$, the baryon or other particle should have an $\bar{\text{s}}$ quark.
+	\item Flavours: the baryon and the other particle should have 3 u, 1 d, and 1 $\bar{s}$ quarks.
+\end{itemize}
+From this, we can determine that the created baryon is a proton (uud) while the other a positively charged kaon (K$^+$, u$\bar{\text{s}}$). To check whether this is feasible, we can used energy conservation. The initial energy is $23895 + 938 = 24833$~MeV. If we assume that particle one is a proton, and two is the kaon, these then have energies $E(p_1, \, p^+) = (8948 \pm 884)$~MeV and $E(p_2, \, K^+) = (7580 \pm 442)$~MeV. Finally, the missing energy from the $\Sigma^0$ is $E(p_{\text{missing}}, \Sigma^0) = (7543 \pm 981)$~MeV, giving an overall energy of $(2.407 \pm 0.140)\times 10^4$~MeV, which matches the initial energy. Switching the proton and kaon tracks yields $(2.408 \pm 0.140)\times 10^4$~MeV which is also a valid result, thus we cannot uniquely assign the two final particles to tracks. Ultimately, we explain the event as a p$\,$p$\,\rightarrow\,$p$\,$K$^+\,\Sigma^0,\,\Sigma^0 \, \rightarrow \, \gamma \, \Lambda$ collision, where we detected the $\Lambda\rightarrow \text{p}\, \pi^-$ decay. Momentum and energy conservation are both well satisfied in this scenario, giving confidence in our result.
+
+\subsection{Second Strange Particle}
 
 
 \section{Conclusion}
