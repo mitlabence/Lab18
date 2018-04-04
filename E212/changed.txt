@@ -1,0 +1,8 @@
+E212 changed:
+*added pi0 case to the end of first V0, 1 nm distance to sigma0 case
+*multiplicity: added statistical errors to 280 cases and 64 events, also charged multiplicity 4.375 pm 0.5... and neutral multiplicities to 1.094. pm 0.13 and 0.5026 pm 0.0589
+*corrected second V0, got K0 as a result
+*Inserted second V0 images, with short captions (to be modified?)
+*Ordered references
+
+
