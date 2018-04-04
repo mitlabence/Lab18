@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.26)  4 APR 2018 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.26)  4 APR 2018 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,23 +1055,27 @@ Package tocbibind Note: Using section or other style headings.
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (./e212.aux)
+) (./e212.aux
+
+LaTeX Warning: Label `fig:V0second1' multiply defined.
+
+)
 \openout1 = `e212.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1108,7 +1112,7 @@ LaTeX Font Info:    ... okay on input line 26.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 27.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1117,9 +1121,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./e212.out) (./e212.out)
 \@outlinefile=\write3
@@ -1240,50 +1244,47 @@ e
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 26.
+. Activating mapping `default' on line 27.
 .................................................
 \c__siunitx_mathsf_int=\count300
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count301
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 <SM.png, id=113, 893.58844pt x 659.46375pt>
 File: SM.png Graphic file (type png)
 <use SM.png>
-Package pdftex.def Info: SM.png  used on input line 49. on input line 49.
+Package pdftex.def Info: SM.png  used on input line 51. on input line 51.
 Package pdftex.def Info: Requested size: 232.97914pt x 171.92946pt on input lin
-e 49.
+e 51.
 <mass.png, id=118, 460.72125pt x 217.5628pt>
 File: mass.png Graphic file (type png)
 <use mass.png>
-Package pdftex.def Info: mass.png  used on input line 56. on input line 56.
+Package pdftex.def Info: mass.png  used on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 232.97914pt x 110.01607pt on input lin
-e 56.
+e 58.
 <energy.png, id=123, 487.06969pt x 150.5625pt>
 File: energy.png Graphic file (type png)
 <use energy.png>
-Package pdftex.def Info: energy.png  used on input line 63. on input line 63.
+Package pdftex.def Info: energy.png  used on input line 65. on input line 65.
 Package pdftex.def Info: Requested size: 232.97914pt x 72.01875pt on input line
- 63.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ 65.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1291,309 +1292,349 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./SM.png>]
+]
 <colour.png, id=148, 546.04pt x 460.72125pt>
 File: colour.png Graphic file (type png)
 <use colour.png>
-Package pdftex.def Info: colour.png  used on input line 73. on input line 73.
+Package pdftex.def Info: colour.png  used on input line 75. on input line 75.
 Package pdftex.def Info: Requested size: 232.97914pt x 196.57373pt on input lin
-e 73.
-
-Underfull \vbox (badness 4673) has occurred while \output is active []
-
-<pseudo.png, id=152, 322.20375pt x 255.20343pt>
+e 75.
+ [2 <./SM.png> <./mass.png> <./energy.png>]
+<pseudo.png, id=163, 322.20375pt x 255.20343pt>
 File: pseudo.png Graphic file (type png)
 <use pseudo.png>
-Package pdftex.def Info: pseudo.png  used on input line 83. on input line 83.
+Package pdftex.def Info: pseudo.png  used on input line 85. on input line 85.
 Package pdftex.def Info: Requested size: 232.97914pt x 184.54071pt on input lin
-e 83.
- [2 <./mass.png> <./energy.png> <./colour.png>]
-Underfull \hbox (badness 1888) in paragraph at lines 107--109
+e 85.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 109--111
 \OT1/cmr/m/n/10 pion, show-ing that these par-tic-u-lar de-cays largely
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
-<oct.png, id=171, 529.98pt x 397.485pt>
+<oct.png, id=173, 529.98pt x 397.485pt>
 File: oct.png Graphic file (type png)
 <use oct.png>
-Package pdftex.def Info: oct.png  used on input line 113. on input line 113.
+Package pdftex.def Info: oct.png  used on input line 115. on input line 115.
 Package pdftex.def Info: Requested size: 232.97914pt x 174.73624pt on input lin
-e 113.
-<dec.png, id=174, 163.10115pt x 132.69246pt>
+e 115.
+<dec.png, id=176, 163.10115pt x 132.69246pt>
 File: dec.png Graphic file (type png)
 <use dec.png>
-Package pdftex.def Info: dec.png  used on input line 119. on input line 119.
+Package pdftex.def Info: dec.png  used on input line 121. on input line 121.
 Package pdftex.def Info: Requested size: 232.97914pt x 189.55034pt on input lin
-e 119.
-[3 <./pseudo.png> <./oct.png> <./dec.png>]
-<bubble.png, id=199, 984.67876pt x 625.58719pt>
-File: bubble.png Graphic file (type png)
-<use bubble.png>
-Package pdftex.def Info: bubble.png  used on input line 140. on input line 140.
+e 121.
 
-Package pdftex.def Info: Requested size: 232.97914pt x 148.0153pt on input line
- 140.
-<track.png, id=203, 419.31656pt x 547.2947pt>
-File: track.png Graphic file (type png)
-<use track.png>
-Package pdftex.def Info: track.png  used on input line 151. on input line 151.
-Package pdftex.def Info: Requested size: 232.97914pt x 304.08618pt on input lin
-e 151.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./bubble.png>]
-<delta.png, id=218, 435.87843pt x 423.08063pt>
+[3 <./colour.png> <./pseudo.png>]
+<bubble.png, id=200, 984.67876pt x 625.58719pt>
+File: bubble.png Graphic file (type png)
+<use bubble.png>
+Package pdftex.def Info: bubble.png  used on input line 139. on input line 139.
+
+Package pdftex.def Info: Requested size: 232.97914pt x 148.0153pt on input line
+ 139.
+ [4 <./oct.png> <./dec.png>]
+<track.png, id=213, 419.31656pt x 547.2947pt>
+File: track.png Graphic file (type png)
+<use track.png>
+Package pdftex.def Info: track.png  used on input line 150. on input line 150.
+Package pdftex.def Info: Requested size: 232.97914pt x 304.08618pt on input lin
+e 150.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<delta.png, id=219, 435.87843pt x 423.08063pt>
 File: delta.png Graphic file (type png)
 <use delta.png>
-Package pdftex.def Info: delta.png  used on input line 165. on input line 165.
+Package pdftex.def Info: delta.png  used on input line 164. on input line 164.
 Package pdftex.def Info: Requested size: 232.97914pt x 226.13608pt on input lin
-e 165.
- [5 <./track.png> <./delta.png>]
+e 164.
+[5 <./bubble.png> <./track.png>]
 <stereo.png, id=234, 1132.98282pt x 639.89063pt>
 File: stereo.png Graphic file (type png)
 <use stereo.png>
-Package pdftex.def Info: stereo.png  used on input line 189. on input line 189.
+Package pdftex.def Info: stereo.png  used on input line 188. on input line 188.
 
 Package pdftex.def Info: Requested size: 232.97914pt x 131.57874pt on input lin
-e 189.
+e 188.
+ [6 <./delta.png> <./stereo.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 205.
+(hyperref)                removing `\pi' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 205.
+(hyperref)                removing `superscript' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 205.
+(hyperref)                removing `math shift' on input line 204.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 205.
-
-[6 <./stereo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-<box.png, id=260, 578.16pt x 376.40625pt>
+<box.png, id=259, 578.16pt x 376.40625pt>
 File: box.png Graphic file (type png)
 <use box.png>
-Package pdftex.def Info: box.png  used on input line 232. on input line 232.
+Package pdftex.def Info: box.png  used on input line 231. on input line 231.
 Package pdftex.def Info: Requested size: 232.97914pt x 151.67406pt on input lin
-e 232.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation `seul2' on page 7 undefined on input line 249.
-
+e 231.
 [7 <./box.png (PNG copy)>]
-<pair.png, id=277, 851.18pt x 481.8pt>
+<pair.png, id=280, 851.18pt x 481.8pt>
 File: pair.png Graphic file (type png)
 <use pair.png>
-Package pdftex.def Info: pair.png  used on input line 262. on input line 262.
+Package pdftex.def Info: pair.png  used on input line 261. on input line 261.
 Package pdftex.def Info: Requested size: 232.97914pt x 131.87419pt on input lin
-e 262.
-<neutrino.png, id=281, 925.20656pt x 694.09312pt>
+e 261.
+<neutrino.png, id=284, 925.20656pt x 694.09312pt>
 File: neutrino.png Graphic file (type png)
 <use neutrino.png>
-Package pdftex.def Info: neutrino.png  used on input line 273. on input line 27
-3.
+Package pdftex.def Info: neutrino.png  used on input line 272. on input line 27
+2.
 Package pdftex.def Info: Requested size: 232.97914pt x 174.77258pt on input lin
-e 273.
+e 272.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/E212_v0_primary1.png, id=285, 769.37437pt x 435.12563pt>
+[8 <./pair.png>]
+<Images/E212_v0_primary1.png, id=296, 769.37437pt x 435.12563pt>
 File: Images/E212_v0_primary1.png Graphic file (type png)
 <use Images/E212_v0_primary1.png>
-Package pdftex.def Info: Images/E212_v0_primary1.png  used on input line 283. o
-n input line 283.
+Package pdftex.def Info: Images/E212_v0_primary1.png  used on input line 281. o
+n input line 281.
 Package pdftex.def Info: Requested size: 232.97914pt x 131.76035pt on input lin
-e 283.
-<Images/E212_v01.png, id=286, 694.09312pt x 393.72093pt>
+e 281.
+<Images/E212_v01.png, id=297, 694.09312pt x 393.72093pt>
 File: Images/E212_v01.png Graphic file (type png)
 <use Images/E212_v01.png>
-Package pdftex.def Info: Images/E212_v01.png  used on input line 289. on input 
-line 289.
+Package pdftex.def Info: Images/E212_v01.png  used on input line 287. on input 
+line 287.
 Package pdftex.def Info: Requested size: 232.97914pt x 132.15715pt on input lin
-e 289.
-[8 <./pair.png> <./neutrino.png>]
-<Images/primary_1.png, id=296, 578.16pt x 165.61874pt>
+e 287.
+ [9 <./neutrino.png> <./Images/E212_v0_primary1.png> <./Images/E212_v01.png>]
+<Images/primary_1.png, id=307, 578.16pt x 165.61874pt>
 File: Images/primary_1.png Graphic file (type png)
 <use Images/primary_1.png>
-Package pdftex.def Info: Images/primary_1.png  used on input line 309. on input
- line 309.
+Package pdftex.def Info: Images/primary_1.png  used on input line 307. on input
+ line 307.
 Package pdftex.def Info: Requested size: 232.97914pt x 66.73657pt on input line
- 309.
- [9 <./Images/E212_v0_primary1.png> <./Images/E212_v01.png> <./Images/primary_1
-.png (PNG copy)>]
+ 307.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 344.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 342.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.7}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.357 \begin{equation}
+l.355 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.4.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.357 \begin{equation}
+l.355 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.4.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.357 \begin{equation}
+l.355 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.4.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.357 \begin{equation}
+l.355 \begin{equation}
                       
-Overfull \hbox (1.12578pt too wide) detected at line 359
+Overfull \hbox (1.12578pt too wide) detected at line 357
 []\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 = ((7743\OML/cmm/m/it/10 :\OT1/cmr/m/n/1
 0 0 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/10 994\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5
 ) [] (282\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 9 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/
 10 76\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 9) [])\OML/cmm/m/it/10 :
  []
 
-[10]
-Underfull \hbox (badness 3009) in paragraph at lines 378--379
-[]\OT1/cmr/m/n/10 Unspecified au-thor, \OT1/cmr/m/sl/10 Ad-vanced Lab-o-ra-tory
- Course
- []
+[10 <./Images/primary_1.png (PNG copy)>]
+<Images/V0second1.jpg, id=320, 2055.68pt x 1541.76pt>
+File: Images/V0second1.jpg Graphic file (type jpg)
+<use Images/V0second1.jpg>
+Package pdftex.def Info: Images/V0second1.jpg  used on input line 370. on input
+ line 370.
+Package pdftex.def Info: Requested size: 232.97914pt x 174.72264pt on input lin
+e 370.
+<Images/primary_2.png, id=322, 578.16pt x 151.56625pt>
+File: Images/primary_2.png Graphic file (type png)
+<use Images/primary_2.png>
+Package pdftex.def Info: Images/primary_2.png  used on input line 376. on input
+ line 376.
+Package pdftex.def Info: Requested size: 232.97914pt x 61.07408pt on input line
+ 376.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./Images/V0second1.jpg> <./Images/primary_2.png (PNG copy)>]
+<Images/V0second3.jpg, id=331, 2698.08pt x 1525.7pt>
+File: Images/V0second3.jpg Graphic file (type jpg)
+<use Images/V0second3.jpg>
+Package pdftex.def Info: Images/V0second3.jpg  used on input line 412. on input
+ line 412.
+Package pdftex.def Info: Requested size: 232.97914pt x 131.74309pt on input lin
+e 412.
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 []\OT1/cmr/m/n/10 T. DeMichele, \OT1/cmr/m/it/10 The Stan-dard Model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 \OT1/cmr/m/it/10 (of Par-ti-cle Physics) Ex-plained\OT1/cmr/m/n/10 , WWW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 \OT1/cmr/m/n/10 Doc-u-ment, []$\OT1/cmtt/m/n/10 http : / / factmyth . com /
  []
 
 
-Overfull \hbox (23.9367pt too wide) in paragraph at lines 385--386
+Overfull \hbox (23.9367pt too wide) in paragraph at lines 425--426
 \OT1/cmtt/m/n/10 the-[]standard-[]model-[]of-[]particle-[]physics-[]explained/$
 []\OT1/cmr/m/n/10 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 []\OT1/cmr/m/n/10 H. Klus, \OT1/cmr/m/it/10 The Strong Nu-clear Force\OT1/cmr/m
 /n/10 , WWW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 \OT1/cmr/m/n/10 Doc-u-ment, []$\OT1/cmtt/m/n/10 http : / / www . thestargarden 
 . co . uk /
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 389.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 431.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 389.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 431.
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 []\OT1/cmr/m/n/10 T. Dorigo, \OT1/cmr/m/it/10 Omega b: the new baryon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 \OT1/cmr/m/it/10 nailed by D0\OT1/cmr/m/n/10 , WWW Doc-u-ment, []$\OT1/cmtt/m/n
 /10 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 \OT1/cmtt/m/n/10 / / dorigo . wordpress . com / 2008 / 09 / 19 /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+[12 <./Images/V0second3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 \OT1/cmtt/m/n/10 ch / archiv / HST2005 / bubble _ chambers / BCwebsite /
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 401--402
+Underfull \hbox (badness 6094) in paragraph at lines 443--444
 []\OT1/cmr/m/n/10 G. G. Harigel, \OT1/cmr/m/sl/10 Bub-ble Cham-bers, Tech-nol-o
 gy
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 401--402
+Underfull \hbox (badness 7047) in paragraph at lines 443--444
 \OT1/cmr/m/sl/10 and Im-pact on High En-ergy Physics \OT1/cmr/m/n/10 (CERN,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
-[11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
+
+Underfull \hbox (badness 1052) in paragraph at lines 447--466
+[]\OT1/cmr/m/n/10 W. R. Leo, \OT1/cmr/m/sl/10 Tech-niques for Nu-clear and Par-
+ti-cle
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 467.
+[13
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 467.
  (./e212.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 467.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 467.
 Package rerunfilecheck Info: File `e212.out' has not changed.
-(rerunfilecheck)             Checksum: E11446045E9E07B49A3D6AD8DB037138;1787.
+(rerunfilecheck)             Checksum: D530BAE03D393F368A895E311834321E;1809.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 467.
  ) 
 Here is how much of TeX's memory you used:
- 18902 strings out of 492990
- 360271 string characters out of 6135004
- 446175 words of memory out of 5000000
- 22187 multiletter control sequences out of 15000+600000
- 543226 words of font info for 72 fonts, out of 8000000 for 9000
+ 18933 strings out of 492990
+ 360761 string characters out of 6135004
+ 448465 words of memory out of 5000000
+ 22206 multiletter control sequences out of 15000+600000
+ 544635 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,15n,34p,10394b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,15n,34p,10394b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
-.pfb>
-Output written on e212.pdf (11 pages, 2044759 bytes).
+/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on e212.pdf (13 pages, 3797081 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
