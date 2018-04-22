@@ -1,0 +1,19 @@
+{
+    c1->Clear();
+    c1->Divide(2,4);
+    c1->cd(1); 
+    w.GetHalfMaximum("MCW75",26,46);
+    c1->cd(2);
+    w.GetHalfMaximum("MCW78",26,47);
+    c1->cd(3);
+    w.GetHalfMaximum("MCW79",26,47);
+    c1->cd(4);
+    w.GetHalfMaximum("MCW80",26,48);
+    c1->cd(5);
+    w.GetHalfMaximum("MCW81",26,48);
+    c1->cd(6);
+    w.GetHalfMaximum("MCW82",26,49);
+    c1->cd(7);
+    w.GetHalfMaximum("MCW85",26,51);
+}
+

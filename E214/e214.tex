@@ -1,0 +1,293 @@
+\documentclass[twocolumn]{article}
+\usepackage{listings} %for listing code
+\usepackage{multirow} %multirow cells in tables
+\usepackage{geometry}	%
+\usepackage{abstract} %to get email footnotes
+\geometry{margin=2cm}	%more visible figures (more place) 
+\usepackage[superscript,biblabel]{cite}%superscript citing
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}	%booklet
+\usepackage{hyperref}	%clickable citings, referencing URL via \url{}
+\usepackage{siunitx}	%for SI units; see ftp://ftp.dante.de/tex-archive/macros/latex/exptl/siunitx/siunitx.pdf
+\usepackage{graphicx} 	%includegraphics
+\usepackage{mhchem}		%writing chemical elements with mass numbers
+\usepackage[nottoc]{tocbibind}	%references
+\usepackage{indentfirst}%indenting first paragraphs
+
+%set code style
+
+\lstset{		language=C++,
+				frame=tb,
+                basicstyle=\footnotesize\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#},
+                numbers=left
+}
+
+
+%the command \insertFigure{file} inserts figure with width 0.9*(column width)
+\newcommand{\insertFigure}[1]{%
+   \includegraphics[width=0.95\linewidth]{#1}%
+}
+
+\title{\textbf{E214: ATLAS}}
+\author{Bence Mitlasóczki\thanks{s6bemitl@uni-bonn.de} and Beno\^it Scholtes\thanks{s6bescho@uni-bonn.de} \\ \textit{Rheinische-Friedrich-Wilhelms Universit\"at Bonn}}
+\begin{document}
+\renewcommand{\abstractname}{\vspace{-\baselineskip}} %supresses abstract title
+\twocolumn[ %makes a one column abstract
+\begin{@twocolumnfalse}
+\maketitle
+\begin{abstract} \vspace{-8mm}
+Abstract goes here
+\end{abstract}
+\end{@twocolumnfalse}
+\hspace{5mm} ]
+\maketitle
+\saythanks %from abstract package to ensure email footnotes from \thanks command in a two-collumn article
+\section{Introduction}
+Introduction text
+\section{Theory}
+
+\section{Experimental setup}\label{sec:Exp}
+\subsection{The ATLAS detector}
+To detect the various particles created by the collisions, the ATLAS detector consists of several layers.
+\par The inner detector helps determining the particle paths as precisely as possible. Determining the momentum of charged particles is made possible by utilizing a solenoid magnet surrounding this system, creating a 2~T magnetic field in which a particle with charge $q$ experiences a force of 
+\begin{equation}
+\vec{F} = \frac{d}{dt} \vec{p} = q \vec{v} \times \vec{B},\nonumber
+\end{equation}
+\textbf{from which it is possible to calculate the momentum.} %TODO HOW?
+\begin{itemize}
+\item The innermost layer consists of semiconductor pixels (pixel detector, PD), which allow for precise reconstruction of vertices.
+\item The semi-conductor tracker layer (SCT) serves the same purpose, but with long strips that make covering a larger surface area more practical.
+\item The transition radiation tracker (TRT) consists of thin, long tubes (drift chambers) with inhomogeneous medium filling in the space between them. A particle passing through this medium emits transition radiation. The photons created this way, along with the particle itself, interact with the gas inside the tubes, causing ionizing. As there is a voltage applied to an electrode in the middle and the tube, the electrons are drawn to the electrode, contributing to an electric pulse. As the transition radiation is strongest for particles with high velocity, the strength of the signal can be used to identify the lightest particles, electrons and positrons.
+\item The solenoid superconductor magnet mentioned above, creating the magneti field $\vec{B}$ which is parallel to the colliding beams.
+\end{itemize}
+The layers surrounding the inner detector are the following:
+\begin{itemize}
+\item The electromagnetic calorimeter (ECAL) is made of accordion-shaped lead and stainless steel sheets responsible for interacting with the particles passing through, creating an electromagnetic shower. The liquid argon between the sheets is ionized by the particles passing through, and the created free electrons are drawn to a copper electrode. The signal strength can be related to the deposited energy. This calorimeter stops photons, electrons and positrons entirely. Hadrons and muons also deposit some energy here, but they pass through to reach the outer layers. The cooling system is a cryostat.
+\item The hadron calorimeter (HCAL) interacts strongly with the entering particles. The iron tiles induce hadronic showers. The particles thus created enter the scintillation tiles producing light, and these photons are carried away in an optical fiber to a unit which measures light intensity, from which the deposited energy can be calculated. The scintillation material is liquid argon, so a cooling system is used in this layer as well.
+\item The muon calorimeter is needed to measure the energy of the muons: these particles pass through all the previous layers with losing only part of their energy. This unit is supplemented by a larger magnetic system consisting of toroid magnets; thus the muon system is capable of determining the momentum independently of the inner layers. The tiles making up this layer consist of thin tubes filled with gas, and work on the principle of ionization, similarly to the TRT tubes. 
+\end{itemize}
+\section{Procedure} \label{sec:Proc}
+\subsection{Atlantis}
+As our first task, we looked at examples in the event display software Atlantis. This way we got familiar with the working of the ATLAS detector. We had to complete two introductory tasks as described below.
+\subsubsection{Electron energy}
+We looked at the first twenty electron events in the learning data-set, determining the momentum by the track radius and the energy of the ECAL clusters by manually selecting the region. The results are summed up in Table \ref{tab:electron}. The histogram made of the $E/p$ ratios is shown in Figure \ref{fig:electron_histogram}
+\begin{figure}
+\centering
+\insertFigure{Images/electron_histogram.png}
+\caption{Electron E/p histogram.}
+\label{fig:electron_histogram}
+\end{figure}
+\begin{figure}
+\centering
+\insertFigure{Images/Atlantis_Electron_cropped.png}
+\caption{An (artificial) electron track as viewed in ATLANTIS.}
+\end{figure}
+%TODO what does the inner detector give, momentum in GeV/c or energy in GeV?
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\# & I.D. (GeV) & ECAL (GeV) & E/p\\
+\hline
+1&	26.2&		54.7&	2.09\\\hline
+2&	22.78&		35.2&	1.55\\\hline
+3&	244.35&		223.2&	0.91\\\hline
+4&	N/A &		N/A&	N/A\\\hline
+5&	N/A	&		N/A&	N/A\\\hline
+6&	66.67&		78.3&	1.17\\\hline
+7&	7.55&		56.6&	7.50\\\hline
+8&	129.82&		162.9&	1.25\\\hline
+9&	3.27&		47.7&	14.59\\\hline
+10&	79.01&		66.2&	0.84\\\hline
+11&	95.93&		78.7&	0.82\\\hline
+12&	37.4&		30.6&	0.82\\\hline
+13&	89.35&		86.5&	0.97\\\hline
+14&	235.24&		242.3&	1.03\\\hline
+15&	105.14&		105.3&	1.00\\\hline
+16&	N/A	  &		N/A&	N/A\\\hline
+17&	28.62&		28.1&	0.982\\\hline
+18&	53.41&		46.4&	0.869\\\hline
+19&	32.92&		64.3&	1.95\\\hline
+20&	105.64&		80.8&	0.765\\\hline
+21&	N/A	  &		N/A&	N/A\\\hline
+22&	93.52&		82.1&	0.878\\\hline
+23&	113.98&		92.7&	0.813\\\hline
+24&	155.35&		283&	1.82\\\hline
+\end{tabular}
+\caption{Electron task}
+\label{tab:electron}
+\end{table}
+\subsubsection{Muon momentum comparison}
+As our second task, we compared the measured muon momentum in the muon spectrometer and the inner detector. Calculating the differences between the two methods (Table \ref{tab:muon}), we noticed some cases where the muon seems to have gained momentum. The average energy loss is 6.87~GeV.
+%TODO same issue of GeV vs. GeV/c here
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{\#} 	& I.D.		& M.C. 		& Diff. 	& \multirow{2}{*}{$\eta$} & \multirow{2}{*}{$\phi^{\circ}$}\\
+					& (GeV)	& (GeV)	& (GeV)	&	&\\
+\hline
+1&	85.28&		53.92&		31.36&		1.437&	21\\\hline
+2&	43.4&		43.83&		-0.43&		-0.767&	25\\\hline
+3&	241.37&		237.02&		4.350&		-2.438&	230\\\hline
+4&	48.89&		44.77&		4.12&		0.567&	311\\\hline
+5&	168.16&		177.62&		-9.46&		-1.809&	244\\\hline
+6&	117.32&		96.56&		20.76&		1.621&	152\\\hline
+7&	71.94&		64.96&		6.98&		0.699&	3.8\\\hline
+8&	199.91&		199.44&		0.470&		1.797&	67\\\hline
+9&	57.84&		50.01&		7.830&		-0.287&	241\\\hline
+10&	71.1&		0&			71.1&		1.181&	312\\\hline
+11&	100.75&		94.11&		6.64&		-1.636&	48\\\hline
+12&	38.26&		34.48&		3.78&		0.189&	326\\\hline
+13&	105.19&		108.68&		-3.490&		1.163&	224\\\hline
+14&	236.12&		263.61&		-27.49&		2.286&	103\\\hline
+15&	131.69&		125.51&		6.180&		-1.763&	255\\\hline
+16&	152.24&		157.69&		-5.450&		-1.874&	27\\\hline
+17&	35.23&		32.18&		3.05&		0.395&	326\\\hline
+18&	54.19&		50&			4.19&		0.229&	336\\\hline
+19&	84.75&		68.09&		16.66&		0.773&	260\\\hline
+20&	104.26&		107.98&		-3.72&		1.421&	78\\
+\hline
+\end{tabular}
+\caption{Muon assignment. The first column shows the Inner Detector measured momentum values, the second column the muon calorimeter momenta, the third column the loss of momentum (negative values show an increase in momentum), the fourth column $\eta$, the pseudorapidity, the last column the azimuthal angle.}
+\label{tab:muon}
+\end{table}
+\begin{figure}
+\centering
+\insertFigure{Images/Atlantis_Muon_cropped.png}
+\caption{Artificial muon event as seen in Atlantis (the panel with quantitive informations has been cropped for better visibility).}
+\end{figure}
+\subsection{Electron energy calibration}
+As the detector is not ideal, we need to calibrate the different regions to account for the differences in their characteristics. We chose sections of $\Delta \eta = 1.25$ and $\Delta \varphi = \pi/2$ ($-2.5 \leq \eta \leq 2.5$, $-\pi < \varphi < \pi$). Using the well-known Z$^0$ mass, we used cuts to limit ourselves to each of these intervals and iterated the process of scaling the individual values. We also introduced a transverse momentum dependent correction, finally a constant shift. Our final \textsl{ElecCalib.C} contents can be seen in Section \ref{sec:Code}. The mass obtained after three iterations is $91.1975 \pm 0.0204$~GeV, with resolution $2.5315 \pm 0.0251$, we considered this precise enough for our purposes. Figure \ref{fig:final_iteration} shows our fitting.
+\begin{figure}
+\centering
+\insertFigure{Images/FinalIteration.png}
+\caption{Final iteration fitting of Z$^0$}
+\label{fig:final_iteration}
+\end{figure}
+\subsection{Measurement of the W-boson mass}
+\begin{figure}
+\centering
+\insertFigure{Images/FirstWFit.png}
+\caption{Z$^0$ mass from ATLAS data}
+\label{fig:Z0ATLAS}
+\end{figure}
+After setting up the electron energy calibration file, we tested it on real ATLAS data, as seen in Figure \ref{fig:Z0ATLAS}. The mass acquired here is in good agreement with the commonly accepted value. As our next step, we tried scaling the QCD background by comparing the ATLAS data points and our stack-plot. We decided that the scale factor $\alpha = 0.35 \pm 0.05$ gave a fair match (the error was approximated by manual trial).
+\begin{figure}
+\centering
+\insertFigure{Images/ptw_scale.png}
+\caption{QCD scaled to achieve (by eye) a good match between the stack-plot and the data points.}
+\label{fig:QCDscalefactor}
+\end{figure}
+Following the guide, we then set up a macro file to visualize the effect of our cuts on the different data sets of W-boson events with different masses, all at once. The measured half maxima and a linear fitting is shown in Figure \ref{fig:gaugecurve}. We found the linear fitting to be
+\begin{equation}\nonumber
+\text{HM}(m) = (0.50267 \pm 0.00867)\cdot m + (2.2613 \pm 0.6898)
+\end{equation}
+For the real data, we obtained the half max to be at $43.04 \pm 0.09$, which gives, after inverting the previous relation, a mass of $m_\text{W} = 81.12 \pm 2.03$~GeV.
+%TODO maybe use inverted data as original fitting? Then need to figure out how to fit when x-axis has errors.
+\begin{figure}
+\centering
+\insertFigure{Images/Jacobihalfmax.png}
+\caption{The gauge curve data points with linear fitting.}
+\label{fig:gaugecurve}
+\end{figure}
+\subsection{Cross-check using ATLAS \textit{ee} pair data}
+The gauge curve can be applied in the case of data for electron-positron pairs. 
+\begin{figure}
+\centering
+\insertFigure{Images/ZeeCheck.png}
+\caption{Plot showing the cross-check procedure.}
+\label{fig:crosscheck}
+\end{figure}
+Using the inverse of the gauge function again, we get
+\begin{equation}
+HM^{-1} \big(48.47 \pm 0.12\big) = 91.927 \pm 2.171 \, \text{GeV,}
+\end{equation}
+in good agreement with the literature value, which supports our previous works.
+\subsubsection{Error sources}
+
+\section{Results}
+\section{Conclusion}
+\begin{thebibliography}{9}
+\bibitem{book}
+K. Siegbahn, \textsl{Alpha-, beta-, and gamma-ray spectroscopy, Vol. 2} (North Holland Publishing Company, Amsterdam, 1965).
+\bibitem{booklet}
+Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
+\bibitem{youtube}
+ATLAS Experiment YouTube channel, \url{http://youtube.com/TheATLASExperiment}.
+ \bibitem{link}
+ W. U. Boeglin, \textit{Scintillation Detectors}, WWW Document, \url{http://wanda.fiu.edu/teaching/courses/Modern_lab_manual/scintillator.html}.
+\bibitem{pdf_on_website}
+Unspecified author, \textsl{Gamma Ray Spectroscopy} (University of Florida, 2013), \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}.
+\bibitem{cfd}
+E. Ermis and C. Celiktas, International Journal Of Instrumentation Science 1, (2013), pp.54-62.
+%alternative url: https://en.wikipedia.org/wiki/Constant_fraction_discriminator
+\bibitem{leo}
+W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Springer-Verlag, 1987), p. 305.
+%William R. Leo
+\bibitem{meliss}
+A. C. Melissinos, J. Napolitano, \textsl{Experiments in Modern Physics, 2\textsuperscript{nd} edition} (Academic Press, San Diego, 2003), pp 419-21.
+\end{thebibliography}
+\newpage
+\onecolumn
+\section{Code}\label{sec:Code}
+%TODO this does not look too nice
+\begin{lstlisting}
+#include "math.h"
+#include "TMath.h"
+
+double ElecCalib(double e_raw, double pt, double eta, 
+		 double phi, double etiso, double eoverp, double mindrjet)
+{
+  //double dummy=pt*eta*phi*etiso*eoverp*mindrjet;
+  double energy = e_raw ;
+    
+if (eta>-2.5 && eta<-2.5/2){
+    if (phi> -3.14 && phi< -3.14/2) energy = energy *(91.2/89.79)*(91.19/91.19)*(91.19/91.17);
+    else if (phi> -3.14/2 && phi< 0) energy = energy *(91.2/89.76)*(91.19/91.23)*(91.19/91.18);
+    else if (phi> 0 && phi< 3.14/2) energy = energy *(91.2/89.69)*(91.19/91.14)*(91.19/91.18);
+    else if (phi> 3.14/2 && phi< 3.14) energy = energy *(91.2/89.6)*(91.19/91.09)*(91.19/91.13);
+}
+else if (eta>-2.5/2 && eta<0){
+    if (phi> -3.14 && phi< -3.14/2) energy = energy *(91.2/89.84)*(91.19/91.17)*(91.19/91.15);
+    else if (phi> -3.14/2 && phi< 0) energy = energy *(91.2/89.72)*(91.19/91.13)*(91.19/91.17);
+    else if (phi> 0 && phi< 3.14/2) energy = energy *(91.2/90.11)*(91.19/91.3)*(91.19/91.25);
+    else if (phi> 3.14/2 && phi< 3.14) energy = energy *(91.2/89.92)*(91.19/91.22)*(91.19/91.22);
+}
+else if (eta>0 && eta<2.5/2){
+    if (phi> -3.14 && phi< -3.14/2) energy = energy *(91.2/89.86)*(91.19/91.13)*(91.19/91.16);
+    else if (phi> -3.14/2 && phi< 0) energy = energy *(91.2/89.96)*(91.19/91.22)*(91.19/91.22);
+    else if (phi> 0 && phi< 3.14/2) energy = energy *(91.2/89.73)*(91.19/91.12)*(91.19/91.16);
+    else if (phi> 3.14/2 && phi< 3.14) energy = energy *(91.2/89.91)*(91.19/91.16)*(91.19/91.20);
+}
+else if (eta>2.5/2 && eta<2.5){
+    if (phi> -3.14 && phi< -3.14/2) energy = energy *(91.2/89.92)*(91.19/91.23)*(91.19/91.22);
+    else if (phi> -3.14/2 && phi< 0) energy = energy *(91.2/90.01)*(91.19/91.16)*(91.19/91.23);
+    else if (phi> 0 && phi< 3.14/2) energy = energy *(91.2/89.82)*(91.19/91.16)*(91.19/91.18);
+    else if (phi> 3.14/2 && phi< 3.14) energy = energy *(91.2/89.91)*(91.19/91.12)*(91.19/91.21);
+}
+
+if (fabs(pt)>0 && fabs(pt)<20) energy = energy*(91.19/89.26)*(91.19/90.04);
+else if (fabs(pt)>20 && fabs(pt)<30) energy = energy*(91.19/90.13)*(91.19/90.79);
+else if (fabs(pt)>30 && fabs(pt)<35) energy = energy*(91.19/90.51)*(91.19/90.92);
+else if (fabs(pt)>35 && fabs(pt)<40) energy = energy*(91.19/90.68)*(91.19/90.86);
+else if (fabs(pt)>40 && fabs(pt)<45) energy = energy*(91.19/91.32)*(91.19/91.1);
+else if (fabs(pt)>45 && fabs(pt)<50) energy = energy*(91.19/92.34)*(91.19/91.75);
+else if (fabs(pt)>50 && fabs(pt)<60) energy = energy*(91.19/92.31)*(91.19/91.92);
+else if (fabs(pt)>60) energy = energy*(91.19/91.89)*(91.19/91.85);
+
+energy = energy - 0.025;
+
+
+  // if (fabs(eta)>1.5) energy = energy * 91.2/78.2;
+  // else if (fabs(eta)>2.0) energy = energy * 91.2/85.4;
+return energy;
+} 
+\end{lstlisting}
+\newpage
+\end{document}
