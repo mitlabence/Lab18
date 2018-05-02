@@ -97,7 +97,45 @@ The inner workings of hadrons need to be properly considered to accurately model
 In order to model collisions accurately, such as the proton-proton collisions at the LHC, the kinematics of the partons need to be used, derived from parton distribution functions (PDF). These functions describe relative momentum of the different partons as a fraction of the baryon's momentum. They are determined from experiments and depend on the energy scale of the interactions. At the energy scale of the LHC, most proton-proton interactions are of their sea quarks and not valence quarks~\cite{manual}. One needs to consider all possible reactions however and observe the products of the interaction, such as the number of jets and their momenta, to identify the interaction.
 
 %TODO Talk about Jacobi peak etc
-
+\subsection{The Heavy Gauge Bosons\cite{manual}}%Citation is for the numerical data
+\subsubsection{Production, Detection}
+Apart from the massless photon, there are three massive gauge bosons in the Standard Model, the neutral Z$^0$ and the charged W$^\pm$ bosons.
+\par The Z$^0$ boson has a mass of $91.1876 \pm 0.0021$~GeV. The main decay mode is through jets ($\approx 70\%$). For our purposes, the decay to a lepton-antilepton pair (each lepton flavour having a branching ratio of $\approx 3.6-3.7 \%$) is the important mode, as it is easier to work with lepton tracks than jets because of the amount of QCD background jets.
+\par The W$^\pm$ bosons have a mass known with an order of magnitude higher uncertainty: $80.403 \pm 0.029$~GeV. They decay to jets with the highest probability ($\approx 68 \%$), and the lepton ($e$, $\mu$)-lepton antineutrino decay modes are looked for in the experiment (the branching ratios are $\approx 10.6-11.3\%$ for each flavour).
+Both the W and Z bosons are produced in the weak Drell-Yan process (see Figure \ref{fig:WDiagram})
+\begin{figure}
+\includegraphics[scale=0.33]{Images/WDiagram.png}
+\includegraphics[scale=0.33]{Images/ZDiagram_differentflavour.png}
+\caption{W boson production and decay}
+\label{fig:WDiagram}
+%Made with https://feynman.aivazis.com/
+\end{figure}
+The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and needs to be reconstructed from the missing transverse momentum. To a good approximation, both the Z and the W bosons decay at rest, thus the two final state particles have the same momentum, in the opposite direction. We will utilize the precisely known $Z^0$ mass in Section \ref{sec:Proc}, and consider the case of the W-boson mass below. 
+\subsubsection{The Jacobi Peak\cite{manual}}
+%TODO not entirely clear why are we looking at d(sigma)/d(pT) and not sigma(pT), maybe because we are looking at bins, thus dsigma  ~ d(sigma)/d(pT)*d(pT)?
+%TODO Check bibliography item WMassExperiment (correct form?)
+Let us examine the W-boson decay. The final state leptons have an approximate angular distribution
+\begin{equation}
+\frac{d\sigma}{d\cos \theta^*} = 1 + \cos^2 \theta^*, \nonumber
+\end{equation}
+where $\theta^*$ denotes the angle between the lepton track and the beam axis.
+With this knowledge, we can calculate
+\begin{equation}
+\frac{d \sigma}{d p_T} = \frac{d \sigma}{d \cos \theta^*} \left\vert \frac{d p_T}{d \cos \theta^*} \right\vert^{-1} = \frac{d \sigma}{d \cos \theta^*} \cdot  \frac{\frac{2p_T}{M_W}}{\sqrt{\left( \frac{M_W}{2}\right)^2 - p_T^2}} \nonumber
+\end{equation}
+This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak. There should be no events with $p_T > \frac{M_W}{2}$ in a decay of the W-boson at rest. In reality, there are three distorting effects: first, the detector is made of multiple parts each having a different sensitivity, or even not working, contributing to somewhat imprecise measured (and missing) momenta. Second, the W-boson mass has a Breit-Wigner type distribution centered at $M_W$. The $p_T$ distribution should reflect this as well. Third, the W-boson at the tree level has no transverse momentum (this assumption is made to derive the formula above), but the radiational corrections allow for some initial $p_T$. An example process is shown in Figure \ref{fig:WRadiation}. 
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{Images/WRadiation.png}
+\caption{Feynman diagram of a W-boson production with initial state radiation, giving the W-boson transverse momentum.}
+\label{fig:WRadiation}
+\end{figure}
+\begin{figure}
+\centering
+\insertFigure{Images/WmassExample.eps}
+\caption{An example of the expected electron transverse momentum histogram.\cite{WMassExperiment}}
+\end{figure}
+In the ideal case, one can easily declare the measured mass as the peak in the histogram, but the smoothening effects make it necessary to employ a ruse. We take advantage of the available simulated data sets with different (known) masses. By fitting a function and extracting the transverse momentum corresponding to the half maximum, we can get a good estimation to what mass the half maximum of the real data fitting corresponds to. %TODO what kind of function do we fit?
 \subsection{Extensions to the SM}
 Though the SM has been extremely successful at describing fundamental physics, it has several shortcomings which necessitate explanations from new physics. Of these, some of the most significant are the inability of the SM to explain neutrino oscillations, gravity, dark matter, and the hierarchy problem. The latter is the observed discrepancy between the strengths of the fundamental forces. The strengths are quantified by coupling constants of the relevant gauge bosons with the relevant charge (gluons with colour charge) and these ``constants" actively depend on the energy scale of the interactions. That said, if a grand unified theory (GUT) of the three fundamental forces is to be established, whereby the forces are unified at some higher energy scale, it is expected that the strengths of the different coupling constants converge at this scale, a phenomena which is seemingly not achieved within the SM. \\
 
@@ -301,9 +339,11 @@ H. Klus, \textit{The Strong Nuclear Force}, WWW Document, \url{http://www.thesta
 J. Denker, \textit{Quarks -\textgreater Mesons -\textgreater Nonet = Octet plus Singlet}, WWW Document, \url{https://www.av8n.com/physics/quark-meson-nonet.htm}.
 \bibitem{manual}
 Unspecified author, \textsl{Advanced Laboratory Course physics601:E214 The ATLAS Experiment} (University of Bonn, 2018).
+\bibitem{WMassExperiment}
+%Chris Hays, Ashutosh Kotwal, Larry Nodulman, Oliver Stelzer-Chilton, William Trischuk, Ian Vollrath, https://www-cdf.fnal.gov/physics/ewk/2007/wmass/
+Hays, C., Kotwal, A., Nodulman, L., Stelzer-Chilton, O., Trischuk, W., Vollrath, I. (2007). \textsl{First Measurement of the W Boson Mass with CDF in Run II}.
 \bibitem{susy}
 Unspecified author, \textsl{Extensions to the Standard Model?}, WWW Document, \url{http://www.physics.gla.ac.uk/ppt/bsm.htm}.
-
 \bibitem{booklet}
 Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
 \bibitem{youtube}
