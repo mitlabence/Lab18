@@ -114,7 +114,7 @@ The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from th
 \subsubsection{The Jacobi Peak\cite{manual}}
 %TODO not entirely clear why are we looking at d(sigma)/d(pT) and not sigma(pT), maybe because we are looking at bins, thus dsigma  ~ d(sigma)/d(pT)*d(pT)?
 %TODO Check bibliography item WMassExperiment (correct form?)
-Let us examine the W-boson decay. The final state leptons have an approximate angular distribution
+In the process $W \, \rightarrow \, l \bar{\nu}_l$, the final state leptons have an approximate angular distribution
 \begin{equation}
 \frac{d\sigma}{d\cos \theta^*} = 1 + \cos^2 \theta^*, \nonumber
 \end{equation}
@@ -136,9 +136,10 @@ This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak. 
 \caption{An example of the expected electron transverse momentum histogram.\cite{WMassExperiment}}
 \end{figure}
 In the ideal case, one can easily declare the measured mass as the peak in the histogram, but the smoothening effects make it necessary to employ a ruse. We take advantage of the available simulated data sets with different (known) masses. By fitting a function and extracting the transverse momentum corresponding to the half maximum, we can get a good estimation to what mass the half maximum of the real data fitting corresponds to. %TODO what kind of function do we fit?
+\subsection{$Z^0$-Pair Production}
+Although we chose to determine the mass of the W-boson, here follows a short description of the other main task, searching for new physics phenomena in simulated data. The place to look in this case is the set of events where a $Z^0$ pair decays into four leptons, as this gives a clear signal of a ZZ event. The task here is to get rid of background events; these are a $t \bar{t}$ pair decaying via $t \rightarrow b W^+ \rightarrow b \, l^+ \nu_l$, or a Z boson with two additional b quarks (in both cases, B-hadrons that contain the b quarks might decay semi-leptonically, producing one more lepton each) with the help of data sets containing such events. After getting satisfactory filtering, a data set with SM and simulated Higgs or other "new physics" events; by looking at the characteristics of each hypothetical scenario (SUSY in the form of $Z Z^{(*)}$ events, new generation quarks, or additional gauge bosons ($Z^\prime$)), we need to decide which one might have appeared in the experiment.
 \subsection{Extensions to the SM}
 Though the SM has been extremely successful at describing fundamental physics, it has several shortcomings which necessitate explanations from new physics. Of these, some of the most significant are the inability of the SM to explain neutrino oscillations, gravity, dark matter, and the hierarchy problem. The latter is the observed discrepancy between the strengths of the fundamental forces. The strengths are quantified by coupling constants of the relevant gauge bosons with the relevant charge (gluons with colour charge) and these ``constants" actively depend on the energy scale of the interactions. That said, if a grand unified theory (GUT) of the three fundamental forces is to be established, whereby the forces are unified at some higher energy scale, it is expected that the strengths of the different coupling constants converge at this scale, a phenomena which is seemingly not achieved within the SM. \\
-
 \par There are numerous theories which attempt to solve the different problems of the SM. One more promising theory is supersymmetry (SuSy) which proposes solutions to the hierarchy problem and provides a candidate dark matter particle. The minimal supersymmetric extension to the SM (MSSM) states that each lepton in the SM has a bosonic superpartner of spin 0, while every boson has a fermionic superpartner of spin 1/2. Figure~\ref{fig:susy} shows the MSSM particle spectrum.
 \begin{figure}[!h]
 	\centering
@@ -147,9 +148,9 @@ Though the SM has been extremely successful at describing fundamental physics, i
 	\label{fig:susy}
 \end{figure}
 The superparticles have undefined mass, as MSSM particles of mass equal to their superpartners have not been found. As particle physics experiments such as the LHC have not found any MSSM particles yet, it is likely that they have much larger masses not probed yet by the LHC, if MSSM is indeed accurate. MSSM introduces a conserved and multiplicative quantum number called R-parity, defined as $R = (-1)^{3B+L+2S}$, where $B$ is baryon number, $L$ is lepton number, and $S$ is spin. SM particles have +1 R-parity while superparticles have -1 R-parity. As a result, a superparticle cannot decay into SM particles without violating R-parity. Thus, the lightest supersymmetric particle (LSP) must be stable. This is the natural dark matter particle candidate introduced by SuSy. Furthermore, with SuSy the three fundamental force coupling constants do indeed approximately unite at a scale of $10^{16}$~GeV, solving the hierarchy problem. Searching for evidence of SuSy is currently one of the main goals of the LHC as this would be a major leap in our understanding of physics. As of yet, no such signature have been observed. Other searches of new physics include additional heavy bosons proposed by other SM extension theories, such as bosons similar to the Z boson yet heavier. Furthermore, searches of higher generations of quarks and leptons in the SM are also conducted since they could very well exist yet are so massive that they have not been able to be produced in particle collisions. The LHC can easily investigate such proposals yet is limited in the energy of collisions and thus the masses of the produced particles.
-
 \section{The ATLAS Detector}\label{sec:Exp}
-To detect the various particles created by the collisions, the ATLAS detector consists of several layers. Figure~\ref{fig:ATLAS} is a cross-sectional perspective of the detector. 
+The ATLAS detector is one of the several detectors in the LHC (Large Hadron Collider), a circular accelerator in Geneva, Switzerland. In it, two proton beams with the energy of 6.5~TeV each are collided with each other. The resulting legion %horde? multitude?
+ of particles are detected by the detectors. Out of these, the ATLAS (\textbf{A} \textbf{T}oroidal \textbf{L}HC \textbf{A}pparatu\textbf{S}) is the largest, general-purpose apparatus, able to detect the various particles created by the collisions. It consists of several layers. Figure~\ref{fig:ATLAS} is a cross-sectional perspective of the detector.
 \begin{figure}[!h]
 	\centering
 	\insertFigure{Images/ATLAS.png}
@@ -325,8 +326,6 @@ HM^{-1} \big(48.47 \pm 0.12\big) = 91.927 \pm 2.171 \, \text{GeV,}
 \end{equation}
 in good agreement with the literature value, which supports our previous works.
 \subsubsection{Error sources}
-
-\section{Results}
 \section{Conclusion}
 \begin{thebibliography}{9}
 \bibitem{Thompson}
