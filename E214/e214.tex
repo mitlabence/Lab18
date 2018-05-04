@@ -49,11 +49,16 @@ Abstract goes here
 \saythanks %from abstract package to ensure email footnotes from \thanks command in a two-collumn article
 \section{Introduction}
 Introduction text
+
+The ATLAS detector is one of the several detectors in the LHC, a circular accelerator in Geneva, Switzerland. In it, two proton beams with the energy of 6.5~TeV each are collided with each other. The resulting legion %horde? multitude?
+of particles are detected by the detectors. Out of these, the ATLAS (\textbf{A} \textbf{T}oroidal \textbf{L}HC \textbf{A}pparatu\textbf{S}) is the largest, general-purpose apparatus, able to detect the various particles created by the collisions. 
+
+%TODO introduce acronyms: LHC
 \section{Theory}
 Our current best understanding of particle physics is the Standard Model of particle physics (SM). This model describes our discoveries of fundamental particles and their interactions with each other, mediated by fundamental forces. It furthermore describes the way these particles and forces combine to form atoms, from which many of the physical phenomena we encounter in everyday life can be explained. The main shortcoming of the SM however, is its inability to be united with gravity. That said, due to the relative weakness of gravity in comparison to the other fundamental forces, it rarely has an effect in particle physics and thus is mainly ignored (also in this paper).
 
 \subsection{The Standard Model}
-Figure~\ref{fig:part} give a summary of the particles in the SM with their most basic properties. Furthermore, there also exists anti-particles of many of these particles. An anti-particle, such as a positron, is identical to its particle (electron) apart from having the opposite electric charge. A neutral particle is often its own anti-particle such as the Z~boson, though neutrinos have anti-particles which are merely distinct by having opposing spin projections. All matter particles and the W~bosons have anti-particles while the rest are their own anti-particles.
+Figure~\ref{fig:part} give a summary of the particles in the SM with their most basic properties. Furthermore, there also exists anti-particles of many of these particles. An anti-particle, such as a positron, is identical to its particle (electron) apart from having the opposite electric charge. A neutral particle is often its own anti-particle such as the $Z^0$~boson, though neutrinos have anti-particles which are merely distinct by having opposing spin projections. All matter particles and the W~bosons have anti-particles while the rest are their own anti-particles.
 \begin{figure}[!h]
 	\centering
 	\insertFigure{Images/SM.png}
@@ -74,7 +79,7 @@ The main reason why the second and third generation of particles are largely not
 	\caption{Illustration of the energies required to probe different structures and particles.~\cite{Thompson}}
 	\label{fig:energy}
 \end{figure}
-\par Figure~\ref{fig:part} also shows the fundamental forces in the SM which are all mediated via the exchange of a gauge boson. The most familiar of these is the photon $\gamma$ which mediates the electromagnetic force, responsible for electricity, magnetism, and light. The photon interacts with all particles that have an electric charge and thus with all matter particles in the SM apart from the neutrinos. It also interacts with the W~bosons as they are electrically charged. The gluon gauge bosons mediate the strong force, thus called as it is the strongest force and binds nuclei and hadrons together, explained in Section~\ref{sec:hadrons}. The gluons interacts only with particles which have a so-called ``colour" charge, another property of particles similar to electric charge. Only quarks have a colour charge and the eight differently coloured gluons. Next, the oppositely charged W$^{\pm}$ and Z~bosons mediate the weak interaction, the weakest force apart from gravity. This force is responsible for radioactive decay and interacts with all matter particles in the SM. Finally, the Higgs boson is the most recently discovered particle which gives mass to all the matter particles in the SM by interacting with them.
+\par Figure~\ref{fig:part} also shows the fundamental forces in the SM which are all mediated via the exchange of a gauge boson. The most familiar of these is the photon $\gamma$ which mediates the electromagnetic force. The photon interacts with all particles that have an electric charge and thus with all fundamental matter particles in the SM apart from the neutrinos. It also interacts with the W~bosons as they are electrically charged. The gluon gauge bosons mediate the strong force, thus called as it is the strongest force and binds nuclei and hadrons together, explained in Section~\ref{sec:hadrons}. The gluons interacts only with particles which have a so-called ``colour" charge, another property of particles similar to electric charge. Only quarks have a colour charge and the eight differently coloured gluons. Next, the oppositely charged W$^{\pm}$ and Z$^0$~bosons mediate the weak interaction, the weakest force apart from gravity. This force is responsible for radioactive decay and interacts with all matter particles in the SM. Finally, the Higgs boson is the most recently discovered particle which gives mass to all the matter particles in the SM by interacting with them.
 
 \subsection{Hadrons and the Strong Force}\label{sec:hadrons}
 Though quarks are elementary in the SM, they cannot be observed as free particles. This is because quantum chromodynamics (QCD) of the SM, the theory of the strong force, states that colour is confined such that systems with a colour charge cannot propagate freely, termed \textit{colour confinement}. Instead, only colourless composite particles can be observed. As a result, quarks form composite particles called hadrons which are bound by gluons. Hadrons generally form baryons, composed of three quarks, and mesons, composed of one quark and one anti-quark. The reason for the these two types is a result of there being three colours, red, blue, and green, for the quarks, and three anti-colours, anti-red, anti-blue, and anti-green, for the anti-quarks. Colourlessness is achieved by combining all three colours (or anti-colours) in a baryon, or a colour and its anti-colour in a meson, as shown in Figure~\ref{fig:colour}. Protons and neutrons are examples of baryons, composed of two up quarks and one down quark (written as uud), and two down quarks and one up quark (udd), respectively.
@@ -94,49 +99,46 @@ The inner workings of hadrons need to be properly considered to accurately model
 	\caption{Feynman diagram of proton-proton collision, namely between a valence quark (top) and a sea quark. The two produced gluons here will immediately \textsl{hardonise}, form into hadrons, as a result of colour confinement. Thus, this interaction produces two protons and two hadron jets.~\cite{manual}}
 	\label{fig:parton}
 \end{figure}
-In order to model collisions accurately, such as the proton-proton collisions at the LHC, the kinematics of the partons need to be used, derived from parton distribution functions (PDF). These functions describe relative momentum of the different partons as a fraction of the baryon's momentum. They are determined from experiments and depend on the energy scale of the interactions. At the energy scale of the LHC, most proton-proton interactions are of their sea quarks and not valence quarks~\cite{manual}. One needs to consider all possible reactions however and observe the products of the interaction, such as the number of jets and their momenta, to identify the interaction.
+In order to model collisions accurately, such as the proton-proton collisions at the LHC, the kinematics of the partons need to be used, derived from parton distribution functions (PDF). These functions describe relative momentum of the different partons as a fraction of the baryon's momentum. They are determined from experiments and depend on the energy scale of the interactions. At the energy scale of the LHC, most proton-proton interactions are of their sea quarks and not valence quarks~\cite{manual}. One needs to consider all possible reactions however and observe the products of the interaction, such as the number of jets and their momenta, to identify an interaction in a collider experiment.
 
-%TODO Talk about Jacobi peak etc
-\subsection{The Heavy Gauge Bosons\cite{manual}}%Citation is for the numerical data
+\subsection{The Heavy Gauge Bosons}%Citation is for the numerical data
 \subsubsection{Production, Detection}
-Apart from the massless photon, there are three massive gauge bosons in the Standard Model, the neutral Z$^0$ and the charged W$^\pm$ bosons.
-\par The Z$^0$ boson has a mass of $91.1876 \pm 0.0021$~GeV. The main decay mode is through jets ($\approx 70\%$). For our purposes, the decay to a lepton-antilepton pair (each lepton flavour having a branching ratio of $\approx 3.6-3.7 \%$) is the important mode, as it is easier to work with lepton tracks than jets because of the amount of QCD background jets.
-\par The W$^\pm$ bosons have a mass known with an order of magnitude higher uncertainty: $80.403 \pm 0.029$~GeV. They decay to jets with the highest probability ($\approx 68 \%$), and the lepton ($e$, $\mu$)-lepton antineutrino decay modes are looked for in the experiment (the branching ratios are $\approx 10.6-11.3\%$ for each flavour).
-Both the W and Z bosons are produced in the weak Drell-Yan process (see Figure \ref{fig:WDiagram})
-\begin{figure}
+The three massive gauge bosons in the Standard Model are the neutral Z$^0$ and the charged W$^\pm$ bosons. The Z$^0$ boson has a mass of $91.1876 \pm 0.0021$~GeV~\cite{manual}. The main decay mode is through jets ($\approx 70\%$). For our purposes, the decay to a lepton-antilepton pair (each lepton flavour having a branching ratio of $\approx 3.6-3.7 \%$) is the important mode, as it is easier to work with lepton tracks than jets. This is due to the large number of background QCD jets which are hard to distinguish from the Z$^0$ decay jets. The W$^\pm$ bosons have a slightly smaller mass of $80.403 \pm 0.029$~GeV. They decay to jets with the highest probability ($\approx 68 \%$), though the lepton-lepton ($e$, $\mu$) antineutrino decay modes are looked for in the experiment (the branching ratios are $\approx 10.6-11.3\%$ for each flavour) again due to their easy identification in the data. Both the W and Z bosons are produced in the weak Drell-Yan process, shown in Figure \ref{fig:WDiagram}.
+\begin{figure} [!h]
 \includegraphics[scale=0.33]{Images/WDiagram.png}
 \includegraphics[scale=0.33]{Images/ZDiagram_differentflavour.png}
-\caption{W boson production and decay}
+\caption{W and Z boson production and decay via the Drell-Yan process, from the interaction of a quark and anti-quark (not necessarily of the same flavour).}
 \label{fig:WDiagram}
 %Made with https://feynman.aivazis.com/
 \end{figure}
-The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and needs to be reconstructed from the missing transverse momentum. To a good approximation, both the Z and the W bosons decay at rest, thus the two final state particles have the same momentum, in the opposite direction. We will utilize the precisely known $Z^0$ mass in Section \ref{sec:Proc}, and consider the case of the W-boson mass below. 
-\subsubsection{The Jacobi Peak\cite{manual}}
+The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and its momentum needs to be reconstructed from the missing transverse momentum, as neutrinos are the mainly the only particle undetectable by the ATLAS detector. To a good approximation, both the Z and the W bosons decay at rest, thus the two final state particles have the same momentum, in the opposite direction. We will utilize the precisely known $Z^0$ mass for the verification of our method in Section~\ref{sec:Proc}, and consider the case of the W-boson mass below. 
+\subsubsection{The Jacobi Peak}
 %TODO not entirely clear why are we looking at d(sigma)/d(pT) and not sigma(pT), maybe because we are looking at bins, thus dsigma  ~ d(sigma)/d(pT)*d(pT)?
 %TODO Check bibliography item WMassExperiment (correct form?)
-In the process $W \, \rightarrow \, l \bar{\nu}_l$, the final state leptons have an approximate angular distribution
+In the process $W \, \rightarrow \, l \bar{\nu}_l$, the final state leptons have an approximate angular distribution~\cite{manual}
 \begin{equation}
 \frac{d\sigma}{d\cos \theta^*} = 1 + \cos^2 \theta^*, \nonumber
 \end{equation}
 where $\theta^*$ denotes the angle between the lepton track and the beam axis.
-With this knowledge, we can calculate
+With this knowledge, we can calculate the differential cross-section
 \begin{equation}
-\frac{d \sigma}{d p_T} = \frac{d \sigma}{d \cos \theta^*} \left\vert \frac{d p_T}{d \cos \theta^*} \right\vert^{-1} = \frac{d \sigma}{d \cos \theta^*} \cdot  \frac{\frac{2p_T}{M_W}}{\sqrt{\left( \frac{M_W}{2}\right)^2 - p_T^2}} \nonumber
+\frac{d \sigma}{d p_T} = \frac{d \sigma}{d \cos \theta^*} \left\vert \frac{d p_T}{d \cos \theta^*} \right\vert^{-1} = \frac{d \sigma}{d \cos \theta^*} \cdot  \frac{\frac{2p_T}{M_W}}{\sqrt{\left( \frac{M_W}{2}\right)^2 - p_T^2}}. \nonumber
 \end{equation}
-This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak. There should be no events with $p_T > \frac{M_W}{2}$ in a decay of the W-boson at rest. In reality, there are three distorting effects: first, the detector is made of multiple parts each having a different sensitivity, or even not working, contributing to somewhat imprecise measured (and missing) momenta. Second, the W-boson mass has a Breit-Wigner type distribution centered at $M_W$. The $p_T$ distribution should reflect this as well. Third, the W-boson at the tree level has no transverse momentum (this assumption is made to derive the formula above), but the radiational corrections allow for some initial $p_T$. An example process is shown in Figure \ref{fig:WRadiation}. 
-\begin{figure}
+This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak, and there should be no events with $p_T > \frac{M_W}{2}$ in a decay of the W-boson at rest. In reality, there are three distorting effects. Firstly, the detector is made of multiple parts each having a different sensitivity, or even not working, contributing to somewhat imprecise measured (and missing) momenta. Secondly, the W-boson mass has a Breit-Wigner type distribution centred at $M_W$ as it is not stable. The $p_T$ distribution should reflect this as well. Thirdly, the W-boson at the tree level has no transverse momentum (this assumption is made to derive the formula above), but the radiative corrections allow for some initial $p_T$. An example process is shown in Figure \ref{fig:WRadiation}. 
+\begin{figure} [!h]
 \centering
 \includegraphics[scale=0.25]{Images/WRadiation.png}
 \caption{Feynman diagram of a W-boson production with initial state radiation, giving the W-boson transverse momentum.}
 \label{fig:WRadiation}
 \end{figure}
-\begin{figure}
+\begin{figure} [!h]
 \centering
 \insertFigure{Images/WmassExample.eps}
 \caption{An example of the expected electron transverse momentum histogram.\cite{WMassExperiment}}
 \end{figure}
-In the ideal case, one can easily declare the measured mass as the peak in the histogram, but the smoothening effects make it necessary to employ a ruse. We take advantage of the available simulated data sets with different (known) masses. By fitting a function and extracting the transverse momentum corresponding to the half maximum, we can get a good estimation to what mass the half maximum of the real data fitting corresponds to. %TODO what kind of function do we fit?
-\subsection{$Z^0$-Pair Production}
+In the ideal case, one can easily declare the measured mass as the peak in the histogram. The distorting effects however smoothen out the curve complicating things. Instead, we take advantage of the available simulated data sets of decays of different particles with known masses. By fitting a function and extracting the transverse momentum corresponding to the half maximum, we can get a good estimation to what mass the half maximum of the real data fitting corresponds to. %TODO what kind of function do we fit? Give a bit more detail here about how we use this to obtain the mass of the W boson. Also, refer to Figure 8 if you use it.
+
+\subsection{$Z^0$-Pair Production} %TODO I'm not sure about this section, it doesn't read well and doesn't really fit in to the report. Maybe put it after the next section or get rid of it. It doesn't go into enough detail to make it understandable.
 Although we chose to determine the mass of the W-boson, here follows a short description of the other main task, searching for new physics phenomena in simulated data. The place to look in this case is the set of events where a $Z^0$ pair decays into four leptons, as this gives a clear signal of a ZZ event. The task here is to get rid of background events; these are a $t \bar{t}$ pair decaying via $t \rightarrow b W^+ \rightarrow b \, l^+ \nu_l$, or a Z boson with two additional b quarks (in both cases, B-hadrons that contain the b quarks might decay semi-leptonically, producing one more lepton each) with the help of data sets containing such events. After getting satisfactory filtering, a data set with SM and simulated Higgs or other "new physics" events; by looking at the characteristics of each hypothetical scenario (SUSY in the form of $Z Z^{(*)}$ events, new generation quarks, or additional gauge bosons ($Z^\prime$)), we need to decide which one might have appeared in the experiment.
 \subsection{Extensions to the SM}
 Though the SM has been extremely successful at describing fundamental physics, it has several shortcomings which necessitate explanations from new physics. Of these, some of the most significant are the inability of the SM to explain neutrino oscillations, gravity, dark matter, and the hierarchy problem. The latter is the observed discrepancy between the strengths of the fundamental forces. The strengths are quantified by coupling constants of the relevant gauge bosons with the relevant charge (gluons with colour charge) and these ``constants" actively depend on the energy scale of the interactions. That said, if a grand unified theory (GUT) of the three fundamental forces is to be established, whereby the forces are unified at some higher energy scale, it is expected that the strengths of the different coupling constants converge at this scale, a phenomena which is seemingly not achieved within the SM. \\
@@ -148,27 +150,26 @@ Though the SM has been extremely successful at describing fundamental physics, i
 	\label{fig:susy}
 \end{figure}
 The superparticles have undefined mass, as MSSM particles of mass equal to their superpartners have not been found. As particle physics experiments such as the LHC have not found any MSSM particles yet, it is likely that they have much larger masses not probed yet by the LHC, if MSSM is indeed accurate. MSSM introduces a conserved and multiplicative quantum number called R-parity, defined as $R = (-1)^{3B+L+2S}$, where $B$ is baryon number, $L$ is lepton number, and $S$ is spin. SM particles have +1 R-parity while superparticles have -1 R-parity. As a result, a superparticle cannot decay into SM particles without violating R-parity. Thus, the lightest supersymmetric particle (LSP) must be stable. This is the natural dark matter particle candidate introduced by SuSy. Furthermore, with SuSy the three fundamental force coupling constants do indeed approximately unite at a scale of $10^{16}$~GeV, solving the hierarchy problem. Searching for evidence of SuSy is currently one of the main goals of the LHC as this would be a major leap in our understanding of physics. As of yet, no such signature have been observed. Other searches of new physics include additional heavy bosons proposed by other SM extension theories, such as bosons similar to the Z boson yet heavier. Furthermore, searches of higher generations of quarks and leptons in the SM are also conducted since they could very well exist yet are so massive that they have not been able to be produced in particle collisions. The LHC can easily investigate such proposals yet is limited in the energy of collisions and thus the masses of the produced particles.
+
 \section{The ATLAS Detector}\label{sec:Exp}
-The ATLAS detector is one of the several detectors in the LHC (Large Hadron Collider), a circular accelerator in Geneva, Switzerland. In it, two proton beams with the energy of 6.5~TeV each are collided with each other. The resulting legion %horde? multitude?
- of particles are detected by the detectors. Out of these, the ATLAS (\textbf{A} \textbf{T}oroidal \textbf{L}HC \textbf{A}pparatu\textbf{S}) is the largest, general-purpose apparatus, able to detect the various particles created by the collisions. It consists of several layers. Figure~\ref{fig:ATLAS} is a cross-sectional perspective of the detector.
+This experiment analyses data from the ATLAS detector at the LHC. The ATLAS detector is cylindrical in shape, where the proton beams enter through each end of the cylindrical detector and collide in its centre. It makes use of numerous layers in order to detect particles produced in the collisions. Figure~\ref{fig:ATLAS} is a cross-sectional perspective of the detector showing the different layers. Circular detector disks are also added to the two ends of the cylindrical detector to further detect and measure particles at small angles to the beam axis.
 \begin{figure}[!h]
 	\centering
 	\insertFigure{Images/ATLAS.png}
-	\caption{Cross-sectional view of the ATLAS detector showing the different detectors at different layers and how different particles interact with the different detectors. Most of the muon spectrometer is not included in this image.~\cite{manual}}
+	\caption{Cross-sectional view of the ATLAS detector showing the different detectors at different layers and how different particles interact with the detectors. Most of the muon spectrometer is not included in this image.~\cite{manual}}
 	\label{fig:ATLAS}
 \end{figure}
 
 \subsection{Inner Detector}
-The inner detector helps determining the particle paths as precisely as possible. A solenoid magnet surrounds this system, creating a $\vec{B} = 2$~T magnetic field in which a particle with charge $q$ and velocity $\vec{v}$ experiences a Lorentz force of 
+The inner detector helps determining the particle paths as precisely as possible. A solenoid magnet surrounds this system, creating a $\vec{B} = 2$~T magnetic field parallel to the colliding protons so as not to deflect them before collision. A particle with charge $q$ and velocity $\vec{v}$ in this magnetic field experiences a Lorentz force of 
 \begin{equation}
 \vec{F} = \frac{d}{dt} \vec{p} = q \vec{v} \times \vec{B}.\nonumber
 \end{equation}
-From the observed radius of the track of the particle, its momentum and charge sign can be determined allowing for a kinematic analysis of the collision. One can see in Figure~\ref{fig:ATLAS} how the charged particles are bent by the magnetic field in the inner detector.
+From the observed radius of the track of the particle, its momentum and charge sign can be determined allowing for a kinematic analysis of the collision. One can see in Figure~\ref{fig:ATLAS} how the charged particles are bent by the magnetic field in the inner detector. The inner detector is composed of different layers of detectors, hereby summarised:
 \begin{itemize}
-\item The innermost layer consists of semiconductor pixels (pixel detector, PD), which allow for precise spatial reconstruction of vertices.
+\item The innermost layer consists of over 80 million silicon semiconductor pixels (pixel detector, PD) which each have their own electronic circuit.~\cite{manual} This allows for precise spatial reconstruction of vertices, importantly being able to distinguish between closely separated primary and secondary vertices.
 \item The semi-conductor tracker layer (SCT) serves the same purpose, but with long strips that make covering a larger surface area more practical.
 \item The transition radiation tracker (TRT) consists of thin, long tubes (drift chambers) with inhomogeneous medium filling in the space between them. A particle passing through this medium emits transition radiation. The photons created this way, along with the particle itself, interact with the gas inside the tubes, causing ionizing. As there is a voltage applied to an electrode in the middle and the tube, the electrons are drawn to the electrode, contributing to an electric pulse. As the transition radiation is strongest for particles with high velocity, the strength of the signal can be used to identify the lightest particles, electrons and positrons.
-\item The solenoid superconductor magnet mentioned above, creating the magnetic field $\vec{B}$. The magnetic field is parallel to the colliding protons so as not to deflect them before collision.
 \end{itemize}
 
 \subsection{Outer Layers}
@@ -201,7 +202,6 @@ We looked at the first 24 electron events in the learning data-set, determining 
 \label{fig:electron_histogram}
 \end{figure}
 
-%TODO what does the inner detector give, momentum in GeV/c or energy in GeV?
 \begin{table} [!h]
 \centering
 \begin{tabular}{|c|c|c|c|}
@@ -239,9 +239,8 @@ We looked at the first 24 electron events in the learning data-set, determining 
 From the data, it can be seen that quite a few electrons were measured to have slightly higher momentum than energy, indicating the inaccuracy of the detector. The histogram shows that most electrons were measured with similar energy and momentum, though two relativistic electrons are found with E/p=7.50 and 14.59. A larger sample is required to determine the proper E/p distribution of electrons and whether a higher ratio of relativistic electrons are produced.
 
 \subsubsection{Muon Momentum Comparison}
-As our second task, we compared the measured muon momentum in the muon spectrometer and the inner detector. Calculating the differences between the two methods (Table \ref{tab:muon}), we noticed some cases where the muon seems to have gained momentum. The average energy loss is 6.87~GeV.
-%TODO same issue of GeV vs. GeV/c here
-\begin{table}
+As our second task, we compared the measured muon momentum in the muon spectrometer and the inner detector. Calculating the differences between the two methods allowed us to determine the energy loss of the muons in the calorimeter and whether this depended on any quantity of the muons, such as their direction of flight. Table~\ref{tab:muon} provides the results. Figure~\ref{fig:muonat} shows a muon event in ATLANTIS.
+\begin{table} [!h]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -270,14 +269,17 @@ As our second task, we compared the measured muon momentum in the muon spectrome
 20&	104.26&		107.98&		-3.72&		1.421&	78\\
 \hline
 \end{tabular}
-\caption{Muon assignment. The first column shows the Inner Detector measured momentum values, the second column the muon calorimeter momenta, the third column the loss of momentum (negative values show an increase in momentum), the fourth column $\eta$, the pseudorapidity, the last column the azimuthal angle.}
+\caption{The first column shows the Inner Detector measured momentum values, the second column the muon calorimeter momenta, the third column the loss of momentum (negative values show an increase in momentum), the fourth column $\eta$, the pseudorapidity, and the last column the azimuthal angle with respect to the proton beam axis.}
 \label{tab:muon}
 \end{table}
-\begin{figure}
+Here, we found that there are some cases where the muons seem to have gained momentum. This is indicative of the fact that the momenta of the muons are not accurately calculated in the inner detector due to the short pathlength of the muon in the detector and the insignificant deflection of the muon due to its large mass. As a result, the radius of the muon's arc cannot be precisely measured, thus resulting in an inaccurate measurement of the muons momentum. The muon system is much larger, on the other hand, allowing for a much more precise calculation of the muon momenta. Ultimately, the average energy loss of the muons in the calorimeter is 6.87~GeV. The possible dependence of the energy loss of the muons on their pseudorapidity $\eta$ and their azimuthal angles $\phi$ was analysed. These quantities were chosen as they were determined to be the only reasonable quantities that the measured energy loss could depend on. It was reasoned that the ends of the ATLAS detector, which are fitted with detector plates in which the calorimeters and muon system don't extend as far as in the middle cylindrical section, won't be able to measure the muon momenta as accurately, or that the muons won't dispose as much energy in the shortened calorimeter. That said, no dependence on these quantities was found in the energy loss of the muons. This could either be because there is no such correlation to be found or that a large sample size is required. A larger sample size could be needed as the accuracy of the measured muon momenta is not very high, resulting in fluctuations in the energy differences calculated which obscure any $\eta$ or $\phi$ dependence. A large sample size could counteract this obscurity.
+\begin{figure} [!h]]
 \centering
 \insertFigure{Images/Atlantis_Muon_cropped.png}
 \caption{Artificial muon event as seen in ATLANTIS (the panel with quantitive informations has been cropped for better visibility).}
+\label{fig:muonat}
 \end{figure}
+
 \subsection{Electron energy calibration}
 As the detector is not ideal, we need to calibrate the different regions to account for the differences in their characteristics. We chose sections of $\Delta \eta = 1.25$ and $\Delta \varphi = \pi/2$ ($-2.5 \leq \eta \leq 2.5$, $-\pi < \varphi < \pi$). Using the well-known Z$^0$ mass, we used cuts to limit ourselves to each of these intervals and iterated the process of scaling the individual values. We also introduced a transverse momentum dependent correction, finally a constant shift. Our final \textsl{ElecCalib.C} contents can be seen in Section \ref{sec:Code}. The mass obtained after three iterations is $91.1975 \pm 0.0204$~GeV, with resolution $2.5315 \pm 0.0251$, we considered this precise enough for our purposes. Figure \ref{fig:final_iteration} shows our fitting.
 \begin{figure}
