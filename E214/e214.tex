@@ -183,13 +183,13 @@ The hadron calorimeter (HCAL) interacts strongly with the entering particles. Th
 \subsubsection{Muon Spectrometer}
 The muon spectrometer is needed to measure the energy of the muons. The muons are so massive that they don't emit bremsstrahlung and don't interact strongly meaning that they only deposit a small amount of their energy in the previous layers of the detector. This unit is supplemented by a larger magnetic system consisting of toroidal magnets such that the detector is capable of determining the momentum of the muons independently of the inner layers. The tiles making up this layer consist of thin tubes filled with gas, and work on the principle of ionization, similarly to the TRT tubes. 
 
-\section{Procedure} \label{sec:Proc}
+\section{Procedure and Results} \label{sec:Proc}
 \subsection{ATLANTIS}
 As our first task, we looked at examples of events in the ATLAS detector in the event display software ATLANTIS. This way we got familiar with the working of the ATLAS detector and the signatures of different particles in the detector.
 \begin{figure} [!h]
 	\centering
 	\insertFigure{Images/Atlantis_Electron_cropped.png}
-	\caption{An (artificial) electron track as viewed in ATLANTIS, showing the electromagnetic shower in the ECAL (green).}
+	\caption{An (artificial) electron track as viewed in ATLANTIS, showing the electromagnetic shower (yellow) in the ECAL (green). The panel with quantitative information and control functions has been cropped for better visibility.}
 	\label{fig:elec}
 \end{figure}
 
@@ -272,31 +272,56 @@ As our second task, we compared the measured muon momentum in the muon spectrome
 \caption{The first column shows the Inner Detector measured momentum values, the second column the muon calorimeter momenta, the third column the loss of momentum (negative values show an increase in momentum), the fourth column $\eta$, the pseudorapidity, and the last column the azimuthal angle with respect to the proton beam axis.}
 \label{tab:muon}
 \end{table}
-Here, we found that there are some cases where the muons seem to have gained momentum. This is indicative of the fact that the momenta of the muons are not accurately calculated in the inner detector due to the short pathlength of the muon in the detector and the insignificant deflection of the muon due to its large mass. As a result, the radius of the muon's arc cannot be precisely measured, thus resulting in an inaccurate measurement of the muons momentum. The muon system is much larger, on the other hand, allowing for a much more precise calculation of the muon momenta. Ultimately, the average energy loss of the muons in the calorimeter is 6.87~GeV. The possible dependence of the energy loss of the muons on their pseudorapidity $\eta$ and their azimuthal angles $\phi$ was analysed. These quantities were chosen as they were determined to be the only reasonable quantities that the measured energy loss could depend on. It was reasoned that the ends of the ATLAS detector, which are fitted with detector plates in which the calorimeters and muon system don't extend as far as in the middle cylindrical section, won't be able to measure the muon momenta as accurately, or that the muons won't dispose as much energy in the shortened calorimeter. That said, no dependence on these quantities was found in the energy loss of the muons. This could either be because there is no such correlation to be found or that a large sample size is required. A larger sample size could be needed as the accuracy of the measured muon momenta is not very high, resulting in fluctuations in the energy differences calculated which obscure any $\eta$ or $\phi$ dependence. A large sample size could counteract this obscurity.
+Here, we found that there are some cases where the muons seem to have gained momentum. This is indicative of the fact that the momenta of the muons are not accurately calculated in the inner detector due to the short pathlength of the muon in the detector and the insignificant deflection of the muon due to its large mass. As a result, the radius of the muon's arc cannot be precisely measured, thus resulting in an inaccurate measurement of the muons momentum. The muon system is much larger, on the other hand, allowing for a much more precise calculation of the muon momenta. Ultimately, the average energy loss of the muons in the calorimeter is 6.87~GeV. The possible dependence of the energy loss of the muons on their pseudorapidity $\eta = -\ln(\tan(\theta/2))$ ($\theta$ being the polar angle) and their azimuthal angles $\phi$ was analysed. These quantities were chosen as they were determined to be the only reasonable quantities that the measured energy loss could depend on. It was reasoned that the ends of the ATLAS detector, which are fitted with detector plates in which the calorimeters and muon system don't extend as far as in the middle cylindrical section, won't be able to measure the muon momenta as accurately, or that the muons won't dispose as much energy in the shortened calorimeter. That said, no dependence on these quantities was found in the energy loss of the muons. This could either be because there is no such correlation to be found or that a large sample size is required. A larger sample size could be needed as the accuracy of the measured muon momenta is not very high, resulting in fluctuations in the energy differences calculated which obscure any $\eta$ or $\phi$ dependence. A large sample size could counteract this obscurity.
 \begin{figure} [!h]]
 \centering
 \insertFigure{Images/Atlantis_Muon_cropped.png}
-\caption{Artificial muon event as seen in ATLANTIS (the panel with quantitive informations has been cropped for better visibility).}
+\caption{Artificial muon event as seen in ATLANTIS. Slight energy deposition in the HCAL can be observed. The detector view is in fisheye mode so that the size of the muon system is reduced to allow for better visibility of the more central detectors.}
 \label{fig:muonat}
 \end{figure}
 
-\subsection{Electron energy calibration}
-As the detector is not ideal, we need to calibrate the different regions to account for the differences in their characteristics. We chose sections of $\Delta \eta = 1.25$ and $\Delta \varphi = \pi/2$ ($-2.5 \leq \eta \leq 2.5$, $-\pi < \varphi < \pi$). Using the well-known Z$^0$ mass, we used cuts to limit ourselves to each of these intervals and iterated the process of scaling the individual values. We also introduced a transverse momentum dependent correction, finally a constant shift. Our final \textsl{ElecCalib.C} contents can be seen in Section \ref{sec:Code}. The mass obtained after three iterations is $91.1975 \pm 0.0204$~GeV, with resolution $2.5315 \pm 0.0251$, we considered this precise enough for our purposes. Figure \ref{fig:final_iteration} shows our fitting.
-\begin{figure}
-\centering
-\insertFigure{Images/FinalIteration.png}
-\caption{Final iteration fitting of Z$^0$}
-\label{fig:final_iteration}
+\subsection{ECAL Calibration}
+The energy data obtained from the ECAL detector needs to be properly calibrated to give the correct energies of particles. This will allow for a more accurate measurement of the energies of the detected leptons used to measure the mass of the W-boson in the next section. The raw output energies are not accurate as the ECAL is composed of many modules which all have slightly different sensitivities, or may even be inactive, resulting in varying energy outputs. Furthermore, the particles can lose energy before reaching the ECAL and calibration can counteract any such systematic offset. Ultimately, different regions of the ECAL need to be calibrated differently, corresponding to the different raw sensitivities and inactivities of those regions. We made cuts of the pseudorapidity and azimuthal angle to probe different regions and calibrated their energies individually. We chose sections with widths of $\Delta \eta = 1.25$ and $\Delta \varphi = \pi/2$, over the full range of the detector: $-2.5 \leq \eta \leq 2.5$ and $-\pi < \varphi < \pi$. The $\eta$ and $\phi$ cuts were made simultaneously, so as to probe more localised regions of the detector, as opposed to slices in $\phi$ and $\eta$. This was deemed to be a more sensible approach as we reasoned that discrepancies in the detector are more likely to be localise to smaller areas as opposed to be dependent individually on $\eta$ or $\phi$. If this was not the case however, our simultaneous cuts of $\phi$ and $\eta$ would still be able to detect individual dependence on these angles. To reduce computational time, however, the number of cuts made in $\phi$ and $\eta$ individually could not be as many as if we had made the cuts separately, thus not probing the individual dependence finely. Further experimentation should determine whether making cuts in $\phi$ and $\eta$ individually more effectively calibrates the detector than simultaneous. \\
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/ElectronEnergy.png}
+	\caption{Histogram of energy of electrons from Z$^0$ decays, with the peak at $\sim$ $m_{Z^0}/2$.}
+	\label{fig:Elec}
 \end{figure}
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/PositronEnergy.png}
+	\caption{Histogram of energy of electrons from Z$^0$ decays, with the peak at $\sim$ $m_{Z^0}/2$.}
+	\label{fig:Pos}
+\end{figure}
+
+\par In addition to probing different regions of the ECAL, separate cuts on the momenta of the particles were made. This was to determine whether there was any dependence of the inaccurately measured particle energies with their momenta calculated in the inner detector. This could be caused by the ECAL reacting non-linearly to different momenta of the particles, resulting in inaccurate energy measurements. To calibrate the detector, electron-positron pairs from Z$^0$~boson weak decays were used as the mass of the Z$^0$~boson is very precisely known. Furthermore, the Z$^0$~boson are produced with insignificant transverse momentum due to the collinearity of the protons and thus partons which create them. This means that the invariant mass of the produced electron-positron pair is equal to the Z$^0$~boson mass and thus is very finely set. To calibrate the detector, the invariant mass of the $e^-e^+$ pair was calculated for each cut to determine its discrepancy from the Z$^0$~boson. The energy yield of that cut was then multiplied by $m_{Z^0}/m_{\text{calc}}$ such that region of the ECAL should be calibrated to measure the correct mass for the Z$^0$~boson. Figures~\ref{fig:Elec},~\ref{fig:Pos}, and~\ref{fig:Inv} depict the electron energy, positron energy, and electron-positron invariant mass histograms, respectively, before a calibration was performed. It can be seen that the peaks of the histograms line up approximately with the ideal values of $m_{Z^0}/2$ for the first two, and $m_{Z^0}$ for the last one. This suggests that the ECAL is already quite well tuned to providing accurate energy yields, though not exactly, demonstrating the necessity for the calibration. The uncalibrated ECAL calculated a mass of the Z$^0$ of $89.87 
+\pm 0.02$~GeV, demonstrating that, on average, the calibration needed to magnify the energy output of the ECAL detector.\\
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/InvMass.png}
+	\caption{Histogram of invariant mass of the positron-electron pairs, with the peak at $\sim$ $m_{Z^0}$.}
+	\label{fig:Inv}
+\end{figure}
+\par The Appendix, Section~\ref{sec:Code}, shows the code written for the calibration for use in the ROOT program of CERN. We attempted to iterate this process by again measuring the respective masses with the recently calibrated regions and then recalibrating the newly calculated mass discrepancies. This turned out to be counterproductive however, as the calculated Z$^0$~boson mass became less accurate. The reason for this is unknown but due to the fact that the originally calculated Z$^0$~boson mass was adequately accurate, the first calibration was merely taken for the rest of the experiment. Further experimentation can investigate different cuts, such as cutting the pseudorapidity and azimuthal angle separately to determine whether iterative calibrations work in that case, or if not, perhaps why they do not work. \\
+\begin{figure} [!h]
+	\centering
+	\insertFigure{Images/FinalIteration.png}
+	\caption{Histogram of electron-positron invariant mass with Voigt fit, giving the mass of the Z$^0$~boson at the position of the peak.}
+	\label{fig:final_iteration}
+\end{figure}
+\par Ultimately, the optimal mass obtained for the Z$^0$~boson after our calibration is $91.198 \pm 0.020$~GeV, which is in good agreement with the known value. This was calculated by fitting a Voigt function to the electron-positron invariant mass $M_{ee}$. A Voigt function is a Breit-Wigner curve convoluted with a Gaussian, whereby resonances (short-lived particles) have Breit-Wigner distributions, yet the inaccurate detector effects are Gaussian distributed.  Figure~\ref{fig:final_iteration} shows the $e^-e^+$ histogram with invariant mass fit after calibration.
+
 \subsection{Measurement of the W-boson mass}
-\begin{figure}
+%TODO Include gauge curves? Wmasses with different QCD corrections? 
+\begin{figure}[!h]
 \centering
 \insertFigure{Images/FirstWFit.png}
 \caption{Z$^0$ mass from ATLAS data}
 \label{fig:Z0ATLAS}
 \end{figure}
 After setting up the electron energy calibration file, we tested it on real ATLAS data, as seen in Figure \ref{fig:Z0ATLAS}. The mass acquired here is in good agreement with the commonly accepted value. As our next step, we tried scaling the QCD background by comparing the ATLAS data points and our stack-plot. We decided that the scale factor $\alpha = 0.35 \pm 0.05$ gave a fair match (the error was approximated by manual trial).
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \insertFigure{Images/ptw_scale.png}
 \caption{QCD scaled to achieve (by eye) a good match between the stack-plot and the data points.}
@@ -308,7 +333,7 @@ Following the guide, we then set up a macro file to visualize the effect of our 
 \end{equation}
 For the real data, we obtained the half max to be at $43.04 \pm 0.09$, which gives, after inverting the previous relation, a mass of $m_\text{W} = 81.12 \pm 2.03$~GeV.
 %TODO maybe use inverted data as original fitting? Then need to figure out how to fit when x-axis has errors.
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \insertFigure{Images/Jacobihalfmax.png}
 \caption{The gauge curve data points with linear fitting.}
@@ -316,7 +341,7 @@ For the real data, we obtained the half max to be at $43.04 \pm 0.09$, which giv
 \end{figure}
 \subsection{Cross-check using ATLAS \textit{ee} pair data}
 The gauge curve can be applied in the case of data for electron-positron pairs. 
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \insertFigure{Images/ZeeCheck.png}
 \caption{Plot showing the cross-check procedure.}
@@ -364,8 +389,8 @@ A. C. Melissinos, J. Napolitano, \textsl{Experiments in Modern Physics, 2\textsu
 \end{thebibliography}
 \newpage
 \onecolumn
-\section{Code}\label{sec:Code}
-%TODO this does not look too nice -- It's fine! :P
+\section{Appendix: ECAL Calibration Code}\label{sec:Code}
+The code used in ROOT to calibrate the ECAL detector. The code is here is shown with three iterations. Ultimately, we found that using only the first calibration was the most accurate method and thus the iterations were not used in the final calibration of the ECAL.
 \begin{lstlisting}
 #include "math.h"
 #include "TMath.h"
