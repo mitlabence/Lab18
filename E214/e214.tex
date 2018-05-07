@@ -103,7 +103,7 @@ In order to model collisions accurately, such as the proton-proton collisions at
 
 \subsection{The Heavy Gauge Bosons}%Citation is for the numerical data
 \subsubsection{Production, Detection}
-The three massive gauge bosons in the Standard Model are the neutral Z$^0$ and the charged W$^\pm$ bosons. The Z$^0$ boson has a mass of $91.1876 \pm 0.0021$~GeV~\cite{manual}. The main decay mode is through jets ($\approx 70\%$). For our purposes, the decay to a lepton-antilepton pair (each lepton flavour having a branching ratio of $\approx 3.6-3.7 \%$) is the important mode, as it is easier to work with lepton tracks than jets. This is due to the large number of background QCD jets which are hard to distinguish from the Z$^0$ decay jets. The W$^\pm$ bosons have a slightly smaller mass of $80.403 \pm 0.029$~GeV. They decay to jets with the highest probability ($\approx 68 \%$), though the lepton-lepton ($e$, $\mu$) antineutrino decay modes are looked for in the experiment (the branching ratios are $\approx 10.6-11.3\%$ for each flavour) again due to their easy identification in the data. Both the W and Z bosons are produced in the weak Drell-Yan process, shown in Figure \ref{fig:WDiagram}.
+The three massive gauge bosons in the Standard Model are the neutral Z$^0$ and the charged W$^\pm$ bosons. The Z$^0$ boson has a mass of $91.1876 \pm 0.0021$~GeV~\cite{manual}. Its main decay mode is through jets ($\approx 70\%$). For our purposes, the decay to a lepton-antilepton pair (each lepton flavour having a branching ratio of $\approx 3.6-3.7 \%$) is the important mode, as it is easier to work with lepton tracks than jets. This is due to the large number of background QCD jets which are hard to distinguish from the Z$^0$ decay jets. The W$^\pm$ bosons have a slightly smaller mass of $80.403 \pm 0.029$~GeV, and they also decay to jets with the highest probability ($\approx 68 \%$), though the lepton-lepton ($e$, $\mu$) antineutrino decay modes are looked for in the experiment (the branching ratios are $\approx 10.6-11.3\%$ for each flavour) again due to their easy identification in the data. Both the W and Z bosons are produced in the weak Drell-Yan process, shown in Figure \ref{fig:WDiagram}.
 \begin{figure} [!h]
 \includegraphics[scale=0.33]{Images/WDiagram.png}
 \includegraphics[scale=0.33]{Images/ZDiagram_differentflavour.png}
@@ -111,7 +111,7 @@ The three massive gauge bosons in the Standard Model are the neutral Z$^0$ and t
 \label{fig:WDiagram}
 %Made with https://feynman.aivazis.com/
 \end{figure}
-The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and its momentum needs to be reconstructed from the missing transverse momentum, as neutrinos are the mainly the only particle undetectable by the ATLAS detector. To a good approximation, both the Z and the W bosons decay at rest, thus the two final state particles have the same momentum, in the opposite direction. We will utilize the precisely known $Z^0$ mass for the verification of our method in Section~\ref{sec:Proc}, and consider the case of the W-boson mass below. 
+The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and its momentum needs to be reconstructed from the missing transverse momentum, as neutrinos are the mainly the only particle undetectable by the ATLAS detector. Both the W and Z boson decays are two-body decays, thus in the rest frame of the boson, the daughter particles have opposite three-momenta. It is easy to derive the $p_T$ (transverse momentum) spectrum in this reference frame, and use the fact that it does not change under Lorentz boosts in the beam direction to get an approximate distribution. For the Z boson, the invariant mass is well-known, and can be used to calibrate the ATLAS calorimeter. Examining the $Z^0 \, \rightarrow \, ee$ events, the observed invariant electron-positron mass distribution can be fitted with (approximately) a Breit-Wigner function. The W-boson mass will be sought as explained below. %We will utilize the precisely known $Z^0$ mass for the verification of our method in Section~\ref{sec:Proc}, and consider the case of the W-boson mass below. 
 \subsubsection{The Jacobi Peak}
 %TODO not entirely clear why are we looking at d(sigma)/d(pT) and not sigma(pT), maybe because we are looking at bins, thus dsigma  ~ d(sigma)/d(pT)*d(pT)?
 %TODO Check bibliography item WMassExperiment (correct form?)
@@ -135,11 +135,13 @@ This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak, 
 \centering
 \insertFigure{Images/WmassExample.eps}
 \caption{An example of the expected electron transverse momentum histogram.\cite{WMassExperiment}}
+\label{fig:WmassExample}
 \end{figure}
-In the ideal case, one can easily declare the measured mass as the peak in the histogram. The distorting effects however smoothen out the curve complicating things. Instead, we take advantage of the available simulated data sets of decays of different particles with known masses. By fitting a function and extracting the transverse momentum corresponding to the half maximum, we can get a good estimation to what mass the half maximum of the real data fitting corresponds to. %TODO what kind of function do we fit? Give a bit more detail here about how we use this to obtain the mass of the W boson. Also, refer to Figure 8 if you use it.
-
+In the ideal case, one can easily declare the measured mass as the peak in the histogram. The distorting effects however smoothen out the curve complicating things, as seen in Figure \ref{fig:WmassExample}. Instead, we take advantage of the available simulated data sets of decays of different particles with known masses. We can fit a function that takes into account the distorting effects, and find the half maximum belonging to the known mass (this variable can be argued to not be changed considerably by the aforementioned smearing effects). This allows us to acquire a list of W-boson mass and half maximum pairs, to which a (linear) fitting is possible; this is called the gauge curve. Using the gauge curve and knowing the half maximum corresponding to the real W-boson data, we can obtain the real W-boson mass. %TODO check (or omit) what kind of function we fit, it is never mentioned in the manual. Maybe need an ideal Jacobi peak image as well?
+\iffalse
 \subsection{$Z^0$-Pair Production} %TODO I'm not sure about this section, it doesn't read well and doesn't really fit in to the report. Maybe put it after the next section or get rid of it. It doesn't go into enough detail to make it understandable.
 Although we chose to determine the mass of the W-boson, here follows a short description of the other main task, searching for new physics phenomena in simulated data. The place to look in this case is the set of events where a $Z^0$ pair decays into four leptons, as this gives a clear signal of a ZZ event. The task here is to get rid of background events; these are a $t \bar{t}$ pair decaying via $t \rightarrow b W^+ \rightarrow b \, l^+ \nu_l$, or a Z boson with two additional b quarks (in both cases, B-hadrons that contain the b quarks might decay semi-leptonically, producing one more lepton each) with the help of data sets containing such events. After getting satisfactory filtering, a data set with SM and simulated Higgs or other "new physics" events; by looking at the characteristics of each hypothetical scenario (SUSY in the form of $Z Z^{(*)}$ events, new generation quarks, or additional gauge bosons ($Z^\prime$)), we need to decide which one might have appeared in the experiment.
+\fi
 \subsection{Extensions to the SM}
 Though the SM has been extremely successful at describing fundamental physics, it has several shortcomings which necessitate explanations from new physics. Of these, some of the most significant are the inability of the SM to explain neutrino oscillations, gravity, dark matter, and the hierarchy problem. The latter is the observed discrepancy between the strengths of the fundamental forces. The strengths are quantified by coupling constants of the relevant gauge bosons with the relevant charge (gluons with colour charge) and these ``constants" actively depend on the energy scale of the interactions. That said, if a grand unified theory (GUT) of the three fundamental forces is to be established, whereby the forces are unified at some higher energy scale, it is expected that the strengths of the different coupling constants converge at this scale, a phenomena which is seemingly not achieved within the SM. \\
 \par There are numerous theories which attempt to solve the different problems of the SM. One more promising theory is supersymmetry (SuSy) which proposes solutions to the hierarchy problem and provides a candidate dark matter particle. The minimal supersymmetric extension to the SM (MSSM) states that each lepton in the SM has a bosonic superpartner of spin 0, while every boson has a fermionic superpartner of spin 1/2. Figure~\ref{fig:susy} shows the MSSM particle spectrum.
@@ -284,14 +286,14 @@ Here, we found that there are some cases where the muons seem to have gained mom
 The energy data obtained from the ECAL detector needs to be properly calibrated to give the correct energies of particles. This will allow for a more accurate measurement of the energies of the detected leptons used to measure the mass of the W-boson in the next section. The raw output energies are not accurate as the ECAL is composed of many modules which all have slightly different sensitivities, or may even be inactive, resulting in varying energy outputs. Furthermore, the particles can lose energy before reaching the ECAL and calibration can counteract any such systematic offset. Ultimately, different regions of the ECAL need to be calibrated differently, corresponding to the different raw sensitivities and inactivities of those regions. We made cuts of the pseudorapidity and azimuthal angle to probe different regions and calibrated their energies individually. We chose sections with widths of $\Delta \eta = 1.25$ and $\Delta \varphi = \pi/2$, over the full range of the detector: $-2.5 \leq \eta \leq 2.5$ and $-\pi < \varphi < \pi$. The $\eta$ and $\phi$ cuts were made simultaneously, so as to probe more localised regions of the detector, as opposed to slices in $\phi$ and $\eta$. This was deemed to be a more sensible approach as we reasoned that discrepancies in the detector are more likely to be localise to smaller areas as opposed to be dependent individually on $\eta$ or $\phi$. If this was not the case however, our simultaneous cuts of $\phi$ and $\eta$ would still be able to detect individual dependence on these angles. To reduce computational time, however, the number of cuts made in $\phi$ and $\eta$ individually could not be as many as if we had made the cuts separately, thus not probing the individual dependence finely. Further experimentation should determine whether making cuts in $\phi$ and $\eta$ individually more effectively calibrates the detector than simultaneous. \\
 \begin{figure} [!h]
 	\centering
-	\insertFigure{Images/ElectronEnergy.png}
+	\insertFigure{Images/ElectronEnergyLabeled.png}
 	\caption{Histogram of energy of electrons from Z$^0$ decays, with the peak at $\sim$ $m_{Z^0}/2$.}
 	\label{fig:Elec}
 \end{figure}
 \begin{figure} [!h]
 	\centering
-	\insertFigure{Images/PositronEnergy.png}
-	\caption{Histogram of energy of electrons from Z$^0$ decays, with the peak at $\sim$ $m_{Z^0}/2$.}
+	\insertFigure{Images/PositronEnergyLabeled.png}
+	\caption{Histogram of energy of positrons from Z$^0$ decays, with the peak at $\sim$ $m_{Z^0}/2$.}
 	\label{fig:Pos}
 \end{figure}
 
@@ -299,14 +301,14 @@ The energy data obtained from the ECAL detector needs to be properly calibrated 
 \pm 0.02$~GeV, demonstrating that, on average, the calibration needed to magnify the energy output of the ECAL detector.\\
 \begin{figure} [!h]
 	\centering
-	\insertFigure{Images/InvMass.png}
+	\insertFigure{Images/InvMassLabeled.png}
 	\caption{Histogram of invariant mass of the positron-electron pairs, with the peak at $\sim$ $m_{Z^0}$.}
 	\label{fig:Inv}
 \end{figure}
 \par The Appendix, Section~\ref{sec:Code}, shows the code written for the calibration for use in the ROOT program of CERN. We attempted to iterate this process by again measuring the respective masses with the recently calibrated regions and then recalibrating the newly calculated mass discrepancies. This turned out to be counterproductive however, as the calculated Z$^0$~boson mass became less accurate. The reason for this is unknown but due to the fact that the originally calculated Z$^0$~boson mass was adequately accurate, the first calibration was merely taken for the rest of the experiment. Further experimentation can investigate different cuts, such as cutting the pseudorapidity and azimuthal angle separately to determine whether iterative calibrations work in that case, or if not, perhaps why they do not work. \\
 \begin{figure} [!h]
 	\centering
-	\insertFigure{Images/FinalIteration.png}
+	\insertFigure{Images/FinalIterationLabeled.png}
 	\caption{Histogram of electron-positron invariant mass with Voigt fit, giving the mass of the Z$^0$~boson at the position of the peak.}
 	\label{fig:final_iteration}
 \end{figure}
@@ -316,14 +318,14 @@ The energy data obtained from the ECAL detector needs to be properly calibrated 
 %TODO Include gauge curves? Wmasses with different QCD corrections? 
 \begin{figure}[!h]
 \centering
-\insertFigure{Images/FirstWFit.png}
+\insertFigure{Images/FirstWFitLabeled.png}
 \caption{Z$^0$ mass from ATLAS data}
 \label{fig:Z0ATLAS}
 \end{figure}
 After setting up the electron energy calibration file, we tested it on real ATLAS data, as seen in Figure \ref{fig:Z0ATLAS}. The mass acquired here is in good agreement with the commonly accepted value. As our next step, we tried scaling the QCD background by comparing the ATLAS data points and our stack-plot. We decided that the scale factor $\alpha = 0.35 \pm 0.05$ gave a fair match (the error was approximated by manual trial).
 \begin{figure}[!h]
 \centering
-\insertFigure{Images/ptw_scale.png}
+\insertFigure{Images/ptw_scaleLabeled.png}
 \caption{QCD scaled to achieve (by eye) a good match between the stack-plot and the data points.}
 \label{fig:QCDscalefactor}
 \end{figure}
@@ -332,7 +334,6 @@ Following the guide, we then set up a macro file to visualize the effect of our 
 \text{HM}(m) = (0.50267 \pm 0.00867)\cdot m + (2.2613 \pm 0.6898)
 \end{equation}
 For the real data, we obtained the half max to be at $43.04 \pm 0.09$, which gives, after inverting the previous relation, a mass of $m_\text{W} = 81.12 \pm 2.03$~GeV.
-%TODO maybe use inverted data as original fitting? Then need to figure out how to fit when x-axis has errors.
 \begin{figure}[!h]
 \centering
 \insertFigure{Images/Jacobihalfmax.png}
@@ -343,7 +344,7 @@ For the real data, we obtained the half max to be at $43.04 \pm 0.09$, which giv
 The gauge curve can be applied in the case of data for electron-positron pairs. 
 \begin{figure}[!h]
 \centering
-\insertFigure{Images/ZeeCheck.png}
+\insertFigure{Images/ZeeCheckLabeled.png}
 \caption{Plot showing the cross-check procedure.}
 \label{fig:crosscheck}
 \end{figure}
@@ -361,31 +362,19 @@ M. Thompson, \textsl{Modern Particle Physics} (Cambridge University Press, New Y
 T. DeMichele, \textit{The Standard Model (of Particle Physics) Explained}, WWW Document, \url{http://factmyth.com/the-standard-model-of-particle-physics-explained/}.
 \bibitem{colour}
 H. Klus, \textit{The Strong Nuclear Force}, WWW Document, \url{http://www.thestargarden.co.uk/Strong-nuclear-force.html}.
-\bibitem{pseudo}
-J. Denker, \textit{Quarks -\textgreater Mesons -\textgreater Nonet = Octet plus Singlet}, WWW Document, \url{https://www.av8n.com/physics/quark-meson-nonet.htm}.
+%\bibitem{pseudo}
+%J. Denker, \textit{Quarks -\textgreater Mesons -\textgreater Nonet = Octet plus %Singlet}, WWW Document, \url{https://www.av8n.com/physics/quark-meson-nonet.htm}.
 \bibitem{manual}
-Unspecified author, \textsl{Advanced Laboratory Course physics601:E214 The ATLAS Experiment} (University of Bonn, 2018).
+Unspecified author, \textsl{Advanced Laboratory Course physics601: E214 The ATLAS Experiment} (University of Bonn, 2018).
 \bibitem{WMassExperiment}
 %Chris Hays, Ashutosh Kotwal, Larry Nodulman, Oliver Stelzer-Chilton, William Trischuk, Ian Vollrath, https://www-cdf.fnal.gov/physics/ewk/2007/wmass/
 Hays, C., Kotwal, A., Nodulman, L., Stelzer-Chilton, O., Trischuk, W., Vollrath, I. (2007). \textsl{First Measurement of the W Boson Mass with CDF in Run II}.
 \bibitem{susy}
 Unspecified author, \textsl{Extensions to the Standard Model?}, WWW Document, \url{http://www.physics.gla.ac.uk/ppt/bsm.htm}.
-\bibitem{booklet}
-Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
-\bibitem{youtube}
-ATLAS Experiment YouTube channel, \url{http://youtube.com/TheATLASExperiment}.
- \bibitem{link}
- W. U. Boeglin, \textit{Scintillation Detectors}, WWW Document, \url{http://wanda.fiu.edu/teaching/courses/Modern_lab_manual/scintillator.html}.
-\bibitem{pdf_on_website}
-Unspecified author, \textsl{Gamma Ray Spectroscopy} (University of Florida, 2013), \url{https://www.phys.ufl.edu/courses/phy4803L/group_I/gamma_spec/gamspec.pdf}.
-\bibitem{cfd}
-E. Ermis and C. Celiktas, International Journal Of Instrumentation Science 1, (2013), pp.54-62.
-%alternative url: https://en.wikipedia.org/wiki/Constant_fraction_discriminator
-\bibitem{leo}
-W. R. Leo, \textsl{Techniques for Nuclear and Particle Physics Experiments} (Springer-Verlag, 1987), p. 305.
-%William R. Leo
-\bibitem{meliss}
-A. C. Melissinos, J. Napolitano, \textsl{Experiments in Modern Physics, 2\textsuperscript{nd} edition} (Academic Press, San Diego, 2003), pp 419-21.
+%\bibitem{booklet}
+%Unspecified author, \textsl{Advanced Laboratory Course (physics601): Description of Experiments} (University of Bonn, 2018).
+%\bibitem{youtube}
+%ATLAS Experiment YouTube channel, \url{http://youtube.com/TheATLASExperiment}.
 \end{thebibliography}
 \newpage
 \onecolumn

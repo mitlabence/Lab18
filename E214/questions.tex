@@ -4,11 +4,10 @@
 \begin{document}
 \maketitle
 \section{Section 7.2.2}
-Question A
-\begin{equation}
-Z^0 \, \rightarrow \, e^+ e^-
-\end{equation}
-\begin{align}
+Question A: Decay of the $Z^0$ boson\\
+Which value does the momentum of an electron have in the decay of a $Z^0$ boson $Z^0 \, \rightarrow \, e^+ e^-$, if the $Z^0$ is at rest?\\[12pt]
+From four-momentum conservation:
+\begin{align*}
 p_{Z^0} &= \begin{bmatrix}
            m_{Z^0} \\
           \vec{0} \\
@@ -23,43 +22,40 @@ p_{Z^0} &= \begin{bmatrix}
          E_e\\
          -\vec{p}
          \end{bmatrix}
-\end{align}
-\begin{equation}
-m_{Z^0} = 2 \sqrt{p^2 + m_e^2}
-\end{equation}
-\begin{equation}
-m_{Z^0} = 91.2 \, \text{GeV/$c^2$}, \hspace{6pt} m_{e} = 511 \, \text{GeV/$c^2$}
-\end{equation}
-\begin{equation}
-p = \sqrt{\frac{m_{Z^0}^2}{4} - m_e^2} = 45.6 \, \text{GeV/$c$}
-\end{equation}
-Question B
-\begin{align}
-E_{CMS} = 5 \, \text{GeV} \, \Rightarrow \, s = (p_{\tau^+} + p_{\tau^-})^2 &= \begin{bmatrix}
-2E_{\tau}\\
+         = p_{e^+} + p_{e^-} \nonumber
+\intertext{From this, we get}
+m_{Z^0} &= 2 \sqrt{p^2 + m_e^2} = 91.2 \, \text{GeV}, \hspace{6pt} m_{e} = 511 \, \text{GeV}\\[8pt]
+\Rightarrow p &= \sqrt{\frac{m_{Z^0}^2}{4} - m_e^2} = 45.6 \, \text{GeV}
+\end{align*}
+Question B: Scattering reaction $e^+ e^- \, \rightarrow \, \tau^+ \tau^-$
+\par How large is the momentum of tau leptons in the reaction $e^+ e^- \, \rightarrow \, \tau^+ \tau^-$, if the reaction takes place in the center-of-mass system (center-of-mass energy = 5~GeV)?\\
+In CMS frame ($\vec{p}_{e^-} = - \vec{p}_{e^+}$), the total four-momentum:
+\begin{align*}
+s = (p_{\tau^+} + p_{\tau^-})^2 &= \begin{bmatrix}
+2E_{\tau}  \\
 \vec{0}
-\end{bmatrix}^2 = 4 E_{\tau}^2 = E_{CMS}^2
-\end{align}
-\begin{equation}
-p_{\tau}^2 = E_{\tau}^2 - m_{tau}^2 = \Big( \frac{25}{4} - 1.78^2 \Big) \, \text{GeV$^2$/$c^2$}
-\end{equation}
-\begin{equation}
-p = 1.755 \, \text{GeV/$c$}
-\end{equation}
+\end{bmatrix}^2 = 4 E_{\tau}^2 = E_{CMS}^2=25 \, \text{GeV}^2 
+\end{align*}
+We can calculate ($m_\tau \approx 1.78$~GeV) the three-momentum of the tau leptons:
+\begin{align*}
+p_{\tau}^2 = E_{\tau}^2 - m_{tau}^2 &= \Big( \frac{25}{4} - 1.78^2 \Big) \, \text{GeV$^2$}\\[8pt]
+p &= 1.755 \, \text{GeV}
+\end{align*}
 \section{Section 7.4.1}
-First question: ptw.
-\par We are looking at $W \, \rightarrow e \nu$ processes. We can use the missing transverse momentum (\texttt{ptmis\_x, ptmis\_y}), which we assign to the neutrino. As we know the electron transverse momentum: \texttt{el\_px, el\_py, el\_pt}, the W-boson transverse momentum is determined by momentum conservation.\\[14pt]
-Fitting.
-\par Also see Barlow pp. 58-60 (4.11-12): the standard deviation squared of a function $f(x,y)$ is given by
+How could the variable \texttt{ptw} be constructed from other tree variables?\\
+\par We are looking at $W \, \rightarrow e \nu$ processes. We can use the missing transverse momentum (\texttt{ptmis\_x, ptmis\_y}), which we assign to the neutrino. As we know the electron transverse momentum: \texttt{el\_px, el\_py, el\_pt}, the W-boson transverse momentum is determined by momentum conservation, if the \\[14pt]
+The correct form of the Gauss error propagation law in the presence of correlations.\\
+%Barlow pp. 58-60 (4.11-12)
+\par The standard deviation squared of a function $f(x,y)$ is given by
 \begin{equation}
 \sigma_f^2 = \Big(\frac{df}{dx}\Big)^2 \sigma_x^2 + \Big( \frac{df}{dy} \Big)^2 \sigma_y^2 + 2 \frac{df}{dx}\frac{df}{dy}\text{cov}(x,y)
 \end{equation}
-\textbf{Minimize correlation: no clue. Correlation is maximal if the variables are linearly dependent ($\pm 1$), 0 if they are statistically independent.}
 \section{Section 7.5.1}
-Minimum invariant 4-lepton mass
-\par At threshold: $m_{Z^0} = 2 m_l$; the minimum 4-lepton invariant mass is acquired when both $Z^0$'s are stationary (CMS frame),and equal to $2m_{Z^0}$.\\[14pt]
-Lepton mass distribution
-\par See manual p. 41, also Thomson 17.19; there is a $Z^0$ peak and a Higgs-boson peak. One example for the background at the Higgs-peak is the $t \rightarrow bW^+$ decay.\\[14pt]
+What is the minimum invariant 4-lepton-mass, when the four leptons originate from a $Z^0$ pair? Why do you find 4-lepton-events with invariant mass beneath this threshold?
+\par At threshold, the $Z^0$ boson decays at rest, in this case: $m_{Z^0} = 2 m_l$. The minimum 4-lepton invariant mass is acquired when both $Z^0$'s are stationary (CMS frame),and equal to $2m_{Z^0}$. When one or two of the $Z^0$ bosons is off-shell, the 4-lepton-mass can be lower than $2 m_{Z^0}$. \\[14pt]
+Consider a Higgs boson which decays into two $Z^0$ bosons. How does the distribution of the 4-lepton-invariant-mass look like?
+%See manual p. 41, also Thomson 17.19
+\par There is a $Z^0$ peak and a Higgs-boson peak. One example for the background at the Higgs-peak is the $t \rightarrow bW^+$ decay.\\[14pt]
 Ideal/real detector.
 \par Ideal: there would be no missing transverse momentum. In real detectors, there are energy losses not detected due to inactive detector elements, imperfect calibration (?).\\[14pt]
 Four leptons in $t \bar{t}$ event.
