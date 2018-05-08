@@ -55,7 +55,7 @@ of particles are detected by the detectors. Out of these, the ATLAS (\textbf{A} 
 
 %TODO introduce acronyms: LHC
 \section{Theory}
-Our current best understanding of particle physics is the Standard Model of particle physics (SM). This model describes our discoveries of fundamental particles and their interactions with each other, mediated by fundamental forces. It furthermore describes the way these particles and forces combine to form atoms, from which many of the physical phenomena we encounter in everyday life can be explained. The main shortcoming of the SM however, is its inability to be united with gravity. That said, due to the relative weakness of gravity in comparison to the other fundamental forces, it rarely has an effect in particle physics and thus is mainly ignored (also in this paper).
+Our current best understanding of particle physics is the Standard Model of particle physics (SM). This model describes our discoveries of fundamental particles and their interactions with each other, mediated by fundamental forces. It furthermore describes the way these particles and forces combine to form atoms, from which many of the physical phenomena we encounter in everyday life can be explained. The main shortcoming of the SM however, is its inability to be united with gravity. That said, due to the relative weakness of gravity in comparison to the other fundamental forces, it rarely has an effect in particle physics and thus is mainly ignored (also in this experiment).
 
 \subsection{The Standard Model}
 Figure~\ref{fig:part} give a summary of the particles in the SM with their most basic properties. Furthermore, there also exists anti-particles of many of these particles. An anti-particle, such as a positron, is identical to its particle (electron) apart from having the opposite electric charge. A neutral particle is often its own anti-particle such as the $Z^0$~boson, though neutrinos have anti-particles which are merely distinct by having opposing spin projections. All matter particles and the W~bosons have anti-particles while the rest are their own anti-particles.
@@ -111,8 +111,9 @@ The three massive gauge bosons in the Standard Model are the neutral Z$^0$ and t
 \label{fig:WDiagram}
 %Made with https://feynman.aivazis.com/
 \end{figure}
-The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and its momentum needs to be reconstructed from the missing transverse momentum, as neutrinos are the mainly the only particle undetectable by the ATLAS detector. Both the W and Z boson decays are two-body decays, thus in the rest frame of the boson, the daughter particles have opposite three-momenta. It is easy to derive the $p_T$ (transverse momentum) spectrum in this reference frame, and use the fact that it does not change under Lorentz boosts in the beam direction to get an approximate distribution. For the Z boson, the invariant mass is well-known, and can be used to calibrate the ATLAS calorimeter. Examining the $Z^0 \, \rightarrow \, ee$ events, the observed invariant electron-positron mass distribution can be fitted with (approximately) a Breit-Wigner function. The W-boson mass will be sought as explained below. %We will utilize the precisely known $Z^0$ mass for the verification of our method in Section~\ref{sec:Proc}, and consider the case of the W-boson mass below. 
-\subsubsection{The Jacobi Peak}
+The $Z^0 \rightarrow ee/\mu\mu$ processes can be precisely reconstructed from the ATLAS data, although there is a (suppressed) background from QED Drell-Yan pairs. In the case of $W \rightarrow e \bar{\nu}_e/\mu \bar{\nu}_\mu$ decays, the neutrino is not detected and its momentum needs to be reconstructed from the missing transverse momentum, as neutrinos are the mainly the only particle undetectable by the ATLAS detector. Both the W and Z boson decays are two-body decays, thus in the rest frame of the boson, the daughter particles have opposite three-momenta. It is easy to derive the $p_T$ (transverse momentum) spectrum in this reference frame, and use the fact that it does not change under Lorentz boosts in the beam direction to get an approximate distribution. For the Z boson, its mass is well-known and can be used to calibrate the ATLAS calorimeter. Examining the $Z^0 \, \rightarrow \, ee$ events, the observed invariant electron-positron mass distribution can be fitted with an approximate Breit-Wigner function. The W-boson mass will be sought as explained below. %We will utilize the precisely known $Z^0$ mass for the verification of our method in Section~\ref{sec:Proc}, and consider the case of the W-boson mass below. 
+
+\subsubsection{The Jacobi Peak} \label{sec:yo}
 %TODO not entirely clear why are we looking at d(sigma)/d(pT) and not sigma(pT), maybe because we are looking at bins, thus dsigma  ~ d(sigma)/d(pT)*d(pT)?
 %TODO Check bibliography item WMassExperiment (correct form?)
 In the process $W \, \rightarrow \, l \bar{\nu}_l$, the final state leptons have an approximate angular distribution~\cite{manual}
@@ -128,7 +129,7 @@ This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak, 
 \begin{figure} [!h]
 \centering
 \includegraphics[scale=0.25]{Images/WRadiation.png}
-\caption{Feynman diagram of a W-boson production with initial state radiation, giving the W-boson transverse momentum.}
+\caption{Feynman diagram of a W-boson production with initial state radiation, giving the W-boson non-zero transverse momentum.}
 \label{fig:WRadiation}
 \end{figure}
 \begin{figure} [!h]
@@ -137,7 +138,8 @@ This curve clearly has a pole at $p_T = \frac{M_W}{2}$, called the Jacobi peak, 
 \caption{An example of the expected electron transverse momentum histogram.\cite{WMassExperiment}}
 \label{fig:WmassExample}
 \end{figure}
-In the ideal case, one can easily declare the measured mass as the peak in the histogram. The distorting effects however smoothen out the curve complicating things, as seen in Figure \ref{fig:WmassExample}. Instead, we take advantage of the available simulated data sets of decays of different particles with known masses. We can fit a function that takes into account the distorting effects, and find the half maximum belonging to the known mass (this variable can be argued to not be changed considerably by the aforementioned smearing effects). This allows us to acquire a list of W-boson mass and half maximum pairs, to which a (linear) fitting is possible; this is called the gauge curve. Using the gauge curve and knowing the half maximum corresponding to the real W-boson data, we can obtain the real W-boson mass. %TODO check (or omit) what kind of function we fit, it is never mentioned in the manual. Maybe need an ideal Jacobi peak image as well?
+In the ideal case, one can easily declare the measured mass as the peak in the histogram. The distorting effects however smoothen out the curve complicating things, as seen in Figure \ref{fig:WmassExample}. The alternate method used to calculate the W~boson mass will be explain in Section~\ref{sec:Wmass} alongside the results obtain from this method.
+
 \iffalse
 \subsection{$Z^0$-Pair Production} %TODO I'm not sure about this section, it doesn't read well and doesn't really fit in to the report. Maybe put it after the next section or get rid of it. It doesn't go into enough detail to make it understandable.
 Although we chose to determine the mass of the W-boson, here follows a short description of the other main task, searching for new physics phenomena in simulated data. The place to look in this case is the set of events where a $Z^0$ pair decays into four leptons, as this gives a clear signal of a ZZ event. The task here is to get rid of background events; these are a $t \bar{t}$ pair decaying via $t \rightarrow b W^+ \rightarrow b \, l^+ \nu_l$, or a Z boson with two additional b quarks (in both cases, B-hadrons that contain the b quarks might decay semi-leptonically, producing one more lepton each) with the help of data sets containing such events. After getting satisfactory filtering, a data set with SM and simulated Higgs or other "new physics" events; by looking at the characteristics of each hypothetical scenario (SUSY in the form of $Z Z^{(*)}$ events, new generation quarks, or additional gauge bosons ($Z^\prime$)), we need to decide which one might have appeared in the experiment.
@@ -238,7 +240,7 @@ We looked at the first 24 electron events in the learning data-set, determining 
 \caption{The momenta and energies of electrons, determined by the inner detector and ECAL, respectively. The E/p values are subsequently calculated.}
 \label{tab:electron}
 \end{table}
-From the data, it can be seen that quite a few electrons were measured to have slightly higher momentum than energy, indicating the inaccuracy of the detector. The histogram shows that most electrons were measured with similar energy and momentum, though two relativistic electrons are found with E/p=7.50 and 14.59. A larger sample is required to determine the proper E/p distribution of electrons and whether a higher ratio of relativistic electrons are produced.
+From the data, it can be seen that quite a few electrons were measured to have slightly higher momentum than energy, indicating the inaccuracy of the detector. The histogram shows that most electrons were measured with similar energy and momentum, as expected, though two relativistic electrons are found with E/p=7.50 and 14.59, identified due to their much larger energy than momentum detected. Their momentum is much smaller due to their inaccurate calculation from their rest mass, as opposed to relativistic mass, with their radius in the inner detector. A larger sample is required to determine the proper E/p distribution of electrons and whether a higher ratio of relativistic electrons are produced.
 
 \subsubsection{Muon Momentum Comparison}
 As our second task, we compared the measured muon momentum in the muon spectrometer and the inner detector. Calculating the differences between the two methods allowed us to determine the energy loss of the muons in the calorimeter and whether this depended on any quantity of the muons, such as their direction of flight. Table~\ref{tab:muon} provides the results. Figure~\ref{fig:muonat} shows a muon event in ATLANTIS.
@@ -271,7 +273,7 @@ As our second task, we compared the measured muon momentum in the muon spectrome
 20&	104.26&		107.98&		-3.72&		1.421&	78\\
 \hline
 \end{tabular}
-\caption{The first column shows the Inner Detector measured momentum values, the second column the muon calorimeter momenta, the third column the loss of momentum (negative values show an increase in momentum), the fourth column $\eta$, the pseudorapidity, and the last column the azimuthal angle with respect to the proton beam axis.}
+\caption{The first column shows the Inner Detector measured momentum values, the second column the muon calorimeter momenta, the third column the loss of momentum (negative values show an increase in momentum), the fourth column $\eta$, the pseudorapidity, and the last column the azimuthal angle with respect to the proton beam axis. Uncertainty is not herein included as it was not insightful to the investigation of quantity dependence on energy difference.}
 \label{tab:muon}
 \end{table}
 Here, we found that there are some cases where the muons seem to have gained momentum. This is indicative of the fact that the momenta of the muons are not accurately calculated in the inner detector due to the short pathlength of the muon in the detector and the insignificant deflection of the muon due to its large mass. As a result, the radius of the muon's arc cannot be precisely measured, thus resulting in an inaccurate measurement of the muons momentum. The muon system is much larger, on the other hand, allowing for a much more precise calculation of the muon momenta. Ultimately, the average energy loss of the muons in the calorimeter is 6.87~GeV. The possible dependence of the energy loss of the muons on their pseudorapidity $\eta = -\ln(\tan(\theta/2))$ ($\theta$ being the polar angle) and their azimuthal angles $\phi$ was analysed. These quantities were chosen as they were determined to be the only reasonable quantities that the measured energy loss could depend on. It was reasoned that the ends of the ATLAS detector, which are fitted with detector plates in which the calorimeters and muon system don't extend as far as in the middle cylindrical section, won't be able to measure the muon momenta as accurately, or that the muons won't dispose as much energy in the shortened calorimeter. That said, no dependence on these quantities was found in the energy loss of the muons. This could either be because there is no such correlation to be found or that a large sample size is required. A larger sample size could be needed as the accuracy of the measured muon momenta is not very high, resulting in fluctuations in the energy differences calculated which obscure any $\eta$ or $\phi$ dependence. A large sample size could counteract this obscurity.
@@ -312,54 +314,96 @@ The energy data obtained from the ECAL detector needs to be properly calibrated 
 	\caption{Histogram of electron-positron invariant mass with Voigt fit, giving the mass of the Z$^0$~boson at the position of the peak.}
 	\label{fig:final_iteration}
 \end{figure}
-\par Ultimately, the optimal mass obtained for the Z$^0$~boson after our calibration is $91.198 \pm 0.020$~GeV, which is in good agreement with the known value. This was calculated by fitting a Voigt function to the electron-positron invariant mass $M_{ee}$. A Voigt function is a Breit-Wigner curve convoluted with a Gaussian, whereby resonances (short-lived particles) have Breit-Wigner distributions, yet the inaccurate detector effects are Gaussian distributed.  Figure~\ref{fig:final_iteration} shows the $e^-e^+$ histogram with invariant mass fit after calibration.
+\par Ultimately, the mass for the Z$^0$~boson after our calibration was calculated by fitting a Voigt function to the electron-positron invariant mass $M_{ee}$ histogram, given in Figure~\ref{fig:final_iteration}. A Voigt function is a Breit-Wigner curve convoluted with a Gaussian. This is to be expected for the histogram as resonances (short-lived particles) have Breit-Wigner distributions, yet the inaccurate detector effects are Gaussian distributed. The optimally calculated Z$^0$~boson mass is $91.198 \pm 0.020$~GeV, in good agreement with the known value, giving confidence in our ECAL calibration.
 
-\subsection{Measurement of the W-boson mass}
-%TODO Include gauge curves? Wmasses with different QCD corrections? 
+
+
+
+
+
+
+\subsection{Measurement of the W-boson mass} 
+\subsubsection{QCD Background Normalisation} \label{sec:QCD}
+The main aim of this experiment is to use the previous calibration to measure the mass of the W~boson from real ATLAS data. The $W^- \to e^- + \nu_e$ and $W^+ \to e^+ + \overline{\nu_e}$ decays, shown in Figure~\ref{fig:WDiagram}, are herein analysed to determine the mass of the W~boson. Firstly, the ECAL calibration was tested on real ATLAS data of Z$^0 \to$ ee decays to determine whether the produced Z~boson mass agrees with world-averaged value. Different kinematic regions were tested to determine whether the calibration was consistent. Figure~\ref{fig:Z0ATLAS} gives the produced histogram when no cuts were made. The produced mass is $91.17 \pm 0.01$~GeV, in good agreement with the world average. All kinematic regions investigated were also in good agreement, suggesting that our ECAL calibration was functioning as desired.
 \begin{figure}[!h]
 \centering
 \insertFigure{Images/FirstWFitLabeled.png}
 \caption{Z$^0$ mass from ATLAS data}
 \label{fig:Z0ATLAS}
 \end{figure}
-After setting up the electron energy calibration file, we tested it on real ATLAS data, as seen in Figure \ref{fig:Z0ATLAS}. The mass acquired here is in good agreement with the commonly accepted value. As our next step, we tried scaling the QCD background by comparing the ATLAS data points and our stack-plot. We decided that the scale factor $\alpha = 0.35 \pm 0.05$ gave a fair match (the error was approximated by manual trial).
+\par The next step was to normalise the QCD background to the size of our used ATLAS data for measuring the W~boson mass. The QCD background is all data that results from the colliding proton partons interacting strongly, in which the W~boson does not appear. As a result, this background complicates our analysis it dominates the data and yet cannot be used to measure the W~boson mass. In order to consider data which is more dominated by W~boson interactions, the QCD background needs to be approximated in the real ATLAS data used to measure the W~boson mass. This is achieved by extracting QCD background data from other ATLAS data to determine its shape and presence in different plots and kinematic regions. However, this applied QCD background firstly needs to be properly scaled to the size of the now used ATLAS data for the W~boson. This is achieved by looking at different plots of the ATLAS data, plotted with stack-plots of the simulated expected QCD background, non-QCD background, and $W \to e\nu$ (or $Z \to ee$) contributions. The plots investigated were the transverse momentum of detected electrons, the isolation energy of the electrons (summed energy in a cone around the electron), the missing transverse energy, the number of jets, and the estimated transverse momentum of the W~boson. Firstly, the scaling of the QCD background was altered such that the different simulated stack-plots agreed with the ATLAS data, observed by eye. Specifically, regions which had a QCD background contribution were dominant were focused on to try to scale the QCD background as accurately as possible. Figure~\ref{fig:QCDscalefactor} is one such plot of the estimated transverse momentum of the W~bosons, with the QCD scale factor changed such that the ATLAS data and stack-plot agree.
 \begin{figure}[!h]
-\centering
-\insertFigure{Images/ptw_scaleLabeled.png}
-\caption{QCD scaled to achieve (by eye) a good match between the stack-plot and the data points.}
-\label{fig:QCDscalefactor}
+	\centering
+	\insertFigure{Images/ptw_scaleLabeled.png}
+	\caption{QCD scaled to 0.45 (initially 1.0) achieved a good match between the stack-plot and the data points, especially around the ${P_T}_W \approx 50$~GeV area where the QCD background is most dominant.}
+	\label{fig:QCDscalefactor}
 \end{figure}
-Following the guide, we then set up a macro file to visualize the effect of our cuts on the different data sets of W-boson events with different masses, all at once. The measured half maxima and a linear fitting is shown in Figure \ref{fig:gaugecurve}. We found the linear fitting to be
+Unfortunately, the scale factor obtain from this method for the different plots did not agree, where in Figure~\ref{fig:QCDscalefactor} it was 0.45, though for the missing transverse energy it was 0.40. \\
+
+\par Ultimately, the W~boson mass will be measured using the transverse momentum of the electrons produced in the W~boson decays, explained later in this section. As a result, this plot was focused on and the scale factor was changed until stack-plot sections with high QCD background agreed with the ATLAS data. The scale factor hereby obtained was approximately 0.25-0.30. That said, this scale factor meant that the other stack-plots were not in good agreement with the ATLAS data, suggesting that it was not likely to be the correct scale factor for this ATLAS data and thus shouldn't be used. A compromise was chosen for the scale factor of $0.35 \pm 0.05$ such that all plots were in relatively good agreement with the data. It is unknown why there is a discrepancy between different plots for the optimal QCD scale factor, apart from the QCD background being merely a simulated, non-ideal estimation on the real QCD background in the data. The uncertainty in the scale factor was determined as the range of values which resulted in adequate agreement between the ATLAS data and the stack-plots in all the plots considered. \\
+
+\par Next, cuts were made on the data to only include data which had low QCD and non-QCD background, in order to optimise the calculation of the W~boson mass. By looking at the different plots mentioned previously, the following cuts were made:
+\begin{itemize}
+\item transverse momentum of the W~boson $\textless$ 20~GeV,
+\item isolation energy of the electron $\textless$ 4~GeV,
+\item number of jets $\textless$ 2, and
+\item 20 $\textless$ (missing transverse energy) $\textless$ 60.
+\end{itemize}
+The number of jets were taken to be at most one as the jets are caused from radiative corrections, shown in Figure~\ref{fig:WRadiation}, give transverse momenta to the W~boson thereby making the process of calculating its mass more complicated. One jet was allowed as only considering no jets reduced the data too much to obtain statistically significant results. The above cuts were those used for the following measurement of the W~boson mass.
+	
+\subsubsection{Gauge Curve Procedure} \label{sec:Wmass}
+As mentioned in Section~\ref{sec:yo}, the W~boson mass cannot be calculated simply by locating the Jacobi peak, due to distorting effects. Instead, we take advantage of the seven available simulated data sets of $W to e\nu$ decays with different W~boson masses. For each, we can fit a polynomial function that takes into account the distorting effects of the Jacobi peak and find the half-maximum of the fit. This allows us to acquire a correlation between simulated W-boson mass and half-maximum values, to which a linear regression is applied. The resulting linear fit is called the gauge curve. Figure~\ref{fig:gaugecurve} shows the gauge curve we obtained, demonstrating a very linear relationship
+\begin{figure}[!h]
+	\centering
+	\insertFigure{Images/Jacobihalfmax.png}
+	\caption{The gauge curve data points with linear fitting, should very good agreement with the linear regression.}
+	\label{fig:gaugecurve}
+\end{figure}
 \begin{equation}\nonumber
-\text{HM}(m) = (0.50267 \pm 0.00867)\cdot m + (2.2613 \pm 0.6898)
+\text{HM}(m) = (0.5027 \pm 0.0087)\cdot m + (2.26 \pm 0.69)
 \end{equation}
-For the real data, we obtained the half max to be at $43.04 \pm 0.09$, which gives, after inverting the previous relation, a mass of $m_\text{W} = 81.12 \pm 2.03$~GeV.
+The fits of all seven simulated data sets are given in the Appendix, Section~\ref{sec:half}. Using the gauge curve and calculating the half-maximum corresponding to the real ATLAS W-boson data, we can obtain the real W-boson mass. We obtained a half-maximum for the real ATLAS data to be $43.04 \pm 0.09$~GeV, given in Figure~\ref{fig:halfW}, which gives a mass of W~boson of $m_\text{W} = 81.1 \pm 2.0$~GeV. 
 \begin{figure}[!h]
-\centering
-\insertFigure{Images/Jacobihalfmax.png}
-\caption{The gauge curve data points with linear fitting.}
-\label{fig:gaugecurve}
+	\centering
+	\insertFigure{Images/Wmass.png}
+	\caption{Plot of the transverse momentum of electrons from real ATLAS W~boson decays with half-maximum fit overlayed. The previously mention cuts have been applied for this plot.}
+	\label{fig:halfW}
 \end{figure}
-\subsection{Cross-check using ATLAS \textit{ee} pair data}
-The gauge curve can be applied in the case of data for electron-positron pairs. 
+This value agrees well with the world-average value for the mass. That said, the uncertainty calculated in this value is quite large, largely derived from large relative uncertainty in the intercept value of the gauge curve. Further experiments should try to reduce this uncertainty, perhaps by using more simulated data sets, in order to obtain a more precise mass for the W~boson. Regardless, the calculated mass is in good agreement with the world-averaged value, giving confidence in our method.\\
+
+\par As a further cross-check, we applied the half-maximum fit to electron transverse momenta from $Z^0$ decays to determine whether an adequate $Z^0$ mass was also obtained. Figure~\ref{fig:crosscheck} shows the corresponding plot. 
 \begin{figure}[!h]
 \centering
 \insertFigure{Images/ZeeCheckLabeled.png}
-\caption{Plot showing the cross-check procedure.}
+\caption{Plot of the transverse momentum of electrons from Z~boson decays with half-maximum fit overlayed, used for the cross-check of our method.}
 \label{fig:crosscheck}
 \end{figure}
-Using the inverse of the gauge function again, we get
-\begin{equation}
-HM^{-1} \big(48.47 \pm 0.12\big) = 91.927 \pm 2.171 \, \text{GeV,}
-\end{equation}
-in good agreement with the literature value, which supports our previous works.
-\subsubsection{Error sources}
+The resulting calculated mass using the gauge curve is $91.93 \pm 2.2$~GeV, again in good agreement with the world-averaged value. This gives further confidence that our method has accurately determined the mass of the W~boson from real ATLAS data. The large uncertainty here is again as a result of the uncertainty in the gauge curve.
+
+\subsubsection{Sources of Systematic Uncertainty}
+It is insightful to investigate any sources of (systematic) uncertainty in our methodology. The most obvious possible source of such uncertainty comes from the QCD background scaling. This is due to the large possible range of scale factors which agreed with different parts of the data, resulting in its large uncertainty. In Section~\ref{sec:QCD}, we obtained a scale factor of $0.35 \pm 0.05$. As a result, the method used in Section~\ref{sec:Wmass} was repeated for a QCD scale factor of 0.30 and 0.40, the edges of the uncertainty range. By calculating the resulting W~boson mass from these scale factors, we could quantify the systematic uncertainty introduced by the QCD background scaling method. Figures~\ref{fig:W1} and~\ref{fig:W2} give the half-maximum plots for the QCD scale factors of 0.30 and 0.40, respectively. 
+\begin{figure}[!h]
+	\centering
+	\insertFigure{Images/Wmass_30.png}
+	\caption{Plot of the transverse momentum of electrons from W~boson decays with half-maximum fit overlayed, for a scale factor of 0.30.}
+	\label{fig:W1}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\insertFigure{Images/Wmass_40.png}
+	\caption{Plot of the transverse momentum of electrons from W~boson decays with half-maximum fit overlayed, for a scale factor of 0.40.}
+	\label{fig:W2}
+\end{figure}
+It can be seen that the stack-plots in the two plots deviate slightly from the data, though not significantly enough to rule out the scale factor as inaccurate, demonstrating the source of the uncertainty. That said, the scale factor of 0.30 fits the data more accurately than that for 0.40, demonstrating the point made in Section~\ref{sec:QCD} about the scale factor approximated from the electron transverse momentum plot at 0.25-0.30 (though larger for other plots). Ultimately, however, the produced half-maximums from the fit are both exactly the same as that for the used scale factor in Section~\ref{sec:Wmass}. Thus, the QCD scaling has not introduced systematic uncertainty in the calculation of the W~boson mass. Given that the QCD background scaling was the most uncertain part of the method, in our opinion, this result has given us confidence that our calculation for the W~boson mass isn't very sensitive to the uncertain QCD scaling process. It furthermore demonstrates that our accurately measured mass isn't somewhat by chance, but that it is quite stable if the method is properly executed. Ultimately, it gives further confidence that our result for the W~boson mass is $81.1 \pm 2.0$~GeV.
+
 \section{Conclusion}
+The aim of this experiment was to familiarise ourselves with data analysis obtained at the ATLAS detector and ultimately, to calculate the mass of the W~boson from real ATLAS data. Initially, we investigated the signatures left by different particles in the detector with the ATLANTIS program. We determined from this that the detector is not ideal, giving electrons with momenta larger than their energies. Furthermore, we couldn't determine a dependence of momentum change of muons in the detector with their pseudorapidity or polar angle, suggesting a larger sample was required to test this further. To calculate the mass of the W~boson, we first had to calibrate the ECAL detector by scaling the energy yield of different parts of the detector such that the mass of the $Z^0$~boson was accurately calculated. We found that the optimal mass obtained of $91.198 \pm 0.020$~GeV, in good agreement with the world-averaged value, was when no iterations of the process were made. Next, the simulated QCD background was appropriately normalised to the ATLAS data with a scale factor of $0.35 \pm 0.05$. Cuts on measured quantities were then made to only include data with small background contributions for the W~boson mass analysis. A gauge curve was then calculated by fitting seven simulated data sets of W~bosons of different masses and measuring their half-maxima. From this, the mass of the W~boson was ultimately calculated from the gauge curve and the half-maximum fit of the ATLAS data to be $81.1 \pm 2.0$~GeV, in good agreement with the world-averaged value. We cross-checked the method and found it to be consistent by similarly calculating the mass of the $Z^0$~boson as $91.93 \pm 2.2$~GeV, also in good agreement with the accepted value. Lastly, we checked the systematic uncertainty introduced by the QCD background scaling method by repeating the method with QCD scale factors of 0.30 and 0.40. We found that the produced W~boss mass was not changed, giving further confidence in our result.
+
 \begin{thebibliography}{9}
-\bibitem{Thompson}
-M. Thompson, \textsl{Modern Particle Physics} (Cambridge University Press, New York, 2013).
 \bibitem{part}
 T. DeMichele, \textit{The Standard Model (of Particle Physics) Explained}, WWW Document, \url{http://factmyth.com/the-standard-model-of-particle-physics-explained/}.
+\bibitem{Thompson}
+M. Thompson, \textsl{Modern Particle Physics} (Cambridge University Press, New York, 2013).
 \bibitem{colour}
 H. Klus, \textit{The Strong Nuclear Force}, WWW Document, \url{http://www.thestargarden.co.uk/Strong-nuclear-force.html}.
 %\bibitem{pseudo}
@@ -378,7 +422,8 @@ Unspecified author, \textsl{Extensions to the Standard Model?}, WWW Document, \u
 \end{thebibliography}
 \newpage
 \onecolumn
-\section{Appendix: ECAL Calibration Code}\label{sec:Code}
+\section{Appendix}
+\subsection{ECAL Calibration Code}\label{sec:Code}
 The code used in ROOT to calibrate the ECAL detector. The code is here is shown with three iterations. Ultimately, we found that using only the first calibration was the most accurate method and thus the iterations were not used in the final calibration of the ECAL.
 \begin{lstlisting}
 #include "math.h"
@@ -432,5 +477,15 @@ energy = energy - 0.025;
 return energy;
 } 
 \end{lstlisting}
+\newpage
+\subsection{Half-Maximum Fits} \label{sec:half}
+The half-maximum fits obtained for the simulated data sets of different W~boson masses. The range of the fits were chosen as large as possible as long as the peak was included and the fit matched the data well.
+\begin{figure}[!h]
+	\centering
+	\insertFigure{Images/GaugeCurves.png}
+	\caption{Half-maximum fits for the different data sets, with the same cuts applied to all.}
+	\label{fig:gauge}
+\end{figure}
+
 \newpage
 \end{document}
