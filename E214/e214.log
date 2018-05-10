@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.26)  9 MAY 2018 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.26)  10 MAY 2018 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,18 +1302,11 @@ Package pdftex.def Info: Images/energy.png  used on input line 79. on input lin
 e 79.
 Package pdftex.def Info: Requested size: 232.97914pt x 72.01875pt on input line
  79.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./Images/SM.png>]
-<Images/colour.png, id=169, 546.04pt x 460.72125pt>
+<Images/colour.png, id=170, 546.04pt x 460.72125pt>
 File: Images/colour.png Graphic file (type png)
 <use Images/colour.png>
 Package pdftex.def Info: Images/colour.png  used on input line 89. on input lin
@@ -1321,31 +1314,37 @@ e 89.
 Package pdftex.def Info: Requested size: 232.97914pt x 196.57373pt on input lin
 e 89.
 
-[2 <./Images/mass.png> <./Images/energy.png> <./Images/colour.png>]
-<Images/parton.png, id=184, 760.34062pt x 496.85625pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Images/parton.png, id=176, 760.34062pt x 496.85625pt>
 File: Images/parton.png Graphic file (type png)
 <use Images/parton.png>
 Package pdftex.def Info: Images/parton.png  used on input line 99. on input lin
 e 99.
 Package pdftex.def Info: Requested size: 232.97914pt x 152.2422pt on input line
  99.
-<Images/WDiagram.png, id=191, 352.31625pt x 225.84375pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./Images/mass.png> <./Images/energy.png>]
+<Images/WDiagram.png, id=193, 352.31625pt x 225.84375pt>
 File: Images/WDiagram.png Graphic file (type png)
 <use Images/WDiagram.png>
 Package pdftex.def Info: Images/WDiagram.png  used on input line 109. on input 
 line 109.
 Package pdftex.def Info: Requested size: 116.26471pt x 74.52866pt on input line
  109.
-<Images/ZDiagram_differentflavour.png, id=192, 343.2825pt x 220.825pt>
+<Images/ZDiagram_differentflavour.png, id=194, 343.2825pt x 220.825pt>
 File: Images/ZDiagram_differentflavour.png Graphic file (type png)
 <use Images/ZDiagram_differentflavour.png>
 Package pdftex.def Info: Images/ZDiagram_differentflavour.png  used on input li
 ne 110. on input line 110.
 Package pdftex.def Info: Requested size: 113.28357pt x 72.87247pt on input line
  110.
- [3 <./Images/parton.png> <./Images/WDiagram.png> <./Images/ZDiagram_differentf
-lavour.png>]
-<Images/WRadiation.png, id=210, 556.0775pt x 289.08pt>
+ [3 <./Images/colour.png> <./Images/parton.png> <./Images/WDiagram.png> <./Imag
+es/ZDiagram_differentflavour.png>]
+<Images/WRadiation.png, id=212, 556.0775pt x 289.08pt>
 File: Images/WRadiation.png Graphic file (type png)
 <use Images/WRadiation.png>
 Package pdftex.def Info: Images/WRadiation.png  used on input line 132. on inpu
@@ -1362,7 +1361,7 @@ Package epstopdf Info: Source file: <Images/WmassExample.eps>
 nverted-to.pdf Images/WmassExample.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
-<Images/WmassExample-eps-converted-to.pdf, id=211, pagebox=cropbox, 569.12625pt
+<Images/WmassExample-eps-converted-to.pdf, id=213, pagebox=cropbox, 569.12625pt
  x 385.44pt>
 File: Images/WmassExample-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/WmassExample-eps-converted-to.pdf>
@@ -1371,47 +1370,56 @@ t line 138. on input line 138.
 Package pdftex.def Info: Requested size: 232.97914pt x 157.78441pt on input lin
 e 138.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-<Images/susy.png, id=217, 770.88pt x 354.32375pt>
+<Images/susy.png, id=219, 770.88pt x 354.32375pt>
 File: Images/susy.png Graphic file (type png)
 <use Images/susy.png>
 Package pdftex.def Info: Images/susy.png  used on input line 153. on input line
  153.
 Package pdftex.def Info: Requested size: 232.97914pt x 107.08188pt on input lin
 e 153.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [4pdfTeX warning (ext4): destination with the same identifier (name{equation.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.158 
-       <./Images/WRadiation.png> <./Images/WmassExample-eps-converted-to.pdf> <
-./Images/susy.png>]
-<Images/ATLAS.png, id=244, 702.625pt x 602.25pt>
+       <./Images/WRadiation.png> <./Images/WmassExample-eps-converted-to.pdf>]
+<Images/ATLAS.png, id=246, 702.625pt x 602.25pt>
 File: Images/ATLAS.png Graphic file (type png)
 <use Images/ATLAS.png>
 Package pdftex.def Info: Images/ATLAS.png  used on input line 163. on input lin
 e 163.
 Package pdftex.def Info: Requested size: 232.97914pt x 199.69882pt on input lin
 e 163.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
- [5 <./Images/ATLAS.png>]
-<Images/Atlantis_Electron_cropped.png, id=257, 972.63374pt x 1031.855pt>
+
+Underfull \vbox (badness 1424) has occurred while \output is active []
+
+ [5 <./Images/susy.png> <./Images/ATLAS.png>]
+<Images/Atlantis_Electron_cropped.png, id=260, 972.63374pt x 1031.855pt>
 File: Images/Atlantis_Electron_cropped.png Graphic file (type png)
 <use Images/Atlantis_Electron_cropped.png>
 Package pdftex.def Info: Images/Atlantis_Electron_cropped.png  used on input li
 ne 196. on input line 196.
 Package pdftex.def Info: Requested size: 232.97914pt x 247.16217pt on input lin
 e 196.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Images/electron_histogram.png, id=261, 578.16pt x 371.3875pt>
+<Images/electron_histogram.png, id=264, 578.16pt x 371.3875pt>
 File: Images/electron_histogram.png Graphic file (type png)
 <use Images/electron_histogram.png>
 Package pdftex.def Info: Images/electron_histogram.png  used on input line 205.
@@ -1419,61 +1427,55 @@ Package pdftex.def Info: Images/electron_histogram.png  used on input line 205.
 Package pdftex.def Info: Requested size: 232.97914pt x 149.65173pt on input lin
 e 205.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <./Images/Atlantis_Electron_cropped.png> <./Images/electron_histogram.png (P
-NG copy)>]
-<Images/Atlantis_Muon_cropped.png, id=272, 975.645pt x 1026.83624pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./Images/Atlantis_Electron_cropped.png>]
+<Images/Atlantis_Muon_cropped.png, id=275, 975.645pt x 1026.83624pt>
 File: Images/Atlantis_Muon_cropped.png Graphic file (type png)
 <use Images/Atlantis_Muon_cropped.png>
 Package pdftex.def Info: Images/Atlantis_Muon_cropped.png  used on input line 2
 83. on input line 283.
 Package pdftex.def Info: Requested size: 232.97914pt x 245.19228pt on input lin
 e 283.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-<Images/ElectronEnergyLabeled.png, id=280, 1617.04124pt x 1003.75pt>
+ [7 <./Images/electron_histogram.png (PNG copy)>]
+<Images/ElectronEnergyLabeled.png, id=283, 1617.04124pt x 1003.75pt>
 File: Images/ElectronEnergyLabeled.png Graphic file (type png)
 <use Images/ElectronEnergyLabeled.png>
 Package pdftex.def Info: Images/ElectronEnergyLabeled.png  used on input line 2
 92. on input line 292.
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  292.
-<Images/PositronEnergyLabeled.png, id=281, 1617.04124pt x 1003.75pt>
+<Images/PositronEnergyLabeled.png, id=284, 1617.04124pt x 1003.75pt>
 File: Images/PositronEnergyLabeled.png Graphic file (type png)
 <use Images/PositronEnergyLabeled.png>
 Package pdftex.def Info: Images/PositronEnergyLabeled.png  used on input line 2
 98. on input line 298.
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  298.
-<Images/InvMassLabeled.png, id=285, 1617.04124pt x 1003.75pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Images/InvMassLabeled.png, id=288, 1617.04124pt x 1003.75pt>
 File: Images/InvMassLabeled.png Graphic file (type png)
 <use Images/InvMassLabeled.png>
 Package pdftex.def Info: Images/InvMassLabeled.png  used on input line 307. on 
 input line 307.
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  307.
-
-[8 <./Images/Atlantis_Muon_cropped.png> <./Images/ElectronEnergyLabeled.png> <.
-/Images/PositronEnergyLabeled.png>]
-<Images/FinalIterationLabeled.png, id=297, 698.61pt x 475.7775pt>
+[8 <./Images/Atlantis_Muon_cropped.png> <./Images/ElectronEnergyLabeled.png>]
+<Images/FinalIterationLabeled.png, id=298, 698.61pt x 475.7775pt>
 File: Images/FinalIterationLabeled.png Graphic file (type png)
 <use Images/FinalIterationLabeled.png>
 Package pdftex.def Info: Images/FinalIterationLabeled.png  used on input line 3
 14. on input line 314.
 Package pdftex.def Info: Requested size: 232.97914pt x 158.66954pt on input lin
 e 314.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Images/FirstWFitLabeled.png, id=301, 1617.04124pt x 1003.75pt>
+<Images/FirstWFitLabeled.png, id=302, 1617.04124pt x 1003.75pt>
 File: Images/FirstWFitLabeled.png Graphic file (type png)
 <use Images/FirstWFitLabeled.png>
 Package pdftex.def Info: Images/FirstWFitLabeled.png  used on input line 331. o
@@ -1481,9 +1483,9 @@ n input line 331.
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  331.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Images/ptw_scaleLabeled.png, id=303, 1617.04124pt x 1003.75pt>
+[9 <./Images/PositronEnergyLabeled.png> <./Images/InvMassLabeled.png> <./Images
+/FinalIterationLabeled.png>]
+<Images/ptw_scaleLabeled.png, id=314, 1617.04124pt x 1003.75pt>
 File: Images/ptw_scaleLabeled.png Graphic file (type png)
 <use Images/ptw_scaleLabeled.png>
 Package pdftex.def Info: Images/ptw_scaleLabeled.png  used on input line 338. o
@@ -1499,10 +1501,6 @@ Underfull \hbox (badness 1668) in paragraph at lines 335--343
 Underfull \hbox (badness 10000) in paragraph at lines 335--343
 
  []
-
-[9 <./Images/InvMassLabeled.png> <./Images/FinalIterationLabeled.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 1354) in paragraph at lines 344--345
@@ -1552,15 +1550,15 @@ LaTeX Warning: Command \textless invalid in math mode on input line 351.
 
 LaTeX Warning: Command \textless invalid in math mode on input line 351.
 
-<Images/Jacobihalfmax.png, id=317, 578.16pt x 369.38pt>
+[10 <./Images/FirstWFitLabeled.png> <./Images/ptw_scaleLabeled.png>]
+<Images/Jacobihalfmax.png, id=327, 578.16pt x 369.38pt>
 File: Images/Jacobihalfmax.png Graphic file (type png)
 <use Images/Jacobihalfmax.png>
 Package pdftex.def Info: Images/Jacobihalfmax.png  used on input line 359. on i
 nput line 359.
 Package pdftex.def Info: Requested size: 232.97914pt x 148.8428pt on input line
  359.
-[10 <./Images/FirstWFitLabeled.png> <./Images/ptw_scaleLabeled.png>]
-<Images/WmassLabeled.png, id=327, 1617.04124pt x 1003.75pt>
+<Images/WmassLabeled.png, id=330, 1617.04124pt x 1003.75pt>
 File: Images/WmassLabeled.png Graphic file (type png)
 <use Images/WmassLabeled.png>
 Package pdftex.def Info: Images/WmassLabeled.png  used on input line 369. on in
@@ -1572,21 +1570,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--374
 
  []
 
-<Images/ZeeCheckLabeled.png, id=329, 1617.04124pt x 1003.75pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Images/ZeeCheckLabeled.png, id=332, 1617.04124pt x 1003.75pt>
 File: Images/ZeeCheckLabeled.png Graphic file (type png)
 <use Images/ZeeCheckLabeled.png>
 Package pdftex.def Info: Images/ZeeCheckLabeled.png  used on input line 378. on
  input line 378.
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  378.
-<Images/Wmass_30Labeled.png, id=334, 1617.04124pt x 1003.75pt>
+<Images/Wmass_30Labeled.png, id=337, 1617.04124pt x 1003.75pt>
 File: Images/Wmass_30Labeled.png Graphic file (type png)
 <use Images/Wmass_30Labeled.png>
 Package pdftex.def Info: Images/Wmass_30Labeled.png  used on input line 388. on
  input line 388.
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  388.
-<Images/Wmass_40Labeled.png, id=335, 1617.04124pt x 1003.75pt>
+<Images/Wmass_40Labeled.png, id=338, 1617.04124pt x 1003.75pt>
 File: Images/Wmass_40Labeled.png Graphic file (type png)
 <use Images/Wmass_40Labeled.png>
 Package pdftex.def Info: Images/Wmass_40Labeled.png  used on input line 394. on
@@ -1594,16 +1595,11 @@ Package pdftex.def Info: Images/Wmass_40Labeled.png  used on input line 394. on
 Package pdftex.def Info: Requested size: 232.97914pt x 144.6134pt on input line
  394.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./Images/Jacobihalfmax.png (PNG copy)> <./Images/WmassLabeled.png> <./Imag
-es/ZeeCheckLabeled.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [11 <./Images/Jacobihalfmax.png (PNG copy)> <./Images/WmassLabeled.png> <./Ima
+ges/ZeeCheckLabeled.png>] [12 <./Images/Wmass_30Labeled.png> <./Images/Wmass_40
+Labeled.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 405--406
 []\OT1/cmr/m/n/10 T. DeMichele, \OT1/cmr/m/it/10 The Stan-dard Model
  []
@@ -1642,7 +1638,7 @@ Underfull \hbox (badness 3009) in paragraph at lines 413--414
  Course
  []
 
-[12 <./Images/Wmass_30Labeled.png> <./Images/Wmass_40Labeled.png>]
+
 Underfull \hbox (badness 4303) in paragraph at lines 418--423
 []\OT1/cmr/m/n/10 Unspecified au-thor, \OT1/cmr/m/sl/10 Ex-ten-sions to the Sta
 n-dard
@@ -1659,7 +1655,7 @@ tp : / / www . physics .
 ] [14
 
 ]
-<Images/GaugeCurves.png, id=425, 1617.04124pt x 1003.75pt>
+<Images/GaugeCurves.png, id=428, 1617.04124pt x 1003.75pt>
 File: Images/GaugeCurves.png Graphic file (type png)
 <use Images/GaugeCurves.png>
 Package pdftex.def Info: Images/GaugeCurves.png  used on input line 486. on inp
@@ -1691,7 +1687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
-<Images/Z0peak.png, id=433, 496.85625pt x 477.785pt>
+<Images/Z0peak.png, id=436, 496.85625pt x 477.785pt>
 File: Images/Z0peak.png Graphic file (type png)
 <use Images/Z0peak.png>
 Package pdftex.def Info: Images/Z0peak.png  used on input line 543. on input li
@@ -1741,18 +1737,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 561.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 561.
 Package rerunfilecheck Info: File `e214.out' has not changed.
 (rerunfilecheck)             Checksum: 1184493F775F750C335F55C20F138845;2198.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 561.
  ) 
 Here is how much of TeX's memory you used:
- 20523 strings out of 492990
- 384174 string characters out of 6135004
+ 20533 strings out of 492990
+ 384269 string characters out of 6135004
  514423 words of memory out of 5000000
- 23728 multiletter control sequences out of 15000+600000
- 540604 words of font info for 60 fonts, out of 8000000 for 9000
+ 23733 multiletter control sequences out of 15000+600000
+ 541915 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,15n,58p,10394b,1200s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -1762,25 +1754,27 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-8.pfb>
-Output written on e214.pdf (17 pages, 2661101 bytes).
+1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on e214.pdf (17 pages, 2692222 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
+ 563 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
  140 named destinations out of 1000 (max. 500000)
  392 words of extra memory for PDF output out of 10000 (max. 10000000)
 
